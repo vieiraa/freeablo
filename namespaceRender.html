@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -88,6 +89,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Wrapper for low-level rendering library.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRender_1_1SpriteGroup.html">SpriteGroup</a></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af50f804b65c964056de6aeffcf039f66"></a><!-- doxytag: member="Render::Sprite" ref="af50f804b65c964056de6aeffcf039f66" args="" -->
@@ -100,12 +104,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725f4e1357ec4979c7ed97f447c7d5a6"></a><!-- doxytag: member="Render::drawAt" ref="a725f4e1357ec4979c7ed97f447c7d5a6" args="(const Sprite &amp;sprite, size_t x, size_t y)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawAt</b> (const Sprite &amp;sprite, size_t x, size_t y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af52eed9214fade1de3c7d6ca3ddd06d5"></a><!-- doxytag: member="Render::loadGroup" ref="af52eed9214fade1de3c7d6ca3ddd06d5" args="(const std::string &amp;path)" -->
-std::vector&lt; Sprite &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loadGroup</b> (const std::string &amp;path)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a866c83fa57a061d612245fd59ae8e48a"></a><!-- doxytag: member="Render::setLevel" ref="a866c83fa57a061d612245fd59ae8e48a" args="(const std::string &amp;tilesetPath, const Level::DunFile &amp;dun, const Level::TilFile &amp;til, const Level::MinFile &amp;min)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (const std::string &amp;tilesetPath, const <a class="el" href="classLevel_1_1DunFile.html">Level::DunFile</a> &amp;dun, const <a class="el" href="classLevel_1_1TilFile.html">Level::TilFile</a> &amp;til, const <a class="el" href="classLevel_1_1MinFile.html">Level::MinFile</a> &amp;min)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5220cd97c15c387fb2613f5276eb586"></a><!-- doxytag: member="Render::drawLevel" ref="ae5220cd97c15c387fb2613f5276eb586" args="(int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLevel</b> (int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae16d9d13bf164a419e17ba647b75dda1"></a><!-- doxytag: member="Render::drawAt" ref="ae16d9d13bf164a419e17ba647b75dda1" args="(const Sprite &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawAt</b> (const Sprite &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79647e82f82b76fbfc01c9dee38e9d1f"></a><!-- doxytag: member="Render::clear" ref="a79647e82f82b76fbfc01c9dee38e9d1f" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba682eda0a79a45db43e3892cbe13ad9"></a><!-- doxytag: member="Render::createTransparentSurface" ref="aba682eda0a79a45db43e3892cbe13ad9" args="(size_t width, size_t height)" -->
@@ -114,8 +118,6 @@ SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>createTransp
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setpixel</b> (SDL_Surface *s, int x, int y, <a class="el" href="structCel_1_1Colour.html">Cel::Colour</a> c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8384399aba8d9bca82788367f744016f"></a><!-- doxytag: member="Render::drawFrame" ref="a8384399aba8d9bca82788367f744016f" args="(SDL_Surface *s, int start_x, int start_y, const Cel::CelFrame &amp;frame)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawFrame</b> (SDL_Surface *s, int start_x, int start_y, const <a class="el" href="classCel_1_1CelFrame.html">Cel::CelFrame</a> &amp;frame)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab62a761b6ae5bc6d5c9d7e30ce9b473c"></a><!-- doxytag: member="Render::getSprite" ref="ab62a761b6ae5bc6d5c9d7e30ce9b473c" args="(Cel::CelFile &amp;f, size_t index)" -->
-SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>getSprite</b> (<a class="el" href="classCel_1_1CelFile.html">Cel::CelFile</a> &amp;f, size_t index)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11cc224af7ea1bfccaa795a2bd581092"></a><!-- doxytag: member="Render::blit" ref="a11cc224af7ea1bfccaa795a2bd581092" args="(SDL_Surface *from, SDL_Surface *to, int x, int y)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>blit</b> (SDL_Surface *from, SDL_Surface *to, int x, int y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bbdc70f166ed8419fcfa4d292258b6a"></a><!-- doxytag: member="Render::drawMinTile" ref="a3bbdc70f166ed8419fcfa4d292258b6a" args="(SDL_Surface *s, Cel::CelFile &amp;f, int x, int y, int16_t l, int16_t r)" -->
@@ -130,10 +132,6 @@ Variables</h2></td></tr>
 SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>screen</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d4fe43f2de1fa5d1d4a0a059df5385"></a><!-- doxytag: member="Render::tileset" ref="a43d4fe43f2de1fa5d1d4a0a059df5385" args="" -->
 SDL_Surface **&#160;</td><td class="memItemRight" valign="bottom"><b>tileset</b> = NULL</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4848b65db4ab8d5f5f8a126de7af266f"></a><!-- doxytag: member="Render::x_base" ref="a4848b65db4ab8d5f5f8a126de7af266f" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>x_base</b> = WIDTH/2</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adac48ea939597984129ce6a6f1b44052"></a><!-- doxytag: member="Render::y_base" ref="adac48ea939597984129ce6a6f1b44052" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>y_base</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492f58ae653a70dda58d41fe44752816"></a><!-- doxytag: member="Render::tilCache" ref="a492f58ae653a70dda58d41fe44752816" args="" -->
 std::map&lt; size_t, SDL_Surface * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tilCache</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabda0d39a3d50273c4dae41d1b10dc1e"></a><!-- doxytag: member="Render::level" ref="aabda0d39a3d50273c4dae41d1b10dc1e" args="" -->
@@ -142,6 +140,10 @@ SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>level</b> = 
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelWidth</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f92cb83f09535677629de395a727ad1"></a><!-- doxytag: member="Render::levelHeight" ref="a5f92cb83f09535677629de395a727ad1" args="" -->
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelHeight</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bbcd9e8602e8dfd842cea2fdecdace5"></a><!-- doxytag: member="Render::levelX" ref="a6bbcd9e8602e8dfd842cea2fdecdace5" args="" -->
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelX</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16334f662869063e5af5470cebc19282"></a><!-- doxytag: member="Render::levelY" ref="a16334f662869063e5af5470cebc19282" args="" -->
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelY</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Wrapper for low-level rendering library. </p>
@@ -151,7 +153,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelHeight</b></t
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -163,7 +165,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelHeight</b></t
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 12 2014 18:54:16 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 22 2014 15:40:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

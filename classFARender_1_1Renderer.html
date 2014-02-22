@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,7 +100,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">FARender::Renderer Class Reference</div>  </div>
 </div><!--header-->
@@ -115,6 +118,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (const <
 <a class="el" href="classFARender_1_1RenderState.html">RenderState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFreeState</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f17e5a5e8d490f7bedcc0b2c2e48918"></a><!-- doxytag: member="FARender::Renderer::setCurrentState" ref="a7f17e5a5e8d490f7bedcc0b2c2e48918" args="(RenderState *current)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentState</b> (<a class="el" href="classFARender_1_1RenderState.html">RenderState</a> *current)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3bcc5a3217058dc2a3ce0469cbbd37a"></a><!-- doxytag: member="FARender::Renderer::loadImage" ref="ac3bcc5a3217058dc2a3ce0469cbbd37a" args="(const std::string &amp;path)" -->
+FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>loadImage</b> (const std::string &amp;path)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e68b29718f806cb93cc71656c5a4c28"></a><!-- doxytag: member="FARender::Renderer::get" ref="a4e68b29718f806cb93cc71656c5a4c28" args="()" -->
+static <a class="el" href="classFARender_1_1Renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a075801b647c57f36888322f7cc1f10fe"></a><!-- doxytag: member="FARender::Renderer::CacheSpriteGroup" ref="a075801b647c57f36888322f7cc1f10fe" args="" -->
+class&#160;</td><td class="memItemRight" valign="bottom"><b>CacheSpriteGroup</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/farender/<a class="el" href="renderer_8h_source.html">renderer.h</a></li>
@@ -126,7 +139,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentState</b> (
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -138,7 +151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentState</b> (
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 12 2014 18:54:16 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 22 2014 15:40:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

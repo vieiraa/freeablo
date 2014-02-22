@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,16 +112,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac85ba6987fd9c052c264d6224c24dbcf"></a><!-- doxytag: member="FARender::RenderState::mMutex" ref="ac85ba6987fd9c052c264d6224c24dbcf" args="" -->
 boost::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>mMutex</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acca4736c471b30abd9efb387c7fb96b9"></a><!-- doxytag: member="FARender::RenderState::mX1" ref="acca4736c471b30abd9efb387c7fb96b9" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mX1</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a13b629c1d59324bffead5ec757b98"></a><!-- doxytag: member="FARender::RenderState::mY1" ref="ad8a13b629c1d59324bffead5ec757b98" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mY1</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11cbeacd5e8e5005aefc3b6095d67d39"></a><!-- doxytag: member="FARender::RenderState::mX2" ref="a11cbeacd5e8e5005aefc3b6095d67d39" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mX2</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3667283a7bb0d4afb744692e55a8eb8e"></a><!-- doxytag: member="FARender::RenderState::mY2" ref="a3667283a7bb0d4afb744692e55a8eb8e" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mY2</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6712fa6d5a33a702e3501c003b4f0981"></a><!-- doxytag: member="FARender::RenderState::mDist" ref="a6712fa6d5a33a702e3501c003b4f0981" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mDist</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347886c74bdbcfd0d2e538c3e23f4f77"></a><!-- doxytag: member="FARender::RenderState::mPos" ref="a347886c74bdbcfd0d2e538c3e23f4f77" args="" -->
+<a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mPos</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7c742784a3a915ea3a33b8944b0fb11"></a><!-- doxytag: member="FARender::RenderState::mObjects" ref="ae7c742784a3a915ea3a33b8944b0fb11" args="" -->
+std::vector&lt; boost::tuple<br class="typebreak"/>
+&lt; FASpriteGroup, size_t, <br class="typebreak"/>
+<a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFARender_1_1RenderState.html#ae7c742784a3a915ea3a33b8944b0fb11">mObjects</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">group, index into group, and position <br/></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>apps/freeablo/farender/<a class="el" href="renderer_8h_source.html">renderer.h</a></li>
@@ -131,7 +129,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mDist</b></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -143,7 +141,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mDist</b></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 12 2014 18:54:16 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 22 2014 15:40:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
