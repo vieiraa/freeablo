@@ -4,5 +4,6 @@ var searchData=
   ['cel',['Cel',['../namespaceCel.html',1,'']]],
   ['celfile',['CelFile',['../classCel_1_1CelFile.html',1,'Cel']]],
   ['celframe',['CelFrame',['../classCel_1_1CelFrame.html',1,'Cel']]],
-  ['colour',['Colour',['../structCel_1_1Colour.html',1,'Cel']]]
+  ['colour',['Colour',['../structCel_1_1Colour.html',1,'Cel']]],
+  ['current',['current',['../classFAWorld_1_1Position.html#a40be66d42d4090fb3eb44db248ec16ef',1,'FAWorld::Position']]]
 ];

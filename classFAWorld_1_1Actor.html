@@ -120,16 +120,24 @@ Inheritance diagram for FAWorld::Actor:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a386ff9ba515bf3eb52412b6e799c92da"></a><!-- doxytag: member="FAWorld::Actor::Actor" ref="a386ff9ba515bf3eb52412b6e799c92da" args="(const std::string &amp;walkAnimPath)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b> (const std::string &amp;walkAnimPath)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec539d670c28fa3359df17efe9f77f23"></a><!-- doxytag: member="FAWorld::Actor::Actor" ref="aec539d670c28fa3359df17efe9f77f23" args="(const std::string &amp;walkAnimPath, const std::string &amp;idleAnimPath)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b> (const std::string &amp;walkAnimPath, const std::string &amp;idleAnimPath)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac86cf8221d2260292b909015f82a8866"></a><!-- doxytag: member="FAWorld::Actor::update" ref="ac86cf8221d2260292b909015f82a8866" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0f672a764dbd1aa2854eff81e45f78e"></a><!-- doxytag: member="FAWorld::Actor::getCurrentAnim" ref="ab0f672a764dbd1aa2854eff81e45f78e" args="()" -->
+FARender::FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentAnim</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07ef3d20f2270f5b2a8c1fb3075f6f81"></a><!-- doxytag: member="FAWorld::Actor::setAnimation" ref="a07ef3d20f2270f5b2a8c1fb3075f6f81" args="(AnimState::AnimState state)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnimation</b> (AnimState::AnimState state)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78328234299e1ed9da3e706cdfaf3853"></a><!-- doxytag: member="FAWorld::Actor::mPos" ref="a78328234299e1ed9da3e706cdfaf3853" args="" -->
 <a class="el" href="classFAWorld_1_1Position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mPos</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7f1985453e433bf1311270e7c743d11"></a><!-- doxytag: member="FAWorld::Actor::walkAnim" ref="ad7f1985453e433bf1311270e7c743d11" args="" -->
-FARender::FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>walkAnim</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac8c6e9679991d2711a39f1839239cbf"></a><!-- doxytag: member="FAWorld::Actor::mWalkAnim" ref="aac8c6e9679991d2711a39f1839239cbf" args="" -->
+FARender::FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>mWalkAnim</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac30acef71c30ceee418fb4828cfec89a"></a><!-- doxytag: member="FAWorld::Actor::mIdleAnim" ref="ac30acef71c30ceee418fb4828cfec89a" args="" -->
+FARender::FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>mIdleAnim</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd918eed32d94304e71eafb26a8d9096"></a><!-- doxytag: member="FAWorld::Actor::mFrame" ref="acd918eed32d94304e71eafb26a8d9096" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mFrame</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/faworld/<a class="el" href="actor_8h_source.html">actor.h</a></li>
@@ -153,7 +161,7 @@ FARender::FASpriteGroup&#160;</td><td class="memItemRight" valign="bottom"><b>wa
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 23 2014 14:51:18 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 23 2014 18:09:04 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
