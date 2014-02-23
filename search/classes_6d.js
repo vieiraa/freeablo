@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['minfile',['MinFile',['../classLevel_1_1MinFile.html',1,'Level']]]
+  ['min',['Min',['../classLevel_1_1Min.html',1,'Level']]]
 ];

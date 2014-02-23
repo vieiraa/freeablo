@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tilfile',['TilFile',['../classLevel_1_1TilFile.html',1,'Level']]]
+  ['tileset',['TileSet',['../classLevel_1_1TileSet.html',1,'Level']]]
 ];

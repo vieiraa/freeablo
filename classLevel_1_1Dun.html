@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: FAWorld::Position Class Reference</title>
+<title>Freeablo: Level::Dun Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -93,42 +93,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>FAWorld</b>      </li>
-      <li class="navelem"><a class="el" href="classFAWorld_1_1Position.html">Position</a>      </li>
+      <li class="navelem"><a class="el" href="namespaceLevel.html">Level</a>      </li>
+      <li class="navelem"><a class="el" href="classLevel_1_1Dun.html">Dun</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">FAWorld::Position Class Reference</div>  </div>
+<div class="title">Level::Dun Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FAWorld::Position" -->
-<p><a href="classFAWorld_1_1Position-members.html">List of all members.</a></p>
+<!-- doxytag: class="Level::Dun" -->
+<p><a href="classLevel_1_1Dun-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>DunHelper</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad34a10975af08be2beb527fc2d10d101"></a><!-- doxytag: member="FAWorld::Position::update" ref="ad34a10975af08be2beb527fc2d10d101" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#ad34a10975af08be2beb527fc2d10d101">update</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">advances towards mNext <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebe0dd29cec43011e986c36a9a52b7b7"></a><!-- doxytag: member="Level::Dun::Dun" ref="aebe0dd29cec43011e986c36a9a52b7b7" args="(const std::string &amp;)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Dun</b> (const std::string &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bab570f405838e0da306490de4fb8da"></a><!-- doxytag: member="Level::Dun::operator[]" ref="a5bab570f405838e0da306490de4fb8da" args="(size_t x) const " -->
+DunHelper&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a405c84f6952cc06183f9c760ac8ac48e"></a><!-- doxytag: member="Level::Dun::Dun" ref="a405c84f6952cc06183f9c760ac8ac48e" args="(size_t width, size_t height)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Dun</b> (size_t width, size_t height)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa22de06fdec8277adaf7b2c2a410b62a"></a><!-- doxytag: member="Level::Dun::resize" ref="aa22de06fdec8277adaf7b2c2a410b62a" args="(size_t width, size_t height)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_t width, size_t height)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa7b92459c261812ee458349605fa4ab"></a><!-- doxytag: member="Level::Dun::at" ref="aaa7b92459c261812ee458349605fa4ab" args="(size_t x, size_t y)" -->
+int16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_t x, size_t y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d55538e22f7d08fde8f71c820059894"></a><!-- doxytag: member="Level::Dun::at" ref="a6d55538e22f7d08fde8f71c820059894" args="(size_t x, size_t y) const " -->
+const int16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (size_t x, size_t y) const </td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ca87294a7a617442caa007b354402ba"></a><!-- doxytag: member="Level::Dun::getTown" ref="a3ca87294a7a617442caa007b354402ba" args="(const Dun &amp;sector1, const Dun &amp;sector2, const Dun &amp;sector3, const Dun &amp;sector4)" -->
+static <a class="el" href="classLevel_1_1Dun.html">Dun</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTown</b> (const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector1, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector2, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector3, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector4)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40b056e1555d6b19fd77cb34112a738f"></a><!-- doxytag: member="FAWorld::Position::mCurrent" ref="a40b056e1555d6b19fd77cb34112a738f" args="" -->
-std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#a40b056e1555d6b19fd77cb34112a738f">mCurrent</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">where we are coming from <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9581daa5d02d6c8b7e43476931829ccb"></a><!-- doxytag: member="FAWorld::Position::mNext" ref="a9581daa5d02d6c8b7e43476931829ccb" args="" -->
-std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#a9581daa5d02d6c8b7e43476931829ccb">mNext</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">where we are going to <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7492aeb4817c537b6776a8ccceffef5c"></a><!-- doxytag: member="FAWorld::Position::mDist" ref="a7492aeb4817c537b6776a8ccceffef5c" args="" -->
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#a7492aeb4817c537b6776a8ccceffef5c">mDist</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">percentage of the way there <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac650ffbf75b577d065213e22413c4764"></a><!-- doxytag: member="Level::Dun::mWidth" ref="ac650ffbf75b577d065213e22413c4764" args="" -->
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>mWidth</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c4ac0491356bc0243ea5478e85d679a"></a><!-- doxytag: member="Level::Dun::mHeight" ref="a9c4ac0491356bc0243ea5478e85d679a" args="" -->
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>mHeight</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68bf6309d171a708591ca870e114f68d"></a><!-- doxytag: member="Level::Dun::mBlocks" ref="a68bf6309d171a708591ca870e114f68d" args="" -->
+std::vector&lt; int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mBlocks</b></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05403e792bd11287da84f9b468f10e24"></a><!-- doxytag: member="Level::Dun::DunHelper" ref="a05403e792bd11287da84f9b468f10e24" args="" -->
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DunHelper</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53d02d1b94c08e7ed63adb7a4588ee1"></a><!-- doxytag: member="Level::Dun::getTown" ref="ac53d02d1b94c08e7ed63adb7a4588ee1" args="(const Dun &amp;sector1, const Dun &amp;sector2, const Dun &amp;sector3, const Dun &amp;sector4)" -->
+<a class="el" href="classLevel_1_1Dun.html">Dun</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTown</b> (const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector1, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector2, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector3, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;sector4)</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>apps/freeablo/faworld/<a class="el" href="position_8h_source.html">position.h</a></li>
-<li>apps/freeablo/faworld/position.cpp</li>
+<li>components/level/<a class="el" href="dun_8h_source.html">dun.h</a></li>
+<li>components/level/dun.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
