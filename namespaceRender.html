@@ -104,8 +104,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725f4e1357ec4979c7ed97f447c7d5a6"></a><!-- doxytag: member="Render::drawAt" ref="a725f4e1357ec4979c7ed97f447c7d5a6" args="(const Sprite &amp;sprite, size_t x, size_t y)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawAt</b> (const Sprite &amp;sprite, size_t x, size_t y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83c74719be2badc497b25eecbdafd1a"></a><!-- doxytag: member="Render::setLevel" ref="ae83c74719be2badc497b25eecbdafd1a" args="(const std::string &amp;tilesetPath, const Level::Dun &amp;dun, const Level::TileSet &amp;til, const Level::Min &amp;min)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (const std::string &amp;tilesetPath, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;dun, const <a class="el" href="classLevel_1_1TileSet.html">Level::TileSet</a> &amp;til, const <a class="el" href="classLevel_1_1Min.html">Level::Min</a> &amp;min)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0470838cc0218b9bf65599e7aecbd54b"></a><!-- doxytag: member="Render::setLevel" ref="a0470838cc0218b9bf65599e7aecbd54b" args="(const Level::Level &amp;level, const std::string &amp;tilesetPath)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (const <a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, const std::string &amp;tilesetPath)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5220cd97c15c387fb2613f5276eb586"></a><!-- doxytag: member="Render::drawLevel" ref="ae5220cd97c15c387fb2613f5276eb586" args="(int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLevel</b> (int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae16d9d13bf164a419e17ba647b75dda1"></a><!-- doxytag: member="Render::drawAt" ref="ae16d9d13bf164a419e17ba647b75dda1" args="(const Sprite &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
@@ -123,19 +123,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>blit</b> (SDL_Surface
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bbdc70f166ed8419fcfa4d292258b6a"></a><!-- doxytag: member="Render::drawMinTile" ref="a3bbdc70f166ed8419fcfa4d292258b6a" args="(SDL_Surface *s, Cel::CelFile &amp;f, int x, int y, int16_t l, int16_t r)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawMinTile</b> (SDL_Surface *s, <a class="el" href="classCel_1_1CelFile.html">Cel::CelFile</a> &amp;f, int x, int y, int16_t l, int16_t r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae16798b84b495fbcd9578a0b25b60f49"></a><!-- doxytag: member="Render::drawMinPillar" ref="ae16798b84b495fbcd9578a0b25b60f49" args="(SDL_Surface *s, int x, int y, const Level::MinPillar &amp;pillar, Cel::CelFile &amp;tileset)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawMinPillar</b> (SDL_Surface *s, int x, int y, const Level::MinPillar &amp;pillar, <a class="el" href="classCel_1_1CelFile.html">Cel::CelFile</a> &amp;tileset)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75ecbbefcb7bdc8112db7749e6e32f2d"></a><!-- doxytag: member="Render::drawTilBlock" ref="a75ecbbefcb7bdc8112db7749e6e32f2d" args="(SDL_Surface *to, int x, int y, const Level::TileSet &amp;til, size_t index, const Level::Min &amp;min, Cel::CelFile &amp;tileset)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTilBlock</b> (SDL_Surface *to, int x, int y, const <a class="el" href="classLevel_1_1TileSet.html">Level::TileSet</a> &amp;til, size_t index, const <a class="el" href="classLevel_1_1Min.html">Level::Min</a> &amp;min, <a class="el" href="classCel_1_1CelFile.html">Cel::CelFile</a> &amp;tileset)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawMinPillar</b> (SDL_Surface *s, int x, int y, const <a class="el" href="classLevel_1_1MinPillar.html">Level::MinPillar</a> &amp;pillar, <a class="el" href="classCel_1_1CelFile.html">Cel::CelFile</a> &amp;tileset)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f48d6ad8330e603ecba09241cbb46be"></a><!-- doxytag: member="Render::screen" ref="a1f48d6ad8330e603ecba09241cbb46be" args="" -->
 SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>screen</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d4fe43f2de1fa5d1d4a0a059df5385"></a><!-- doxytag: member="Render::tileset" ref="a43d4fe43f2de1fa5d1d4a0a059df5385" args="" -->
 SDL_Surface **&#160;</td><td class="memItemRight" valign="bottom"><b>tileset</b> = NULL</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492f58ae653a70dda58d41fe44752816"></a><!-- doxytag: member="Render::tilCache" ref="a492f58ae653a70dda58d41fe44752816" args="" -->
-std::map&lt; size_t, SDL_Surface * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tilCache</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabda0d39a3d50273c4dae41d1b10dc1e"></a><!-- doxytag: member="Render::level" ref="aabda0d39a3d50273c4dae41d1b10dc1e" args="" -->
-SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>level</b> = NULL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75c95cde5407ec62defe916ec9f00315"></a><!-- doxytag: member="Render::levelSprite" ref="a75c95cde5407ec62defe916ec9f00315" args="" -->
+SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><b>levelSprite</b> = NULL</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1ba88a954f61f80f633255507b0ef80"></a><!-- doxytag: member="Render::levelWidth" ref="ad1ba88a954f61f80f633255507b0ef80" args="" -->
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelWidth</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f92cb83f09535677629de395a727ad1"></a><!-- doxytag: member="Render::levelHeight" ref="a5f92cb83f09535677629de395a727ad1" args="" -->
@@ -165,7 +161,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>levelY</b></td></t
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 24 2014 19:36:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 26 2014 16:28:58 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

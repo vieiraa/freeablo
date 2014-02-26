@@ -78,7 +78,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Level Namespace Reference<div class="ingroups"><a class="el" href="group__level.html">Level</a></div></div>  </div>
 </div><!--header-->
@@ -90,14 +91,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel_1_1Dun.html">Dun</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel_1_1Level.html">Level</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel_1_1MinPillar.html">MinPillar</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel_1_1Min.html">Min</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel_1_1TileSet.html">TileSet</a></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0a9776ff75982d8f38827c564ac3f3"></a><!-- doxytag: member="Level::MinPillar" ref="aec0a9776ff75982d8f38827c564ac3f3" args="" -->
-typedef std::vector&lt; int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MinPillar</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac151c0e6db72871802eb8b89405dabc2"></a><!-- doxytag: member="Level::TilBlock" ref="ac151c0e6db72871802eb8b89405dabc2" args="" -->
 typedef std::vector&lt; int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TilBlock</b></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd4614558ad809723d52db7547bf835"></a><!-- doxytag: member="Level::get" ref="a9fd4614558ad809723d52db7547bf835" args="(size_t x, size_t y, Dun &amp;dun)" -->
+int16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (size_t x, size_t y, <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;dun)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b698bb99fd894d376ce86fd4f43e151"></a><!-- doxytag: member="Level::get" ref="a6b698bb99fd894d376ce86fd4f43e151" args="(size_t x, size_t y, const Dun &amp;dun)" -->
+const int16_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;dun)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4db0de91d9d5fddf45f9ec7d7384bb5a"></a><!-- doxytag: member="Level::get" ref="a4db0de91d9d5fddf45f9ec7d7384bb5a" args="(size_t x, size_t y, const Level &amp;level)" -->
+const <a class="el" href="classLevel_1_1MinPillar.html">MinPillar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Level.html">Level</a> &amp;level)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Library for loading blizzard DUN, TIL and MIN level files. </p>
@@ -119,7 +128,7 @@ typedef std::vector&lt; int16_t &gt;&#160;</td><td class="memItemRight" valign="
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 24 2014 19:36:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 26 2014 16:28:58 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

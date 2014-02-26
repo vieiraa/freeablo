@@ -87,49 +87,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00005"></a>00005 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="keyword">namespace </span>Level
-<a name="l00009"></a>00009 {
-<a name="l00010"></a><a class="code" href="classLevel_1_1Dun.html">00010</a>     <span class="keyword">class </span><a class="code" href="classLevel_1_1Dun.html">Dun</a>
-<a name="l00011"></a>00011     {
-<a name="l00012"></a>00012 
-<a name="l00013"></a>00013         <span class="keyword">class </span>DunHelper
-<a name="l00014"></a>00014         {
-<a name="l00015"></a>00015             <span class="keyword">private</span>:
-<a name="l00016"></a>00016                 <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; parent;
-<a name="l00017"></a>00017                 <span class="keywordtype">size_t</span> x;
-<a name="l00018"></a>00018             <span class="keyword">public</span>:    
-<a name="l00019"></a>00019                 DunHelper(<span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; _p, <span class="keywordtype">size_t</span> _x) : parent(_p), x(_x) {}
-<a name="l00020"></a>00020                 
-<a name="l00021"></a>00021                 <span class="keyword">const</span> int16_t&amp; operator[](<span class="keywordtype">size_t</span> y){ <span class="keywordflow">return</span> parent.at(x, y); }
-<a name="l00022"></a>00022         };
-<a name="l00023"></a>00023 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;misc/helper2d.h&gt;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">namespace </span>Level
+<a name="l00011"></a>00011 {
+<a name="l00012"></a><a class="code" href="classLevel_1_1Dun.html">00012</a>     <span class="keyword">class </span><a class="code" href="classLevel_1_1Dun.html">Dun</a>
+<a name="l00013"></a>00013     {
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015         <span class="keyword">public</span>:
+<a name="l00016"></a>00016             <a class="code" href="classLevel_1_1Dun.html">Dun</a>(<span class="keyword">const</span> std::string&amp;);
+<a name="l00017"></a>00017             <a class="code" href="classLevel_1_1Dun.html">Dun</a>();
+<a name="l00018"></a>00018             <a class="code" href="classLevel_1_1Dun.html">Dun</a>(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
+<a name="l00019"></a>00019             
+<a name="l00020"></a>00020             <span class="keyword">static</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a> getTown(<span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector1, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector2, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector3, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector4);
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022             <a class="code" href="classMisc_1_1Helper2D.html">Misc::Helper2D&lt;Dun, int16_t&amp;&gt;</a> operator[] (<span class="keywordtype">size_t</span> x);
+<a name="l00023"></a>00023             <a class="code" href="classMisc_1_1Helper2D.html">Misc::Helper2D&lt;const Dun, const int16_t&amp;&gt;</a> operator[] (<span class="keywordtype">size_t</span> x) <span class="keyword">const</span>;
 <a name="l00024"></a>00024 
-<a name="l00025"></a>00025         <span class="keyword">public</span>:
-<a name="l00026"></a>00026             <a class="code" href="classLevel_1_1Dun.html">Dun</a>(<span class="keyword">const</span> std::string&amp;);
+<a name="l00025"></a>00025             <span class="keywordtype">size_t</span> width() <span class="keyword">const</span>;
+<a name="l00026"></a>00026             <span class="keywordtype">size_t</span> height() <span class="keyword">const</span>;
 <a name="l00027"></a>00027             
-<a name="l00028"></a>00028             <span class="keyword">static</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a> getTown(<span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector1, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector2, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector3, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector4);
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030             DunHelper operator[] (<span class="keywordtype">size_t</span> x)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> DunHelper(*<span class="keyword">this</span>, x); }
-<a name="l00031"></a>00031             
-<a name="l00032"></a>00032             int16_t mWidth;
-<a name="l00033"></a>00033             int16_t mHeight;
+<a name="l00028"></a>00028         <span class="keyword">private</span>:
+<a name="l00029"></a>00029             <span class="keywordtype">void</span> resize(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031             std::vector&lt;int16_t&gt; mBlocks;
+<a name="l00032"></a>00032             <span class="keywordtype">size_t</span> mWidth;
+<a name="l00033"></a>00033             <span class="keywordtype">size_t</span> mHeight;
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035             std::vector&lt;int16_t&gt; mBlocks;
-<a name="l00036"></a>00036         
-<a name="l00037"></a>00037         <span class="comment">//TODO: sort this out</span>
-<a name="l00038"></a>00038         <span class="comment">//private:</span>
-<a name="l00039"></a>00039             <a class="code" href="classLevel_1_1Dun.html">Dun</a>();
-<a name="l00040"></a>00040             <a class="code" href="classLevel_1_1Dun.html">Dun</a>(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
-<a name="l00041"></a>00041             <span class="keywordtype">void</span> resize(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
-<a name="l00042"></a>00042             int16_t&amp; at(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y) { <span class="keywordflow">return</span> mBlocks[x+y*mWidth]; }
-<a name="l00043"></a>00043             <span class="keyword">const</span> int16_t&amp; at(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mBlocks[x+y*mWidth]; }
-<a name="l00044"></a>00044             <span class="keyword">friend</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a> getTown(<span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector1, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector2, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector3, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; sector4);
-<a name="l00045"></a>00045             <span class="keyword">friend</span> <span class="keyword">class </span>DunHelper;
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047     };
-<a name="l00048"></a>00048 }
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050 <span class="preprocessor">#endif</span>
+<a name="l00035"></a>00035             <span class="keyword">friend</span> <span class="keyword">const</span> int16_t&amp; <span class="keyword">get</span>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <span class="keyword">const</span> <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; dun);
+<a name="l00036"></a>00036             <span class="keyword">friend</span> int16_t&amp; <span class="keyword">get</span>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <a class="code" href="classLevel_1_1Dun.html">Dun</a>&amp; dun);
+<a name="l00037"></a>00037     };
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -148,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 24 2014 19:36:06 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 26 2014 16:28:58 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
