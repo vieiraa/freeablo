@@ -89,34 +89,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 
 <a name="l00008"></a>00008 <span class="keyword">namespace </span>Level
 <a name="l00009"></a>00009 {
-<a name="l00010"></a><a class="code" href="classLevel_1_1MinPillar.html">00010</a>     <span class="keyword">class </span><a class="code" href="classLevel_1_1MinPillar.html">MinPillar</a>
+<a name="l00010"></a><a class="code" href="classLevel_1_1Min.html">00010</a>     <span class="keyword">class </span><a class="code" href="classLevel_1_1Min.html">Min</a>
 <a name="l00011"></a>00011     {
 <a name="l00012"></a>00012         <span class="keyword">public</span>:
-<a name="l00013"></a>00013             <span class="keywordtype">size_t</span> size() <span class="keyword">const</span>;
-<a name="l00014"></a>00014             int16_t operator[] (<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
-<a name="l00015"></a>00015             <span class="keywordtype">bool</span> <a class="code" href="classLevel_1_1MinPillar.html#a701a129b3835810b34134504b864175f" title="Checks if any above ground blocks are non-empty, does not work properly for town.">passable</a>() <span class="keyword">const</span>; 
-<a name="l00016"></a>00016         
+<a name="l00013"></a>00013             <a class="code" href="classLevel_1_1Min.html">Min</a>(<span class="keyword">const</span> std::string&amp;);
+<a name="l00014"></a>00014             <span class="keyword">const</span> std::vector&lt;int16_t&gt;&amp; operator[] (<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
+<a name="l00015"></a>00015             <span class="keywordtype">size_t</span> size();
+<a name="l00016"></a>00016 
 <a name="l00017"></a>00017         <span class="keyword">private</span>:
-<a name="l00018"></a>00018             <a class="code" href="classLevel_1_1MinPillar.html">MinPillar</a>(std::vector&lt;int16_t&gt; data);
-<a name="l00019"></a>00019             std::vector&lt;int16_t&gt; mData;
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classLevel_1_1Min.html">Min</a>;
-<a name="l00022"></a>00022             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classLevel_1_1Level.html">Level</a>;
-<a name="l00023"></a>00023     };
-<a name="l00024"></a>00024 
-<a name="l00025"></a><a class="code" href="classLevel_1_1Min.html">00025</a>     <span class="keyword">class </span><a class="code" href="classLevel_1_1Min.html">Min</a>
-<a name="l00026"></a>00026     {
-<a name="l00027"></a>00027         <span class="keyword">public</span>:
-<a name="l00028"></a>00028             <a class="code" href="classLevel_1_1Min.html">Min</a>(<span class="keyword">const</span> std::string&amp;);
-<a name="l00029"></a>00029             <span class="keyword">const</span> <a class="code" href="classLevel_1_1MinPillar.html">MinPillar</a>&amp; operator[] (<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
-<a name="l00030"></a>00030             <span class="keywordtype">size_t</span> size();
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032         <span class="keyword">private</span>:
-<a name="l00033"></a>00033             std::vector&lt;MinPillar&gt; mPillars;
-<a name="l00034"></a>00034     };
-<a name="l00035"></a>00035 }
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="preprocessor">#endif</span>
+<a name="l00018"></a>00018             std::vector&lt;std::vector&lt;int16_t&gt; &gt; mPillars;
+<a name="l00019"></a>00019     };
+<a name="l00020"></a>00020 }
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -135,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 4 2014 21:13:38 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 6 2014 18:34:21 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
