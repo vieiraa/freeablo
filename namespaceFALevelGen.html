@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -136,8 +137,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addDoors</b> (<a clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isWall</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61f9e824e7d7e0a82fa7db48c6c6e94c"></a><!-- doxytag: member="FALevelGen::setPoint" ref="a61f9e824e7d7e0a82fa7db48c6c6e94c" args="(int32_t x, int32_t y, int val, const Level::Dun &amp;tmpLevel, Level::Dun &amp;level, const TileSet &amp;tileset)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (int32_t x, int32_t y, int val, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const <a class="el" href="classFALevelGen_1_1TileSet.html">TileSet</a> &amp;tileset)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f4de3e5e8b67d0355133f65a06c7ef5"></a><!-- doxytag: member="FALevelGen::generate" ref="a0f4de3e5e8b67d0355133f65a06c7ef5" args="(size_t width, size_t height, size_t levelNum)" -->
-<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a>&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (size_t width, size_t height, size_t levelNum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a38b65c4b4374bd82bb881ec4197f6c"></a><!-- doxytag: member="FALevelGen::placeMonsters" ref="a4a38b65c4b4374bd82bb881ec4197f6c" args="(Level::Level &amp;level, const DiabloExe::DiabloExe &amp;exe, size_t levelNum)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>placeMonsters</b> (<a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t levelNum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad43c05142daeca7447a80b35494453a1"></a><!-- doxytag: member="FALevelGen::generate" ref="ad43c05142daeca7447a80b35494453a1" args="(size_t width, size_t height, size_t levelNum, const DiabloExe::DiabloExe &amp;exe)" -->
+<a class="el" href="classLevel_1_1Level.html">Level::Level</a>&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (size_t width, size_t height, size_t levelNum, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae67843d327b2eb402d25e6ba3d4c206"></a><!-- doxytag: member="FALevelGen::minKey" ref="aae67843d327b2eb402d25e6ba3d4c206" args="(const std::vector&lt; size_t &gt; &amp;key, const std::vector&lt; bool &gt; &amp;mstSet)" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>minKey</b> (const std::vector&lt; size_t &gt; &amp;key, const std::vector&lt; bool &gt; &amp;mstSet)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ea210f38328e739f62adb59485ebaf6"></a><!-- doxytag: member="FALevelGen::minimumSpanningTree" ref="a6ea210f38328e739f62adb59485ebaf6" args="(const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;graph, std::vector&lt; size_t &gt; &amp;parent)" -->
@@ -173,7 +176,7 @@ boost::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>rng</b></td
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 6 2014 18:34:21 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 8 2014 17:12:28 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
