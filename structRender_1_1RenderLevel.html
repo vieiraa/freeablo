@@ -112,8 +112,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52c7a2f471494d61f49ddba541b10fc4"></a><!-- doxytag: member="Render::RenderLevel::setLevel" ref="a52c7a2f471494d61f49ddba541b10fc4" args="(const Level::Level &amp;level)" -->
 <a class="el" href="structRender_1_1RenderLevel.html">RenderLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (const <a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c7f58173e14079d95485b9326b3c923"></a><!-- doxytag: member="Render::RenderLevel::drawLevel" ref="a3c7f58173e14079d95485b9326b3c923" args="(RenderLevel *level, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLevel</b> (<a class="el" href="structRender_1_1RenderLevel.html">RenderLevel</a> *level, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a958433708643104cf0443bf7d78c85f9"></a><!-- doxytag: member="Render::RenderLevel::drawLevel" ref="a958433708643104cf0443bf7d78c85f9" args="(RenderLevel *level, LevelObjects &amp;objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLevel</b> (<a class="el" href="structRender_1_1RenderLevel.html">RenderLevel</a> *level, LevelObjects &amp;objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24c5402f53887d83b3b837cf34234fc2"></a><!-- doxytag: member="Render::RenderLevel::drawLevelHelper" ref="a24c5402f53887d83b3b837cf34234fc2" args="(RenderLevel *level, std::map&lt; int32_t, Sprite &gt; &amp;minMap, int32_t x, int32_t y)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLevelHelper</b> (<a class="el" href="structRender_1_1RenderLevel.html">RenderLevel</a> *level, std::map&lt; int32_t, Sprite &gt; &amp;minMap, int32_t x, int32_t y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a9aa05684b1c47002bf6907690eec9e"></a><!-- doxytag: member="Render::RenderLevel::drawAt" ref="a3a9aa05684b1c47002bf6907690eec9e" args="(RenderLevel *level, const Sprite &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawAt</b> (<a class="el" href="structRender_1_1RenderLevel.html">RenderLevel</a> *level, const Sprite &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9d806633aaec26fe5a687e5a1212d4c"></a><!-- doxytag: member="Render::RenderLevel::getClickedTile" ref="af9d806633aaec26fe5a687e5a1212d4c" args="(RenderLevel *level, size_t x, size_t y)" -->
@@ -142,7 +144,7 @@ std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bot
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 25 2014 15:38:56 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 23:52:30 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
