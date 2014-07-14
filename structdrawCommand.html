@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: Render</title>
+<title>Freeablo: drawCommand Struct Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -69,21 +69,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">Render</div>  </div>
-<div class="ingroups"><a class="el" href="group__components.html">Components</a></div></div><!--header-->
+<div class="title">drawCommand Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
+<!-- doxytag: class="drawCommand" -->
+<p><a href="structdrawCommand-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRender.html">Render</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Wrapper for low-level rendering library. </p>
-<br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Draw</b>, 
+<b>EnableScissor</b>, 
+<b>SetScissor</b>
+ }</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20343e64cf3d04468016ce2924903f23"></a><!-- doxytag: member="drawCommand::mode" ref="a20343e64cf3d04468016ce2924903f23" args="" -->
+enum drawCommand:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr><td class="memItemLeft" ><a class="anchor" id="a28de005aa94a95c9bda3968664dcf074"></a><!-- doxytag: member="drawCommand::draw" ref="a28de005aa94a95c9bda3968664dcf074" args="" -->
+struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;std::vector&lt; Rocket::Core::Vertex &gt;&#160;&#160;&#160;<b>vertices</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;std::vector&lt; int &gt;&#160;&#160;&#160;<b>indices</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;Rocket::Core::TextureHandle&#160;&#160;&#160;<b>texture</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;Rocket::Core::Vector2f&#160;&#160;&#160;<b>translation</b></td></tr>
+<tr><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b></td></tr>
+<tr><td class="memItemLeft" ><a class="anchor" id="a4ce436d9170028f4eef41992a21ef654"></a><!-- doxytag: member="drawCommand::setScissor" ref="a4ce436d9170028f4eef41992a21ef654" args="" -->
+struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<b>x</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<b>y</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<b>width</b></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<b>height</b></td></tr>
+<tr><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>setScissor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac156ab97b4a50e14801e1aed4fa0e0b5"></a><!-- doxytag: member="drawCommand::enableScissor" ref="ac156ab97b4a50e14801e1aed4fa0e0b5" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableScissor</b></td></tr>
 </table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>components/render/rocketglue/<a class="el" href="RenderInterfaceSDL2_8h_source.html">RenderInterfaceSDL2.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

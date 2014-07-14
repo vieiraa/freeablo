@@ -91,6 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFARender_1_1LoadGuiTextureStruct.html">LoadGuiTextureStruct</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFARender_1_1GenerateGuiTextureStruct.html">GenerateGuiTextureStruct</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFARender_1_1RenderState.html">RenderState</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFARender_1_1Renderer.html">Renderer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFARender_1_1CacheSpriteGroup.html">CacheSpriteGroup</a></td></tr>
@@ -102,15 +104,17 @@ typedef boost::shared_ptr<br class="typebreak"/>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>RenderThreadState</b> { <br/>
-&#160;&#160;<b>running</b>, 
-<b>levelChange</b>, 
-<b>loadSprite</b>, 
-<b>loadRocket</b>, 
+&#160;&#160;<b>guiLoadTexture</b>, 
+<b>guiGenerateTexture</b>, 
+<b>guiReleaseTexture</b>, 
+<b>running</b>, 
 <br/>
-&#160;&#160;<b>unLoadRocket</b>, 
+&#160;&#160;<b>levelChange</b>, 
+<b>loadSprite</b>, 
 <b>pause</b>, 
 <b>spriteDestroy</b>, 
-<b>stopped</b>
+<br/>
+&#160;&#160;<b>stopped</b>
 <br/>
  }</td></tr>
 </table>
@@ -134,7 +138,7 @@ Enumerations</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 28 2014 22:17:49 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 14 2014 19:51:21 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

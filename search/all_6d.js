@@ -6,7 +6,7 @@ var searchData=
   ['minpillar',['MinPillar',['../classLevel_1_1MinPillar.html',1,'Level']]],
   ['misc',['Misc',['../namespaceMisc.html',1,'']]],
   ['mobjects',['mObjects',['../classFARender_1_1RenderState.html#ae7c742784a3a915ea3a33b8944b0fb11',1,'FARender::RenderState']]],
-  ['monster',['Monster',['../classFAWorld_1_1Monster.html',1,'FAWorld']]],
+  ['monster',['Monster',['../structDiabloExe_1_1Monster.html',1,'DiabloExe']]],
   ['monster',['Monster',['../structLevel_1_1Monster.html',1,'Level']]],
-  ['monster',['Monster',['../structDiabloExe_1_1Monster.html',1,'DiabloExe']]]
+  ['monster',['Monster',['../classFAWorld_1_1Monster.html',1,'FAWorld']]]
 ];
