@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029             <span class="keywordtype">size_t</span> <a class="code" href="classCel_1_1CelFile.html#a3250aab7b67716ab35d84c4d4f1e76d8" title="if normal cel file, returns same as numFrames(), for an archive, the number of frames in each subcel...">animLength</a>(); 
 <a name="l00030"></a>00030 
 <a name="l00031"></a>00031         <span class="keyword">private</span>:
-<a name="l00032"></a>00032             <span class="keywordtype">size_t</span> getFrame(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; frame, std::vector&lt;Colour&gt;&amp; rawImage);
+<a name="l00032"></a>00032             <span class="keywordtype">size_t</span> getFrame(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; frame, <span class="keywordtype">size_t</span> frameNum, std::vector&lt;Colour&gt;&amp; rawImage);
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034             <span class="keywordtype">size_t</span> readNormalFrames(<a class="code" href="structFAIO_1_1FAFile.html">FAIO::FAFile</a>* file);
 <a name="l00035"></a>00035             <span class="keywordtype">size_t</span> readCl2ArchiveFrames(<a class="code" href="structFAIO_1_1FAFile.html">FAIO::FAFile</a>* file);
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 24 2014 13:48:10 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 24 2014 15:21:42 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
