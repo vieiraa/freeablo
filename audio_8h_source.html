@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: components/audio/audio.h Source File</title>
+<title>freeablo: components/audio/audio.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,29 +81,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">components/audio/audio.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef AUDIO_H</span>
+<a href="audio_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef AUDIO_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define AUDIO_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="keyword">namespace </span>Audio
-<a name="l00007"></a>00007 {
-<a name="l00008"></a>00008     <span class="keywordtype">void</span> init();
-<a name="l00009"></a>00009     
-<a name="l00010"></a>00010     <span class="keyword">typedef</span> <span class="keywordtype">void</span> Music;
-<a name="l00011"></a>00011     Music* loadMusic(<span class="keyword">const</span> std::string&amp; path);
-<a name="l00012"></a>00012     <span class="keywordtype">void</span> freeMusic(Music* mus);
-<a name="l00013"></a>00013     <span class="keywordtype">void</span> playMusic(Music* mus);
-<a name="l00014"></a>00014 }
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="namespace_audio.html">00008</a> <span class="keyword">namespace </span>Audio
+<a name="l00009"></a>00009 {
+<a name="l00010"></a>00010     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a1bc7922d7669f621d532686d08bb8e41">init</a>(<span class="keywordtype">size_t</span> channelCount);
+<a name="l00011"></a>00011     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a7234a67a576788cf386dd445ed4ba8f4">quit</a>();
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="namespace_audio.html#a704453a3f0e49a9938bdd5b3b761d358">00013</a>     <span class="keyword">typedef</span> <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a704453a3f0e49a9938bdd5b3b761d358">Music</a>;
+<a name="l00014"></a><a class="code" href="namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0">00014</a>     <span class="keyword">typedef</span> <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0">Sound</a>;
 <a name="l00015"></a>00015 
-<a name="l00016"></a>00016 <span class="preprocessor">#endif</span>
+<a name="l00016"></a>00016     <a class="code" href="namespace_audio.html#a704453a3f0e49a9938bdd5b3b761d358">Music</a>* <a class="code" href="namespace_audio.html#aa723124f1d8ab10a57d74aac0df5d5cb">loadMusic</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
+<a name="l00017"></a>00017     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a6d7dacf61f15d103f537cacc6709ecd9">freeMusic</a>(<a class="code" href="namespace_audio.html#a704453a3f0e49a9938bdd5b3b761d358">Music</a>* mus);
+<a name="l00018"></a>00018     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a1f8ec35cd176d20ab229db0215ebf4b9">playMusic</a>(<a class="code" href="namespace_audio.html#a704453a3f0e49a9938bdd5b3b761d358">Music</a>* mus);
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020     <a class="code" href="namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0">Sound</a>* <a class="code" href="namespace_audio.html#a640626e3ff91a05bf85051aa564d2be7">loadSound</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
+<a name="l00021"></a>00021     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#afeccfbb26a8934b2f65625af4cbeb5bc">freeSound</a>(<a class="code" href="namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0">Sound</a>* sound);
+<a name="l00022"></a>00022     int32_t <a class="code" href="namespace_audio.html#a35fd2f02e417b4b357899722a1a7b693">playSound</a>(<a class="code" href="namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0">Sound</a>* sound);
+<a name="l00023"></a>00023     <span class="keywordtype">void</span> <a class="code" href="namespace_audio.html#a509ee3f5ca42359ecdc69fe4b2b7733a">stopSound</a>();
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025     <span class="keywordtype">bool</span> <a class="code" href="namespace_audio.html#adabeb825a2478eca63f0ffee94fc80e4">channelPlaying</a>(int32_t channel);
+<a name="l00026"></a>00026 }
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

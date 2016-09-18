@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/falevelgen/tileset.h Source File</title>
+<title>freeablo: apps/freeablo/falevelgen/tileset.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/falevelgen/tileset.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_TILESET_H</span>
+<a href="apps_2freeablo_2falevelgen_2tileset_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_TILESET_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FA_TILESET_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
@@ -88,76 +89,200 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;map&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;utility&gt;</span>
-<a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;boost/property_tree/ptree.hpp&gt;</span>
-<a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <span class="keyword">namespace </span>FALevelGen
-<a name="l00013"></a>00013 {
-<a name="l00014"></a><a class="code" href="classFALevelGen_1_1TileSet.html">00014</a>     <span class="keyword">class </span><a class="code" href="classFALevelGen_1_1TileSet.html">TileSet</a>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="settings_8h.html">settings/settings.h</a>&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">namespace </span>FALevelGen
+<a name="l00012"></a>00012 {
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html">00014</a>     <span class="keyword">namespace </span><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dc">TileSetEnum</a>
 <a name="l00015"></a>00015     {
-<a name="l00016"></a>00016         <span class="keyword">public</span>:
-<a name="l00017"></a>00017             <a class="code" href="classFALevelGen_1_1TileSet.html">TileSet</a>(<span class="keyword">const</span> std::string&amp; path);
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019             <span class="keywordtype">size_t</span> xWall;
-<a name="l00020"></a>00020             <span class="keywordtype">size_t</span> outsideXWall;
-<a name="l00021"></a>00021             <span class="keywordtype">size_t</span> yWall;
-<a name="l00022"></a>00022             <span class="keywordtype">size_t</span> outsideYWall;
-<a name="l00023"></a>00023             <span class="keywordtype">size_t</span> bottomCorner;
-<a name="l00024"></a>00024             <span class="keywordtype">size_t</span> outsideBottomCorner;
-<a name="l00025"></a>00025             <span class="keywordtype">size_t</span> rightCorner;
-<a name="l00026"></a>00026             <span class="keywordtype">size_t</span> outsideRightCorner;
-<a name="l00027"></a>00027             <span class="keywordtype">size_t</span> leftCorner;
-<a name="l00028"></a>00028             <span class="keywordtype">size_t</span> outsideLeftCorner;
-<a name="l00029"></a>00029             <span class="keywordtype">size_t</span> topCorner;
-<a name="l00030"></a>00030             <span class="keywordtype">size_t</span> outsideTopCorner;
-<a name="l00031"></a>00031             <span class="keywordtype">size_t</span> floor;
-<a name="l00032"></a>00032             <span class="keywordtype">size_t</span> blank;
-<a name="l00033"></a>00033             <span class="keywordtype">size_t</span> xWallEnd;
-<a name="l00034"></a>00034             <span class="keywordtype">size_t</span> yWallEnd;
-<a name="l00035"></a>00035             <span class="keywordtype">size_t</span> xDoor;
-<a name="l00036"></a>00036             <span class="keywordtype">size_t</span> yDoor;
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038             <span class="keywordtype">size_t</span> upStairs1;
-<a name="l00039"></a>00039             <span class="keywordtype">size_t</span> upStairs2;
-<a name="l00040"></a>00040             <span class="keywordtype">size_t</span> upStairs3;
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042             <span class="keywordtype">size_t</span> upStairs4;
-<a name="l00043"></a>00043             <span class="keywordtype">size_t</span> upStairs5;
-<a name="l00044"></a>00044             <span class="keywordtype">size_t</span> upStairs6;
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046             <span class="keywordtype">size_t</span> upStairs7;
-<a name="l00047"></a>00047             <span class="keywordtype">size_t</span> upStairs8;
-<a name="l00048"></a>00048             <span class="keywordtype">size_t</span> upStairs9;
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050             <span class="keywordtype">size_t</span> downStairs1;
-<a name="l00051"></a>00051             <span class="keywordtype">size_t</span> downStairs2;
-<a name="l00052"></a>00052             <span class="keywordtype">size_t</span> downStairs3;
-<a name="l00053"></a>00053             <span class="keywordtype">size_t</span> downStairs4;
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055             <span class="keywordtype">size_t</span> getRandomTile(<span class="keywordtype">size_t</span> tile);
-<a name="l00056"></a>00056             std::map&lt;size_t, size_t&gt; getDoorMap();
-<a name="l00057"></a>00057         
-<a name="l00058"></a>00058         <span class="keyword">private</span>:
-<a name="l00059"></a>00059             std::map&lt;size_t, std::pair&lt;std::vector&lt;std::pair&lt;size_t, size_t&gt; &gt;, <span class="keywordtype">size_t</span>&gt; &gt; mAlternatives;
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061             std::map&lt;size_t, size_t&gt; mDoorMap;
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063             <span class="keywordtype">void</span> fillTile(<span class="keywordtype">size_t</span> tile, boost::property_tree::ptree&amp; pt, <span class="keyword">const</span> std::string&amp; str);
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065             <span class="keywordtype">void</span> loadDoorMap(boost::property_tree::ptree&amp; pt);
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067     };
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069 }
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 <span class="preprocessor">#endif</span>
+<a name="l00016"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dc">00016</a>         <span class="keyword">enum</span> <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dc">TileSetEnum</a>
+<a name="l00017"></a>00017         {
+<a name="l00018"></a>00018             <span class="comment">// this block and the block after it are related</span>
+<a name="l00019"></a>00019             <span class="comment">// eg insideYWall MUST be equal to yWall + insideXWall</span>
+<a name="l00020"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad69ab2f530345df650430c8652099ea2">00020</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad69ab2f530345df650430c8652099ea2">xWall</a>,
+<a name="l00021"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca85f6fcf93c83e12eb36ecf8b908da136">00021</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca85f6fcf93c83e12eb36ecf8b908da136">yWall</a>,
+<a name="l00022"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaa6994e237ec53d316398aa64f5f712b9">00022</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaa6994e237ec53d316398aa64f5f712b9">leftCorner</a>,
+<a name="l00023"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca7e292ed8d4ffaced01a4e17e1b8ef000">00023</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca7e292ed8d4ffaced01a4e17e1b8ef000">rightCorner</a>,
+<a name="l00024"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaee026f4fd03b1ee73109396af55e65f7">00024</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaee026f4fd03b1ee73109396af55e65f7">bottomCorner</a>,
+<a name="l00025"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca378969d7f01a6b060d128b3d0e94e33b">00025</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca378969d7f01a6b060d128b3d0e94e33b">topCorner</a>,
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaef82bf520b310951ebe2b55791da44d5">00027</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaef82bf520b310951ebe2b55791da44d5">insideXWall</a>,
+<a name="l00028"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcac7a42af2c49b0b688706a248230905e8">00028</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcac7a42af2c49b0b688706a248230905e8">insideYWall</a>,
+<a name="l00029"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca45edcd40a601965bfc1d2053736341f0">00029</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca45edcd40a601965bfc1d2053736341f0">insideLeftCorner</a>,
+<a name="l00030"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcabcec0f79c0cb370ae10a60b8f892bd2e">00030</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcabcec0f79c0cb370ae10a60b8f892bd2e">insideRightCorner</a>,
+<a name="l00031"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca647a0e4fb35ecb9007a05919f844a0a8">00031</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca647a0e4fb35ecb9007a05919f844a0a8">insideBottomCorner</a>,
+<a name="l00032"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcade58fdf8a5e957aeaab4c6ead6b27b8f">00032</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcade58fdf8a5e957aeaab4c6ead6b27b8f">insideTopCorner</a>,
+<a name="l00033"></a>00033 
+<a name="l00034"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca81bd022a79a4eb0e89077636f5a20dd8">00034</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca81bd022a79a4eb0e89077636f5a20dd8">insideXWallEnd</a>,
+<a name="l00035"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaaa713523f06a85b7a1c1b2ff8f4706d0">00035</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaaa713523f06a85b7a1c1b2ff8f4706d0">insideXWallEndBack</a>,
+<a name="l00036"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca46a30d168ed489d299e4a4439b8bd6c8">00036</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca46a30d168ed489d299e4a4439b8bd6c8">insideYWallEnd</a>,
+<a name="l00037"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca1fb2dc86e34da89ef924934b3794e1aa">00037</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca1fb2dc86e34da89ef924934b3794e1aa">insideYWallEndBack</a>,
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca20cfa20583c0ffc1fc95a1e8f76d5156">00041</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca20cfa20583c0ffc1fc95a1e8f76d5156">outsideXWall</a>,
+<a name="l00042"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaaca2e5fbe43f26c888d5df5f517e3f1a">00042</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaaca2e5fbe43f26c888d5df5f517e3f1a">outsideYWall</a>,
+<a name="l00043"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca3e30c530155bc74b83a44e9e02349329">00043</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca3e30c530155bc74b83a44e9e02349329">outsideBottomCorner</a>,
+<a name="l00044"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca82c33ab8e3cc10c4faff9c30403ea4c8">00044</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca82c33ab8e3cc10c4faff9c30403ea4c8">outsideRightCorner</a>,
+<a name="l00045"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca49b0ee6136a536de2f6ae3534eeda40b">00045</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca49b0ee6136a536de2f6ae3534eeda40b">outsideLeftCorner</a>,
+<a name="l00046"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcafc3b5f049bf223e5a374dd4840c31e72">00046</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcafc3b5f049bf223e5a374dd4840c31e72">outsideTopCorner</a>,
+<a name="l00047"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca33ae339ffc9348756a38917c430e97c5">00047</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca33ae339ffc9348756a38917c430e97c5">floor</a>,
+<a name="l00048"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaab4e80175f3a4b066b540ea5d33569ae">00048</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaab4e80175f3a4b066b540ea5d33569ae">blank</a>,
+<a name="l00049"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaa757cd6cdafa7bb740daa639dd579bdf">00049</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaa757cd6cdafa7bb740daa639dd579bdf">xDoor</a>,
+<a name="l00050"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca377a6de412431417f17164e31f09ba2a">00050</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca377a6de412431417f17164e31f09ba2a">yDoor</a>,
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca34e2e6814df7e1e56b57cb8b1a8c42ee">00053</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca34e2e6814df7e1e56b57cb8b1a8c42ee">joinY</a>,
+<a name="l00054"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5aabde39880a6379395fe78c9d7579d6">00054</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5aabde39880a6379395fe78c9d7579d6">joinYRightCorner</a>,
+<a name="l00055"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca01d5a5fd40fa04a7e3dadea7d4a6298d">00055</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca01d5a5fd40fa04a7e3dadea7d4a6298d">joinRightCorner</a>,
+<a name="l00056"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca950f50ef31aed9b106c2a5e8f6a8bfae">00056</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca950f50ef31aed9b106c2a5e8f6a8bfae">joinOutXRightCorner</a>,
+<a name="l00057"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca53bff1b38ef6fd601d75b87bcaf4399c">00057</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca53bff1b38ef6fd601d75b87bcaf4399c">joinOutX</a>,
+<a name="l00058"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad8c8c6ea38e496d04bdd91b6aa189610">00058</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad8c8c6ea38e496d04bdd91b6aa189610">joinOutXTopCorner</a>,
+<a name="l00059"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca74e212db9eb55f219a4b9ac29fd3e472">00059</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca74e212db9eb55f219a4b9ac29fd3e472">joinTopCorner</a>,
+<a name="l00060"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca91cc3e53963235b719037f1c29d96269">00060</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca91cc3e53963235b719037f1c29d96269">joinOutYTopCorner</a>,
+<a name="l00061"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca00268e9f4b998155927c60d0474fdd0b">00061</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca00268e9f4b998155927c60d0474fdd0b">joinOutY</a>,
+<a name="l00062"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcae26fe2b4054d08dc658f861a52c7fe0c">00062</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcae26fe2b4054d08dc658f861a52c7fe0c">joinOutYLeftCorner</a>,
+<a name="l00063"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaf67398553df736db066cdb40e4b5c94a">00063</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaf67398553df736db066cdb40e4b5c94a">joinLeftCorner</a>,
+<a name="l00064"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca35e9cb2683b3a04b6fdfba7588b9ff74">00064</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca35e9cb2683b3a04b6fdfba7588b9ff74">joinXLeftCorner</a>,
+<a name="l00065"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca68d0fbdedc0bc5e8b4b2827a992263a2">00065</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca68d0fbdedc0bc5e8b4b2827a992263a2">joinX</a>,
+<a name="l00066"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcae0e46218805599e7855cf8c665d6695d">00066</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcae0e46218805599e7855cf8c665d6695d">joinXBottomCorner</a>,
+<a name="l00067"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca638d5923fdb359c3f76bae4f667eb5f2">00067</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca638d5923fdb359c3f76bae4f667eb5f2">joinBottomCorner</a>,
+<a name="l00068"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca7bbc20b3974d2863269e5024763a3cf2">00068</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca7bbc20b3974d2863269e5024763a3cf2">joinYBottomCorner</a>,
+<a name="l00069"></a>00069 
+<a name="l00070"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad44530dba760158c0d359c1911f723da">00070</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad44530dba760158c0d359c1911f723da">upStairs1</a>,
+<a name="l00071"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcab8333f9fecb3ce3091f689f1aebcccb2">00071</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcab8333f9fecb3ce3091f689f1aebcccb2">upStairs2</a>,
+<a name="l00072"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca2080afc46254e155e02d726887189b41">00072</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca2080afc46254e155e02d726887189b41">upStairs3</a>,
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca14a10bc3e575b599e6ef733838380a8c">00074</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca14a10bc3e575b599e6ef733838380a8c">upStairs4</a>,
+<a name="l00075"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca8822d499ee9e000e7edd888832704420">00075</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca8822d499ee9e000e7edd888832704420">upStairs5</a>,
+<a name="l00076"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5ee4cbd9a2516bb273c5c67ccdade2c7">00076</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5ee4cbd9a2516bb273c5c67ccdade2c7">upStairs6</a>,
+<a name="l00077"></a>00077 
+<a name="l00078"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca6c34fd366b58e34e9b2f9191dcf81414">00078</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca6c34fd366b58e34e9b2f9191dcf81414">upStairs7</a>,
+<a name="l00079"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcabcdc1db9ac8b7c464a99cc42186c522d">00079</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcabcdc1db9ac8b7c464a99cc42186c522d">upStairs8</a>,
+<a name="l00080"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcacc2ae3e87306b2f25f64ed28069bbd64">00080</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcacc2ae3e87306b2f25f64ed28069bbd64">upStairs9</a>,
+<a name="l00081"></a>00081 
+<a name="l00082"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca0e0c41234dac3cf6f9533dd56413b0ca">00082</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca0e0c41234dac3cf6f9533dd56413b0ca">downStairs1</a>,
+<a name="l00083"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca070fcb945135c6692a657e11f3a75cb2">00083</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca070fcb945135c6692a657e11f3a75cb2">downStairs2</a>,
+<a name="l00084"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca12f64e53bd8c65467ed2d91cf5f18534">00084</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca12f64e53bd8c65467ed2d91cf5f18534">downStairs3</a>,
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca624a17622845a2ab9a785e6e20d0d725">00086</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca624a17622845a2ab9a785e6e20d0d725">downStairs4</a>,
+<a name="l00087"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca428f03541de0e2aa76c7c1e65983a5a2">00087</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca428f03541de0e2aa76c7c1e65983a5a2">downStairs5</a>,
+<a name="l00088"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca1fb4a894dfa130d5812c4483c9f6f759">00088</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca1fb4a894dfa130d5812c4483c9f6f759">downStairs6</a>,
+<a name="l00089"></a>00089 
+<a name="l00090"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaca9bd776972eefed9a9f93cd2a69a2c7">00090</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaca9bd776972eefed9a9f93cd2a69a2c7">downStairs7</a>,
+<a name="l00091"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca29f24bffeb91a0cea777911d8a8c0da3">00091</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca29f24bffeb91a0cea777911d8a8c0da3">downStairs8</a>,
+<a name="l00092"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad9548ade7ab8f5d6e9458786ff32480a">00092</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcad9548ade7ab8f5d6e9458786ff32480a">downStairs9</a>,
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094             <span class="comment">// these two just used internally in levelgen.cpp, not loaded from a file like the rest</span>
+<a name="l00095"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5fb43a0748ddd8354d15d7ec78db8a79">00095</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dca5fb43a0748ddd8354d15d7ec78db8a79">upStairs</a>,
+<a name="l00096"></a><a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaf2da3779184b1b481100a17c6b071c61">00096</a>             <a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaf2da3779184b1b481100a17c6b071c61">downStairs</a>
+<a name="l00097"></a>00097         };
+<a name="l00098"></a>00098     }
+<a name="l00099"></a>00099 
+<a name="l00100"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html">00100</a>     <span class="keyword">class </span><a class="code" href="class_f_a_level_gen_1_1_tile_set.html">TileSet</a>
+<a name="l00101"></a>00101     {
+<a name="l00102"></a>00102         <span class="keyword">public</span>:
+<a name="l00103"></a>00103             <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae1e714bc70bce6e6801511ceaf6d87de">TileSet</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
+<a name="l00104"></a>00104 
+<a name="l00105"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a34c1c1e18cc84da80893351aaeade4dd">00105</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a34c1c1e18cc84da80893351aaeade4dd">xWall</a>;
+<a name="l00106"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#abc9b7ec41753c4d1b8515a6390e69c52">00106</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#abc9b7ec41753c4d1b8515a6390e69c52">outsideXWall</a>;
+<a name="l00107"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a0028f1fcccfe981982f147b206978fd4">00107</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a0028f1fcccfe981982f147b206978fd4">yWall</a>;
+<a name="l00108"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aef69ada43e2c9d31e56fef126035b765">00108</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aef69ada43e2c9d31e56fef126035b765">outsideYWall</a>;
+<a name="l00109"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aead5306a0ecb12b21ffad203c2e6554a">00109</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aead5306a0ecb12b21ffad203c2e6554a">bottomCorner</a>;
+<a name="l00110"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#acc65e50b8bcae6d437fcdba4cc204279">00110</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#acc65e50b8bcae6d437fcdba4cc204279">outsideBottomCorner</a>;
+<a name="l00111"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a359ac0c2f727ffd8923ec7b32f34c0af">00111</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a359ac0c2f727ffd8923ec7b32f34c0af">rightCorner</a>;
+<a name="l00112"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#af24bbcc223a47f0a29a30f633d0bad86">00112</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#af24bbcc223a47f0a29a30f633d0bad86">outsideRightCorner</a>;
+<a name="l00113"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adab8d23e138184bccf9f9147ac06c3ce">00113</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adab8d23e138184bccf9f9147ac06c3ce">leftCorner</a>;
+<a name="l00114"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3188198a5dba5ea77a7777ebef8b4144">00114</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3188198a5dba5ea77a7777ebef8b4144">outsideLeftCorner</a>;
+<a name="l00115"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#afd0a7e1d4621c230409de079f507c90a">00115</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#afd0a7e1d4621c230409de079f507c90a">topCorner</a>;
+<a name="l00116"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4e6d75efb38d84e33a564852985ea030">00116</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4e6d75efb38d84e33a564852985ea030">outsideTopCorner</a>;
+<a name="l00117"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3592053c43d3516f2ef8af31ccbaf4a7">00117</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3592053c43d3516f2ef8af31ccbaf4a7">floor</a>;
+<a name="l00118"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a355e88bd5145cc4dc8eaa70c84018ab0">00118</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a355e88bd5145cc4dc8eaa70c84018ab0">blank</a>;
+<a name="l00119"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae174fc3dd49c19cd2f97a1a261b0b4ae">00119</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae174fc3dd49c19cd2f97a1a261b0b4ae">xWallEnd</a>;
+<a name="l00120"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a51bed6df10894ee4e3de2114d957c56f">00120</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a51bed6df10894ee4e3de2114d957c56f">xWallEndBack</a>;
+<a name="l00121"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ade6037d693a266a41e2ed13c3ae9f3f4">00121</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ade6037d693a266a41e2ed13c3ae9f3f4">yWallEnd</a>;
+<a name="l00122"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a11deb41bd8260647dd21e7e678a9cb69">00122</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a11deb41bd8260647dd21e7e678a9cb69">yWallEndBack</a>;
+<a name="l00123"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aba0752da5ce6b632b6379f709d5d03ab">00123</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aba0752da5ce6b632b6379f709d5d03ab">xDoor</a>;
+<a name="l00124"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab59c2aa45535ff98a690a31533f992de">00124</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab59c2aa45535ff98a690a31533f992de">yDoor</a>;
+<a name="l00125"></a>00125 
+<a name="l00126"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6dbaa94905a709dc65888981759810be">00126</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6dbaa94905a709dc65888981759810be">upStairs1</a>;
+<a name="l00127"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a5e07e0e1ca03564dff961528f5f2c0e4">00127</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a5e07e0e1ca03564dff961528f5f2c0e4">upStairs2</a>;
+<a name="l00128"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae82bb0db04ba6b11d3254f3ae152ef6e">00128</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae82bb0db04ba6b11d3254f3ae152ef6e">upStairs3</a>;
+<a name="l00129"></a>00129 
+<a name="l00130"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a53f7a47c911c2e0d1a9e616984a10536">00130</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a53f7a47c911c2e0d1a9e616984a10536">upStairs4</a>;
+<a name="l00131"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4f5c183bfbb5e91299cf7332d66360df">00131</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4f5c183bfbb5e91299cf7332d66360df">upStairs5</a>;
+<a name="l00132"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a8c2d99450be01cd137deeb0e8128fd8d">00132</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a8c2d99450be01cd137deeb0e8128fd8d">upStairs6</a>;
+<a name="l00133"></a>00133 
+<a name="l00134"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a7abfa698dc8bcf4e114d18c368f22d2e">00134</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a7abfa698dc8bcf4e114d18c368f22d2e">upStairs7</a>;
+<a name="l00135"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a04ed76061d86016c3845b1f6567c76e3">00135</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a04ed76061d86016c3845b1f6567c76e3">upStairs8</a>;
+<a name="l00136"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aca104aba70b640fbbbcc3dedd35d1d9e">00136</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aca104aba70b640fbbbcc3dedd35d1d9e">upStairs9</a>;
+<a name="l00137"></a>00137 
+<a name="l00138"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab1dbcd9de2adbe8edbd8b0a7d32e806a">00138</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab1dbcd9de2adbe8edbd8b0a7d32e806a">downStairs1</a>;
+<a name="l00139"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a614f21055e6d0e475365f74511b7d12b">00139</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a614f21055e6d0e475365f74511b7d12b">downStairs2</a>;
+<a name="l00140"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6aac37170c5e807549a997ed8fd313a6">00140</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6aac37170c5e807549a997ed8fd313a6">downStairs3</a>;
+<a name="l00141"></a>00141 
+<a name="l00142"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4dd4b830760c8b490a838f166ef538f5">00142</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4dd4b830760c8b490a838f166ef538f5">downStairs4</a>;
+<a name="l00143"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aa0bb9963e8e1082c66576e72de389429">00143</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aa0bb9963e8e1082c66576e72de389429">downStairs5</a>;
+<a name="l00144"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a70c27206f98d457163a442eb99b5ac6d">00144</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a70c27206f98d457163a442eb99b5ac6d">downStairs6</a>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aafa38fcd28b79d33e27e8890eae91415">00146</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aafa38fcd28b79d33e27e8890eae91415">downStairs7</a>;
+<a name="l00147"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adf8e9b6a189b208090f932c147ec6589">00147</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adf8e9b6a189b208090f932c147ec6589">downStairs8</a>;
+<a name="l00148"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3476c2185c0db886c78469c8a3533489">00148</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3476c2185c0db886c78469c8a3533489">downStairs9</a>;
+<a name="l00149"></a>00149 
+<a name="l00150"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aaa1f2445864ed7b824e370d717fbaf66">00150</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aaa1f2445864ed7b824e370d717fbaf66">insideXWall</a>;
+<a name="l00151"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6afe34d2951b3cba4edd5e7dd524f3f2">00151</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6afe34d2951b3cba4edd5e7dd524f3f2">insideXWallEnd</a>;
+<a name="l00152"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aa9db9f0d2a00c34a29558ae67c1c73c0">00152</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#aa9db9f0d2a00c34a29558ae67c1c73c0">insideXWallEndBack</a>;
+<a name="l00153"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a0bb46b2fc26db1c5605461de46f7cce3">00153</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a0bb46b2fc26db1c5605461de46f7cce3">insideYWall</a>;
+<a name="l00154"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ac172f699b4b71b952188913b23a63615">00154</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ac172f699b4b71b952188913b23a63615">insideYWallEnd</a>;
+<a name="l00155"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6dfd637650530c25550cee2485321ea6">00155</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a6dfd637650530c25550cee2485321ea6">insideYWallEndBack</a>;
+<a name="l00156"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a5a7dbd533fe062227daa72411ccaa282">00156</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a5a7dbd533fe062227daa72411ccaa282">insideLeftCorner</a>;
+<a name="l00157"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae48e2968db788ea3ddec465d72c805a6">00157</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae48e2968db788ea3ddec465d72c805a6">insideRightCorner</a>;
+<a name="l00158"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a1fe6c83ac2a0e32c571194f0bd620792">00158</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a1fe6c83ac2a0e32c571194f0bd620792">insideBottomCorner</a>;
+<a name="l00159"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a046591b9c696f16da29c4130620435b3">00159</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a046591b9c696f16da29c4130620435b3">insideTopCorner</a>;
+<a name="l00160"></a>00160 
+<a name="l00161"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a2d5370f4e59e0890f124185715107e4c">00161</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a2d5370f4e59e0890f124185715107e4c">joinY</a>;
+<a name="l00162"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ace8174ce8fa8965e7dc39e9c4cf77f9b">00162</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ace8174ce8fa8965e7dc39e9c4cf77f9b">joinYRightCorner</a>;
+<a name="l00163"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adf5cb7d24cabec75876b653ace34ebe3">00163</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#adf5cb7d24cabec75876b653ace34ebe3">joinRightCorner</a>;
+<a name="l00164"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ac84da6136aeda692d5696be9997b9447">00164</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ac84da6136aeda692d5696be9997b9447">joinOutXRightCorner</a>;
+<a name="l00165"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae444c6151235a458a46b9266a6e0180b">00165</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae444c6151235a458a46b9266a6e0180b">joinOutX</a>;
+<a name="l00166"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3700e820426dff04f77eb62a1ea18cb6">00166</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a3700e820426dff04f77eb62a1ea18cb6">joinOutXTopCorner</a>;
+<a name="l00167"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4b3d6ce1dc08e855169b1b20e11376e1">00167</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4b3d6ce1dc08e855169b1b20e11376e1">joinTopCorner</a>;
+<a name="l00168"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a9ba7b74f3c0957cf7a4357eb526e5889">00168</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a9ba7b74f3c0957cf7a4357eb526e5889">joinOutYTopCorner</a>;
+<a name="l00169"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a549c477c5506ad401aafd25db44ab79a">00169</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a549c477c5506ad401aafd25db44ab79a">joinOutY</a>;
+<a name="l00170"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae2de5d855f5ade5a308a06ea56dfd654">00170</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ae2de5d855f5ade5a308a06ea56dfd654">joinOutYLeftCorner</a>;
+<a name="l00171"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a28a7a39bda0f9499b34a7e3351c551d0">00171</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a28a7a39bda0f9499b34a7e3351c551d0">joinLeftCorner</a>;
+<a name="l00172"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a54fac93ff3b0f2aa88a7b95d373e8786">00172</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a54fac93ff3b0f2aa88a7b95d373e8786">joinXLeftCorner</a>;
+<a name="l00173"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a47803b5295114f841797263839a3ebff">00173</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a47803b5295114f841797263839a3ebff">joinX</a>;
+<a name="l00174"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4ea91a4c866bf70b647e17d0638756bb">00174</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a4ea91a4c866bf70b647e17d0638756bb">joinXBottomCorner</a>;
+<a name="l00175"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab86f76643838f22b96b49e9227b041ae">00175</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#ab86f76643838f22b96b49e9227b041ae">joinBottomCorner</a>;
+<a name="l00176"></a><a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a326ef3ac18a39a7523a64e3ea4e2035d">00176</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a326ef3ac18a39a7523a64e3ea4e2035d">joinYBottomCorner</a>;
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a1a94d1a832c5e78a620be556f53c6876">getRandomTile</a>(<span class="keywordtype">size_t</span> tile);
+<a name="l00179"></a>00179             std::map&lt;size_t, size_t&gt; <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a75f68323e29fb12f3b1137d0f3ee5e82">getDoorMap</a>();
+<a name="l00180"></a>00180 
+<a name="l00181"></a>00181             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_level_gen_1_1_tile_set.html#a2aaee31d3302b06ebc00dbcce9364306">convert</a>(<a class="code" href="namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dc">TileSetEnum::TileSetEnum</a> val);
+<a name="l00182"></a>00182         
+<a name="l00183"></a>00183         <span class="keyword">private</span>:
+<a name="l00184"></a>00184             std::map&lt;size_t, std::pair&lt;std::vector&lt;std::pair&lt;size_t, size_t&gt; &gt;, <span class="keywordtype">size_t</span>&gt; &gt; mAlternatives;
+<a name="l00185"></a>00185 
+<a name="l00186"></a>00186             std::map&lt;size_t, size_t&gt; mDoorMap;
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188             <span class="keywordtype">void</span> fillTile(<span class="keywordtype">size_t</span> tile, <a class="code" href="class_settings_1_1_settings.html">Settings::Settings</a> &amp; settings, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; str);
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190             <span class="keywordtype">void</span> loadDoorMap(<a class="code" href="class_settings_1_1_settings.html">Settings::Settings</a> &amp; settings);
+<a name="l00191"></a>00191     };
+<a name="l00192"></a>00192 
+<a name="l00193"></a>00193 }
+<a name="l00194"></a>00194 
+<a name="l00195"></a>00195 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -169,7 +294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

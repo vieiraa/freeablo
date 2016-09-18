@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['diabloexe',['DiabloExe',['../namespaceDiabloExe.html',1,'']]]
+  ['diabloexe',['DiabloExe',['../namespace_diablo_exe.html',1,'']]]
 ];

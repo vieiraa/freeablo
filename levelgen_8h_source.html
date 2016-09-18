@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/falevelgen/levelgen.h Source File</title>
+<title>freeablo: apps/freeablo/falevelgen/levelgen.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,20 +81,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/falevelgen/levelgen.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef LEVELGEN_H</span>
+<a href="levelgen_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef LEVELGEN_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define LEVELGEN_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;level/level.h&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;../faworld/gamelevel.h&quot;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a><a class="code" href="namespaceDiabloExe.html">00006</a> <span class="keyword">namespace </span><a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe</a>
+<a name="l00006"></a>00006 <span class="keyword">namespace </span><a class="code" href="overall__architecture_8md.html#aff86d0c970beeff499e51962e663765d">DiabloExe</a>
 <a name="l00007"></a>00007 {
-<a name="l00008"></a>00008     <span class="keyword">class </span><a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe</a>;
+<a name="l00008"></a>00008     <span class="keyword">class </span><a class="code" href="overall__architecture_8md.html#aff86d0c970beeff499e51962e663765d">DiabloExe</a>;
 <a name="l00009"></a>00009 }
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="keyword">namespace </span>FALevelGen
 <a name="l00012"></a>00012 {
 <a name="l00013"></a>00013   
-<a name="l00014"></a>00014     <a class="code" href="classLevel_1_1Level.html">Level::Level</a>* generate(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height, <span class="keywordtype">size_t</span> levelNum, <span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a>&amp; exe, <span class="keyword">const</span> std::string&amp; celPath);
+<a name="l00014"></a>00014     <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>* <a class="code" href="namespace_f_a_level_gen.html#acf970d89560068907dc8e5f8a0511161">generate</a>(<span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height, <span class="keywordtype">size_t</span> dLvl, <span class="keyword">const</span> <a class="code" href="class_diablo_exe_1_1_diablo_exe.html">DiabloExe::DiabloExe</a>&amp; exe, <span class="keywordtype">size_t</span> previous, <span class="keywordtype">size_t</span> next);
 <a name="l00015"></a>00015 
 <a name="l00016"></a>00016 }
 <a name="l00017"></a>00017 
@@ -104,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

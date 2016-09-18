@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: components/misc/helper2d.h Source File</title>
+<title>freeablo: components/misc/helper2d.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,23 +81,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">components/misc/helper2d.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef HELPER_2D_H</span>
+<a href="helper2d_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef HELPER_2D_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define HELPER_2D_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
 <a name="l00005"></a>00005 
 <a name="l00006"></a>00006 <span class="keyword">namespace </span>Misc
 <a name="l00007"></a>00007 {
-<a name="l00012"></a><a class="code" href="classMisc_1_1Helper2D.html">00012</a>     <span class="keyword">template</span> &lt;<span class="keyword">class</span> From, <span class="keyword">class</span> Retval&gt; <span class="keyword">class </span><a class="code" href="classMisc_1_1Helper2D.html">Helper2D</a>
+<a name="l00012"></a><a class="code" href="class_misc_1_1_helper2_d.html">00012</a>     <span class="keyword">template</span> &lt;<span class="keyword">class</span> From, <span class="keyword">class</span> Retval&gt; <span class="keyword">class </span><a class="code" href="class_misc_1_1_helper2_d.html">Helper2D</a>
 <a name="l00013"></a>00013     {
 <a name="l00014"></a>00014         <span class="keyword">private</span>:
 <a name="l00015"></a>00015             From&amp; parent;
 <a name="l00016"></a>00016             <span class="keywordtype">size_t</span> x;
 <a name="l00017"></a>00017             Retval (*func)(size_t, size_t, From&amp;); 
 <a name="l00018"></a>00018         <span class="keyword">public</span>:    
-<a name="l00019"></a>00019             <a class="code" href="classMisc_1_1Helper2D.html">Helper2D</a>(From&amp; _p, <span class="keywordtype">size_t</span> _x, Retval (*_func)(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>, From&amp;)) : parent(_p), x(_x), func(_func) {}
+<a name="l00019"></a><a class="code" href="class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524">00019</a>             <a class="code" href="class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524">Helper2D</a>(From&amp; _p, <span class="keywordtype">size_t</span> _x, Retval (*_func)(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>, From&amp;)) : parent(_p), x(_x), func(_func) {}
 <a name="l00020"></a>00020             
-<a name="l00021"></a>00021             Retval operator[](<span class="keywordtype">size_t</span> y){ <span class="keywordflow">return</span> func(x, y, parent); }
+<a name="l00021"></a><a class="code" href="class_misc_1_1_helper2_d.html#ac109116f5b7d8f4ca8074e1739d39707">00021</a>             Retval <a class="code" href="class_misc_1_1_helper2_d.html#ac109116f5b7d8f4ca8074e1739d39707">operator[]</a>(<span class="keywordtype">size_t</span> y){ <span class="keywordflow">return</span> func(x, y, parent); }
 <a name="l00022"></a>00022     };
 <a name="l00023"></a>00023 }
 <a name="l00024"></a>00024 
@@ -107,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

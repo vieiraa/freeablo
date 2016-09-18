@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/faworld/monster.h Source File</title>
+<title>freeablo: apps/freeablo/faworld/monster.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,37 +81,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/faworld/monster.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef W_MONSTER_H</span>
+<a href="apps_2freeablo_2faworld_2monster_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef W_MONSTER_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define W_MONSTER_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;actor.h&quot;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="actor_8h.html">actor.h</a>&quot;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="keyword">namespace </span>DiabloExe
+<a name="l00006"></a>00006 <span class="keyword">namespace </span><a class="code" href="overall__architecture_8md.html#aff86d0c970beeff499e51962e663765d">DiabloExe</a>
 <a name="l00007"></a>00007 {
 <a name="l00008"></a>00008     <span class="keyword">struct </span>Monster;
 <a name="l00009"></a>00009 }
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="keyword">namespace </span>FAWorld
 <a name="l00012"></a>00012 {
-<a name="l00013"></a><a class="code" href="classFAWorld_1_1Monster.html">00013</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1Monster.html">Monster</a>: <span class="keyword">public</span> <a class="code" href="classFAWorld_1_1Actor.html">Actor</a>
+<a name="l00013"></a><a class="code" href="class_f_a_world_1_1_monster.html">00013</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_monster.html">Monster</a>: <span class="keyword">public</span> <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>
 <a name="l00014"></a>00014     {
-<a name="l00015"></a>00015         <span class="keyword">public</span>:
-<a name="l00016"></a>00016             <a class="code" href="classFAWorld_1_1Monster.html">Monster</a>(<span class="keyword">const</span> <a class="code" href="structDiabloExe_1_1Monster.html">DiabloExe::Monster</a>&amp; monster, <a class="code" href="classFAWorld_1_1Position.html">Position</a> pos);
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018         <span class="keyword">private</span>:
-<a name="l00019"></a>00019             std::string getWalkCl2(<span class="keyword">const</span> <a class="code" href="structDiabloExe_1_1Monster.html">DiabloExe::Monster</a>&amp; monster);
-<a name="l00020"></a>00020             std::string getIdleCl2(<span class="keyword">const</span> <a class="code" href="structDiabloExe_1_1Monster.html">DiabloExe::Monster</a>&amp; monster);
-<a name="l00021"></a>00021     };
-<a name="l00022"></a>00022 }
+<a name="l00015"></a>00015         <a class="code" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">STATIC_HANDLE_NET_OBJECT_IN_CLASS</a>()
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017         <span class="keyword">public</span>:
+<a name="l00018"></a>00018             <a class="code" href="class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919">Monster</a>();
+<a name="l00019"></a>00019             <a class="code" href="class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919">Monster</a>(<span class="keyword">const</span> <a class="code" href="struct_diablo_exe_1_1_monster.html">DiabloExe::Monster</a>&amp; monster, <a class="code" href="class_f_a_world_1_1_position.html">Position</a> pos, <a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a> * stats=<span class="keyword">nullptr</span>);
+<a name="l00020"></a>00020             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_monster.html#a80d8e8f0ace5fbb0c1507a187b3abe75">init</a>();
+<a name="l00021"></a>00021             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48">getDieWav</a>();
+<a name="l00022"></a>00022             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_world_1_1_monster.html#a730a8781ca04eddc6c68c4b2b8055d33">getHitWav</a>();
 <a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="preprocessor">#endif     </span>
+<a name="l00024"></a>00024         <span class="keyword">private</span>:
+<a name="l00025"></a>00025             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mAnimPath;
+<a name="l00026"></a>00026             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mSoundPath;
+<a name="l00027"></a>00027     };
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="preprocessor">#endif     </span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

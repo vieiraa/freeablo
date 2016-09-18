@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/faworld/actor.h Source File</title>
+<title>freeablo: apps/freeablo/faworld/actor.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,57 +81,167 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/faworld/actor.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef ACTOR_H</span>
+<a href="actor_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef ACTOR_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define ACTOR_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;position.h&quot;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="position_8h.html">position.h</a>&quot;</span>
 <a name="l00005"></a>00005 
 <a name="l00006"></a>00006 <span class="preprocessor">#include &quot;../farender/renderer.h&quot;</span>
-<a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="keyword">namespace </span>FAWorld
-<a name="l00009"></a>00009 {
-<a name="l00010"></a>00010     <span class="keyword">namespace </span>AnimState
-<a name="l00011"></a>00011     {
-<a name="l00012"></a>00012         <span class="keyword">enum</span> AnimState
-<a name="l00013"></a>00013         {
-<a name="l00014"></a>00014             walk,
-<a name="l00015"></a>00015             idle
-<a name="l00016"></a>00016         };
-<a name="l00017"></a>00017     }
-<a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="classFAWorld_1_1Actor.html">00019</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1Actor.html">Actor</a>
-<a name="l00020"></a>00020     {
-<a name="l00021"></a>00021         <span class="keyword">public</span>:
-<a name="l00022"></a>00022             <a class="code" href="classFAWorld_1_1Actor.html">Actor</a>(<span class="keyword">const</span> std::string&amp; walkAnimPath, <span class="keyword">const</span> std::string&amp; idleAnimPath, <span class="keyword">const</span> <a class="code" href="classFAWorld_1_1Position.html">Position</a>&amp; pos):
-<a name="l00023"></a>00023                 mPos(pos),
-<a name="l00024"></a>00024                 mWalkAnim(FARender::Renderer::get()-&gt;loadImage(walkAnimPath)), 
-<a name="l00025"></a>00025                 mIdleAnim(FARender::Renderer::get()-&gt;loadImage(idleAnimPath)), 
-<a name="l00026"></a>00026                 mFrame(0),
-<a name="l00027"></a>00027                 mAnimState(AnimState::idle) {}
-<a name="l00028"></a>00028             <span class="keywordtype">void</span> update();
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030             FARender::FASpriteGroup getCurrentAnim();
-<a name="l00031"></a>00031             <span class="keywordtype">void</span> setAnimation(AnimState::AnimState state);
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033             <a class="code" href="classFAWorld_1_1Position.html">Position</a> mPos;
-<a name="l00034"></a>00034         <span class="comment">//private: //TODO: fix this</span>
-<a name="l00035"></a>00035             FARender::FASpriteGroup mWalkAnim;
-<a name="l00036"></a>00036             FARender::FASpriteGroup mIdleAnim;
-<a name="l00037"></a>00037             <span class="keywordtype">size_t</span> mFrame;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039         <span class="keyword">private</span>:
-<a name="l00040"></a>00040             AnimState::AnimState mAnimState;
-<a name="l00041"></a>00041     };
-<a name="l00042"></a>00042 }
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;../fasavegame/savegame.h&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;boost/format.hpp&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="misc_8h.html">misc/misc.h</a>&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">namespace </span>Engine
+<a name="l00013"></a>00013 {
+<a name="l00014"></a>00014     <span class="keyword">class </span>NetManager;
+<a name="l00015"></a>00015 }
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">namespace </span>FAWorld
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019     <span class="keyword">class </span>ActorStats;
+<a name="l00020"></a>00020     <span class="keyword">class </span>World;
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html">00022</a>     <span class="keyword">namespace </span><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState</a>
+<a name="l00023"></a>00023     {
+<a name="l00024"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">00024</a>         <span class="keyword">enum</span> <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState</a>
+<a name="l00025"></a>00025         {
+<a name="l00026"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a0c9a7f6f517e36f81f76c89ee9533ad7">00026</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a0c9a7f6f517e36f81f76c89ee9533ad7">walk</a>,
+<a name="l00027"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a36d90d96ba5fb7775aa511a0c191bfd7">00027</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a36d90d96ba5fb7775aa511a0c191bfd7">idle</a>,
+<a name="l00028"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3aaeaaae5828bb4b57e078d81975cbba96">00028</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3aaeaaae5828bb4b57e078d81975cbba96">attack</a>,
+<a name="l00029"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a5607ac40cc45e334c5ba41d6a37ee926">00029</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a5607ac40cc45e334c5ba41d6a37ee926">dead</a>,
+<a name="l00030"></a><a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3afddc2512bfa4b607cc587112b7ae0073">00030</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3afddc2512bfa4b607cc587112b7ae0073">hit</a>
+<a name="l00031"></a>00031         };
+<a name="l00032"></a>00032     }    
+<a name="l00033"></a><a class="code" href="class_f_a_world_1_1_actor.html">00033</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> : <span class="keyword">public</span> <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>
+<a name="l00034"></a>00034     {
+<a name="l00035"></a>00035         <a class="code" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">STATIC_HANDLE_NET_OBJECT_IN_CLASS</a>()
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="keyword">public</span>:
+<a name="l00038"></a>00038             <a class="code" href="class_f_a_world_1_1_actor.html#ab9e28a0505dc7a3040e249c563badd37">Actor</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; walkAnimPath=<span class="stringliteral">&quot;&quot;</span>,
+<a name="l00039"></a>00039                   <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; idleAnimPath=<span class="stringliteral">&quot;&quot;</span>,
+<a name="l00040"></a>00040                   <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_position.html">Position</a>&amp; pos = <a class="code" href="class_f_a_world_1_1_position.html">Position</a>(0,0),
+<a name="l00041"></a>00041                   <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; dieAnimPath=<span class="stringliteral">&quot;&quot;</span>,
+<a name="l00042"></a>00042                   <a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a>* stats=<span class="keyword">nullptr</span>);
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044 <span class="preprocessor">#endif</span>
+<a name="l00044"></a>00044             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083">update</a>(<span class="keywordtype">bool</span> noclip, <span class="keywordtype">size_t</span> ticksPassed);
+<a name="l00045"></a>00045             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a9b83109c5d0813a7aa9d9c4bccf3848f">setStats</a>(<a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a>* stats);
+<a name="l00046"></a>00046             <span class="keyword">virtual</span> <a class="code" href="class_f_a_world_1_1_actor.html#a653ac7a30cd4ab50c741f60d767cb340">~Actor</a>();
+<a name="l00047"></a><a class="code" href="class_f_a_world_1_1_actor.html#aa6234a4667ea2574d192619e786812e4">00047</a>             <span class="keyword">virtual</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_world_1_1_actor.html#aa6234a4667ea2574d192619e786812e4">getDieWav</a>(){<span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;}
+<a name="l00048"></a><a class="code" href="class_f_a_world_1_1_actor.html#ad877a8196a376ed0d728fd548e7e5171">00048</a>             <span class="keyword">virtual</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_world_1_1_actor.html#ad877a8196a376ed0d728fd548e7e5171">getHitWav</a>(){<span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;}
+<a name="l00049"></a><a class="code" href="class_f_a_world_1_1_actor.html#a3d9fd6b8cecb2199ae331b9625eb1454">00049</a>             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a3d9fd6b8cecb2199ae331b9625eb1454">setSpriteClass</a>(<a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> className){<a class="code" href="misc_8h.html#a6c7ba74ad57863d1342878d2c703e660">UNUSED_PARAM</a>(className);}
+<a name="l00050"></a>00050             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a">takeDamage</a>(<span class="keywordtype">double</span> amount);
+<a name="l00051"></a>00051             <span class="keyword">virtual</span> int32_t <a class="code" href="class_f_a_world_1_1_actor.html#a4a999f531e5704c6bc6c2c8eb358b3de">getCurrentHP</a>();
+<a name="l00052"></a><a class="code" href="class_f_a_world_1_1_actor.html#a7b6c16a77650c8da9bf4323510ca1c8f">00052</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a7b6c16a77650c8da9bf4323510ca1c8f">mAnimPlaying</a> = <span class="keyword">false</span>;
+<a name="l00053"></a><a class="code" href="class_f_a_world_1_1_actor.html#a0aa3b53bf1be4464e2c5b45e4465a0c8">00053</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a0aa3b53bf1be4464e2c5b45e4465a0c8">isAttacking</a> = <span class="keyword">false</span>;
+<a name="l00054"></a><a class="code" href="class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411">00054</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411">isTalking</a> = <span class="keyword">false</span>;
+<a name="l00055"></a>00055             <span class="keyword">virtual</span> <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#a4478cc4a8dd82419b9aa23e3d13393a3">getCurrentAnim</a>();
+<a name="l00056"></a>00056             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a00af1cf4ccaf76a3cf84dc7ec5ba3390">setAnimation</a>(<a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState::AnimState</a> state, <span class="keywordtype">bool</span> reset=<span class="keyword">false</span>);
+<a name="l00057"></a>00057             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a455e64c9a81c840a0f909cdf84624fb5">setWalkAnimation</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> path);
+<a name="l00058"></a>00058             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a9df9839ef9050448179e7aded3180f48">setIdleAnimation</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> path);            
+<a name="l00059"></a>00059             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState::AnimState</a> <a class="code" href="class_f_a_world_1_1_actor.html#af9dbee7f6987ffae1a1698434367057f">getAnimState</a>();
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="class_f_a_world_1_1_actor.html#aa06348c90e930601c7c3ebcb0557cea6">00061</a>             int32_t <a class="code" href="class_f_a_world_1_1_actor.html#aa06348c90e930601c7c3ebcb0557cea6">getId</a>()
+<a name="l00062"></a>00062             {
+<a name="l00063"></a>00063                 <span class="keywordflow">return</span> mId;
+<a name="l00064"></a>00064             }
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e">setLevel</a>(<a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* level);
+<a name="l00067"></a>00067             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* <a class="code" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58">getLevel</a>();
+<a name="l00068"></a>00068 
+<a name="l00069"></a><a class="code" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb">00069</a>             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb">attack</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * enemy)
+<a name="l00070"></a>00070             {
+<a name="l00071"></a>00071                 <a class="code" href="misc_8h.html#a6c7ba74ad57863d1342878d2c703e660">UNUSED_PARAM</a>(enemy);
+<a name="l00072"></a>00072                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00073"></a>00073             }
+<a name="l00074"></a>00074 
+<a name="l00075"></a><a class="code" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">00075</a>             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">talk</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * actor)
+<a name="l00076"></a>00076             {
+<a name="l00077"></a>00077                 <a class="code" href="misc_8h.html#a6c7ba74ad57863d1342878d2c703e660">UNUSED_PARAM</a>(actor);
+<a name="l00078"></a>00078                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00079"></a>00079             }
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">00081</a>             <a class="code" href="class_f_a_world_1_1_position.html">Position</a> <a class="code" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">mPos</a>;            
+<a name="l00082"></a>00082         <span class="comment">//private: //TODO: fix this</span>
+<a name="l00083"></a><a class="code" href="class_f_a_world_1_1_actor.html#a17b9a46c3ff9241dec8ffef817afbf68">00083</a>             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#a17b9a46c3ff9241dec8ffef817afbf68">mWalkAnim</a> = <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>();
+<a name="l00084"></a><a class="code" href="class_f_a_world_1_1_actor.html#ab78b06a953550b034c7eefe3b53093a3">00084</a>             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#ab78b06a953550b034c7eefe3b53093a3">mIdleAnim</a> = <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>();
+<a name="l00085"></a><a class="code" href="class_f_a_world_1_1_actor.html#ad6c8e2bce4b2a085562553608744e83c">00085</a>             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#ad6c8e2bce4b2a085562553608744e83c">mDieAnim</a> = <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>();
+<a name="l00086"></a><a class="code" href="class_f_a_world_1_1_actor.html#a0f7af56ab59368afa294709db74267b0">00086</a>             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#a0f7af56ab59368afa294709db74267b0">mAttackAnim</a> = <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>();
+<a name="l00087"></a><a class="code" href="class_f_a_world_1_1_actor.html#af17b18f889b02e2b9adbe4724e55aac7">00087</a>             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_actor.html#af17b18f889b02e2b9adbe4724e55aac7">mHitAnim</a> = <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>();
+<a name="l00088"></a>00088         
+<a name="l00089"></a><a class="code" href="class_f_a_world_1_1_actor.html#acd918eed32d94304e71eafb26a8d9096">00089</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_actor.html#acd918eed32d94304e71eafb26a8d9096">mFrame</a>;
+<a name="l00090"></a>00090             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a">die</a>();
+<a name="l00091"></a><a class="code" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">00091</a>             std::pair&lt;int32_t, int32_t&gt; <a class="code" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">mDestination</a>;
+<a name="l00092"></a><a class="code" href="class_f_a_world_1_1_actor.html#aeae544fb56b7d7b8709e8124cb4d9577">00092</a>             std::pair&lt;int32_t, int32_t&gt;&amp; <a class="code" href="class_f_a_world_1_1_actor.html#aeae544fb56b7d7b8709e8124cb4d9577">destination</a>()
+<a name="l00093"></a>00093             {
+<a name="l00094"></a>00094                 <span class="keywordflow">return</span> <a class="code" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">mDestination</a>;
+<a name="l00095"></a>00095             }
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735">canTalk</a>() <span class="keyword">const</span>;
+<a name="l00098"></a>00098             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36">isDead</a>() <span class="keyword">const</span>;
+<a name="l00099"></a>00099             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e">isEnemy</a>() <span class="keyword">const</span>;
+<a name="l00100"></a>00100             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_world_1_1_actor.html#a4bc04e344af9ef719cf3572748ca355e">getActorId</a>() <span class="keyword">const</span>;
+<a name="l00101"></a>00101             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a258c7036b477faa50ea6d4a9d6a0a349">setActorId</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; <span class="keywordtype">id</span>);
+<a name="l00102"></a>00102             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#a939890831e2e172233eac6e6665c898e">setCanTalk</a>(<span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735">canTalk</a>);
+<a name="l00103"></a>00103 
+<a name="l00104"></a><a class="code" href="class_f_a_world_1_1_actor.html#a63774b2f9633d35b041adb5f0937c315">00104</a>             std::map&lt;AnimState::AnimState, size_t&gt; <a class="code" href="class_f_a_world_1_1_actor.html#a63774b2f9633d35b041adb5f0937c315">mAnimTimeMap</a>;
+<a name="l00105"></a><a class="code" href="class_f_a_world_1_1_actor.html#a14eefc56cb7a87f21c02b1979a84ca3e">00105</a>             <a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a> * <a class="code" href="class_f_a_world_1_1_actor.html#a14eefc56cb7a87f21c02b1979a84ca3e">mStats</a>=<span class="keyword">nullptr</span>;
+<a name="l00106"></a>00106             <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0">getWriteSize</a>();
+<a name="l00107"></a>00107             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362" title="Write object to packet.">writeTo</a>(ENetPacket *packet, <span class="keywordtype">size_t</span>&amp; position);
+<a name="l00108"></a>00108             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21">readFrom</a>(ENetPacket *packet, <span class="keywordtype">size_t</span>&amp; position);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110         <span class="keyword">protected</span>:
+<a name="l00111"></a><a class="code" href="class_f_a_world_1_1_actor.html#a5c7b9155b85b7d6d10397e77e0588e6a">00111</a>             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* <a class="code" href="class_f_a_world_1_1_actor.html#a5c7b9155b85b7d6d10397e77e0588e6a">mLevel</a> = <a class="code" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
+<a name="l00112"></a>00112 
+<a name="l00113"></a><a class="code" href="class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1">00113</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1">mIsDead</a> = <span class="keyword">false</span>;
+<a name="l00114"></a><a class="code" href="class_f_a_world_1_1_actor.html#a97a2ee333d13eb57eaebe9c0dc98acc9">00114</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a97a2ee333d13eb57eaebe9c0dc98acc9">mCanTalk</a> = <span class="keyword">false</span>;
+<a name="l00115"></a><a class="code" href="class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c">00115</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c">mIsEnemy</a>;
+<a name="l00116"></a>00116 
+<a name="l00117"></a><a class="code" href="class_f_a_world_1_1_actor.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">00117</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_actor.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a>;
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119             <span class="keyword">template</span>&lt;<span class="keyword">class</span> Archive&gt;
+<a name="l00120"></a><a class="code" href="class_f_a_world_1_1_actor.html#aa6a27417ed0edf06434a63bcab51864b">00120</a>             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#aa6a27417ed0edf06434a63bcab51864b">save</a>(Archive &amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> version)<span class="keyword"> const</span>
+<a name="l00121"></a>00121 <span class="keyword">            </span>{
+<a name="l00122"></a>00122                 <a class="code" href="misc_8h.html#a6c7ba74ad57863d1342878d2c703e660">UNUSED_PARAM</a>(version);
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">mPos</a>;
+<a name="l00125"></a>00125                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#acd918eed32d94304e71eafb26a8d9096">mFrame</a>;
+<a name="l00126"></a>00126                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a>;
+<a name="l00127"></a>00127                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">mDestination</a>;
+<a name="l00128"></a>00128             }
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130             <span class="keyword">template</span>&lt;<span class="keyword">class</span> Archive&gt;
+<a name="l00131"></a><a class="code" href="class_f_a_world_1_1_actor.html#ae052cd3c00a6b57b34430d684e7863b8">00131</a>             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_actor.html#ae052cd3c00a6b57b34430d684e7863b8">load</a>(Archive &amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> version)
+<a name="l00132"></a>00132             {
+<a name="l00133"></a>00133                 <a class="code" href="misc_8h.html#a6c7ba74ad57863d1342878d2c703e660">UNUSED_PARAM</a>(version);
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">mPos</a>;
+<a name="l00136"></a>00136                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#acd918eed32d94304e71eafb26a8d9096">mFrame</a>;
+<a name="l00137"></a>00137                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a>;
+<a name="l00138"></a>00138                 ar &amp; this-&gt;<a class="code" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">mDestination</a>;
+<a name="l00139"></a>00139             }
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">canIAttack</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * actor);
+<a name="l00142"></a>00142             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf">canTalkTo</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * actor);
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144             BOOST_SERIALIZATION_SPLIT_MEMBER()
+<a name="l00145"></a><a class="code" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">00145</a>             <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState</a>::<a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState</a> <a class="code" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a>;
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147         <a class="code" href="cel_8cpp.html#a6a1d6e1a12975a4e9a0b5b952e79eaad">private</a>:
+<a name="l00148"></a>00148             std::<span class="keywordtype">string</span> mActorId;
+<a name="l00149"></a>00149             int32_t mId;
+<a name="l00150"></a><a class="code" href="class_f_a_world_1_1_actor.html#ae313696e3157b96c2c65de30abd4fe1f">00150</a>             friend class Engine::NetManager;
+<a name="l00151"></a>00151     };
+<a name="l00152"></a>00152 }
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -142,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

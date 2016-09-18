@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: components/input/inputmanager.h Source File</title>
+<title>freeablo: components/input/inputmanager.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,94 +81,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">components/input/inputmanager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef INPUT_H</span>
+<a href="inputmanager_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef INPUT_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define INPUT_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
-<a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;boost/function.hpp&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;boost/lockfree/queue.hpp&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;functional&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;boost/lockfree/spsc_queue.hpp&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;misc/disablewarn.h&gt;</span>
-<a name="l00010"></a>00010 <span class="preprocessor">    #include &lt;Rocket/Core.h&gt;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;misc/enablewarn.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="disablewarn_8h.html">misc/disablewarn.h</a>&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;Rocket/Core.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;<a class="code" href="enablewarn_8h.html">misc/enablewarn.h</a>&gt;</span>
 <a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;keys.h&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="keys_8h.html">keys.h</a>&quot;</span>
 <a name="l00014"></a>00014 
 <a name="l00015"></a>00015 <span class="keyword">namespace </span>Input
 <a name="l00016"></a>00016 {
-<a name="l00017"></a>00017     <span class="keyword">enum</span> Modifier
+<a name="l00017"></a><a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baab">00017</a>     <span class="keyword">enum</span> <a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baab">Modifier</a>
 <a name="l00018"></a>00018     {
-<a name="l00019"></a>00019         FAMOD_CTRL = 1,
-<a name="l00020"></a>00020         FAMOD_ALT = 2,
-<a name="l00021"></a>00021         FAMOD_SHIFT = 4
+<a name="l00019"></a><a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baaba6e54d886726fdedc91c3a09e6212bd1c">00019</a>         <a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baaba6e54d886726fdedc91c3a09e6212bd1c">FAMOD_CTRL</a> = 1,
+<a name="l00020"></a><a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baabae557d263d2ecdfaa35c919d261726981">00020</a>         <a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baabae557d263d2ecdfaa35c919d261726981">FAMOD_ALT</a> = 2,
+<a name="l00021"></a><a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baaba4bbce56f0c68e04c4c2a5dafde468772">00021</a>         <a class="code" href="namespace_input.html#a1c39e19422b6144499a478cdc907baaba4bbce56f0c68e04c4c2a5dafde468772">FAMOD_SHIFT</a> = 4
 <a name="l00022"></a>00022     };
 <a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="classInput_1_1InputManager.html">00024</a>     <span class="keyword">class </span><a class="code" href="classInput_1_1InputManager.html">InputManager</a>
+<a name="l00024"></a><a class="code" href="class_input_1_1_input_manager.html">00024</a>     <span class="keyword">class </span><a class="code" href="class_input_1_1_input_manager.html">InputManager</a>
 <a name="l00025"></a>00025     {
 <a name="l00026"></a>00026         <span class="keyword">public</span>:
-<a name="l00027"></a>00027             <a class="code" href="classInput_1_1InputManager.html">InputManager</a>(boost::function&lt;<span class="keywordtype">void</span>(Key)&gt; keyPress, boost::function&lt;<span class="keywordtype">void</span>(Key)&gt; keyRelease,
-<a name="l00028"></a>00028                 boost::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t, Key)&gt; mouseClick,
-<a name="l00029"></a>00029                 boost::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t, Key)&gt; mouseRelease,
-<a name="l00030"></a>00030                 boost::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t)&gt; mouseMove,
-<a name="l00031"></a>00031                 Rocket::Core::Context* context);
+<a name="l00027"></a>00027             <a class="code" href="class_input_1_1_input_manager.html#a36dfdf6b744e2aff2cd846acd3c630bd">InputManager</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Key</a>)&gt; keyPress, std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Key</a>)&gt; keyRelease,
+<a name="l00028"></a>00028                 std::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t, <a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Key</a>)&gt; mouseClick,
+<a name="l00029"></a>00029                 std::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t, <a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Key</a>)&gt; mouseRelease,
+<a name="l00030"></a>00030                 std::function&lt;<span class="keywordtype">void</span>(uint32_t, uint32_t)&gt; mouseMove,
+<a name="l00031"></a>00031                 <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* context);
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033             <span class="keywordtype">void</span> processInput(<span class="keywordtype">bool</span> paused);
-<a name="l00034"></a>00034             <span class="keywordtype">void</span> poll();
+<a name="l00033"></a>00033             <span class="keywordtype">void</span> <a class="code" href="class_input_1_1_input_manager.html#a7bcad8c100eea21ce9d75385d6ce5081">processInput</a>(<span class="keywordtype">bool</span> paused);
+<a name="l00034"></a>00034             <span class="keywordtype">void</span> <a class="code" href="class_input_1_1_input_manager.html#a8c487668bd5ec294cfcccb94337f43d7">poll</a>();
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036             uint32_t getModifiers();
+<a name="l00036"></a>00036             uint32_t <a class="code" href="class_input_1_1_input_manager.html#a255637037fe447bb1650883f0752163c">getModifiers</a>();
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038             <span class="keyword">static</span> <a class="code" href="classInput_1_1InputManager.html">InputManager</a>* <span class="keyword">get</span>();
+<a name="l00038"></a>00038             <span class="keyword">static</span> <a class="code" href="class_input_1_1_input_manager.html">InputManager</a>* <span class="keyword">get</span>();
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040         <span class="keyword">private</span>:
-<a name="l00041"></a>00041             
-<a name="l00043"></a>00043             <span class="keyword">struct </span>Event
-<a name="l00044"></a>00044             {
-<a name="l00045"></a>00045                 <span class="keywordtype">size_t</span> type;
-<a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="unionInput_1_1InputManager_1_1Event_1_1__vals.html">00047</a>                 <span class="keyword">union </span><a class="code" href="unionInput_1_1InputManager_1_1Event_1_1__vals.html">_vals</a>
-<a name="l00048"></a>00048                 {
-<a name="l00049"></a>00049                     int32_t key;
-<a name="l00050"></a>00050                     
-<a name="l00051"></a><a class="code" href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseButton.html">00051</a>                     <span class="keyword">struct </span><a class="code" href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseButton.html">_mouseButton</a>
-<a name="l00052"></a>00052                     {
-<a name="l00053"></a>00053                         int32_t key;
-<a name="l00054"></a>00054                         int32_t x;
-<a name="l00055"></a>00055                         int32_t y;
-<a name="l00056"></a>00056                     } mouseButton;
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseMove.html">00058</a>                     <span class="keyword">struct </span><a class="code" href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseMove.html">_mouseMove</a>
-<a name="l00059"></a>00059                     {
-<a name="l00060"></a>00060                         int32_t x;
-<a name="l00061"></a>00061                         int32_t y;
-<a name="l00062"></a>00062                     } mouseMove;
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064                 } vals;
-<a name="l00065"></a>00065             };
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067             boost::lockfree::queue&lt;Event&gt; mQueue;
-<a name="l00068"></a>00068             boost::function&lt;void(Key)&gt; mKeyPress;
-<a name="l00069"></a>00069             boost::function&lt;void(Key)&gt; mKeyRelease;
-<a name="l00070"></a>00070             boost::function&lt;void(uint32_t, uint32_t, Key)&gt; mMouseClick;
-<a name="l00071"></a>00071             boost::function&lt;void(uint32_t, uint32_t, Key)&gt; mMouseRelease;
-<a name="l00072"></a>00072             boost::function&lt;void(uint32_t, uint32_t)&gt; mMouseMove;
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074             Rocket::Core::Context* mContext;
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076             <span class="keyword">static</span> <a class="code" href="classInput_1_1InputManager.html">InputManager</a>* instance;
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078             uint32_t mModifiers;
-<a name="l00079"></a>00079     };
-<a name="l00080"></a>00080 }
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
+<a name="l00041"></a>00041             <span class="keywordtype">void</span> rocketBaseClicked(); 
+<a name="l00042"></a>00042             <span class="keywordtype">bool</span> mBaseWasClicked;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044             <span class="keyword">friend</span> <span class="keywordtype">void</span> <a class="code" href="class_input_1_1_input_manager.html#ab2af8793ba52a3c798c2d791108f1aeb" title="Basically a copy of the subset of SDL_Event that we actually use.">baseClickedHelper</a>();
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046             
+<a name="l00048"></a>00048             <span class="keyword">struct </span>Event
+<a name="l00049"></a>00049             {
+<a name="l00050"></a>00050                 <span class="keywordtype">size_t</span> type;
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html">00052</a>                 <span class="keyword">union </span><a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html">_vals</a>
+<a name="l00053"></a>00053                 {
+<a name="l00054"></a><a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html#aafb8b62148f9da96da69175f9ff7f697">00054</a>                     int32_t <a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html#aafb8b62148f9da96da69175f9ff7f697">key</a>;
+<a name="l00055"></a>00055                     
+<a name="l00056"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html">00056</a>                     <span class="keyword">struct </span><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html">_mouseButton</a>
+<a name="l00057"></a>00057                     {
+<a name="l00058"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a91e23db9386f2070b8e9eb89c179ea5c">00058</a>                         int32_t <a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a91e23db9386f2070b8e9eb89c179ea5c">key</a>;
+<a name="l00059"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a9315290bf2ca60c8fd0c46210836a298">00059</a>                         int32_t <a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a9315290bf2ca60c8fd0c46210836a298">x</a>;
+<a name="l00060"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a802f0784a361e2a17ead60a358c97d51">00060</a>                         int32_t <a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html#a802f0784a361e2a17ead60a358c97d51">y</a>;
+<a name="l00061"></a>00061                     } <a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html#abd736cc4db8e9625f2fe1ec31f0b7067">mouseButton</a>;
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html">00063</a>                     <span class="keyword">struct </span><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html">_mouseMove</a>
+<a name="l00064"></a>00064                     {
+<a name="l00065"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html#add27ed9284e84b894b85ccaa7e1cf47b">00065</a>                         int32_t <a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html#add27ed9284e84b894b85ccaa7e1cf47b">x</a>;
+<a name="l00066"></a><a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html#a024999a8f117429ba4f674c4027436f5">00066</a>                         int32_t <a class="code" href="struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html#a024999a8f117429ba4f674c4027436f5">y</a>;
+<a name="l00067"></a>00067                     } <a class="code" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html#a7fd47c78ce1e9dc2eb83e3db766a55c8">mouseMove</a>;
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069                 } vals;
+<a name="l00070"></a>00070             };
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072             boost::lockfree::spsc_queue&lt;Event, boost::lockfree::capacity&lt;500&gt; &gt; mQueue;
+<a name="l00073"></a>00073             std::function&lt;void(Key)&gt; mKeyPress;
+<a name="l00074"></a>00074             std::function&lt;void(Key)&gt; mKeyRelease;
+<a name="l00075"></a>00075             std::function&lt;void(uint32_t, uint32_t, Key)&gt; mMouseClick;
+<a name="l00076"></a>00076             std::function&lt;void(uint32_t, uint32_t, Key)&gt; mMouseRelease;
+<a name="l00077"></a>00077             std::function&lt;void(uint32_t, uint32_t)&gt; mMouseMove;
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079             <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* mContext;
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081             <span class="keyword">static</span> <a class="code" href="class_input_1_1_input_manager.html">InputManager</a>* instance;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083             uint32_t mModifiers;
+<a name="l00084"></a>00084     };
+<a name="l00085"></a>00085 }
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -179,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

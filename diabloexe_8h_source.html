@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: components/diabloexe/diabloexe.h Source File</title>
+<title>freeablo: components/diabloexe/diabloexe.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,56 +81,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">components/diabloexe/diabloexe.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DIABLO_EXE_H</span>
+<a href="diabloexe_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DIABLO_EXE_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DIABLO_EXE_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00005"></a>00005 <span class="preprocessor">#include &lt;map&gt;</span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;boost/property_tree/ptree.hpp&gt;</span>
-<a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;faio/faio.h&gt;</span>
-<a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;monster.h&quot;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;npc.h&quot;</span>
-<a name="l00014"></a>00014 
-<a name="l00015"></a>00015 <span class="keyword">namespace </span>DiabloExe
-<a name="l00016"></a>00016 {
-<a name="l00017"></a><a class="code" href="classDiabloExe_1_1DiabloExe.html">00017</a>     <span class="keyword">class </span><a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe</a>
-<a name="l00018"></a>00018     {
-<a name="l00019"></a>00019         <span class="keyword">public</span>:
-<a name="l00020"></a>00020             <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe</a>();
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022             <span class="keyword">const</span> <a class="code" href="structDiabloExe_1_1Monster.html">Monster</a>&amp; getMonster(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;
-<a name="l00023"></a>00023             std::vector&lt;const Monster*&gt; getMonstersInLevel(<span class="keywordtype">size_t</span> levelNum) <span class="keyword">const</span>;
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025             <span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1Npc.html">Npc</a>&amp; getNpc(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;
-<a name="l00026"></a>00026             std::vector&lt;const Npc*&gt; getNpcs() <span class="keyword">const</span>;
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028             std::string dump() <span class="keyword">const</span>;
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;<a class="code" href="settings_8h.html">settings/settings.h</a>&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="faio_8h.html">faio/faio.h</a>&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="components_2diabloexe_2monster_8h.html">monster.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="npc_8h.html">npc.h</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="baseitem_8h.html">baseitem.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="affix_8h.html">affix.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="uniqueitem_8h.html">uniqueitem.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="components_2diabloexe_2characterstats_8h.html">characterstats.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="keyword">namespace </span><a class="code" href="overall__architecture_8md.html#aff86d0c970beeff499e51962e663765d">DiabloExe</a>
+<a name="l00018"></a>00018 {
+<a name="l00019"></a><a class="code" href="class_diablo_exe_1_1_diablo_exe.html">00019</a>     <span class="keyword">class </span><a class="code" href="class_diablo_exe_1_1_diablo_exe.html">DiabloExe</a>
+<a name="l00020"></a>00020     {
+<a name="l00021"></a>00021         <span class="keyword">public</span>:
+<a name="l00022"></a>00022             <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#aae82ed26725dbd5b89faca92507958f0">DiabloExe</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pathEXE = <span class="stringliteral">&quot;Diablo.exe&quot;</span>);
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024             <span class="keyword">const</span> <a class="code" href="struct_diablo_exe_1_1_monster.html">Monster</a>&amp; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a26ff05a3d26939171b997bcab240db18">getMonster</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; name) <span class="keyword">const</span>;
+<a name="l00025"></a>00025             std::vector&lt;const Monster*&gt; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#aad5677580044b6a52bd8be1af1ba2df1">getMonstersInLevel</a>(<span class="keywordtype">size_t</span> levelNum) <span class="keyword">const</span>;
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027             <span class="keyword">const</span> <a class="code" href="class_diablo_exe_1_1_npc.html">Npc</a>&amp; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a8ca07a9b1a6f35fb66ac442c7ca9f6f3">getNpc</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; name) <span class="keyword">const</span>;
+<a name="l00028"></a>00028             std::vector&lt;const Npc*&gt; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a1b882c37a6bb57d9a4f39313d455896c">getNpcs</a>() <span class="keyword">const</span>;
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030         <span class="keyword">private</span>:
-<a name="l00031"></a>00031             std::string getMD5();
-<a name="l00032"></a>00032             std::string getVersion();
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034             <span class="keywordtype">void</span> loadMonsters(<a class="code" href="structFAIO_1_1FAFile.html">FAIO::FAFile</a>* exe, boost::property_tree::ptree&amp; pt);
-<a name="l00035"></a>00035             <span class="keywordtype">void</span> loadNpcs(<a class="code" href="structFAIO_1_1FAFile.html">FAIO::FAFile</a>* exe, boost::property_tree::ptree&amp; pt);
-<a name="l00036"></a>00036             
-<a name="l00037"></a>00037             std::string mVersion;
-<a name="l00038"></a>00038             std::map&lt;std::string, Monster&gt; mMonsters;
-<a name="l00039"></a>00039             std::map&lt;std::string, Npc&gt; mNpcs;
-<a name="l00040"></a>00040     };
-<a name="l00041"></a>00041 }
+<a name="l00030"></a>00030             <span class="keyword">const</span> <a class="code" href="class_diablo_exe_1_1_base_item.html">BaseItem</a>&amp; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#aab7b87b8911a77c9c4348d75478a4de6">getItem</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; name) <span class="keyword">const</span>;
+<a name="l00031"></a>00031             std::map&lt;std::string, BaseItem&gt; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#aed7fe3ba6c146189d3776ee2fb7b4d96">getItemMap</a>() <span class="keyword">const</span>;
+<a name="l00032"></a>00032             <span class="keyword">const</span> std::map&lt;std::string, UniqueItem&gt; &amp; <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a38a0b3b88a812979b1a59e04a5cbc6de">getUniqueItemMap</a>() <span class="keyword">const</span>;
+<a name="l00033"></a>00033             <span class="keyword">const</span> <a class="code" href="class_diablo_exe_1_1_character_stats.html">CharacterStats</a> <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#ab4b5958fc74129e5b2ca6e7cf90bb6fa">getCharacterStat</a>(<a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> character) <span class="keyword">const</span>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a6b96c6decba7dde07ef2897e89066f7e">dump</a>() <span class="keyword">const</span>;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037             <span class="keywordtype">bool</span> <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a8f95e86ff119b3cd82ed65d13b2f238d">isLoaded</a>() <span class="keyword">const</span>;
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039             uint32_t <a class="code" href="class_diablo_exe_1_1_diablo_exe.html#a5525a860a81e27aa43590e8c9ec8a564">swapEndian</a>(uint32_t arg);
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 
 <a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
+<a name="l00043"></a>00043         <span class="keyword">private</span>:
+<a name="l00044"></a>00044             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> getMD5(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pathEXE);
+<a name="l00045"></a>00045             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> getVersion(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pathEXE);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048             <span class="keywordtype">void</span> loadMonsters(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);
+<a name="l00049"></a>00049             <span class="keywordtype">void</span> loadNpcs(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);
+<a name="l00050"></a>00050             <span class="keywordtype">void</span> loadBaseItems(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);
+<a name="l00051"></a>00051             <span class="keywordtype">void</span> loadUniqueItems(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);
+<a name="l00052"></a>00052             <span class="keywordtype">void</span> loadAffixes(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);
+<a name="l00053"></a>00053             <span class="keywordtype">void</span> loadCharacterStats(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a> * exe);
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057             <a class="code" href="class_settings_1_1_settings.html">Settings::Settings</a> mSettings;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mVersion;
+<a name="l00060"></a>00060             std::map&lt;std::string, Monster&gt; mMonsters;
+<a name="l00061"></a>00061             std::map&lt;std::string, Npc&gt; mNpcs;
+<a name="l00062"></a>00062             std::map&lt;std::string, BaseItem&gt; mBaseItems;
+<a name="l00063"></a>00063             std::map&lt;std::string, UniqueItem&gt; mUniqueItems;
+<a name="l00064"></a>00064             std::map&lt;std::string, Affix&gt; mAffixes;
+<a name="l00065"></a>00065             std::map&lt;std::string, CharacterStats&gt; mCharacters;
+<a name="l00066"></a>00066     };
+<a name="l00067"></a>00067 }
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -141,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

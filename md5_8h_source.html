@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: components/misc/md5.h Source File</title>
+<title>freeablo: components/misc/md5.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">components/misc/md5.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Slightly modified for freeablo</span>
+<a href="md5_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Slightly modified for freeablo</span>
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="comment">/*</span>
 <a name="l00004"></a>00004 <span class="comment">  Copyright (C) 1999 Aladdin Enterprises.  All rights reserved.</span>
@@ -136,15 +137,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00054"></a>00054 <span class="comment"> * ARCH_IS_BIG_ENDIAN.</span>
 <a name="l00055"></a>00055 <span class="comment"> */</span>
 <a name="l00056"></a>00056 
-<a name="l00057"></a>00057 <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> md5_byte_t; <span class="comment">/* 8-bit byte */</span>
-<a name="l00058"></a>00058 <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> md5_word_t; <span class="comment">/* 32-bit word */</span>
+<a name="l00057"></a><a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">00057</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a>; <span class="comment">/* 8-bit byte */</span>
+<a name="l00058"></a><a class="code" href="namespace_misc.html#aa67288164076d465bf0af3373a73d31c">00058</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespace_misc.html#aa67288164076d465bf0af3373a73d31c">md5_word_t</a>; <span class="comment">/* 32-bit word */</span>
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="comment">/* Define the state of the MD5 Algorithm. */</span>
-<a name="l00061"></a><a class="code" href="structMisc_1_1md5__state__s.html">00061</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structMisc_1_1md5__state__s.html">md5_state_s</a> {
-<a name="l00062"></a>00062     md5_word_t count[2];    <span class="comment">/* message length in bits, lsw first */</span>
-<a name="l00063"></a>00063     md5_word_t abcd[4];     <span class="comment">/* digest buffer */</span>
-<a name="l00064"></a>00064     md5_byte_t buf[64];     <span class="comment">/* accumulate block */</span>
-<a name="l00065"></a>00065 } <a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a>;
+<a name="l00061"></a><a class="code" href="struct_misc_1_1md5__state__s.html">00061</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_s</a> {
+<a name="l00062"></a><a class="code" href="struct_misc_1_1md5__state__s.html#ab58712275ccaa7b7269ce573bb852727">00062</a>     <a class="code" href="namespace_misc.html#aa67288164076d465bf0af3373a73d31c">md5_word_t</a> <a class="code" href="struct_misc_1_1md5__state__s.html#ab58712275ccaa7b7269ce573bb852727">count</a>[2];    <span class="comment">/* message length in bits, lsw first */</span>
+<a name="l00063"></a><a class="code" href="struct_misc_1_1md5__state__s.html#a81f60235429595102e195c0eb8e52e4b">00063</a>     <a class="code" href="namespace_misc.html#aa67288164076d465bf0af3373a73d31c">md5_word_t</a> <a class="code" href="struct_misc_1_1md5__state__s.html#a81f60235429595102e195c0eb8e52e4b">abcd</a>[4];     <span class="comment">/* digest buffer */</span>
+<a name="l00064"></a><a class="code" href="struct_misc_1_1md5__state__s.html#a98997e508e2857a65635cae5d6a7ad90">00064</a>     <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a> <a class="code" href="struct_misc_1_1md5__state__s.html#a98997e508e2857a65635cae5d6a7ad90">buf</a>[64];     <span class="comment">/* accumulate block */</span>
+<a name="l00065"></a>00065 } <a class="code" href="namespace_misc.html#a9537ddcada280960023a83a306480feb">md5_state_t</a>;
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067 <span class="comment">//#ifdef __cplusplus</span>
 <a name="l00068"></a>00068 <span class="comment">//extern &quot;C&quot; </span>
@@ -153,23 +154,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00071"></a>00071 
 <a name="l00072"></a>00072 <span class="comment">/* Initialize the algorithm. */</span>
 <a name="l00073"></a>00073 <span class="preprocessor">#ifdef P1</span>
-<a name="l00074"></a>00074 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_init(P1(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms));
+<a name="l00074"></a>00074 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#a0a6c959b7d67721633530a16cf18feb6">md5_init</a>(P1(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms));
 <a name="l00075"></a>00075 <span class="preprocessor">#else</span>
-<a name="l00076"></a>00076 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_init(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms);
+<a name="l00076"></a>00076 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#a0a6c959b7d67721633530a16cf18feb6">md5_init</a>(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms);
 <a name="l00077"></a>00077 <span class="preprocessor">#endif</span>
 <a name="l00078"></a>00078 <span class="preprocessor"></span>
 <a name="l00079"></a>00079 <span class="comment">/* Append a string to the message. */</span>
 <a name="l00080"></a>00080 <span class="preprocessor">#ifdef P3</span>
-<a name="l00081"></a>00081 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_append(P3(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms, <span class="keyword">const</span> md5_byte_t *data, <span class="keywordtype">int</span> nbytes));
+<a name="l00081"></a>00081 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#a5456d95d832a2ffd3c57f30a1647fa97">md5_append</a>(P3(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms, <span class="keyword">const</span> <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a> *data, <span class="keywordtype">int</span> nbytes));
 <a name="l00082"></a>00082 <span class="preprocessor">#else</span>
-<a name="l00083"></a>00083 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_append(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms, <span class="keyword">const</span> md5_byte_t *data, <span class="keywordtype">int</span> nbytes);
+<a name="l00083"></a>00083 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#a5456d95d832a2ffd3c57f30a1647fa97">md5_append</a>(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms, <span class="keyword">const</span> <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a> *data, <span class="keywordtype">int</span> nbytes);
 <a name="l00084"></a>00084 <span class="preprocessor">#endif</span>
 <a name="l00085"></a>00085 <span class="preprocessor"></span>
 <a name="l00086"></a>00086 <span class="comment">/* Finish the message and return the digest. */</span>
 <a name="l00087"></a>00087 <span class="preprocessor">#ifdef P2</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_finish(P2(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms, md5_byte_t digest[16]));
+<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#add1b0340264e37b35c23fd978442e80a">md5_finish</a>(P2(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms, <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a> digest[16]));
 <a name="l00089"></a>00089 <span class="preprocessor">#else</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="keywordtype">void</span> md5_finish(<a class="code" href="structMisc_1_1md5__state__s.html">md5_state_t</a> *pms, md5_byte_t digest[16]);
+<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="namespace_misc.html#add1b0340264e37b35c23fd978442e80a">md5_finish</a>(<a class="code" href="struct_misc_1_1md5__state__s.html">md5_state_t</a> *pms, <a class="code" href="namespace_misc.html#a2886d1654f0554125b1f2e08e8e28718">md5_byte_t</a> digest[16]);
 <a name="l00091"></a>00091 <span class="preprocessor">#endif</span>
 <a name="l00092"></a>00092 <span class="preprocessor"></span>
 <a name="l00093"></a>00093 <span class="comment">//#ifdef __cplusplus</span>
@@ -183,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -195,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 26 2014 16:25:17 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
