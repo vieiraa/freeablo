@@ -93,79 +93,101 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="netobject_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FA_NET_OBJECT_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FA_NET_OBJECT_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;enet/enet.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="enet_8h.html">enet/enet.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// put in implementation file for NetObject subclasses. Requires the below macro.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// see registerNetObjectClass below</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="netobject_8h.html#ab27c7db6726e8b6421a80092491e570c">    9</a></span>&#160;<span class="preprocessor">#define STATIC_HANDLE_NET_OBJECT_IN_IMPL(className) \</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    int32_t className::mClassIndirectId = -1; \</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    NetObject* StaticInitialiseFunc##className() { return new className(); } \</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    struct StaticInitialise##className \</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    { \</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">        StaticInitialise##className() \</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">        { \</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">            className::mClassIndirectId = NetObject::registerNetObjectClass(#className, StaticInitialiseFunc##className); \</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">        } \</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    } _StaticInitialise##className;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// put in class defenition of NetObject subclasses</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">   21</a></span>&#160;<span class="preprocessor">#define STATIC_HANDLE_NET_OBJECT_IN_CLASS() \</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">    public: \</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        static int32_t mClassIndirectId; \</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">        virtual int32_t getClassId() { return ::FAWorld::NetObject::getClassIdFromIndirectId(mClassIndirectId); }</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_f_a_world.html">FAWorld</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">   32</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">~NetObject</a>() {}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a9339b64f1355eaa2899489845c982280">getWriteSize</a>() = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4">writeTo</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position) = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a7f7b24f69a32b43f7e36b1f5702e6765">readFrom</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position) = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">   57</a></span>&#160;             <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">getBasePriority</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;             {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;             }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">tickDone</a>(<span class="keywordtype">bool</span> wasSent);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;             <span class="keyword">static</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687">registerNetObjectClass</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* typeName, <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>* (*factoryFunc)());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;             <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>* <a class="code" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">construct</a>(int32_t classId);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;             <span class="keyword">virtual</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">getClassId</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;             <span class="keyword">static</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">getClassIdFromIndirectId</a>(int32_t indirectId);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;             <span class="keywordtype">size_t</span> mPriority = 1;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    };</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bitstream_8h.html">serial/bitstream.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// put in implementation file for NetObject subclasses. Requires the below macro.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// see registerNetObjectClass below</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="netobject_8h.html#ab27c7db6726e8b6421a80092491e570c">   11</a></span>&#160;<span class="preprocessor">#define STATIC_HANDLE_NET_OBJECT_IN_IMPL(className)                                                                         \</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    int32_t className::mClassIndirectId = -1;                                                                               \</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    NetObject* StaticInitialiseFunc##className() { return new className(); }                                                \</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    struct StaticInitialise##className                                                                                      \</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    {                                                                                                                       \</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">        StaticInitialise##className()                                                                                       \</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">        {                                                                                                                   \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">            className::mClassIndirectId = NetObject::registerNetObjectClass(#className, StaticInitialiseFunc##className);   \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">        }                                                                                                                   \</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    } _StaticInitialise##className;                                                                                         \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    Serial::Error::Error className::streamHandle(Serial::WriteBitStream&amp; stream)                                            \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">    {                                                                                                                       \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">         serialise_object(stream, *this);                                                                                   \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">         return Serial::Error::Success;                                                                                     \</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">     }                                                                                                                      \</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">     Serial::Error::Error className::streamHandle(Serial::ReadBitStream&amp; stream)                                            \</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">     {                                                                                                                      \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">         serialise_object(stream, *this);                                                                                   \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">         return Serial::Error::Success;                                                                                     \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">     }</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// put in class defenition of NetObject subclasses</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">   33</a></span>&#160;<span class="preprocessor">#define STATIC_HANDLE_NET_OBJECT_IN_CLASS()                                                                         \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    public:                                                                                                         \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">        static int32_t mClassIndirectId;                                                                            \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">        virtual int32_t getClassId() { return ::FAWorld::NetObject::getClassIdFromIndirectId(mClassIndirectId); }   \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">        virtual Serial::Error::Error streamHandle(Serial::WriteBitStream&amp; stream);                                  \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">        virtual Serial::Error::Error streamHandle(Serial::ReadBitStream&amp; stream);</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="netobject_8h.html#a20593d67fd03ec39730445090941e27b">   40</a></span>&#160;<span class="preprocessor">#define serialise_as_parent_class(parentClassName) do           \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">{                                                               \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    parentClassName&amp; asParent = *this;                          \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    auto ret = asParent.parentClassName::streamHandle(stream);  \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    if (ret != Serial::Error::Success)                          \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">        return ret;                                             \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">} while(0)                          </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_f_a_world.html">FAWorld</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html">   51</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">   54</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">~NetObject</a>() {}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> <a class="code" href="class_f_a_world_1_1_net_object.html#a70640300475f8df4471d749223531d21">streamHandle</a>(<a class="code" href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a>&amp; stream) = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> <a class="code" href="class_f_a_world_1_1_net_object.html#a70640300475f8df4471d749223531d21">streamHandle</a>(<a class="code" href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a>&amp; stream) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">   62</a></span>&#160;             <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">getBasePriority</a>()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;             {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;             }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">tickDone</a>(<span class="keywordtype">bool</span> wasSent);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;             <span class="keyword">static</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687">registerNetObjectClass</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* typeName, <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>* (*factoryFunc)());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;             <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>* <a class="code" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">construct</a>(int32_t classId);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;             <span class="keyword">virtual</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">getClassId</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;             <span class="keyword">static</span> int32_t <a class="code" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">getClassIdFromIndirectId</a>(int32_t indirectId);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;             <span class="keywordtype">size_t</span> mPriority = 1;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a473b0869199f05cb8ea6bfdce460d687"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687">FAWorld::NetObject::registerNetObjectClass</a></div><div class="ttdeci">static int32_t registerNetObjectClass(const char *typeName, NetObject *(*factoryFunc)())</div><div class="ttdoc">Registers a factory function for a NetObject subclass, so they can be constructed using just the id...</div><div class="ttdef"><b>Definition:</b> netobject.cpp:39</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html_ad857986c68aa3d4a6f5e6b19fd06299b"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">FAWorld::NetObject::~NetObject</a></div><div class="ttdeci">virtual ~NetObject()</div><div class="ttdef"><b>Definition:</b> netobject.h:32</div></div>
+<div class="ttc" id="class_f_a_world_1_1_net_object_html_ad857986c68aa3d4a6f5e6b19fd06299b"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">FAWorld::NetObject::~NetObject</a></div><div class="ttdeci">virtual ~NetObject()</div><div class="ttdef"><b>Definition:</b> netobject.h:54</div></div>
+<div class="ttc" id="class_f_a_world_1_1_net_object_html_a70640300475f8df4471d749223531d21"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a70640300475f8df4471d749223531d21">FAWorld::NetObject::streamHandle</a></div><div class="ttdeci">virtual Serial::Error::Error streamHandle(Serial::WriteBitStream &amp;stream)=0</div></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a5bc4351c25f45b87a6ba5a4f732afb08"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">FAWorld::NetObject::getPriority</a></div><div class="ttdeci">size_t getPriority()</div><div class="ttdef"><b>Definition:</b> netobject.cpp:19</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html_a9339b64f1355eaa2899489845c982280"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a9339b64f1355eaa2899489845c982280">FAWorld::NetObject::getWriteSize</a></div><div class="ttdeci">virtual size_t getWriteSize()=0</div></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a13c2ffe170095ff5b8e893765e1d89c8"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">FAWorld::NetObject::construct</a></div><div class="ttdeci">static NetObject * construct(int32_t classId)</div><div class="ttdoc">construct a class instance of a NetObject subclass, using a classId previously registered with regist...</div><div class="ttdef"><b>Definition:</b> netobject.cpp:70</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html_a497984649cd1eb7b59429423cdaeecd4"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4">FAWorld::NetObject::writeTo</a></div><div class="ttdeci">virtual bool writeTo(ENetPacket *packet, size_t &amp;position)=0</div><div class="ttdoc">Write object to packet. </div></div>
+<div class="ttc" id="class_serial_1_1_write_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:64</div></div>
+<div class="ttc" id="class_serial_1_1_read_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:100</div></div>
+<div class="ttc" id="bitstream_8h_html"><div class="ttname"><a href="bitstream_8h.html">bitstream.h</a></div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6f"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> bitstream.h:24</div></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a875f5add72812b21f2fde5737586e671"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">FAWorld::NetObject::getClassId</a></div><div class="ttdeci">virtual int32_t getClassId()</div><div class="ttdoc">get the class id for sending over the network, this is the id used on construct() and registerNetObje...</div><div class="ttdef"><b>Definition:</b> netobject.cpp:81</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html">FAWorld::NetObject</a></div><div class="ttdef"><b>Definition:</b> netobject.h:29</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html_a7f7b24f69a32b43f7e36b1f5702e6765"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a7f7b24f69a32b43f7e36b1f5702e6765">FAWorld::NetObject::readFrom</a></div><div class="ttdeci">virtual bool readFrom(ENetPacket *packet, size_t &amp;position)=0</div></div>
+<div class="ttc" id="enet_8h_html"><div class="ttname"><a href="enet_8h.html">enet.h</a></div><div class="ttdoc">ENet public header file. </div></div>
+<div class="ttc" id="class_f_a_world_1_1_net_object_html"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html">FAWorld::NetObject</a></div><div class="ttdef"><b>Definition:</b> netobject.h:51</div></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a84eaa7e8220ef7f8cfb10d95398a0995"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">FAWorld::NetObject::getClassIdFromIndirectId</a></div><div class="ttdeci">static int32_t getClassIdFromIndirectId(int32_t indirectId)</div><div class="ttdef"><b>Definition:</b> netobject.cpp:65</div></div>
 <div class="ttc" id="namespace_f_a_world_html"><div class="ttname"><a href="namespace_f_a_world.html">FAWorld</a></div><div class="ttdef"><b>Definition:</b> engineinputmanager.h:11</div></div>
 <div class="ttc" id="class_f_a_world_1_1_net_object_html_a930342e8a97ad6f3051f96d9df4ea272"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">FAWorld::NetObject::tickDone</a></div><div class="ttdeci">void tickDone(bool wasSent)</div><div class="ttdoc">Called after every network tick. Used to accumulate priorities, for later recall with getPriority() ...</div><div class="ttdef"><b>Definition:</b> netobject.cpp:11</div></div>
-<div class="ttc" id="class_f_a_world_1_1_net_object_html_af0c64ee334bceb8ab832b2dd5e3ae222"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">FAWorld::NetObject::getBasePriority</a></div><div class="ttdeci">virtual size_t getBasePriority()</div><div class="ttdef"><b>Definition:</b> netobject.h:57</div></div>
+<div class="ttc" id="class_f_a_world_1_1_net_object_html_af0c64ee334bceb8ab832b2dd5e3ae222"><div class="ttname"><a href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">FAWorld::NetObject::getBasePriority</a></div><div class="ttdeci">virtual size_t getBasePriority()</div><div class="ttdef"><b>Definition:</b> netobject.h:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

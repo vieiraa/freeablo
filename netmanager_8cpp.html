@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>freeablo: apps/freeablo/engine/netmanager.cpp File Reference</title>
+<title>freeablo: apps/freeablo/engine/net/netmanager.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,43 +82,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_602d65a36a9060157a1a908dd1bac890.html">apps</a></li><li class="navelem"><a class="el" href="dir_c160aeafe456625348c3f6b803f5369a.html">freeablo</a></li><li class="navelem"><a class="el" href="dir_f90468726ee096c92f4b7058a210c277.html">engine</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_602d65a36a9060157a1a908dd1bac890.html">apps</a></li><li class="navelem"><a class="el" href="dir_c160aeafe456625348c3f6b803f5369a.html">freeablo</a></li><li class="navelem"><a class="el" href="dir_f90468726ee096c92f4b7058a210c277.html">engine</a></li><li class="navelem"><a class="el" href="dir_7ee770bc68a18dc94f5d5fafb216304c.html">net</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">netmanager.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="netmanager_8h_source.html">netmanager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="world_8h_source.html">../faworld/world.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="playerfactory_8h_source.html">../faworld/playerfactory.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="apps_2freeablo_2faworld_2monster_8h_source.html">../faworld/monster.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="world_8h_source.html">../../faworld/world.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="playerfactory_8h_source.html">../../faworld/playerfactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="actor_8h_source.html">../../faworld/actor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="player_8h_source.html">../../faworld/player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="apps_2freeablo_2faworld_2monster_8h_source.html">../../faworld/monster.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="bitstream_8h_source.html">serial/bitstream.h</a>&gt;</code><br />
 <code>#include &lt;boost/math/special_functions.hpp&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &quot;<a class="el" href="server_8h_source.html">server.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="client_8h_source.html">client.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_engine_1_1_server_packet_header.html">Engine::ServerPacketHeader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_engine_1_1_client_packet.html">Engine::ClientPacket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html">Engine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ac3bcf9b01492be06a1ed501aad5aeebc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#ac3bcf9b01492be06a1ed501aad5aeebc">Engine::ReliableMessageKind</a> { <a class="el" href="namespace_engine.html#ac3bcf9b01492be06a1ed501aad5aeebca736f4a7bfdb25b6dac155129c5e00535">Engine::Level</a> = 100, 
-<a class="el" href="namespace_engine.html#ac3bcf9b01492be06a1ed501aad5aeebca5cca46d5eeb4639b00332b1f12c434c8">Engine::Sprite</a> = 101
- }</td></tr>
-<tr class="separator:ac3bcf9b01492be06a1ed501aad5aeebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

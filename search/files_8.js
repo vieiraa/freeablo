@@ -2,6 +2,7 @@ var searchData=
 [
   ['hash_5fmemory_2ec',['hash_memory.c',['../hash__memory_8c.html',1,'']]],
   ['helper2d_2eh',['helper2d.h',['../helper2d_8h.html',1,'']]],
+  ['host_2ec',['host.c',['../host_8c.html',1,'']]],
   ['hotkey_2ecpp',['hotkey.cpp',['../hotkey_8cpp.html',1,'']]],
   ['hotkey_2eh',['hotkey.h',['../hotkey_8h.html',1,'']]],
   ['huff_2ecpp',['huff.cpp',['../huff_8cpp.html',1,'']]],

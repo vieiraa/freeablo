@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['readme',['../md_readme.html',1,'']]]
+  ['license',['License',['../_license.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['level',['Level',['../group__level.html',1,'']]]
+  ['faio',['FAIO',['../group__faio.html',1,'']]],
+  ['freeablo',['Freeablo',['../group__freeablo.html',1,'']]]
 ];

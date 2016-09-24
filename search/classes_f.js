@@ -9,7 +9,6 @@ var searchData=
   ['pointerprintable',['PointerPrintable',['../structfoo_1_1_pointer_printable.html',1,'foo']]],
   ['popcount',['PopCount',['../struct_pop_count.html',1,'']]],
   ['position',['Position',['../class_f_a_world_1_1_position.html',1,'FAWorld']]],
-  ['posnetdata',['PosNetData',['../struct_f_a_world_1_1_pos_net_data.html',1,'FAWorld']]],
   ['precalculatedprimetable',['PreCalculatedPrimeTable',['../class_pre_calculated_prime_table.html',1,'']]],
   ['predformatfunctor1',['PredFormatFunctor1',['../struct_pred_format_functor1.html',1,'']]],
   ['predformatfunctor2',['PredFormatFunctor2',['../struct_pred_format_functor2.html',1,'']]],

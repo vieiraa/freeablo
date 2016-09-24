@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>freeablo: apps/freeablo/engine/netmanager.h File Reference</title>
+<title>freeablo: apps/freeablo/engine/net/netmanager.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,22 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_602d65a36a9060157a1a908dd1bac890.html">apps</a></li><li class="navelem"><a class="el" href="dir_c160aeafe456625348c3f6b803f5369a.html">freeablo</a></li><li class="navelem"><a class="el" href="dir_f90468726ee096c92f4b7058a210c277.html">engine</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_602d65a36a9060157a1a908dd1bac890.html">apps</a></li><li class="navelem"><a class="el" href="dir_c160aeafe456625348c3f6b803f5369a.html">freeablo</a></li><li class="navelem"><a class="el" href="dir_f90468726ee096c92f4b7058a210c277.html">engine</a></li><li class="navelem"><a class="el" href="dir_7ee770bc68a18dc94f5d5fafb216304c.html">net</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">netmanager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;enet/enet.h&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;<a class="el" href="enet_8h_source.html">enet/enet.h</a>&gt;</code><br />
 </div>
 <p><a href="netmanager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,15 +114,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html">Engine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a2f758185eb1908305028faed44ae8ee2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2f758185eb1908305028faed44ae8ee2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a2f758185eb1908305028faed44ae8ee2">Engine::writeToPacket</a> (ENetPacket *packet, size_t &amp;position, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> T &amp;data)</td></tr>
-<tr class="separator:a2f758185eb1908305028faed44ae8ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc72014886f43e30e3ad11d303d62779"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afc72014886f43e30e3ad11d303d62779"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_engine.html#afc72014886f43e30e3ad11d303d62779">Engine::readFromPacket</a> (ENetPacket *packet, size_t &amp;position, T &amp;dest)</td></tr>
-<tr class="separator:afc72014886f43e30e3ad11d303d62779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

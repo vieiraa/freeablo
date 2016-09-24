@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['cacheentry',['CacheEntry',['../struct_f_a_render_1_1_cache_entry.html',1,'FARender']]],
   ['cacheentry',['CacheEntry',['../struct_f_a_audio_1_1_cache_entry.html',1,'FAAudio']]],
+  ['cacheentry',['CacheEntry',['../struct_f_a_render_1_1_cache_entry.html',1,'FARender']]],
   ['castable',['Castable',['../classtesting_1_1internal_1_1_castable.html',1,'testing::internal']]],
   ['catchcxxexceptionstest',['CatchCxxExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_cxx_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
   ['catchsehexceptionstest',['CatchSehExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_seh_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
@@ -12,6 +12,8 @@ var searchData=
   ['characterstatsbase',['CharacterStatsBase',['../class_f_a_world_1_1_character_stats_base.html',1,'FAWorld']]],
   ['clenenc',['CLenEnc',['../struct_c_len_enc.html',1,'']]],
   ['clenpriceenc',['CLenPriceEnc',['../struct_c_len_price_enc.html',1,'']]],
+  ['client',['Client',['../class_engine_1_1_client.html',1,'Engine']]],
+  ['clientdata',['ClientData',['../struct_engine_1_1_client_data.html',1,'Engine']]],
   ['clientloginerror',['ClientLoginError',['../classupload_1_1_client_login_error.html',1,'upload']]],
   ['clientpacket',['ClientPacket',['../struct_engine_1_1_client_packet.html',1,'Engine']]],
   ['clooktoread',['CLookToRead',['../struct_c_look_to_read.html',1,'']]],

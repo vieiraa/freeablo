@@ -94,8 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">netobject.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;enet/enet.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="enet_8h_source.html">enet/enet.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="bitstream_8h_source.html">serial/bitstream.h</a>&gt;</code><br />
 </div>
 <p><a href="netobject_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,8 +116,34 @@ Macros</h2></td></tr>
 <tr class="separator:ab27c7db6726e8b6421a80092491e570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f86cfe94ff23e7edb15265be9a62cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">STATIC_HANDLE_NET_OBJECT_IN_CLASS</a>()</td></tr>
 <tr class="separator:a80f86cfe94ff23e7edb15265be9a62cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20593d67fd03ec39730445090941e27b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#a20593d67fd03ec39730445090941e27b">serialise_as_parent_class</a>(parentClassName)</td></tr>
+<tr class="separator:a20593d67fd03ec39730445090941e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a20593d67fd03ec39730445090941e27b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define serialise_as_parent_class</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">parentClassName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>           \</div>
+<div class="line">{                                                               \</div>
+<div class="line">    parentClassName&amp; asParent = *<span class="keyword">this</span>;                          \</div>
+<div class="line">    auto ret = asParent.parentClassName::streamHandle(stream);  \</div>
+<div class="line">    if (ret != <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>)                          \</div>
+<div class="line">        return ret;                                             \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:26</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a80f86cfe94ff23e7edb15265be9a62cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -129,9 +156,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>: \</div>
-<div class="line">        static int32_t mClassIndirectId; \</div>
-<div class="line">        virtual int32_t getClassId() { return ::FAWorld::NetObject::getClassIdFromIndirectId(mClassIndirectId); }</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                                                         \</div>
+<div class="line">        static int32_t mClassIndirectId;                                                                            \</div>
+<div class="line">        virtual int32_t getClassId() { return ::FAWorld::NetObject::getClassIdFromIndirectId(mClassIndirectId); }   \</div>
+<div class="line">        virtual <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> streamHandle(<a class="code" href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a>&amp; stream);                                  \</div>
+<div class="line">        virtual <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> streamHandle(<a class="code" href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a>&amp; stream);</div>
+<div class="ttc" id="class_serial_1_1_write_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:64</div></div>
+<div class="ttc" id="class_serial_1_1_read_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:100</div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6f"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> bitstream.h:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -148,15 +180,30 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">int32_t className::mClassIndirectId = -1; \</div>
-<div class="line">    NetObject* StaticInitialiseFunc##className() { <span class="keywordflow">return</span> <span class="keyword">new</span> className(); } \</div>
-<div class="line">    struct StaticInitialise##className \</div>
-<div class="line">    { \</div>
-<div class="line">        StaticInitialise##className() \</div>
-<div class="line">        { \</div>
-<div class="line">            className::mClassIndirectId = NetObject::registerNetObjectClass(#className, StaticInitialiseFunc##className); \</div>
-<div class="line">        } \</div>
-<div class="line">    } _StaticInitialise##className;</div>
+<b>Value:</b><div class="fragment"><div class="line">int32_t className::mClassIndirectId = -1;                                                                               \</div>
+<div class="line">    NetObject* StaticInitialiseFunc##className() { <span class="keywordflow">return</span> <span class="keyword">new</span> className(); }                                                \</div>
+<div class="line">    struct StaticInitialise##className                                                                                      \</div>
+<div class="line">    {                                                                                                                       \</div>
+<div class="line">        StaticInitialise##className()                                                                                       \</div>
+<div class="line">        {                                                                                                                   \</div>
+<div class="line">            className::mClassIndirectId = NetObject::registerNetObjectClass(#className, StaticInitialiseFunc##className);   \</div>
+<div class="line">        }                                                                                                                   \</div>
+<div class="line">    } _StaticInitialise##className;                                                                                         <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">\</a></div>
+<div class="line"><a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">    Serial::Error::Error</a> className::streamHandle(<a class="code" href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a>&amp; stream)                                            \</div>
+<div class="line">    {                                                                                                                       <a class="code" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">\</a></div>
+<div class="line"><a class="code" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">         serialise_object</a>(stream, *<span class="keyword">this</span>);                                                                                   \</div>
+<div class="line">         return <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>;                                                                                     \</div>
+<div class="line">     }                                                                                                                      <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">\</a></div>
+<div class="line"><a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">     Serial::Error::Error</a> className::streamHandle(<a class="code" href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a>&amp; stream)                                            \</div>
+<div class="line">     {                                                                                                                      <a class="code" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">\</a></div>
+<div class="line"><a class="code" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">         serialise_object</a>(stream, *<span class="keyword">this</span>);                                                                                   \</div>
+<div class="line">         return <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>;                                                                                     \</div>
+<div class="line">     }</div>
+<div class="ttc" id="bitstream_8h_html_a7cbae8332dc05077e31afa9928f3ea26"><div class="ttname"><a href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">serialise_object</a></div><div class="ttdeci">#define serialise_object(stream, val)</div><div class="ttdef"><b>Definition:</b> bitstream.h:160</div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:26</div></div>
+<div class="ttc" id="class_serial_1_1_write_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:64</div></div>
+<div class="ttc" id="class_serial_1_1_read_bit_stream_html"><div class="ttname"><a href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:100</div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6f"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> bitstream.h:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>

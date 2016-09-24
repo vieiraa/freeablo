@@ -16,6 +16,7 @@ var searchData=
   ['sfilesetfilepointer',['SFILESETFILEPOINTER',['../_storm_lib_8h.html#a0774389ec43fbcc46f073d6ca838c2e6',1,'StormLib.h']]],
   ['sfilesetlocale',['SFILESETLOCALE',['../_storm_lib_8h.html#a8cda6bb51a41918f2c44e577eb84fb38',1,'StormLib.h']]],
   ['sizet',['SizeT',['../_types_8h.html#a4f8e2163e01de507a0ac376e8ec2b796',1,'Types.h']]],
+  ['socklen_5ft',['socklen_t',['../unix_8c.html#a6b82106923cc13b3a9734520ecc29514',1,'unix.c']]],
   ['sound',['Sound',['../namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0',1,'Audio']]],
   ['sprite',['Sprite',['../namespace_render.html#af50f804b65c964056de6aeffcf039f66',1,'Render']]],
   ['sres',['SRes',['../_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367',1,'Types.h']]],

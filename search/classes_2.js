@@ -1,8 +1,8 @@
 var searchData=
 [
   ['barenvironment',['BarEnvironment',['../class_bar_environment.html',1,'']]],
-  ['base',['Base',['../class_base.html',1,'']]],
   ['base',['Base',['../classtesting_1_1internal_1_1_base.html',1,'testing::internal']]],
+  ['base',['Base',['../class_base.html',1,'']]],
   ['baseitem',['BaseItem',['../class_diablo_exe_1_1_base_item.html',1,'DiabloExe']]],
   ['baseitemmanager',['BaseItemManager',['../class_level_1_1_base_item_manager.html',1,'Level']]],
   ['baseproperty',['BaseProperty',['../class_level_1_1_base_property.html',1,'Level']]],

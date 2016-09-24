@@ -35,6 +35,8 @@ var searchData=
   ['sdl2backend_2ecpp',['sdl2backend.cpp',['../input_2sdl2backend_8cpp.html',1,'']]],
   ['sdl2backend_2ecpp',['sdl2backend.cpp',['../render_2sdl2backend_8cpp.html',1,'']]],
   ['serial_2ecpp',['serial.cpp',['../serial_8cpp.html',1,'']]],
+  ['server_2ecpp',['server.cpp',['../server_8cpp.html',1,'']]],
+  ['server_2eh',['server.h',['../server_8h.html',1,'']]],
   ['settings_2ecpp',['settings.cpp',['../settings_8cpp.html',1,'']]],
   ['settings_2eh',['settings.h',['../settings_8h.html',1,'']]],
   ['sfileaddfile_2ecpp',['SFileAddFile.cpp',['../_s_file_add_file_8cpp.html',1,'']]],

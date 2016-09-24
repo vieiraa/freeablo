@@ -99,6 +99,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="bitstream_8inl.html">bitstream.inl</a>&quot;</code><br />
 </div>
 <p><a href="bitstream_8h_source.html">Go to the source code of this file.</a></p>
@@ -123,14 +125,30 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ade500a6db2e56719854e832f130cc37e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">serialise_int</a>(stream, min, max, val)&#160;&#160;&#160;stream.template handleInt&lt;min, max&gt;(val)</td></tr>
+<tr class="memitem:a49d347c1e943827a07fdb75e7d6e91be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(macro)</td></tr>
+<tr class="separator:a49d347c1e943827a07fdb75e7d6e91be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78eb3c5e025c3dc6f3af5cc09e85a6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ae78eb3c5e025c3dc6f3af5cc09e85a6f">_serialise_int</a>(stream, min, max, val)&#160;&#160;&#160;stream.template handleInt&lt;min, max&gt;(val)</td></tr>
+<tr class="separator:ae78eb3c5e025c3dc6f3af5cc09e85a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba1b03c6867b39e1676c93b2e04f699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a5ba1b03c6867b39e1676c93b2e04f699">_serialise_int32</a>(stream, val)&#160;&#160;&#160;stream.handleInt32(val)</td></tr>
+<tr class="separator:a5ba1b03c6867b39e1676c93b2e04f699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81720560e8c568d5be7ae35b0e490f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ae81720560e8c568d5be7ae35b0e490f6">_serialise_bool</a>(stream, val)&#160;&#160;&#160;stream.handleBool(val)</td></tr>
+<tr class="separator:ae81720560e8c568d5be7ae35b0e490f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0945cc8fd602c9eb3c5da3fbfe2482a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a0945cc8fd602c9eb3c5da3fbfe2482a8">_serialise_object</a>(stream, val)&#160;&#160;&#160;stream.template handleObject(val)</td></tr>
+<tr class="separator:a0945cc8fd602c9eb3c5da3fbfe2482a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade714556eaef5f95be13583e0bdde7cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ade714556eaef5f95be13583e0bdde7cf">_serialise_str</a>(stream, val, len)&#160;&#160;&#160;stream.handleString(val, len)</td></tr>
+<tr class="separator:ade714556eaef5f95be13583e0bdde7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade500a6db2e56719854e832f130cc37e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">serialise_int</a>(stream, min, max, val)&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ae78eb3c5e025c3dc6f3af5cc09e85a6f">_serialise_int</a>(stream, min, max, val))</td></tr>
 <tr class="separator:ade500a6db2e56719854e832f130cc37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f56b9fdcef29e41b055beb28897c28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a95f56b9fdcef29e41b055beb28897c28">serialise_int32</a>(stream, val)&#160;&#160;&#160;stream.template handleInt32(val)</td></tr>
+<tr class="memitem:a95f56b9fdcef29e41b055beb28897c28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a95f56b9fdcef29e41b055beb28897c28">serialise_int32</a>(stream, val)&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#a5ba1b03c6867b39e1676c93b2e04f699">_serialise_int32</a>(stream, val))</td></tr>
 <tr class="separator:a95f56b9fdcef29e41b055beb28897c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89285a037b7ef5df7595d1ddd5e301dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a89285a037b7ef5df7595d1ddd5e301dd">serialise_bool</a>(stream, val)&#160;&#160;&#160;stream.template handleBool(val)</td></tr>
+<tr class="memitem:a89285a037b7ef5df7595d1ddd5e301dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a89285a037b7ef5df7595d1ddd5e301dd">serialise_bool</a>(stream, val)&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ae81720560e8c568d5be7ae35b0e490f6">_serialise_bool</a>(stream, val))</td></tr>
 <tr class="separator:a89285a037b7ef5df7595d1ddd5e301dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cbae8332dc05077e31afa9928f3ea26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">serialise_object</a>(stream, val)&#160;&#160;&#160;stream.template handleObject(val)</td></tr>
+<tr class="memitem:a7cbae8332dc05077e31afa9928f3ea26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a7cbae8332dc05077e31afa9928f3ea26">serialise_object</a>(stream, val)&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#a0945cc8fd602c9eb3c5da3fbfe2482a8">_serialise_object</a>(stream, val))</td></tr>
 <tr class="separator:a7cbae8332dc05077e31afa9928f3ea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98463659d882d2b772b60c6a3dd020f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#ad98463659d882d2b772b60c6a3dd020f">serialise_str</a>(stream, val, len)&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ade714556eaef5f95be13583e0bdde7cf">_serialise_str</a>(stream, val, len))</td></tr>
+<tr class="separator:ad98463659d882d2b772b60c6a3dd020f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201c601d326893168e10baec0a520444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitstream_8h.html#a201c601d326893168e10baec0a520444">serialise_enum</a>(stream, type, val)</td></tr>
+<tr class="separator:a201c601d326893168e10baec0a520444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -152,6 +170,154 @@ Functions</h2></td></tr>
 <tr class="separator:afd128b2fa20f3d2d155eb1a1f42e7d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ae81720560e8c568d5be7ae35b0e490f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _serialise_bool</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;stream.handleBool(val)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae78eb3c5e025c3dc6f3af5cc09e85a6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _serialise_int</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;stream.template handleInt&lt;min, max&gt;(val)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ba1b03c6867b39e1676c93b2e04f699"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _serialise_int32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;stream.handleInt32(val)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0945cc8fd602c9eb3c5da3fbfe2482a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _serialise_object</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;stream.template handleObject(val)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade714556eaef5f95be13583e0bdde7cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _serialise_str</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;stream.handleString(val, len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a89285a037b7ef5df7595d1ddd5e301dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -171,11 +337,51 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;stream.template handleBool(val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ae81720560e8c568d5be7ae35b0e490f6">_serialise_bool</a>(stream, val))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a class="anchor" id="a201c601d326893168e10baec0a520444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define serialise_enum</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                \</div>
+<div class="line">{                                                           \</div>
+<div class="line">    int32_t enumValInt = val;                               <a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">\</a></div>
+<div class="line"><a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">    serialise_int</a>(stream, 0, <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00">type::ENUM_END</a>, enumValInt);   \</div>
+<div class="line">    val = (type)enumValInt;                                 \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="namespace_f_a_world_1_1_anim_state_html_a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00"><div class="ttname"><a href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00">FAWorld::AnimState::ENUM_END</a></div><div class="ttdef"><b>Definition:</b> actor.h:41</div></div>
+<div class="ttc" id="bitstream_8h_html_ade500a6db2e56719854e832f130cc37e"><div class="ttname"><a href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">serialise_int</a></div><div class="ttdeci">#define serialise_int(stream, min, max, val)</div><div class="ttdef"><b>Definition:</b> bitstream.h:157</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ade500a6db2e56719854e832f130cc37e"></a>
@@ -209,7 +415,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;stream.template handleInt&lt;min, max&gt;(val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ae78eb3c5e025c3dc6f3af5cc09e85a6f">_serialise_int</a>(stream, min, max, val))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -235,11 +441,34 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;stream.template handleInt32(val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#a5ba1b03c6867b39e1676c93b2e04f699">_serialise_int32</a>(stream, val))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a class="anchor" id="a49d347c1e943827a07fdb75e7d6e91be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERIALISE_MACRO_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">macro</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>  \</div>
+<div class="line">{                                       \</div>
+<div class="line">    auto ret = macro;                   \</div>
+<div class="line">    if (ret != <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>)  \</div>
+<div class="line">        return ret;                     \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:26</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7cbae8332dc05077e31afa9928f3ea26"></a>
@@ -261,7 +490,39 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;stream.template handleObject(val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#a0945cc8fd602c9eb3c5da3fbfe2482a8">_serialise_object</a>(stream, val))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad98463659d882d2b772b60c6a3dd020f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define serialise_str</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stream, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="bitstream_8h.html#a49d347c1e943827a07fdb75e7d6e91be">SERIALISE_MACRO_BASE</a>(<a class="el" href="bitstream_8h.html#ade714556eaef5f95be13583e0bdde7cf">_serialise_str</a>(stream, val, len))</td>
         </tr>
       </table>
 </div><div class="memdoc">

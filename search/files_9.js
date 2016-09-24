@@ -10,6 +10,7 @@ var searchData=
   ['inftrees_2eh',['inftrees.h',['../inftrees_8h.html',1,'']]],
   ['inputmanager_2eh',['inputmanager.h',['../inputmanager_8h.html',1,'']]],
   ['inputobserverinterface_2eh',['inputobserverinterface.h',['../inputobserverinterface_8h.html',1,'']]],
+  ['install_2edox',['install.dox',['../install_8dox.html',1,'']]],
   ['inventory_2ecpp',['inventory.cpp',['../inventory_8cpp.html',1,'']]],
   ['inventory_2eh',['inventory.h',['../inventory_8h.html',1,'']]],
   ['item_2ecpp',['item.cpp',['../item_8cpp.html',1,'']]],
