@@ -59,7 +59,7 @@ var searchData=
   ['minsize',['minSize',['../class_level_1_1_level.html#a9416355f1baf6467864aaf077d501ab3',1,'Level::Level']]],
   ['mixmatches2',['MixMatches2',['../_lz_find_mt_8c.html#a1435b4fc72b451f24c1aed20dbd64687',1,'LzFindMt.c']]],
   ['mixmatches3',['MixMatches3',['../_lz_find_mt_8c.html#a3a124100a1403a6cc611647368a0f1c7',1,'LzFindMt.c']]],
-  ['monster',['Monster',['../class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919',1,'FAWorld::Monster::Monster()'],['../class_f_a_world_1_1_monster.html#ae91522503d90e572897b3d3f36dcc21c',1,'FAWorld::Monster::Monster(const DiabloExe::Monster &amp;monster, Position pos, ActorStats *stats=nullptr)'],['../struct_diablo_exe_1_1_monster.html#a3f60d5d83501ceb9ff0fd1e30d2d19b0',1,'DiabloExe::Monster::Monster()']]],
+  ['monster',['Monster',['../class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919',1,'FAWorld::Monster::Monster()'],['../class_f_a_world_1_1_monster.html#a38b1a1ba5e5fb7bc1c96539abe1a7ac0',1,'FAWorld::Monster::Monster(const DiabloExe::Monster &amp;monster, Position pos)'],['../struct_diablo_exe_1_1_monster.html#a3f60d5d83501ceb9ff0fd1e30d2d19b0',1,'DiabloExe::Monster::Monster()']]],
   ['moveroom',['moveRoom',['../namespace_f_a_level_gen.html#aa60849f4dc00cc9f72be30242de1568d',1,'FALevelGen']]],
   ['mp_5f2expt',['mp_2expt',['../tommath_8h.html#a69d3ce673029f1a9f47df8e5422a9188',1,'tommath.h']]],
   ['mp_5fabs',['mp_abs',['../tommath_8h.html#a5ebaca45e5b7e58c2e40d4e6fa0c668d',1,'tommath.h']]],

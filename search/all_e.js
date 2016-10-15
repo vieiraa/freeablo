@@ -331,7 +331,7 @@ var searchData=
   ['modspelllevel',['ModSpellLevel',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaabfb9f61136e463645d5993e2f686fac1',1,'FAWorld::Item']]],
   ['monster',['Monster',['../struct_diablo_exe_1_1_monster.html',1,'DiabloExe']]],
   ['monster',['Monster',['../class_f_a_world_1_1_monster.html',1,'FAWorld']]],
-  ['monster',['Monster',['../class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919',1,'FAWorld::Monster::Monster()'],['../class_f_a_world_1_1_monster.html#ae91522503d90e572897b3d3f36dcc21c',1,'FAWorld::Monster::Monster(const DiabloExe::Monster &amp;monster, Position pos, ActorStats *stats=nullptr)'],['../struct_diablo_exe_1_1_monster.html#a3f60d5d83501ceb9ff0fd1e30d2d19b0',1,'DiabloExe::Monster::Monster()']]],
+  ['monster',['Monster',['../class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919',1,'FAWorld::Monster::Monster()'],['../class_f_a_world_1_1_monster.html#a38b1a1ba5e5fb7bc1c96539abe1a7ac0',1,'FAWorld::Monster::Monster(const DiabloExe::Monster &amp;monster, Position pos)'],['../struct_diablo_exe_1_1_monster.html#a3f60d5d83501ceb9ff0fd1e30d2d19b0',1,'DiabloExe::Monster::Monster()']]],
   ['monster_2ecpp',['monster.cpp',['../apps_2freeablo_2faworld_2monster_8cpp.html',1,'']]],
   ['monster_2ecpp',['monster.cpp',['../components_2diabloexe_2monster_8cpp.html',1,'']]],
   ['monster_2eh',['monster.h',['../apps_2freeablo_2faworld_2monster_8h.html',1,'']]],

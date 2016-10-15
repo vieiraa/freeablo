@@ -92,7 +92,7 @@ var searchData=
   ['removedirectoryname',['RemoveDirectoryName',['../classtesting_1_1internal_1_1_file_path.html#a2852e5a759ff2e2620c7317b8121d757',1,'testing::internal::FilePath']]],
   ['removeextension',['RemoveExtension',['../classtesting_1_1internal_1_1_file_path.html#ab2a25cc916c111597b94d006aa973c3d',1,'testing::internal::FilePath']]],
   ['removefilename',['RemoveFileName',['../classtesting_1_1internal_1_1_file_path.html#aed3abcd0b8a7f6ed1ff0e7743ef8bf1e',1,'testing::internal::FilePath']]],
-  ['removeitem',['RemoveItem',['../struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d',1,'THTreeItem::RemoveItem()'],['../struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d',1,'THTreeItem::RemoveItem()'],['../class_f_a_world_1_1_item_manager.html#abd05505713ba17a29ff9ba608dd4c94b',1,'FAWorld::ItemManager::removeItem()']]],
+  ['removeitem',['removeItem',['../class_f_a_world_1_1_item_manager.html#abd05505713ba17a29ff9ba608dd4c94b',1,'FAWorld::ItemManager::removeItem()'],['../struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d',1,'THTreeItem::RemoveItem()'],['../struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d',1,'THTreeItem::RemoveItem()']]],
   ['removelocations',['RemoveLocations',['../namespacegtest__output__test.html#a121831a3be4499f43226a849460076eb',1,'gtest_output_test']]],
   ['removematchingtests',['RemoveMatchingTests',['../namespacegtest__output__test.html#a49e9b498f20bb00261d74e752c1e231d',1,'gtest_output_test']]],
   ['removeoverlaps',['removeOverlaps',['../namespace_f_a_level_gen.html#a1b5d795d5d4a8a5226bcb4facf3227ac',1,'FALevelGen']]],
