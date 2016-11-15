@@ -1,6 +1,7 @@
 var searchData=
 [
   ['fafile',['FAFile',['../struct_f_a_i_o_1_1_f_a_file.html',1,'FAIO']]],
+  ['fafileobject',['FAFileObject',['../class_f_a_i_o_1_1_f_a_file_object.html',1,'FAIO']]],
   ['failedtest',['FailedTest',['../class_failed_test.html',1,'']]],
   ['failingparamtest',['FailingParamTest',['../class_failing_param_test.html',1,'']]],
   ['faiofileinterface',['FAIOFileInterface',['../class_f_a_i_o_file_interface.html',1,'']]],

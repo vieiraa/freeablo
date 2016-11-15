@@ -8,6 +8,7 @@ var searchData=
   ['_7eclient',['~Client',['../class_engine_1_1_client.html#a82cacf91b42a92ab17f8b7d3b3596cf4',1,'Engine::Client']]],
   ['_7ecommontest',['~CommonTest',['../class_common_test.html#a675a632fcf7b1fd961fefc619d6a458d',1,'CommonTest']]],
   ['_7eenvironment',['~Environment',['../classtesting_1_1_environment.html#a0e41c320362576d752cd1f44cabd57d4',1,'testing::Environment']]],
+  ['_7efafileobject',['~FAFileObject',['../class_f_a_i_o_1_1_f_a_file_object.html#ae76ecff803145afbfce274309c0758a1',1,'FAIO::FAFileObject']]],
   ['_7efaiofileinterface',['~FAIOFileInterface',['../class_f_a_i_o_file_interface.html#ae5903d471d01350a2e579f95a0d647ff',1,'FAIOFileInterface']]],
   ['_7efatalfailureinfixtureconstructortest',['~FatalFailureInFixtureConstructorTest',['../class_fatal_failure_in_fixture_constructor_test.html#a514709af7159172a12193a7508683c46',1,'FatalFailureInFixtureConstructorTest']]],
   ['_7efatalfailureinsetuptest',['~FatalFailureInSetUpTest',['../class_fatal_failure_in_set_up_test.html#a915ca362b046259c3586c1ab72bb0a93',1,'FatalFailureInSetUpTest']]],

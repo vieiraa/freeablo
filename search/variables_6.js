@@ -21,6 +21,7 @@ var searchData=
   ['f9_5f',['f9_',['../singletonstd_1_1tr1_1_1tuple.html#a336d5e582fd34e45ec88c78d473671dd',1,'std::tr1::tuple']]],
   ['f9_5fmemory',['f9_memory',['../structltc__cipher__descriptor.html#acea716974a781ad18dcca080539a7542',1,'ltc_cipher_descriptor']]],
   ['factoryfunctable',['factoryFuncTable',['../namespace_f_a_world.html#a4d92b400400830ea7cfeee6e7ee9bf35',1,'FAWorld']]],
+  ['fafile',['faFile',['../class_f_a_i_o_1_1_f_a_file_object.html#a656deb9798458b5f9fe7cb2bd9459721',1,'FAIO::FAFileObject']]],
   ['fastmode',['fastMode',['../struct_c_lzma_enc.html#a8ab4db6a4b34306b2400f40abfa6eda3',1,'CLzmaEnc']]],
   ['fb',['fb',['../struct___c_lzma_enc_props.html#abc44b9026c4edba45c8aef3f4131407d',1,'_CLzmaEncProps']]],
   ['fc',['fc',['../structct__data__s.html#aeeaeef08e37e0d3ea385198b1a297565',1,'ct_data_s']]],

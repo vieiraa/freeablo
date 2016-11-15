@@ -161,7 +161,7 @@ var searchData=
   ['play_5fsound',['PLAY_SOUND',['../namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920aa57fe4cebf4c79aaaf07d3120bbbf6ae',1,'Engine']]],
   ['playbutton',['playButton',['../class_ui___main_window.html#a1a28d28cf3e27503fec703150a8cec5d',1,'Ui_MainWindow']]],
   ['playclickbuttonsound',['playClickButtonSound',['../class_f_a_gui_1_1_f_a_python_funcs.html#af3db3e9cf3035c09423bebacde5366de',1,'FAGui::FAPythonFuncs']]],
-  ['player',['Player',['../class_f_a_world_1_1_inventory.html#a7f4241aa9ecc051c75f779af132a52ed',1,'FAWorld::Inventory::Player()'],['../class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797',1,'FAWorld::Player::Player()'],['../class_f_a_world_1_1_player.html#a5b1eda0f3b9509f1df14b82f403401dd',1,'FAWorld::Player::Player(const std::string &amp;className, const DiabloExe::CharacterStats &amp;charStats)'],['../struct_engine_1_1_client_data.html#a2f86cdb562c00883bbdc48a6657e9938',1,'Engine::ClientData::player()']]],
+  ['player',['player',['../struct_engine_1_1_client_data.html#a2f86cdb562c00883bbdc48a6657e9938',1,'Engine::ClientData::player()'],['../class_f_a_world_1_1_inventory.html#a7f4241aa9ecc051c75f779af132a52ed',1,'FAWorld::Inventory::Player()'],['../class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797',1,'FAWorld::Player::Player()'],['../class_f_a_world_1_1_player.html#a5b1eda0f3b9509f1df14b82f403401dd',1,'FAWorld::Player::Player(const std::string &amp;className, const DiabloExe::CharacterStats &amp;charStats)']]],
   ['player',['Player',['../class_f_a_world_1_1_player.html',1,'FAWorld']]],
   ['player_2ecpp',['player.cpp',['../player_8cpp.html',1,'']]],
   ['player_2eh',['player.h',['../player_8h.html',1,'']]],

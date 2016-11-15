@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="settings_8h.html">settings/settings.h</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="faio_8h.html">faio/faio.h</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fafileobject_8h.html">faio/fafileobject.h</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="components_2diabloexe_2monster_8h.html">monster.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="npc_8h.html">npc.h</a>&quot;</span></div>
@@ -137,12 +137,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> getVersion(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pathEXE);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> loadMonsters(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">void</span> loadNpcs(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> loadBaseItems(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> loadUniqueItems(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">void</span> loadAffixes(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a>* exe);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> loadCharacterStats(<a class="code" href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a> * exe);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> loadMonsters(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">void</span> loadNpcs(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">void</span> loadBaseItems(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> loadUniqueItems(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">void</span> loadAffixes(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> loadCharacterStats(<a class="code" href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a>&amp; exe);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -159,20 +159,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="struct_diablo_exe_1_1_monster_html"><div class="ttname"><a href="struct_diablo_exe_1_1_monster.html">DiabloExe::Monster</a></div><div class="ttdef"><b>Definition:</b> monster.h:16</div></div>
+<div class="ttc" id="struct_diablo_exe_1_1_monster_html"><div class="ttname"><a href="struct_diablo_exe_1_1_monster.html">DiabloExe::Monster</a></div><div class="ttdef"><b>Definition:</b> monster.h:17</div></div>
 <div class="ttc" id="class_diablo_exe_1_1_npc_html"><div class="ttname"><a href="class_diablo_exe_1_1_npc.html">DiabloExe::Npc</a></div><div class="ttdef"><b>Definition:</b> npc.h:8</div></div>
 <div class="ttc" id="npc_8h_html"><div class="ttname"><a href="npc_8h.html">npc.h</a></div></div>
+<div class="ttc" id="class_f_a_i_o_1_1_f_a_file_object_html"><div class="ttname"><a href="class_f_a_i_o_1_1_f_a_file_object.html">FAIO::FAFileObject</a></div><div class="ttdef"><b>Definition:</b> fafileobject.h:12</div></div>
+<div class="ttc" id="fafileobject_8h_html"><div class="ttname"><a href="fafileobject_8h.html">fafileobject.h</a></div></div>
 <div class="ttc" id="affix_8h_html"><div class="ttname"><a href="affix_8h.html">affix.h</a></div></div>
 <div class="ttc" id="namespacetesting_1_1internal_html_a8e8ff5b11e64078831112677156cb111"><div class="ttname"><a href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">testing::internal::string</a></div><div class="ttdeci">::std::string string</div><div class="ttdef"><b>Definition:</b> gtest-port.h:872</div></div>
 <div class="ttc" id="components_2diabloexe_2characterstats_8h_html"><div class="ttname"><a href="components_2diabloexe_2characterstats_8h.html">characterstats.h</a></div></div>
 <div class="ttc" id="class_diablo_exe_1_1_base_item_html"><div class="ttname"><a href="class_diablo_exe_1_1_base_item.html">DiabloExe::BaseItem</a></div><div class="ttdef"><b>Definition:</b> baseitem.h:13</div></div>
 <div class="ttc" id="components_2diabloexe_2monster_8h_html"><div class="ttname"><a href="components_2diabloexe_2monster_8h.html">monster.h</a></div></div>
 <div class="ttc" id="baseitem_8h_html"><div class="ttname"><a href="baseitem_8h.html">baseitem.h</a></div></div>
-<div class="ttc" id="faio_8h_html"><div class="ttname"><a href="faio_8h.html">faio.h</a></div></div>
 <div class="ttc" id="namespace_diablo_exe_html"><div class="ttname"><a href="namespace_diablo_exe.html">DiabloExe</a></div><div class="ttdoc">loads various bts of necessary information that was hardcoded into the original exe file ...</div><div class="ttdef"><b>Definition:</b> enginemain.h:17</div></div>
 <div class="ttc" id="settings_8h_html"><div class="ttname"><a href="settings_8h.html">settings.h</a></div></div>
 <div class="ttc" id="class_diablo_exe_1_1_character_stats_html"><div class="ttname"><a href="class_diablo_exe_1_1_character_stats.html">DiabloExe::CharacterStats</a></div><div class="ttdef"><b>Definition:</b> characterstats.h:8</div></div>
-<div class="ttc" id="struct_f_a_i_o_1_1_f_a_file_html"><div class="ttname"><a href="struct_f_a_i_o_1_1_f_a_file.html">FAIO::FAFile</a></div><div class="ttdef"><b>Definition:</b> faio.h:16</div></div>
 <div class="ttc" id="class_settings_1_1_settings_html"><div class="ttname"><a href="class_settings_1_1_settings.html">Settings::Settings</a></div><div class="ttdef"><b>Definition:</b> settings.h:14</div></div>
 <div class="ttc" id="uniqueitem_8h_html"><div class="ttname"><a href="uniqueitem_8h.html">uniqueitem.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
