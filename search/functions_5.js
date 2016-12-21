@@ -2,6 +2,7 @@ var searchData=
 [
   ['elapsed_5ftime',['elapsed_time',['../classtesting_1_1_test_result.html#a582f6383265d0619df812b75499d0616',1,'testing::TestResult::elapsed_time()'],['../classtesting_1_1_test_case.html#a80f163d2826ba8586fffb41e8d686727',1,'testing::TestCase::elapsed_time()'],['../classtesting_1_1_unit_test.html#aeff5643edc3624e49085e2850512a7de',1,'testing::UnitTest::elapsed_time()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#a0ae726d47c69dd85b4f7858e78368bcb',1,'testing::internal::UnitTestImpl::elapsed_time()']]],
   ['element',['element',['../class_queue_node.html#a0a51093418d7aefcfc2876bfe217b0fc',1,'QueueNode']]],
+  ['empty',['empty',['../struct_priority_queue.html#a422e38d0c3b8398dc6e4867bb4ceec41',1,'PriorityQueue']]],
   ['enablescissorregion',['EnableScissorRegion',['../class_rocket_s_d_l2_renderer.html#a7ad7c990b8da972855f79def5b22a595',1,'RocketSDL2Renderer']]],
   ['encodemultipartformdata',['EncodeMultipartFormData',['../namespaceupload.html#a8508b71e682255af76e4c9d1dcfc59b5',1,'upload']]],
   ['encodeonebyte',['EncodeOneByte',['../class_t_huffmann_tree.html#aa91f1cbb00d0c39fede7accf46d5f295',1,'THuffmannTree']]],

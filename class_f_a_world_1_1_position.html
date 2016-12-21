@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af614f26024526e45894ebde109e84fee"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee">next</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="memdesc:af614f26024526e45894ebde109e84fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">where we are going to  <a href="#af614f26024526e45894ebde109e84fee">More...</a><br /></td></tr>
 <tr class="separator:af614f26024526e45894ebde109e84fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd625d3e4552ed267de09afbe78b395c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#afd625d3e4552ed267de09afbe78b395c">pathNext</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> bIncrease)</td></tr>
+<tr class="memdesc:afd625d3e4552ed267de09afbe78b395c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next find path way node.  <a href="#afd625d3e4552ed267de09afbe78b395c">More...</a><br /></td></tr>
+<tr class="separator:afd625d3e4552ed267de09afbe78b395c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5087eb57c5012a8d5cf85feab4b2a26"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26">distanceFrom</a> (<a class="el" href="class_f_a_world_1_1_position.html">Position</a> B)</td></tr>
 <tr class="separator:ac5087eb57c5012a8d5cf85feab4b2a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -127,6 +130,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9cc36c142caa07ed3d176ae24d709e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aea8d65d506590cdeaa46bf51ceabd3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a9aea8d65d506590cdeaa46bf51ceabd3">mDirection</a></td></tr>
 <tr class="separator:a9aea8d65d506590cdeaa46bf51ceabd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6302d20213ce385c7f9919f068c7a749"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak" />
+&lt; int32_t, int32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a6302d20213ce385c7f9919f068c7a749">mPath</a></td></tr>
+<tr class="memdesc:a6302d20213ce385c7f9919f068c7a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">find path result  <a href="#a6302d20213ce385c7f9919f068c7a749">More...</a><br /></td></tr>
+<tr class="separator:a6302d20213ce385c7f9919f068c7a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda372c27e49020bbfeaadb2b7f64ceb"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#acda372c27e49020bbfeaadb2b7f64ceb">mGoal</a></td></tr>
+<tr class="memdesc:acda372c27e49020bbfeaadb2b7f64ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">the movement goal point. it maybe changed by findPath,otherwise it maybe 0 if findpath failed. It's necessary and different from World::mDestination.  <a href="#acda372c27e49020bbfeaadb2b7f64ceb">More...</a><br /></td></tr>
+<tr class="separator:acda372c27e49020bbfeaadb2b7f64ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890ed29e6fdd2b7dd0864057e8f60a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a890ed29e6fdd2b7dd0864057e8f60a78">mIndex</a></td></tr>
+<tr class="memdesc:a890ed29e6fdd2b7dd0864057e8f60a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">index  <a href="#a890ed29e6fdd2b7dd0864057e8f60a78">More...</a><br /></td></tr>
+<tr class="separator:a890ed29e6fdd2b7dd0864057e8f60a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f20ef7c5fc37dc752e32f75ecc21c5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a4f20ef7c5fc37dc752e32f75ecc21c5a">mMoving</a></td></tr>
 <tr class="separator:a4f20ef7c5fc37dc752e32f75ecc21c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -264,6 +277,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afd625d3e4552ed267de09afbe78b395c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; int32_t, int32_t &gt; FAWorld::Position::pathNext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>bIncrease</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the next find path way node. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad34a10975af08be2beb527fc2d10d101"></a>
 <div class="memitem">
 <div class="memproto">
@@ -369,6 +400,34 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acda372c27e49020bbfeaadb2b7f64ceb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int32_t, int32_t&gt; FAWorld::Position::mGoal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the movement goal point. it maybe changed by findPath,otherwise it maybe 0 if findpath failed. It's necessary and different from World::mDestination. </p>
+
+</div>
+</div>
+<a class="anchor" id="a890ed29e6fdd2b7dd0864057e8f60a78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> FAWorld::Position::mIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>index </p>
+
+</div>
+</div>
 <a class="anchor" id="a4f20ef7c5fc37dc752e32f75ecc21c5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -378,6 +437,20 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6302d20213ce385c7f9919f068c7a749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int32_t, int32_t&gt; &gt; FAWorld::Position::mPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find path result </p>
 
 </div>
 </div>

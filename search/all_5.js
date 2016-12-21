@@ -287,6 +287,7 @@ var searchData=
   ['drawminpillarbase',['drawMinPillarBase',['../namespace_render.html#a17a1ce99e9825ff602e9834cb8a7a409',1,'Render']]],
   ['drawminpillartop',['drawMinPillarTop',['../namespace_render.html#ab52f404c5feb88408defadb935b310e5',1,'Render']]],
   ['drawmintile',['drawMinTile',['../namespace_render.html#a3bbdc70f166ed8419fcfa4d292258b6a',1,'Render']]],
+  ['drawpath',['drawPath',['../findpath_2main_8cpp.html#a7c4630e89d6cfec9b0f7a9a426f50cba',1,'main.cpp']]],
   ['drawroom',['drawRoom',['../namespace_f_a_level_gen.html#a60b3d16c7a0db3ab5895ed0679dc388d',1,'FALevelGen']]],
   ['dropbits',['DROPBITS',['../inflate_8c.html#a65312e68bdf918e606b0deaf69793523',1,'inflate.c']]],
   ['drops',['drops',['../struct_diablo_exe_1_1_monster.html#a002ea5b141f5abd908430e312010cbbf',1,'DiabloExe::Monster']]],

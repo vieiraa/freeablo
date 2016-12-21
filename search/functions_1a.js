@@ -14,6 +14,7 @@ var searchData=
   ['_7efatalfailureinsetuptest',['~FatalFailureInSetUpTest',['../class_fatal_failure_in_set_up_test.html#a915ca362b046259c3586c1ab72bb0a93',1,'FatalFailureInSetUpTest']]],
   ['_7efoo',['~Foo',['../structtesting_1_1gtest__printers__test_1_1_foo.html#a3797cc88591e06b40208ea7535cf33f6',1,'testing::gtest_printers_test::Foo']]],
   ['_7egamelevel',['~GameLevel',['../class_f_a_world_1_1_game_level.html#a5b9994cc2f77761027e6033589dba834',1,'FAWorld::GameLevel']]],
+  ['_7egamelevelimpl',['~GameLevelImpl',['../class_f_a_world_1_1_game_level_impl.html#a1298377390fc0cbd0f08e526401b00e8',1,'FAWorld::GameLevelImpl']]],
   ['_7egtestflagsaver',['~GTestFlagSaver',['../classtesting_1_1internal_1_1_g_test_flag_saver.html#a5f00786b5c9045fd5dd7c42fd7dd1476',1,'testing::internal::GTestFlagSaver']]],
   ['_7egtestlog',['~GTestLog',['../classtesting_1_1internal_1_1_g_test_log.html#a978a099703bbaa0f380216e8d7ee03d3',1,'testing::internal::GTestLog']]],
   ['_7ehasnewfatalfailurehelper',['~HasNewFatalFailureHelper',['../classtesting_1_1internal_1_1_has_new_fatal_failure_helper.html#a913b1bc7c372868c9b2dbb009044ee97',1,'testing::internal::HasNewFatalFailureHelper']]],

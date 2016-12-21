@@ -8,7 +8,7 @@ var searchData=
   ['ecc_5fptadd',['ecc_ptadd',['../structltc__math__descriptor.html#a0fc07f4a6e94cae3c941583f0b0c08e3',1,'ltc_math_descriptor']]],
   ['ecc_5fptdbl',['ecc_ptdbl',['../structltc__math__descriptor.html#adb1b5605e888f110ce858015c7ebcf43',1,'ltc_math_descriptor']]],
   ['ecc_5fptmul',['ecc_ptmul',['../structltc__math__descriptor.html#a91537b4c6315353bf820cfb740996168',1,'ltc_math_descriptor']]],
-  ['elements',['Elements',['../struct___t_bit_array.html#af7e1d973aa16a0e22819e27b997032f0',1,'_TBitArray']]],
+  ['elements',['elements',['../struct_priority_queue.html#a45db352f3b5a2b85e59c3df8762e0236',1,'PriorityQueue::elements()'],['../struct___t_bit_array.html#af7e1d973aa16a0e22819e27b997032f0',1,'_TBitArray::Elements()']]],
   ['elems',['elems',['../structstatic__tree__desc__s.html#ab4bad1c091188c43413a09f626a5787f',1,'static_tree_desc_s']]],
   ['else_5fbranch',['else_branch',['../classpump_1_1_else_node.html#ac838a0fe9f5d713c7f56939eed5e128d',1,'pump.ElseNode.else_branch()'],['../classpump_1_1_if_node.html#a12e422b16ed4291f15cd95cd6e7f81eb',1,'pump.IfNode.else_branch()']]],
   ['empty',['empty',['../class_f_a_world_1_1_item.html#ae153cfeb18009ca67d76006522a84132',1,'FAWorld::Item']]],

@@ -30,6 +30,7 @@ var searchData=
   ['primetabletest',['PrimeTableTest',['../class_prime_table_test.html',1,'']]],
   ['printableviaprintto',['PrintableViaPrintTo',['../structfoo_1_1_printable_via_print_to.html',1,'foo']]],
   ['printableviaprinttotemplate',['PrintableViaPrintToTemplate',['../classfoo_1_1_printable_via_print_to_template.html',1,'foo']]],
+  ['priorityqueue',['PriorityQueue',['../struct_priority_queue.html',1,'']]],
   ['privatecode',['PrivateCode',['../class_private_code.html',1,'']]],
   ['prng_5fstate',['Prng_state',['../union_prng__state.html',1,'']]],
   ['processinvoker',['ProcessInvoker',['../class_launcher_1_1_process_invoker.html',1,'Launcher']]],

@@ -4,6 +4,7 @@ var searchData=
   ['length',['Length',['../class_my_string.html#a878f7e0a327814729a04a412d7b95801',1,'MyString']]],
   ['lengthprocessed',['LengthProcessed',['../class_t_a_d_p_c_m_stream.html#a78f5f80d8374bb47353ea678596501b1',1,'TADPCMStream']]],
   ['level',['Level',['../class_level_1_1_level.html#ade4d4b0c78e61f91234f0ba66f92ddce',1,'Level::Level::Level(const Dun &amp;dun, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs, std::map&lt; size_t, size_t &gt; doorMap, size_t previous, size_t next)'],['../class_level_1_1_level.html#a83d64f99ef71133190702dd4a953eac5',1,'Level::Level::Level()']]],
+  ['levelimpl',['LevelImpl',['../class_f_a_world_1_1_level_impl.html#af362fd6c7dca27ab524768c48fd83072',1,'FAWorld::LevelImpl']]],
   ['levelup',['levelUp',['../class_f_a_world_1_1_actor_stats.html#a9437600fb7e625274e5f47c8755b1456',1,'FAWorld::ActorStats']]],
   ['libtomcalloc',['LibTomCalloc',['../crypt__libc_8c.html#ab306c8541dc18e414954d2c4769d6115',1,'crypt_libc.c']]],
   ['libtomclock',['LibTomClock',['../crypt__libc_8c.html#a0a5558660ecc67b9b6f4261293da3734',1,'crypt_libc.c']]],

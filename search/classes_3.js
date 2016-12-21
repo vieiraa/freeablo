@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['cacheentry',['CacheEntry',['../struct_f_a_audio_1_1_cache_entry.html',1,'FAAudio']]],
   ['cacheentry',['CacheEntry',['../struct_f_a_render_1_1_cache_entry.html',1,'FARender']]],
+  ['cacheentry',['CacheEntry',['../struct_f_a_audio_1_1_cache_entry.html',1,'FAAudio']]],
   ['castable',['Castable',['../classtesting_1_1internal_1_1_castable.html',1,'testing::internal']]],
   ['catchcxxexceptionstest',['CatchCxxExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_cxx_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
   ['catchsehexceptionstest',['CatchSehExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_seh_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
