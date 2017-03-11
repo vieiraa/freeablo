@@ -243,6 +243,7 @@ var searchData=
   ['boost_5fpython_5fmodule',['BOOST_PYTHON_MODULE',['../namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4',1,'FAGui::BOOST_PYTHON_MODULE()'],['../namespace_input.html#a0d6c10e33b8662601f928c163b4c9aab',1,'Input::BOOST_PYTHON_MODULE(hotkey)'],['../namespace_input.html#ad9e351daa36dc2f69bdc74e71d7cbe44',1,'Input::BOOST_PYTHON_MODULE(freeablo_input)']]],
   ['borders',['borders',['../namespace_f_a_level_gen.html#abd97c680f0e14d01f8ce16c23ec91ca9',1,'FALevelGen']]],
   ['bottomcorner',['bottomCorner',['../class_f_a_level_gen_1_1_tile_set.html#aead5306a0ecb12b21ffad203c2e6554a',1,'FALevelGen::TileSet::bottomCorner()'],['../namespace_f_a_level_gen_1_1_tile_set_enum.html#aa0152bc98463c81e72ea1f81571cf4dcaee026f4fd03b1ee73109396af55e65f7',1,'FALevelGen::TileSetEnum::bottomCorner()']]],
+  ['bottommenusize',['bottomMenuSize',['../namespace_render.html#a036ffa2bfdc5f5701ebf29a12f84875a',1,'Render']]],
   ['bpp',['BPP',['../render_2sdl2backend_8cpp.html#a8f40226da14df1fe52cd78fcda4ec5cb',1,'sdl2backend.cpp']]],
   ['break_5fon_5ffailure',['break_on_failure',['../structtesting_1_1_flags.html#acccce2a9673bb61751269d2ef9c21c89',1,'testing::Flags']]],
   ['break_5fon_5ffailure_5fenv_5fvar',['BREAK_ON_FAILURE_ENV_VAR',['../namespacegtest__break__on__failure__unittest.html#a95b56c611c5844be4247700787a175a1',1,'gtest_break_on_failure_unittest']]],

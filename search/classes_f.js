@@ -6,6 +6,7 @@ var searchData=
   ['playerfactory',['PlayerFactory',['../class_f_a_world_1_1_player_factory.html',1,'FAWorld']]],
   ['playpage',['PlayPage',['../class_launcher_1_1_play_page.html',1,'Launcher']]],
   ['point',['Point',['../struct_engine_1_1_point.html',1,'Engine']]],
+  ['point',['Point',['../struct_misc_1_1_point.html',1,'Misc']]],
   ['pointerprintable',['PointerPrintable',['../structfoo_1_1_pointer_printable.html',1,'foo']]],
   ['popcount',['PopCount',['../struct_pop_count.html',1,'']]],
   ['position',['Position',['../class_f_a_world_1_1_position.html',1,'FAWorld']]],

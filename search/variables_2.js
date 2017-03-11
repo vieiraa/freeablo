@@ -61,6 +61,7 @@ var searchData=
   ['blocktablesize64',['BlockTableSize64',['../struct___t_m_p_q_header.html#a49a8c685ecb568b7cc34a7d869d9eb36',1,'_TMPQHeader']]],
   ['bmessageprinted',['bMessagePrinted',['../class_t_log_helper.html#acb7fb00e186ee2ac1c32ed682e255824',1,'TLogHelper']]],
   ['bottomcorner',['bottomCorner',['../class_f_a_level_gen_1_1_tile_set.html#aead5306a0ecb12b21ffad203c2e6554a',1,'FALevelGen::TileSet']]],
+  ['bottommenusize',['bottomMenuSize',['../namespace_render.html#a036ffa2bfdc5f5701ebf29a12f84875a',1,'Render']]],
   ['break_5fon_5ffailure',['break_on_failure',['../structtesting_1_1_flags.html#acccce2a9673bb61751269d2ef9c21c89',1,'testing::Flags']]],
   ['break_5fon_5ffailure_5fenv_5fvar',['BREAK_ON_FAILURE_ENV_VAR',['../namespacegtest__break__on__failure__unittest.html#a95b56c611c5844be4247700787a175a1',1,'gtest_break_on_failure_unittest']]],
   ['break_5fon_5ffailure_5fflag',['BREAK_ON_FAILURE_FLAG',['../namespacegtest__break__on__failure__unittest.html#a04adcb60898d929007033e178c772e88',1,'gtest_break_on_failure_unittest']]],
