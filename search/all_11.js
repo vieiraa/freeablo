@@ -173,7 +173,7 @@ var searchData=
   ['playernoheal',['PlayerNoHeal',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa497414dddf12693a2b95626feec78377',1,'FAWorld::Item']]],
   ['playmusic',['playMusic',['../class_engine_1_1_thread_manager.html#aaa7f2f075f9237f1d684833b31c69556',1,'Engine::ThreadManager::playMusic()'],['../class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b',1,'FAAudio::AudioManager::playMusic()'],['../namespace_audio.html#a1f8ec35cd176d20ab229db0215ebf4b9',1,'Audio::playMusic()']]],
   ['playpage',['PlayPage',['../class_launcher_1_1_play_page.html',1,'Launcher']]],
-  ['playpage',['PlayPage',['../class_launcher_1_1_play_page.html#a5174a87f7581c7501a465115f797b091',1,'Launcher::PlayPage::PlayPage()'],['../class_ui___main_window.html#a1264d728fd74e3f9b65766d821a3ed77',1,'Ui_MainWindow::playPage()']]],
+  ['playpage',['playPage',['../class_ui___main_window.html#a1264d728fd74e3f9b65766d821a3ed77',1,'Ui_MainWindow::playPage()'],['../class_launcher_1_1_play_page.html#a5174a87f7581c7501a465115f797b091',1,'Launcher::PlayPage::PlayPage()']]],
   ['playpage_2ecpp',['playpage.cpp',['../playpage_8cpp.html',1,'']]],
   ['playpage_2eh',['playpage.h',['../playpage_8h.html',1,'']]],
   ['playsound',['playSound',['../class_engine_1_1_thread_manager.html#a9742aabffe9cf6ce0538b8c35f8aabe0',1,'Engine::ThreadManager::playSound()'],['../class_f_a_audio_1_1_audio_manager.html#a1e89093954a2d2d2eefcb60d29101c61',1,'FAAudio::AudioManager::playSound()'],['../class_f_a_gui_1_1_f_a_python_funcs.html#a87545334fff51721b7d9d8dc16721b68',1,'FAGui::FAPythonFuncs::playSound()'],['../namespace_audio.html#a35fd2f02e417b4b357899722a1a7b693',1,'Audio::playSound()']]],

@@ -88,7 +88,6 @@ var searchData=
   ['mdestination',['mDestination',['../class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff',1,'FAWorld::Actor']]],
   ['mdexterity',['mDexterity',['../class_f_a_world_1_1_actor_stats.html#a5cde2cccc0237ae105655b6d84e89465',1,'FAWorld::ActorStats::mDexterity()'],['../class_diablo_exe_1_1_character_stats.html#ab5253ccd47c866dc2b35cdd744e1f727',1,'DiabloExe::CharacterStats::mDexterity()']]],
   ['mdieanim',['mDieAnim',['../class_f_a_world_1_1_actor.html#ad6c8e2bce4b2a085562553608744e83c',1,'FAWorld::Actor']]],
-  ['mdirection',['mDirection',['../class_f_a_world_1_1_position.html#a9aea8d65d506590cdeaa46bf51ceabd3',1,'FAWorld::Position']]],
   ['mdist',['mDist',['../class_f_a_world_1_1_position.html#a9cc36c142caa07ed3d176ae24d709e9c',1,'FAWorld::Position']]],
   ['mdrawbuffer',['mDrawBuffer',['../class_rocket_s_d_l2_renderer.html#a2a37533120bc9166fcba3713bbf33291',1,'RocketSDL2Renderer']]],
   ['meffect',['mEffect',['../struct_diablo_exe_1_1_affix.html#a8dc83c53addd4ca3c03e2f2db20ce3ea',1,'DiabloExe::Affix']]],

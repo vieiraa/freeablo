@@ -75,6 +75,7 @@ var searchData=
   ['getdefaultsprite',['getDefaultSprite',['../namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17',1,'FARender']]],
   ['getdexterity',['getDexterity',['../class_f_a_world_1_1_actor_stats.html#a0bad9f98827f1270f90b6c415a1ebe46',1,'FAWorld::ActorStats']]],
   ['getdiewav',['getDieWav',['../class_f_a_world_1_1_actor.html#aa6234a4667ea2574d192619e786812e4',1,'FAWorld::Actor::getDieWav()'],['../class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48',1,'FAWorld::Monster::getDieWav()']]],
+  ['getdirection',['getDirection',['../class_f_a_world_1_1_position.html#ae228a92b8397df1f2cae4b0452c71e9d',1,'FAWorld::Position']]],
   ['getdoc',['getDoc',['../classpython_1_1docmanage_1_1_doc_manager.html#a9ac6aa34e179695ca54857794c6246a4',1,'python::docmanage::DocManager']]],
   ['getdoormap',['getDoorMap',['../class_f_a_level_gen_1_1_tile_set.html#a75f68323e29fb12f3b1137d0f3ee5e82',1,'FALevelGen::TileSet']]],
   ['geteffect0',['getEffect0',['../class_f_a_world_1_1_item.html#ac55945a16da67647e35285e6533cdc5d',1,'FAWorld::Item']]],

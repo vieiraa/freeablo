@@ -120,6 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd625d3e4552ed267de09afbe78b395c"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#afd625d3e4552ed267de09afbe78b395c">pathNext</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> bIncrease)</td></tr>
 <tr class="memdesc:afd625d3e4552ed267de09afbe78b395c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next find path way node.  <a href="#afd625d3e4552ed267de09afbe78b395c">More...</a><br /></td></tr>
 <tr class="separator:afd625d3e4552ed267de09afbe78b395c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae228a92b8397df1f2cae4b0452c71e9d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#ae228a92b8397df1f2cae4b0452c71e9d">getDirection</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae228a92b8397df1f2cae4b0452c71e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63c808eb6091699bd70124f66bec050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#ac63c808eb6091699bd70124f66bec050">setDirection</a> (int32_t mDirection)</td></tr>
+<tr class="separator:ac63c808eb6091699bd70124f66bec050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5087eb57c5012a8d5cf85feab4b2a26"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26">distanceFrom</a> (<a class="el" href="class_f_a_world_1_1_position.html">Position</a> B)</td></tr>
 <tr class="separator:ac5087eb57c5012a8d5cf85feab4b2a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +132,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9cc36c142caa07ed3d176ae24d709e9c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a9cc36c142caa07ed3d176ae24d709e9c">mDist</a></td></tr>
 <tr class="memdesc:a9cc36c142caa07ed3d176ae24d709e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">percentage of the way there  <a href="#a9cc36c142caa07ed3d176ae24d709e9c">More...</a><br /></td></tr>
 <tr class="separator:a9cc36c142caa07ed3d176ae24d709e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aea8d65d506590cdeaa46bf51ceabd3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a9aea8d65d506590cdeaa46bf51ceabd3">mDirection</a></td></tr>
-<tr class="separator:a9aea8d65d506590cdeaa46bf51ceabd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6302d20213ce385c7f9919f068c7a749"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak" />
 &lt; int32_t, int32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_position.html#a6302d20213ce385c7f9919f068c7a749">mPath</a></td></tr>
 <tr class="memdesc:a6302d20213ce385c7f9919f068c7a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">find path result  <a href="#a6302d20213ce385c7f9919f068c7a749">More...</a><br /></td></tr>
@@ -260,6 +262,21 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae228a92b8397df1f2cae4b0452c71e9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t FAWorld::Position::getDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af614f26024526e45894ebde109e84fee"></a>
 <div class="memitem">
 <div class="memproto">
@@ -292,6 +309,22 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get the next find path way node. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac63c808eb6091699bd70124f66bec050"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FAWorld::Position::setDirection </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mDirection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -374,18 +407,6 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9aea8d65d506590cdeaa46bf51ceabd3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t FAWorld::Position::mDirection</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9cc36c142caa07ed3d176ae24d709e9c"></a>
 <div class="memitem">
 <div class="memproto">
