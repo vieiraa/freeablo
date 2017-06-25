@@ -105,7 +105,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>First install Xcode, and brew, of course. ```bash brew install boost boost-python enet freetype libtomcrypt lbzip2 lzlib qt5 sdl2 sdl2_image sdl2_mixer &ndash;universal cmake brew tap wheybags/homebrew-librocket brew install &ndash;HEAD librocket </p><h1>here it will possibly print a message about python module path settings, follow its instructions</h1>
 <p>``` and continue on with the Linux/Unix section (ignore the librocket instructions).</p>
 <h2>Linux/Unix</h2>
-<p>freeablo uses cmake, and depends on boost &gt;= 1.54, libbz2, zlib, and SDL2, sdl2_image, and libRocket, so make sure to have those installed. libRocket (<a href="http://github.com/libRocket/libRocket">http://github.com/libRocket/libRocket</a>) isn't packaged in most distros, so you'll have to install it from source (this isn't very hard).</p>
+<p>freeablo uses cmake, and depends on boost &gt;= 1.54, libbz2, zlib, and SDL2, sdl2_image, and libRocket, so make sure to have those installed.</p>
+<p>If you are on debian-based distro you can grab them with</p>
+<p>``` shell sudo apt install libsdl2-dev qt5-default libboost-all-dev libbz2-dev zlib1g-dev libsdl2-mixer-dev libsdl2-image-dev libenet-dev ```</p>
+<p><a href="http://github.com/libRocket/libRocket">libRocket</a> isn't packaged in most distros, so you'll have to install it from source (this isn't very hard).</p>
 <p>libRocket installation:</p>
 <p>```bash git clone <a href="https://github.com/libRocket/libRocket.git">https://github.com/libRocket/libRocket.git</a> cd libRocket mkdir buildDir cd buildDir cmake ../Build -DBUILD_PYTHON_BINDINGS=On -DCMAKE_INSTALL_PREFIX:PATH=/usr make sudo make install ```</p>
 <p>libRocket depends on boost::python and freetype</p>
