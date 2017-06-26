@@ -9,6 +9,7 @@ var searchData=
   ['call1500e740',['Call1500E740',['../class_t_huffmann_tree.html#a388775d614b49f71a6ebd5f0b660775d',1,'THuffmannTree']]],
   ['call1500e820',['Call1500E820',['../class_t_huffmann_tree.html#a7ad4b50bbe3ee1b2a473f6b475e470f0',1,'THuffmannTree']]],
   ['call1501db70',['Call1501DB70',['../struct_t_h_tree_item.html#aa0d866d089fe23f2f8b5aaf56925a084',1,'THTreeItem']]],
+  ['canattack',['canAttack',['../class_f_a_world_1_1_faction.html#ab9a1787ced1f38f64723a07757020baa',1,'FAWorld::Faction']]],
   ['caniattack',['canIAttack',['../class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2',1,'FAWorld::Actor']]],
   ['canplace',['canPlace',['../class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478',1,'FAGui::FAPythonFuncs']]],
   ['canplaceitem',['canPlaceItem',['../class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd',1,'FAWorld::Inventory']]],
