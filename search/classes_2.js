@@ -6,6 +6,7 @@ var searchData=
   ['baseitem',['BaseItem',['../class_diablo_exe_1_1_base_item.html',1,'DiabloExe']]],
   ['baseitemmanager',['BaseItemManager',['../class_level_1_1_base_item_manager.html',1,'Level']]],
   ['baseproperty',['BaseProperty',['../class_level_1_1_base_property.html',1,'Level']]],
+  ['basestate',['BaseState',['../class_f_a_world_1_1_actor_state_1_1_base_state.html',1,'FAWorld::ActorState']]],
   ['big',['Big',['../structtesting_1_1gtest__printers__test_1_1_big.html',1,'testing::gtest_printers_test']]],
   ['biggestintconvertible',['BiggestIntConvertible',['../class_biggest_int_convertible.html',1,'']]],
   ['bitsrequired',['BitsRequired',['../struct_bits_required.html',1,'']]],

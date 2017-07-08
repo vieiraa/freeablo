@@ -191,6 +191,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0aa3b53bf1be4464e2c5b45e4465a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a757ce1289834aab96e6a56179a411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411">isTalking</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:a28a757ce1289834aab96e6a56179a411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07eceaf3f9994af7a8311ca251222792"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_state_machine_1_1_state_machine.html">StateMachine::StateMachine</a><br class="typebreak" />
+&lt; <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a07eceaf3f9994af7a8311ca251222792">mActorStateMachine</a></td></tr>
+<tr class="separator:a07eceaf3f9994af7a8311ca251222792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78328234299e1ed9da3e706cdfaf3853"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">mPos</a></td></tr>
 <tr class="separator:a78328234299e1ed9da3e706cdfaf3853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b9a46c3ff9241dec8ffef817afbf68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a17b9a46c3ff9241dec8ffef817afbf68">mWalkAnim</a> = <a class="el" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>()</td></tr>
@@ -241,6 +244,8 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a2b198c1bab942ded7a1a4e757beb730e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a2b198c1bab942ded7a1a4e757beb730e">ActorState::BaseState</a></td></tr>
+<tr class="separator:a2b198c1bab942ded7a1a4e757beb730e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
 <tr class="separator:ac98d07dd8f7b70e16ccb9a01abf56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d8d9a934a75a07ee11a8d4a9b82961"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ae0d8d9a934a75a07ee11a8d4a9b82961">Engine::Server</a></td></tr>
@@ -1000,6 +1005,26 @@ template&lt;class Archive &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a2b198c1bab942ded7a1a4e757beb730e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_f_a_world_1_1_actor_state_1_1_base_state.html">ActorState::BaseState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac98d07dd8f7b70e16ccb9a01abf56b9c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1099,6 +1124,18 @@ template&lt;class Archive &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> FAWorld::Actor::isTalking = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07eceaf3f9994af7a8311ca251222792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_state_machine_1_1_state_machine.html">StateMachine::StateMachine</a>&lt;<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a>&gt;* FAWorld::Actor::mActorStateMachine</td>
         </tr>
       </table>
 </div><div class="memdoc">

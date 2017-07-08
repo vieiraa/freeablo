@@ -2,6 +2,7 @@ var searchData=
 [
   ['m',['m',['../namespace_f_a_i_o.html#a2341739ffdbd12b848c311fd4d6def0c',1,'FAIO']]],
   ['mactor',['mActor',['../class_f_a_world_1_1_actor_stats.html#a01d6ad4d63a02666a200c8bf3abf9180',1,'FAWorld::ActorStats']]],
+  ['mactorstatemachine',['mActorStateMachine',['../class_f_a_world_1_1_actor.html#a07eceaf3f9994af7a8311ca251222792',1,'FAWorld::Actor']]],
   ['magiccode',['magicCode',['../class_diablo_exe_1_1_base_item.html#a91e62dbcbeab6f04130bb6f6fab32ccd',1,'DiabloExe::BaseItem']]],
   ['major_5fversion',['major_version',['../namespaceversiongenerate.html#a792a7f9df0084617e1ddaf10548bbaf8',1,'versiongenerate']]],
   ['manimplaying',['mAnimPlaying',['../class_f_a_world_1_1_actor.html#a7b6c16a77650c8da9bf4323510ca1c8f',1,'FAWorld::Actor']]],

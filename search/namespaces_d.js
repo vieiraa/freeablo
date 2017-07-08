@@ -6,6 +6,7 @@ var searchData=
   ['script',['Script',['../namespace_script.html',1,'']]],
   ['serial',['Serial',['../namespace_serial.html',1,'']]],
   ['settings',['Settings',['../namespace_settings.html',1,'']]],
+  ['statemachine',['StateMachine',['../namespace_state_machine.html',1,'']]],
   ['std',['std',['../namespacestd.html',1,'']]],
   ['tr1',['tr1',['../namespacestd_1_1tr1.html',1,'std']]]
 ];
