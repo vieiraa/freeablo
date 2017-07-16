@@ -39,8 +39,6 @@ var searchData=
   ['alsorundisabledtestsflag',['AlsoRunDisabledTestsFlag',['../namespacegtest__shuffle__test.html#aa17301025facdaa1591c5a5d5410f837',1,'gtest_shuffle_test']]],
   ['alwaysfalse',['AlwaysFalse',['../namespacetesting_1_1internal.html#a4b24c851ab13569b1b15b3d259b60d2e',1,'testing::internal']]],
   ['alwaystrue',['AlwaysTrue',['../namespacetesting_1_1internal.html#a922c9da63cd4bf94fc473b9ecac76414',1,'testing::internal']]],
-  ['animateddecorator',['AnimatedDecorator',['../class_f_a_gui_1_1_animated_decorator.html#afdb5a06d7516616d4c50ea8e737118c4',1,'FAGui::AnimatedDecorator']]],
-  ['animateddecoratorinstancer',['AnimatedDecoratorInstancer',['../class_f_a_gui_1_1_animated_decorator_instancer.html#aa1f6230e26ddb5104281e6a760b6c167',1,'FAGui::AnimatedDecoratorInstancer']]],
   ['animationlength',['animationLength',['../class_cel_1_1_cel_decoder.html#a415cd4fb18067cfc56481ea7fc6ab09f',1,'Cel::CelDecoder']]],
   ['animlength',['animLength',['../class_cel_1_1_cel_file.html#a7d507525457f57e1e17486125a2599f1',1,'Cel::CelFile::animLength()'],['../class_render_1_1_sprite_group.html#a193d3eaea68e688b8d586d50d401efa8',1,'Render::SpriteGroup::animLength()']]],
   ['append',['Append',['../classtesting_1_1_test_part_result_array.html#a01844bd505b18a666324617a1b459558',1,'testing::TestPartResultArray::Append()'],['../classtesting_1_1_test_event_listeners.html#a1207dce74d64c1c39ffa6105560536a0',1,'testing::TestEventListeners::Append()'],['../classpump_1_1_output.html#a087bcfe62de3724a9f06a292d6318ddc',1,'pump.Output.Append()'],['../classtesting_1_1internal_1_1_test_event_repeater.html#ad154ce021881721a5c46994316b14cb1',1,'testing::internal::TestEventRepeater::Append()']]],

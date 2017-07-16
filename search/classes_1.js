@@ -13,8 +13,6 @@ var searchData=
   ['allowsgenericstreaming',['AllowsGenericStreaming',['../classtesting_1_1gtest__printers__test_1_1_allows_generic_streaming.html',1,'testing::gtest_printers_test']]],
   ['allowsgenericstreamingandimplicitconversiontemplate',['AllowsGenericStreamingAndImplicitConversionTemplate',['../classtesting_1_1gtest__printers__test_1_1_allows_generic_streaming_and_implicit_conversion_template.html',1,'testing::gtest_printers_test']]],
   ['allowsgenericstreamingtemplate',['AllowsGenericStreamingTemplate',['../classtesting_1_1gtest__printers__test_1_1_allows_generic_streaming_template.html',1,'testing::gtest_printers_test']]],
-  ['animateddecorator',['AnimatedDecorator',['../class_f_a_gui_1_1_animated_decorator.html',1,'FAGui']]],
-  ['animateddecoratorinstancer',['AnimatedDecoratorInstancer',['../class_f_a_gui_1_1_animated_decorator_instancer.html',1,'FAGui']]],
   ['asserthelper',['AssertHelper',['../classtesting_1_1internal_1_1_assert_helper.html',1,'testing::internal']]],
   ['assertionresult',['AssertionResult',['../classmy__namespace_1_1testing_1_1_assertion_result.html',1,'my_namespace::testing']]],
   ['assertionresult',['AssertionResult',['../classtesting_1_1_assertion_result.html',1,'testing']]],

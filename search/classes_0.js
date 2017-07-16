@@ -47,6 +47,7 @@ var searchData=
   ['_5fsfile_5fcreate_5fmpq',['_SFILE_CREATE_MPQ',['../struct___s_f_i_l_e___c_r_e_a_t_e___m_p_q.html',1,'']]],
   ['_5fsfile_5ffind_5fdata',['_SFILE_FIND_DATA',['../struct___s_f_i_l_e___f_i_n_d___d_a_t_a.html',1,'']]],
   ['_5ftbitarray',['_TBitArray',['../struct___t_bit_array.html',1,'']]],
+  ['_5ftextinput',['_textInput',['../struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__text_input.html',1,'Input::InputManager::Event::_vals']]],
   ['_5ftfileentry',['_TFileEntry',['../struct___t_file_entry.html',1,'']]],
   ['_5ftmpkblock',['_TMPKBlock',['../struct___t_m_p_k_block.html',1,'']]],
   ['_5ftmpkhash',['_TMPKHash',['../struct___t_m_p_k_hash.html',1,'']]],

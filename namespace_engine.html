@@ -106,6 +106,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_keyboard_input_observer_interface.html">KeyboardInputObserverInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_engine_1_1_keyboard_modifiers.html">KeyboardModifiers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_engine_1_1_message.html">Message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_mouse_input_observer_interface.html">MouseInputObserverInterface</a></td></tr>
@@ -128,12 +130,13 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aa8c0bb918cb64fe07e3d3e2c5fbc984a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984a">KeyboardInputAction</a> { <br />
-&#160;&#160;<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aad7d82bfd5b96d077d06fd2205e3f6eae">QUIT</a>, 
+&#160;&#160;<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa496a295335b7e060d4bead0e963f8f8a">PAUSE</a>, 
+<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aad7d82bfd5b96d077d06fd2205e3f6eae">QUIT</a>, 
 <a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aaa0b54255efe2a5e6fc26c5a098841934">NOCLIP</a>, 
 <a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aafdfdb86b3e99df9f76d9667cbedef440">CHANGE_LEVEL_DOWN</a>, 
-<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa0ded9fcda4bc267ad0fb8304b9bc4a16">CHANGE_LEVEL_UP</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aaf756f4f3ffa1df247f3b36eff814572c">TOGGLE_CONSOLE</a>, 
+&#160;&#160;<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa0ded9fcda4bc267ad0fb8304b9bc4a16">CHANGE_LEVEL_UP</a>, 
+<a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aaf756f4f3ffa1df247f3b36eff814572c">TOGGLE_CONSOLE</a>, 
 <a class="el" href="namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa3cc029d4d2b62013f6c79cce981fc7b1">KEYBOARD_INPUT_ACTION_MAX</a>
 <br />
  }</td></tr>
@@ -167,6 +170,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a73b867087505448ca36e5d90c527f947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a73b867087505448ca36e5d90c527f947">handleNuklearKeyboardEvent</a> (<a class="el" href="structnk__context.html">nk_context</a> *ctx, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isDown, <a class="el" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a> sym, <a class="el" href="struct_engine_1_1_keyboard_modifiers.html">KeyboardModifiers</a> mods)</td></tr>
+<tr class="separator:a73b867087505448ca36e5d90c527f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8c2af18f235cb1132c767af33da1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a9f8c2af18f235cb1132c767af33da1f8">handleNuklearMouseEvent</a> (<a class="el" href="structnk__context.html">nk_context</a> *ctx, int32_t x, int32_t y, <a class="el" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a> key, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isDown, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isDoubleClick)</td></tr>
+<tr class="separator:a9f8c2af18f235cb1132c767af33da1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5cbb4a130665bf8d49ec66e6c001ef"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a1a5cbb4a130665bf8d49ec66e6c001ef">getStallThreshold</a> ()</td></tr>
 <tr class="separator:a1a5cbb4a130665bf8d49ec66e6c001ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdd443830c81b03e3ae85fd252a0f847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_engine_1_1_write_packet.html">WritePacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#afdd443830c81b03e3ae85fd252a0f847">getWritePacket</a> (<a class="el" href="namespace_engine.html#a303d93204692a1abe978a611dc20cb7c">PacketType</a> type, uint32_t size, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> reliable, <a class="el" href="namespace_engine.html#a895687c131dd199b8c6206bbac1d4ad8">WritePacketResizableType</a> resizable)</td></tr>
@@ -198,7 +205,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa8c0bb918cb64fe07e3d3e2c5fbc984aad7d82bfd5b96d077d06fd2205e3f6eae"></a>QUIT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa8c0bb918cb64fe07e3d3e2c5fbc984aa496a295335b7e060d4bead0e963f8f8a"></a>PAUSE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa8c0bb918cb64fe07e3d3e2c5fbc984aad7d82bfd5b96d077d06fd2205e3f6eae"></a>QUIT&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aa8c0bb918cb64fe07e3d3e2c5fbc984aaa0b54255efe2a5e6fc26c5a098841934"></a>NOCLIP&#160;</td><td class="fielddoc">
 </td></tr>
@@ -417,6 +426,94 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">WritePacketResizableType&#160;</td>
           <td class="paramname"><em>resizable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73b867087505448ca36e5d90c527f947"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> Engine::handleNuklearKeyboardEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnk__context.html">nk_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>isDown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a>&#160;</td>
+          <td class="paramname"><em>sym</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KeyboardModifiers&#160;</td>
+          <td class="paramname"><em>mods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f8c2af18f235cb1132c767af33da1f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> Engine::handleNuklearMouseEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnk__context.html">nk_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>isDown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>isDoubleClick</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

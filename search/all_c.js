@@ -1,6 +1,7 @@
 var searchData=
 [
   ['k0',['k0',['../struct_d_state.html#ab11d29dfcb76bf3e75cbae13cf699baf',1,'DState']]],
+  ['k_5fbutton_5fsymbol_5flabel_5fstyled',['k_button_symbol_label_styled',['../nuklear_8h.html#a9c9ef56d2ad0d5796d3090b61b14b21e',1,'nuklear.h']]],
   ['kae1',['kAE1',['../gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8ba1a36d0a263e18ed9a4e3562b4cd6e8e6',1,'gtest-printers_test.cc']]],
   ['kae2',['kAE2',['../gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8ba67ee14379c1b9fd5ae5616a1b3f0d5d5',1,'gtest-printers_test.cc']]],
   ['kalignmask',['kAlignMask',['../_lzma_enc_8c.html#a37bc0b7d05763dd5ff92ff1f6a3a05a6',1,'LzmaEnc.c']]],
@@ -175,9 +176,12 @@ var searchData=
   ['key_5fx',['KEY_x',['../namespace_input.html#ac74df526ba38aedbefa716292b6534d5ad28822678998f981aeb7c658b9a0c8eb',1,'Input']]],
   ['key_5fy',['KEY_y',['../namespace_input.html#ac74df526ba38aedbefa716292b6534d5af94571014189c98bf5af6d0f3c402794',1,'Input']]],
   ['key_5fz',['KEY_z',['../namespace_input.html#ac74df526ba38aedbefa716292b6534d5a702d36deac7db993c1528cc706f0814f',1,'Input']]],
+  ['keyboard',['keyboard',['../structnk__input.html#a07db4d8c752d4e9fcc7e18638dfa8740',1,'nk_input']]],
   ['keyboard_5finput_5faction_5fmax',['KEYBOARD_INPUT_ACTION_MAX',['../namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa3cc029d4d2b62013f6c79cce981fc7b1',1,'Engine']]],
   ['keyboardinputaction',['KeyboardInputAction',['../namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984a',1,'Engine']]],
   ['keyboardinputobserverinterface',['KeyboardInputObserverInterface',['../class_engine_1_1_keyboard_input_observer_interface.html',1,'Engine']]],
+  ['keyboardmodifiers',['KeyboardModifiers',['../struct_engine_1_1_keyboard_modifiers.html',1,'Engine']]],
+  ['keys',['keys',['../structnk__keyboard.html#a7f4bc6e6c826efeef5ac3ccfe7be2951',1,'nk_keyboard::keys()'],['../structnk__table.html#abe02ed8fb83c928c36e8e719d64e2cbf',1,'nk_table::keys()']]],
   ['keys_2eh',['keys.h',['../keys_8h.html',1,'']]],
   ['keysize',['keysize',['../structltc__cipher__descriptor.html#a7a99e373f047ea2cb6de239ed7a4b35a',1,'ltc_cipher_descriptor']]],
   ['kfatalfailure',['kFatalFailure',['../classtesting_1_1_test_part_result.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1',1,'testing::TestPartResult']]],

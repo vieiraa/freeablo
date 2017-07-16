@@ -96,8 +96,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>using enet library for networking because it supports a mixture of reliable and unreliable channels.</li>
 <li>using googletest for tests because it seems to be the de-facto testing library for c/c++. Didn't really evaluate any others.</li>
 <li>using stormlib for mpq file reading becase a: it's the only option, b: it's actually really good. Only advantage is it's not packaged in mainstream distros.</li>
-<li>using qt for the launcher because it has good cross platform support (better than gtk), and besides, gtk is yucky. Also, gtk and qt are the only real options for cross platform gui libs in c/c++. </li>
+<li>using qt for the launcher because it has good cross platform support (better than gtk), and besides, gtk is yucky. Also, gtk and qt are the only real options for cross platform gui libs in c/c++.</li>
 </ul>
+<h2>19 Feb 2017 12:44:21</h2>
+<p>No more unsigned ints. They just cause problems (just finished spending several hours debugging a problem with a negative value being passed as a size_t). </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

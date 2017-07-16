@@ -103,24 +103,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8b8e4a76a7aa9eec87f63bccf1decf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d590e7958e63257934ec4a23c33750f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a4d590e7958e63257934ec4a23c33750f">drawBuffer</a> (std::vector&lt; <a class="el" href="struct_draw_command.html">DrawCommand</a> &gt; &amp;buffer, <a class="el" href="class_render_1_1_sprite_cache_base.html">Render::SpriteCacheBase</a> *cache)</td></tr>
 <tr class="separator:a4d590e7958e63257934ec4a23c33750f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a783a13f334b87e23a182513fc0c42b75"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a783a13f334b87e23a182513fc0c42b75">RenderGeometry</a> (Rocket::Core::Vertex *vertices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> num_vertices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> *indices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> num_indices, Rocket::Core::TextureHandle texture, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::Vector2f &amp;translation)</td></tr>
-<tr class="memdesc:a783a13f334b87e23a182513fc0c42b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to render geometry that it does not wish to optimise.  <a href="#a783a13f334b87e23a182513fc0c42b75">More...</a><br /></td></tr>
-<tr class="separator:a783a13f334b87e23a182513fc0c42b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad7c990b8da972855f79def5b22a595"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a7ad7c990b8da972855f79def5b22a595">EnableScissorRegion</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> enable)</td></tr>
-<tr class="memdesc:a7ad7c990b8da972855f79def5b22a595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to enable or disable scissoring to clip content.  <a href="#a7ad7c990b8da972855f79def5b22a595">More...</a><br /></td></tr>
-<tr class="separator:a7ad7c990b8da972855f79def5b22a595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb7307b87652cee9e0282dc61e556eaf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#aeb7307b87652cee9e0282dc61e556eaf">SetScissorRegion</a> (<a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> x, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> y, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> width, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> height)</td></tr>
-<tr class="memdesc:aeb7307b87652cee9e0282dc61e556eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to change the scissor region.  <a href="#aeb7307b87652cee9e0282dc61e556eaf">More...</a><br /></td></tr>
-<tr class="separator:aeb7307b87652cee9e0282dc61e556eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e78538f385d5315b1e85a31417fcd1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#ab0e78538f385d5315b1e85a31417fcd1">LoadTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, Rocket::Core::Vector2i &amp;texture_dimensions, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::String &amp;source)</td></tr>
-<tr class="memdesc:ab0e78538f385d5315b1e85a31417fcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required by the library.  <a href="#ab0e78538f385d5315b1e85a31417fcd1">More...</a><br /></td></tr>
-<tr class="separator:ab0e78538f385d5315b1e85a31417fcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d704d31e2b1b4c3dacbea97a8d3c6fe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a4d704d31e2b1b4c3dacbea97a8d3c6fe">GenerateTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a> *source, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::Vector2i &amp;source_dimensions)</td></tr>
-<tr class="memdesc:a4d704d31e2b1b4c3dacbea97a8d3c6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required to be built from an internally-generated sequence of pixels.  <a href="#a4d704d31e2b1b4c3dacbea97a8d3c6fe">More...</a><br /></td></tr>
-<tr class="separator:a4d704d31e2b1b4c3dacbea97a8d3c6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa159d9c39c0859dd01ed405169393b55"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#aa159d9c39c0859dd01ed405169393b55">ReleaseTexture</a> (Rocket::Core::TextureHandle texture_handle)</td></tr>
-<tr class="memdesc:aa159d9c39c0859dd01ed405169393b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a loaded texture is no longer required.  <a href="#aa159d9c39c0859dd01ed405169393b55">More...</a><br /></td></tr>
-<tr class="separator:aa159d9c39c0859dd01ed405169393b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4609470fe56cf2a66351f20901ab18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a7a4609470fe56cf2a66351f20901ab18">RenderGeometry</a> (Rocket::Core::Vertex *vertices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> num_vertices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> *indices, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> num_indices, Rocket::Core::TextureHandle texture, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::Vector2f &amp;translation)</td></tr>
+<tr class="memdesc:a7a4609470fe56cf2a66351f20901ab18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to render geometry that it does not wish to optimise.  <a href="#a7a4609470fe56cf2a66351f20901ab18">More...</a><br /></td></tr>
+<tr class="separator:a7a4609470fe56cf2a66351f20901ab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470f9af26c86926a980be898c144d862"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a470f9af26c86926a980be898c144d862">EnableScissorRegion</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> enable)</td></tr>
+<tr class="memdesc:a470f9af26c86926a980be898c144d862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to enable or disable scissoring to clip content.  <a href="#a470f9af26c86926a980be898c144d862">More...</a><br /></td></tr>
+<tr class="separator:a470f9af26c86926a980be898c144d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318a2905ca5e3a662b928b3c459caf16"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a318a2905ca5e3a662b928b3c459caf16">SetScissorRegion</a> (<a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> x, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> y, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> width, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> height)</td></tr>
+<tr class="memdesc:a318a2905ca5e3a662b928b3c459caf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to change the scissor region.  <a href="#a318a2905ca5e3a662b928b3c459caf16">More...</a><br /></td></tr>
+<tr class="separator:a318a2905ca5e3a662b928b3c459caf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eddfa0a9611dabebd5ff020620d80ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a2eddfa0a9611dabebd5ff020620d80ec">LoadTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, Rocket::Core::Vector2i &amp;texture_dimensions, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::String &amp;source)</td></tr>
+<tr class="memdesc:a2eddfa0a9611dabebd5ff020620d80ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required by the library.  <a href="#a2eddfa0a9611dabebd5ff020620d80ec">More...</a><br /></td></tr>
+<tr class="separator:a2eddfa0a9611dabebd5ff020620d80ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bd80df20c01651b7b6902a2892725d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a86bd80df20c01651b7b6902a2892725d">GenerateTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a> *source, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Rocket::Core::Vector2i &amp;source_dimensions)</td></tr>
+<tr class="memdesc:a86bd80df20c01651b7b6902a2892725d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required to be built from an internally-generated sequence of pixels.  <a href="#a86bd80df20c01651b7b6902a2892725d">More...</a><br /></td></tr>
+<tr class="separator:a86bd80df20c01651b7b6902a2892725d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4f542365d59207c8896949a19bc1f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#aeb4f542365d59207c8896949a19bc1f4">ReleaseTexture</a> (Rocket::Core::TextureHandle texture_handle)</td></tr>
+<tr class="memdesc:aeb4f542365d59207c8896949a19bc1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a loaded texture is no longer required.  <a href="#aeb4f542365d59207c8896949a19bc1f4">More...</a><br /></td></tr>
+<tr class="separator:aeb4f542365d59207c8896949a19bc1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -199,7 +199,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ad7c990b8da972855f79def5b22a595"></a>
+<a class="anchor" id="a470f9af26c86926a980be898c144d862"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,7 +207,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::EnableScissorRegion </td>
+          <td class="memname">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::EnableScissorRegion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
           <td class="paramname"><em>enable</em></td><td>)</td>
@@ -225,7 +225,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4d704d31e2b1b4c3dacbea97a8d3c6fe"></a>
+<a class="anchor" id="a86bd80df20c01651b7b6902a2892725d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -233,7 +233,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> RocketSDL2Renderer::GenerateTexture </td>
+          <td class="memname">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> RocketSDL2Renderer::GenerateTexture </td>
           <td>(</td>
           <td class="paramtype">Rocket::Core::TextureHandle &amp;&#160;</td>
           <td class="paramname"><em>texture_handle</em>, </td>
@@ -267,7 +267,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab0e78538f385d5315b1e85a31417fcd1"></a>
+<a class="anchor" id="a2eddfa0a9611dabebd5ff020620d80ec"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,7 +275,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> RocketSDL2Renderer::LoadTexture </td>
+          <td class="memname">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> RocketSDL2Renderer::LoadTexture </td>
           <td>(</td>
           <td class="paramtype">Rocket::Core::TextureHandle &amp;&#160;</td>
           <td class="paramname"><em>texture_handle</em>, </td>
@@ -309,7 +309,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa159d9c39c0859dd01ed405169393b55"></a>
+<a class="anchor" id="aeb4f542365d59207c8896949a19bc1f4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -317,7 +317,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::ReleaseTexture </td>
+          <td class="memname">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::ReleaseTexture </td>
           <td>(</td>
           <td class="paramtype">Rocket::Core::TextureHandle&#160;</td>
           <td class="paramname"><em>texture_handle</em></td><td>)</td>
@@ -335,7 +335,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a783a13f334b87e23a182513fc0c42b75"></a>
+<a class="anchor" id="a7a4609470fe56cf2a66351f20901ab18"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -343,7 +343,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::RenderGeometry </td>
+          <td class="memname">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::RenderGeometry </td>
           <td>(</td>
           <td class="paramtype">Rocket::Core::Vertex *&#160;</td>
           <td class="paramname"><em>vertices</em>, </td>
@@ -395,7 +395,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb7307b87652cee9e0282dc61e556eaf"></a>
+<a class="anchor" id="a318a2905ca5e3a662b928b3c459caf16"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -403,7 +403,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::SetScissorRegion </td>
+          <td class="memname">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> RocketSDL2Renderer::SetScissorRegion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -456,9 +456,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>components/render/rocketglue/<a class="el" href="_render_interface_s_d_l2_8h_source.html">RenderInterfaceSDL2.h</a></li>
-<li>components/render/rocketglue/<a class="el" href="_render_interface_s_d_l2_8cpp.html">RenderInterfaceSDL2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

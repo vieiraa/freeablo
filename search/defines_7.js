@@ -27,6 +27,8 @@ var searchData=
   ['getposslot2',['GetPosSlot2',['../_lzma_enc_8c.html#a498d34de71d9d66923816e4343a35d00',1,'LzmaEnc.c']]],
   ['gf2_5fdim',['GF2_DIM',['../zlib_2crc32_8c.html#a366ddceacb9041c5f12bb75fa6d75163',1,'crc32.c']]],
   ['gg',['GG',['../md5_8c.html#a5e30950204c89f2dd001c124d741f561',1,'md5.c']]],
+  ['glactivetexture',['glActiveTexture',['../sdl__gl__funcs_8h.html#af15266b67de988f5ddf442bbbdd1b3fc',1,'sdl_gl_funcs.h']]],
+  ['glblendequation',['glBlendEquation',['../sdl__gl__funcs_8h.html#a4dfdb2741135dfe425fe08e76572023c',1,'sdl_gl_funcs.h']]],
   ['gmask',['gmask',['../save_p_n_g_8cpp.html#a6eed3a1b76271ab34a46654591d992a0',1,'savePNG.cpp']]],
   ['gtest_5f0_5ftuple_5f',['GTEST_0_TUPLE_',['../gtest-tuple_8h.html#acecddf48fa29ec4b0199d5a467e89778',1,'gtest-tuple.h']]],
   ['gtest_5f0_5ftypenames_5f',['GTEST_0_TYPENAMES_',['../gtest-tuple_8h.html#ac6784ade57659fbc58baa03c265ca0ac',1,'gtest-tuple.h']]],

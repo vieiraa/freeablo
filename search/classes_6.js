@@ -5,8 +5,6 @@ var searchData=
   ['fafileobject',['FAFileObject',['../class_f_a_i_o_1_1_f_a_file_object.html',1,'FAIO']]],
   ['failedtest',['FailedTest',['../class_failed_test.html',1,'']]],
   ['failingparamtest',['FailingParamTest',['../class_failing_param_test.html',1,'']]],
-  ['faiofileinterface',['FAIOFileInterface',['../class_f_a_i_o_file_interface.html',1,'']]],
-  ['fapythonfuncs',['FAPythonFuncs',['../class_f_a_gui_1_1_f_a_python_funcs.html',1,'FAGui']]],
   ['faspritegroup',['FASpriteGroup',['../class_f_a_render_1_1_f_a_sprite_group.html',1,'FARender']]],
   ['fatalfailureinfixtureconstructortest',['FatalFailureInFixtureConstructorTest',['../class_fatal_failure_in_fixture_constructor_test.html',1,'']]],
   ['fatalfailureinsetuptest',['FatalFailureInSetUpTest',['../class_fatal_failure_in_set_up_test.html',1,'']]],

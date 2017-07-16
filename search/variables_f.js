@@ -10,10 +10,14 @@ var searchData=
   ['offs2d34',['offs2D34',['../struct_t_dcmp_struct.html#afd6176232470741227d44a8116f0d6fc',1,'TDcmpStruct']]],
   ['offs2e34',['offs2E34',['../struct_t_dcmp_struct.html#aa5b8517a8b665e122124d90bb7b170a3',1,'TDcmpStruct']]],
   ['offs2eb4',['offs2EB4',['../struct_t_dcmp_struct.html#a136cc1c027833309c9f3bca04037e3a1',1,'TDcmpStruct']]],
-  ['offset',['offset',['../structinflate__state.html#af1e38258e8585b1a37854066ef9d939c',1,'inflate_state']]],
+  ['offset',['offset',['../structnk__cursor.html#ae01b7938eb679481a8ef549c27a59080',1,'nk_cursor::offset()'],['../structnk__buffer__marker.html#a225c3628eb1e93f2400496110c4bd87a',1,'nk_buffer_marker::offset()'],['../structnk__menu__state.html#a5c9dbc6f4874d334884970a3a50a9106',1,'nk_menu_state::offset()'],['../structinflate__state.html#af1e38258e8585b1a37854066ef9d939c',1,'inflate_state::offset()']]],
+  ['offset_5fx',['offset_x',['../structnk__panel.html#a2aced4e49f290e87ed6c2823122d946c',1,'nk_panel']]],
+  ['offset_5fy',['offset_y',['../structnk__panel.html#a6704d6eb0414bdeaf9cba1facdb4c729',1,'nk_panel']]],
   ['oid',['OID',['../structltc__hash__descriptor.html#a9ac18099398a5f78a7380eb9b8d435d2',1,'ltc_hash_descriptor']]],
   ['oidlen',['OIDlen',['../structltc__hash__descriptor.html#a2e48a295e28804d5f67a4fd90ed4d8de',1,'ltc_hash_descriptor']]],
+  ['old',['old',['../structnk__edit__state.html#ab71fb9bbac77248af5f1c3bd1471ddfc',1,'nk_edit_state::old()'],['../structnk__property__state.html#a425994ca840cd84b4bb43c14cc761f19',1,'nk_property_state::old()']]],
   ['omac_5fmemory',['omac_memory',['../structltc__cipher__descriptor.html#abd3e34512d4ec3ec033829ecc66565f8',1,'ltc_cipher_descriptor']]],
+  ['once',['once',['../namespace_render.html#a1cdac406db718bfec1fefdee9a542f45',1,'Render']]],
   ['onselect',['onSelect',['../classpython_1_1menu_1_1_menu.html#abb7eabca4a7a93a22c7f0e0daebd189c',1,'python::menu::Menu']]],
   ['op',['op',['../struct_state_machine_1_1_state_change.html#a11663ede04bd0880b667ee9eaf2fb543',1,'StateMachine::StateChange::op()'],['../structcode.html#a4f075d73a9177d05cc7d332105295b83',1,'code::op()']]],
   ['opaque',['opaque',['../structbz__stream.html#a8e000913c058c83abd1ec96c6aef302a',1,'bz_stream::opaque()'],['../structz__stream__s.html#ab72467f908d2ce65d5b42ee6556ef8bb',1,'z_stream_s::opaque()']]],
@@ -24,6 +28,7 @@ var searchData=
   ['opt_5flen',['opt_len',['../structinternal__state.html#a2f6efee5d2057aba8bca2c1a58cf418a',1,'internal_state']]],
   ['optimumcurrentindex',['optimumCurrentIndex',['../struct_c_lzma_enc.html#a9acb8216bd183e0a945ee8da01ef988b',1,'CLzmaEnc']]],
   ['optimumendindex',['optimumEndIndex',['../struct_c_lzma_enc.html#a37dfbf08f0eb7d4d0c3123f7787d3dd0',1,'CLzmaEnc']]],
+  ['option',['option',['../structnk__style.html#a12e31b1eff50ff00fc327325ce6cd7f9',1,'nk_style']]],
   ['optional_5fwhite_5fspaces_5fregex',['OPTIONAL_WHITE_SPACES_REGEX',['../namespacepump.html#ad9744f334322fa37e310075e5e1ec40c',1,'pump']]],
   ['options',['options',['../classupload_1_1_version_control_system.html#a4d57d043bc408887b94269fe4cea9556',1,'upload::VersionControlSystem']]],
   ['original_5fworking_5fdir_5f',['original_working_dir_',['../gtest-options__test_8cc.html#aa5f13fd18a275d0a3117700f30bfb9ff',1,'gtest-options_test.cc']]],
@@ -57,5 +62,6 @@ var searchData=
   ['outsidexwall',['outsideXWall',['../class_f_a_level_gen_1_1_tile_set.html#abc9b7ec41753c4d1b8515a6390e69c52',1,'FALevelGen::TileSet']]],
   ['outsideywall',['outsideYWall',['../class_f_a_level_gen_1_1_tile_set.html#aef69ada43e2c9d31e56fef126035b765',1,'FALevelGen::TileSet']]],
   ['outstream',['outStream',['../struct_c_range_enc.html#a6920bf67a1240e4e98feeea832f868b9',1,'CRangeEnc']]],
-  ['overflow',['overflow',['../struct_c_seq_out_stream_buf.html#a5e3c1a323d05a87ec3c2b6495c7eb49f',1,'CSeqOutStreamBuf']]]
+  ['overflow',['overflow',['../struct_c_seq_out_stream_buf.html#a5e3c1a323d05a87ec3c2b6495c7eb49f',1,'CSeqOutStreamBuf']]],
+  ['overlay',['overlay',['../structnk__context.html#ae51cac633c54b94a63c8fe77b9558f4a',1,'nk_context']]]
 ];

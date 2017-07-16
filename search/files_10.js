@@ -8,7 +8,6 @@ var searchData=
   ['render_2eh',['render.h',['../render_8h.html',1,'']]],
   ['renderer_2ecpp',['renderer.cpp',['../renderer_8cpp.html',1,'']]],
   ['renderer_2eh',['renderer.h',['../renderer_8h.html',1,'']]],
-  ['renderinterfacesdl2_2ecpp',['RenderInterfaceSDL2.cpp',['../_render_interface_s_d_l2_8cpp.html',1,'']]],
   ['renderinterfacesdl2_2eh',['RenderInterfaceSDL2.h',['../_render_interface_s_d_l2_8h.html',1,'']]],
   ['rsa_5fexptmod_2ec',['rsa_exptmod.c',['../rsa__exptmod_8c.html',1,'']]],
   ['rsa_5ffree_2ec',['rsa_free.c',['../rsa__free_8c.html',1,'']]],

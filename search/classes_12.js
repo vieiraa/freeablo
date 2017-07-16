@@ -12,7 +12,6 @@ var searchData=
   ['scopedprematureexitfile',['ScopedPrematureExitFile',['../classtesting_1_1internal_1_1_scoped_premature_exit_file.html',1,'testing::internal']]],
   ['scopedtrace',['ScopedTrace',['../classtesting_1_1internal_1_1_scoped_trace.html',1,'testing::internal']]],
   ['scriptcontext',['ScriptContext',['../class_script_1_1_script_context.html',1,'Script']]],
-  ['scrollbox',['ScrollBox',['../class_f_a_gui_1_1_scroll_box.html',1,'FAGui']]],
   ['sequencetestinglistener',['SequenceTestingListener',['../class_sequence_testing_listener.html',1,'']]],
   ['server',['Server',['../class_engine_1_1_server.html',1,'Engine']]],
   ['serverpacketheader',['ServerPacketHeader',['../struct_engine_1_1_server_packet_header.html',1,'Engine']]],
