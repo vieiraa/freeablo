@@ -161,10 +161,14 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_engine.html#a895687c131dd199b8c6206bbac1d4ad8a4b305847cb6315a75a69f018a902ffb8">WritePacketResizableType::NonResizable</a>
  }</td></tr>
 <tr class="separator:a895687c131dd199b8c6206bbac1d4ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dcbd7e753fb41b7760c029faed80920"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920">ThreadState</a> { <a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a607a240944ffb34234f86340665bc673">PLAY_MUSIC</a>, 
-<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920aa57fe4cebf4c79aaaf07d3120bbbf6ae">PLAY_SOUND</a>, 
-<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a1906b438a5fa847bedbe5a54b0c98382">STOP_SOUND</a>, 
-<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a860ee0853cd7b33ad66ced14cc86ffbd">RENDER_STATE</a>
+<tr class="memitem:a1dcbd7e753fb41b7760c029faed80920"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920">ThreadState</a> { <br />
+&#160;&#160;<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a326bc2e703adc09914931dd97f974c0a">ThreadState::PLAY_MUSIC</a>, 
+<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920abdab420c39f4c96fa41e93a6b9c47b05">ThreadState::PLAY_SOUND</a>, 
+<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a65db86e106871795ae530e4f1246fb99">ThreadState::STOP_SOUND</a>, 
+<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a7871e550a7f7e0f6754818a15f413387">ThreadState::RENDER_STATE</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a6863c766f7dd4ea6c7933fd9787a0293">ThreadState::PRELOAD_SPRITES</a>
+<br />
  }</td></tr>
 <tr class="separator:a1dcbd7e753fb41b7760c029faed80920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -280,20 +284,30 @@ Variables</h2></td></tr>
 <a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920">Engine::ThreadState</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a607a240944ffb34234f86340665bc673"></a>PLAY_MUSIC&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a326bc2e703adc09914931dd97f974c0a"></a>PLAY_MUSIC&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920aa57fe4cebf4c79aaaf07d3120bbbf6ae"></a>PLAY_SOUND&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920abdab420c39f4c96fa41e93a6b9c47b05"></a>PLAY_SOUND&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a1906b438a5fa847bedbe5a54b0c98382"></a>STOP_SOUND&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a65db86e106871795ae530e4f1246fb99"></a>STOP_SOUND&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a860ee0853cd7b33ad66ced14cc86ffbd"></a>RENDER_STATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a7871e550a7f7e0f6754818a15f413387"></a>RENDER_STATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1dcbd7e753fb41b7760c029faed80920a6863c766f7dd4ea6c7933fd9787a0293"></a>PRELOAD_SPRITES&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 

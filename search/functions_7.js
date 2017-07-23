@@ -26,6 +26,7 @@ var searchData=
   ['getactorid',['getActorId',['../class_f_a_world_1_1_actor.html#a4bc04e344af9ef719cf3572748ca355e',1,'FAWorld::Actor']]],
   ['getactors',['getActors',['../class_f_a_world_1_1_game_level.html#a5121ec15ff24b9fc48f258c52e7b7f87',1,'FAWorld::GameLevel']]],
   ['getallactors',['getAllActors',['../class_f_a_world_1_1_world.html#aaecb67ae98d669231b9b2fcab7b9fc16',1,'FAWorld::World']]],
+  ['getandclearspritesneedingpreloading',['getAndClearSpritesNeedingPreloading',['../class_f_a_render_1_1_renderer.html#a57bb2362770cd2309b944419724abafa',1,'FARender::Renderer::getAndClearSpritesNeedingPreloading()'],['../class_f_a_render_1_1_sprite_manager.html#a89ed009e1b4ad4dcbe20ebfc8dc8344b',1,'FARender::SpriteManager::getAndClearSpritesNeedingPreloading()']]],
   ['getanimlength',['getAnimLength',['../class_f_a_render_1_1_f_a_sprite_group.html#a96f298331f8009d4542924f65fe26052',1,'FARender::FASpriteGroup']]],
   ['getanimstate',['getAnimState',['../class_f_a_world_1_1_actor.html#af9dbee7f6987ffae1a1698434367057f',1,'FAWorld::Actor']]],
   ['getansicolorcode',['GetAnsiColorCode',['../namespacetesting_1_1internal.html#a0aefb9deb60e90f19c236559837303d8',1,'testing::internal']]],

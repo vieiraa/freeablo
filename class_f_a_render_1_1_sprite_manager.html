@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a788dd6adaefe7febe9a61afb9018c75a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_sprite_manager.html#a788dd6adaefe7febe9a61afb9018c75a">getFromRaw</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t *source, uint32_t width, uint32_t height)</td></tr>
 <tr class="memdesc:a788dd6adaefe7febe9a61afb9018c75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from the game thread.  <a href="#a788dd6adaefe7febe9a61afb9018c75a">More...</a><br /></td></tr>
 <tr class="separator:a788dd6adaefe7febe9a61afb9018c75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ed009e1b4ad4dcbe20ebfc8dc8344b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_sprite_manager.html#a89ed009e1b4ad4dcbe20ebfc8dc8344b">getAndClearSpritesNeedingPreloading</a> (std::vector&lt; uint32_t &gt; &amp;sprites)</td></tr>
+<tr class="memdesc:a89ed009e1b4ad4dcbe20ebfc8dc8344b"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from the game thread.  <a href="#a89ed009e1b4ad4dcbe20ebfc8dc8344b">More...</a><br /></td></tr>
+<tr class="separator:a89ed009e1b4ad4dcbe20ebfc8dc8344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6477a1788e19b1e953fe354785807f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_render_1_1_sprite_group.html">Render::SpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f">get</a> (uint32_t index)</td></tr>
 <tr class="memdesc:aba6477a1788e19b1e953fe354785807f"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from the render thread.  <a href="#aba6477a1788e19b1e953fe354785807f">More...</a><br /></td></tr>
 <tr class="separator:aba6477a1788e19b1e953fe354785807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +249,24 @@ Public Member Functions</h2></td></tr>
 <p>Wrapper for SpriteCache::get(uint32_t, bool) When loading a normal sprite reference, will just pass through, otherwise the reference is a raw load reference from getFromRaw above, so will load that and inject it into mCache with <a class="el" href="class_f_a_render_1_1_sprite_cache.html#a6f66da5c54efaf0621ee21e600137bff" title="To be called from the render thread. ">SpriteCache::directInsert</a> </p>
 
 <p>Implements <a class="el" href="class_render_1_1_sprite_cache_base.html#af3ac5342c01c2e5372f028e6343b0c76">Render::SpriteCacheBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89ed009e1b4ad4dcbe20ebfc8dc8344b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> FARender::SpriteManager::getAndClearSpritesNeedingPreloading </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sprites</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>To be called from the game thread. </p>
 
 </div>
 </div>
