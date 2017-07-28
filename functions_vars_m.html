@@ -130,6 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>mActor
 : <a class="el" href="class_f_a_world_1_1_actor_stats.html#a01d6ad4d63a02666a200c8bf3abf9180">FAWorld::ActorStats</a>
+, <a class="el" href="class_f_a_world_1_1_behaviour.html#a3fb0caa34d4a64d86cbb3306fa79fbdc">FAWorld::Behaviour</a>
 </li>
 <li>mActorStateMachine
 : <a class="el" href="class_f_a_world_1_1_actor.html#a07eceaf3f9994af7a8311ca251222792">FAWorld::Actor</a>
@@ -137,11 +138,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>magicCode
 : <a class="el" href="class_diablo_exe_1_1_base_item.html#a91e62dbcbeab6f04130bb6f6fab32ccd">DiabloExe::BaseItem</a>
 </li>
-<li>mAnimPlaying
-: <a class="el" href="class_f_a_world_1_1_actor.html#a7b6c16a77650c8da9bf4323510ca1c8f">FAWorld::Actor</a>
-</li>
-<li>mAnimState
-: <a class="el" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">FAWorld::Actor</a>
+<li>mAnimation
+: <a class="el" href="class_f_a_world_1_1_actor.html#a73927c9c9c9d618d1cae1fb8ebbf04f4">FAWorld::Actor</a>
 </li>
 <li>mAnimTimeMap
 : <a class="el" href="class_f_a_world_1_1_actor.html#a63774b2f9633d35b041adb5f0937c315">FAWorld::Actor</a>
@@ -268,6 +266,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>maximumWaitingData
 : <a class="el" href="struct___e_net_host.html#acdf3e5ca03efd3bbfbb4573770ba1037">_ENetHost</a>
+</li>
+<li>mBehaviour
+: <a class="el" href="class_f_a_world_1_1_actor.html#ae6857b8a23c9d78d3862b840e53b78c8">FAWorld::Actor</a>
 </li>
 <li>mBlockingBonus
 : <a class="el" href="class_diablo_exe_1_1_character_stats.html#a46891da024792fe845b400a02759db23">DiabloExe::CharacterStats</a>
@@ -396,9 +397,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_diablo_exe_1_1_character_stats.html#a4dbcad40a98c72f68a2bafdd3855de11">DiabloExe::CharacterStats</a>
 , <a class="el" href="class_f_a_world_1_1_actor_stats.html#ac29fc4df9393d365fea5292febbe52ac">FAWorld::ActorStats</a>
 </li>
-<li>mDestination
-: <a class="el" href="class_f_a_world_1_1_actor.html#a0923c5945b5842dfeb793b492a7bccff">FAWorld::Actor</a>
-</li>
 <li>mDexterity
 : <a class="el" href="class_diablo_exe_1_1_character_stats.html#ab5253ccd47c866dc2b35cdd744e1f727">DiabloExe::CharacterStats</a>
 , <a class="el" href="class_f_a_world_1_1_actor_stats.html#a5cde2cccc0237ae105655b6d84e89465">FAWorld::ActorStats</a>
@@ -486,9 +484,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>mFaction
 : <a class="el" href="class_f_a_world_1_1_actor.html#ac17218367ddba627568f65b426af3959">FAWorld::Actor</a>
-</li>
-<li>mFrame
-: <a class="el" href="class_f_a_world_1_1_actor.html#acd918eed32d94304e71eafb26a8d9096">FAWorld::Actor</a>
 </li>
 <li>mGoal
 : <a class="el" href="class_f_a_world_1_1_position.html#acda372c27e49020bbfeaadb2b7f64ceb">FAWorld::Position</a>
@@ -682,6 +677,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mMonsterType
 : <a class="el" href="class_f_a_world_1_1_actor_stats.html#aea3f6b9f38059df3d60f7c6a5c452e0f">FAWorld::ActorStats</a>
 </li>
+<li>mMoveHandler
+: <a class="el" href="class_f_a_world_1_1_actor.html#a3750ee8440d3a3541a6338df60c19dba">FAWorld::Actor</a>
+</li>
 <li>mMoving
 : <a class="el" href="class_f_a_world_1_1_position.html#a4f20ef7c5fc37dc752e32f75ecc21c5a">FAWorld::Position</a>
 </li>
@@ -738,6 +736,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>mouseMove
 : <a class="el" href="union_input_1_1_input_manager_1_1_event_1_1__vals.html#a7fd47c78ce1e9dc2eb83e3db766a55c8">Input::InputManager::Event::_vals</a>
 </li>
+<li>mPassable
+: <a class="el" href="class_f_a_world_1_1_actor.html#a9d726716d1784ea63b405e0ffb407725">FAWorld::Actor</a>
+</li>
 <li>mPath
 : <a class="el" href="class_f_a_world_1_1_position.html#a6302d20213ce385c7f9919f068c7a749">FAWorld::Position</a>
 </li>
@@ -749,7 +750,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>mPos
 : <a class="el" href="class_f_a_render_1_1_render_state.html#a347886c74bdbcfd0d2e538c3e23f4f77">FARender::RenderState</a>
-, <a class="el" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">FAWorld::Actor</a>
 </li>
 <li>MpqFilePos
 : <a class="el" href="struct___t_m_p_q_file.html#aa3f1dd4380ab784cf651b5191573cc26">_TMPQFile</a>

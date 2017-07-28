@@ -15,6 +15,7 @@ var searchData=
   ['has_5fnew_5ffatal_5ffailure',['has_new_fatal_failure',['../classtesting_1_1internal_1_1_has_new_fatal_failure_helper.html#ae137e639098071f11f531bbd72dde1c7',1,'testing::internal::HasNewFatalFailureHelper']]],
   ['hasfailure',['HasFailure',['../classtesting_1_1_test.html#a7a00be7dd0a6bfdc8d47a1b784623613',1,'testing::Test']]],
   ['hasfatalfailure',['HasFatalFailure',['../classtesting_1_1_test.html#a5e83604628ef542af888d631566ff60c',1,'testing::Test::HasFatalFailure()'],['../classtesting_1_1_test_result.html#ace61ce992083a9124f9ff0e99a2041cc',1,'testing::TestResult::HasFatalFailure()']]],
+  ['hash',['hash',['../structstd_1_1hash_3_01std_1_1pair_3_01a_00_01b_01_4_01_4.html#a6d317c112b5efaaf12dc6fbcee893497',1,'std::hash&lt; std::pair&lt; a, b &gt; &gt;']]],
   ['hash_5ffile',['hash_file',['../tomcrypt__hash_8h.html#a6107c14266137a8f7834e4318d8d5002',1,'tomcrypt_hash.h']]],
   ['hash_5ffilehandle',['hash_filehandle',['../tomcrypt__hash_8h.html#a55d0344508460fbde2c17fe9ef2aa838',1,'tomcrypt_hash.h']]],
   ['hash_5fis_5fvalid',['hash_is_valid',['../tomcrypt__hash_8h.html#a79647f22bf48bfa7de03fe5fc958c846',1,'hash_is_valid(int idx):&#160;crypt_hash_is_valid.c'],['../crypt__hash__is__valid_8c.html#a79647f22bf48bfa7de03fe5fc958c846',1,'hash_is_valid(int idx):&#160;crypt_hash_is_valid.c']]],
@@ -48,6 +49,7 @@ var searchData=
   ['hell',['hell',['../class_f_a_world_1_1_faction.html#a938f46c113e6aa7805e10dc3aa64f62d',1,'FAWorld::Faction']]],
   ['help',['help',['../fontgenerator_2main_8cpp.html#a6d6a48e3841bf9007929f691d654614c',1,'main.cpp']]],
   ['helper2d',['Helper2D',['../class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524',1,'Misc::Helper2D']]],
+  ['heuristic',['heuristic',['../namespace_f_a_world.html#adce8d5602a8ece5b1a324fee3b35dd31',1,'FAWorld']]],
   ['hidedoc',['hideDoc',['../classpython_1_1docmanage_1_1_doc_manager.html#a846750936832a95f1526d3f51f3d3319',1,'python::docmanage::DocManager']]],
   ['hotkey',['Hotkey',['../class_input_1_1_hotkey.html#aa46c53768042f4b36becd21eb6badb8d',1,'Input::Hotkey::Hotkey()'],['../class_input_1_1_hotkey.html#a340b56efcad1598f592f635dfc77f656',1,'Input::Hotkey::Hotkey(const char *name)'],['../class_input_1_1_hotkey.html#ad31a2ba42fdfdcdb5294e2833438136b',1,'Input::Hotkey::Hotkey(const std::string &amp;name)'],['../class_input_1_1_hotkey.html#afd7137ebc76ac86902e6cb9e63918422',1,'Input::Hotkey::Hotkey(int nkey, bool nshift, bool nctrl, bool nalt)']]]
 ];

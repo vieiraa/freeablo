@@ -109,86 +109,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gamelevel_8h.html">gamelevel.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacestd.html">   22</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestd.html">std</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01pair_3_01int_00_01int_01_4_01_4.html">   25</a></span>&#160;    <span class="keyword">struct </span>hash&lt;pair&lt;<a class="code" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>, <a class="code" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>&gt; &gt; {</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01pair_3_01int_00_01int_01_4_01_4.html#a2ba9cfcb3d9174668bb61d2bf5650035">   26</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="structstd_1_1hash_3_01pair_3_01int_00_01int_01_4_01_4.html#a2ba9cfcb3d9174668bb61d2bf5650035">operator()</a>(<span class="keyword">const</span> pair&lt;size_t, size_t&gt;&amp; location)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">int</span> x, y;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            x = location.first;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            y = location.second;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> x * 1812433253 + y;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Number = <span class="keywordtype">size_t</span>&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_priority_queue.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_priority_queue.html">PriorityQueue</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_priority_queue.html#ae86a19aae3f9a32a1d76dfdab34eb70b">   38</a></span>&#160;    <span class="keyword">typedef</span> pair&lt;Number, T&gt; <a class="code" href="struct_priority_queue.html#ae86a19aae3f9a32a1d76dfdab34eb70b">PQElement</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_priority_queue.html#a45db352f3b5a2b85e59c3df8762e0236">   39</a></span>&#160;    priority_queue&lt;PQElement, vector&lt;PQElement&gt;, std::greater&lt;PQElement&gt; &gt; <a class="code" href="struct_priority_queue.html#a45db352f3b5a2b85e59c3df8762e0236">elements</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_priority_queue.html#a422e38d0c3b8398dc6e4867bb4ceec41">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="struct_priority_queue.html#a422e38d0c3b8398dc6e4867bb4ceec41">empty</a>() { <span class="keywordflow">return</span> elements.empty(); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_priority_queue.html#a9361c94664b98a15a91a595d65c9846c">   43</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="struct_priority_queue.html#a9361c94664b98a15a91a595d65c9846c">put</a>(T item, Number priority)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        elements.emplace(priority, item);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_priority_queue.html#ab211c9583fda5c1a6352021444af5f0e">   48</a></span>&#160;    <span class="keyword">inline</span> T <span class="keyword">get</span>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        T best_item = elements.top().second;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        elements.pop();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> best_item;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_f_a_world.html">FAWorld</a></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_find_path.html">   59</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_find_path.html">FindPath</a> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_f_a_world_1_1_find_path.html#a1bb7adbf6aad6705a8b2557ed6849ed4">   62</a></span>&#160;        <span class="keyword">typedef</span> pair&lt;int32_t, int32_t&gt; <a class="code" href="class_f_a_world_1_1_find_path.html#a1bb7adbf6aad6705a8b2557ed6849ed4">Location</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_f_a_world_1_1_find_path.html">FindPath</a>(<a class="code" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a> * level);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        vector&lt;Location&gt; find(Location start, Location&amp; goal,<span class="keywordtype">bool</span>&amp; bArrivable);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_find_path.html">FindPath</a>* <span class="keyword">get</span>(<a class="code" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a>* level);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_f_a_world_1_1_find_path.html">FindPath</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">bool</span> inBounds(Location location);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> passable(Location location);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        vector&lt;Location&gt; neighbors(Location location);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">int</span> heuristic(Location a, Location b);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">bool</span> AStarSearch(Location start, Location goal, unordered_map&lt;Location, Location&gt;&amp; cameFrom, unordered_map&lt;Location, int&gt;&amp; costSoFar);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        vector&lt;Location&gt; reconstructPath(Location start, Location goal, unordered_map&lt;Location, Location&gt;&amp; cameFrom);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        Location findClosesPointToGoal(Location start, Location goal, unordered_map&lt;Location, Location&gt; &amp; cameFrom);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a> * level;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        vector&lt;Location&gt; directions;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sizeOfDirections;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_find_path.html">FindPath</a>* instance;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMPONENTS_LEVEL_PATHFINDING_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="struct_priority_queue_html_a422e38d0c3b8398dc6e4867bb4ceec41"><div class="ttname"><a href="struct_priority_queue.html#a422e38d0c3b8398dc6e4867bb4ceec41">PriorityQueue::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> findpath.h:41</div></div>
-<div class="ttc" id="class_f_a_world_1_1_find_path_html"><div class="ttname"><a href="class_f_a_world_1_1_find_path.html">FAWorld::FindPath</a></div><div class="ttdef"><b>Definition:</b> findpath.h:59</div></div>
-<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> findpath.h:22</div></div>
-<div class="ttc" id="struct_priority_queue_html"><div class="ttname"><a href="struct_priority_queue.html">PriorityQueue</a></div><div class="ttdef"><b>Definition:</b> findpath.h:36</div></div>
-<div class="ttc" id="struct_priority_queue_html_a45db352f3b5a2b85e59c3df8762e0236"><div class="ttname"><a href="struct_priority_queue.html#a45db352f3b5a2b85e59c3df8762e0236">PriorityQueue::elements</a></div><div class="ttdeci">priority_queue&lt; PQElement, vector&lt; PQElement &gt;, std::greater&lt; PQElement &gt; &gt; elements</div><div class="ttdef"><b>Definition:</b> findpath.h:39</div></div>
-<div class="ttc" id="class_f_a_world_1_1_game_level_impl_html"><div class="ttname"><a href="class_f_a_world_1_1_game_level_impl.html">FAWorld::GameLevelImpl</a></div><div class="ttdef"><b>Definition:</b> gamelevel.h:19</div></div>
-<div class="ttc" id="struct_priority_queue_html_a9361c94664b98a15a91a595d65c9846c"><div class="ttname"><a href="struct_priority_queue.html#a9361c94664b98a15a91a595d65c9846c">PriorityQueue::put</a></div><div class="ttdeci">void put(T item, Number priority)</div><div class="ttdef"><b>Definition:</b> findpath.h:43</div></div>
-<div class="ttc" id="class_f_a_world_1_1_find_path_html_a1bb7adbf6aad6705a8b2557ed6849ed4"><div class="ttname"><a href="class_f_a_world_1_1_find_path.html#a1bb7adbf6aad6705a8b2557ed6849ed4">FAWorld::FindPath::Location</a></div><div class="ttdeci">pair&lt; int32_t, int32_t &gt; Location</div><div class="ttdef"><b>Definition:</b> findpath.h:62</div></div>
-<div class="ttc" id="struct_priority_queue_html_ae86a19aae3f9a32a1d76dfdab34eb70b"><div class="ttname"><a href="struct_priority_queue.html#ae86a19aae3f9a32a1d76dfdab34eb70b">PriorityQueue::PQElement</a></div><div class="ttdeci">pair&lt; Number, T &gt; PQElement</div><div class="ttdef"><b>Definition:</b> findpath.h:38</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_f_a_world.html">FAWorld</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;std::pair&lt;int32_t, int32_t&gt;&gt; <a class="code" href="namespace_f_a_world.html#ae0b64ecfc0bfa5262cbee53d45a94cca">pathFind</a>(GameLevelImpl* level, std::pair&lt;int32_t, int32_t&gt; start, std::pair&lt;int32_t, int32_t&gt;&amp; goal, <span class="keywordtype">bool</span>&amp; bArrivable);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMPONENTS_LEVEL_PATHFINDING_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="namespace_f_a_world_html_ae0b64ecfc0bfa5262cbee53d45a94cca"><div class="ttname"><a href="namespace_f_a_world.html#ae0b64ecfc0bfa5262cbee53d45a94cca">FAWorld::pathFind</a></div><div class="ttdeci">std::vector&lt; Location &gt; pathFind(GameLevelImpl *level, Location start, Location &amp;goal, bool &amp;bArrivable)</div><div class="ttdef"><b>Definition:</b> findpath.cpp:149</div></div>
 <div class="ttc" id="gamelevel_8h_html"><div class="ttname"><a href="gamelevel_8h.html">gamelevel.h</a></div></div>
-<div class="ttc" id="structstd_1_1hash_3_01pair_3_01int_00_01int_01_4_01_4_html_a2ba9cfcb3d9174668bb61d2bf5650035"><div class="ttname"><a href="structstd_1_1hash_3_01pair_3_01int_00_01int_01_4_01_4.html#a2ba9cfcb3d9174668bb61d2bf5650035">std::hash&lt; pair&lt; int, int &gt; &gt;::operator()</a></div><div class="ttdeci">size_t operator()(const pair&lt; size_t, size_t &gt; &amp;location) const </div><div class="ttdef"><b>Definition:</b> findpath.h:26</div></div>
-<div class="ttc" id="enet_8h_html_ac5698c428351548dfa3265f2001fff4a"><div class="ttname"><a href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a></div><div class="ttdeci">typedef int(ENET_CALLBACK *ENetInterceptCallback)(struct _ENetHost *host</div></div>
-<div class="ttc" id="namespace_f_a_world_html"><div class="ttname"><a href="namespace_f_a_world.html">FAWorld</a></div><div class="ttdef"><b>Definition:</b> main.cpp:19</div></div>
+<div class="ttc" id="namespace_f_a_world_html"><div class="ttname"><a href="namespace_f_a_world.html">FAWorld</a></div><div class="ttdef"><b>Definition:</b> main.cpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

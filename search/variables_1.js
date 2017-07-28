@@ -22,6 +22,7 @@ var searchData=
   ['active_5fcon',['active_con',['../structnk__popup__state.html#af670e7c6e45a92e369dc54e7b7321f78',1,'nk_popup_state']]],
   ['active_5ftests',['ACTIVE_TESTS',['../namespacegtest__filter__unittest.html#a8eb26cb0e0ac81737723cc9d16e1d253',1,'gtest_filter_unittest.ACTIVE_TESTS()'],['../namespacegtest__shuffle__test.html#acd6d827819dcc06b9bf061cd4849b082',1,'gtest_shuffle_test.ACTIVE_TESTS()']]],
   ['activtrigger',['activTrigger',['../class_diablo_exe_1_1_base_item.html#ae74cdbd494c61aac02454b84a26f3a19',1,'DiabloExe::BaseItem']]],
+  ['actortarget',['actorTarget',['../class_f_a_world_1_1_actor.html#a3c8bb44107fac190931de9ab705a3abb',1,'FAWorld::Actor']]],
   ['add',['add',['../structltc__math__descriptor.html#a3c5a767ab97f422249f8f03ce28003f6',1,'ltc_math_descriptor']]],
   ['add_5fentropy',['add_entropy',['../structltc__prng__descriptor.html#a8f2e7e058eb85734edaa3f2828e5e010',1,'ltc_prng_descriptor']]],
   ['addi',['addi',['../structltc__math__descriptor.html#ae2cbb82f254ef2682325d07d2d06b7c9',1,'ltc_math_descriptor']]],

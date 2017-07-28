@@ -87,17 +87,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">findpath.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="findpath_8h_source.html">findpath.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="stdhashes_8h_source.html">misc/stdhashes.h</a>&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_a_world_1_1_priority_queue.html">FAWorld::PriorityQueue&lt; T, Number &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_f_a_world"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html">FAWorld</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae9ea9cec7b4cb15d6cdb50e05f022ece"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; int32_t, <br class="typebreak" />
+int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">FAWorld::Location</a></td></tr>
+<tr class="separator:ae9ea9cec7b4cb15d6cdb50e05f022ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad6f650641f2120c333177a74e91e061f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ad6f650641f2120c333177a74e91e061f">FAWorld::inBounds</a> (GameLevelImpl *level, Location location)</td></tr>
+<tr class="separator:ad6f650641f2120c333177a74e91e061f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421cdf9a3a7edee78c3288fd6990e895"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Location &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a421cdf9a3a7edee78c3288fd6990e895">FAWorld::neighbors</a> (GameLevelImpl *level, Location location)</td></tr>
+<tr class="separator:a421cdf9a3a7edee78c3288fd6990e895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce8d5602a8ece5b1a324fee3b35dd31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#adce8d5602a8ece5b1a324fee3b35dd31">FAWorld::heuristic</a> (Location a, Location b)</td></tr>
+<tr class="separator:adce8d5602a8ece5b1a324fee3b35dd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ee24e5d45bbacc1a887da7d34eff7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a87ee24e5d45bbacc1a887da7d34eff7c">FAWorld::AStarSearch</a> (GameLevelImpl *level, Location start, Location goal, std::unordered_map&lt; Location, Location &gt; &amp;came_from, std::unordered_map&lt; Location, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> &gt; &amp;costSoFar)</td></tr>
+<tr class="separator:a87ee24e5d45bbacc1a887da7d34eff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72900a0b93c476963db705242ee75e2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Location &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ab72900a0b93c476963db705242ee75e2">FAWorld::reconstructPath</a> (Location start, Location goal, std::unordered_map&lt; Location, Location &gt; &amp;cameFrom)</td></tr>
+<tr class="separator:ab72900a0b93c476963db705242ee75e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8573fae666fcf6a80c8efd67e20cbe7b"><td class="memItemLeft" align="right" valign="top">Location&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a8573fae666fcf6a80c8efd67e20cbe7b">FAWorld::findClosesPointToGoal</a> (GameLevelImpl *level, Location start, Location goal, std::unordered_map&lt; Location, Location &gt; &amp;cameFrom)</td></tr>
+<tr class="separator:a8573fae666fcf6a80c8efd67e20cbe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b64ecfc0bfa5262cbee53d45a94cca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Location &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ae0b64ecfc0bfa5262cbee53d45a94cca">FAWorld::pathFind</a> (GameLevelImpl *level, Location start, Location &amp;goal, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;bArrivable)</td></tr>
+<tr class="separator:ae0b64ecfc0bfa5262cbee53d45a94cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
