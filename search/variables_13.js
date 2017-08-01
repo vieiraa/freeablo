@@ -159,7 +159,7 @@ var searchData=
   ['streamendwasreached',['streamEndWasReached',['../struct___c_match_finder.html#af0f1c0199f01b77735bfc159c27f8dd2',1,'_CMatchFinder']]],
   ['streamgetpos',['StreamGetPos',['../struct_t_file_stream.html#a158f1621a05e8b3002c1729fd5d4cfca',1,'TFileStream']]],
   ['streamgetsize',['StreamGetSize',['../struct_t_file_stream.html#a95b85c4ef3254dc6a73fdb2e566ebbba',1,'TFileStream']]],
-  ['streampos',['StreamPos',['../struct_t_file_stream.html#a84324f2f19bfc3fcbc563ef2391f84fe',1,'TFileStream::StreamPos()'],['../struct___c_match_finder.html#ac189de27dcaa96eac5447a272f338b60',1,'_CMatchFinder::streamPos()']]],
+  ['streampos',['streamPos',['../struct___c_match_finder.html#ac189de27dcaa96eac5447a272f338b60',1,'_CMatchFinder::streamPos()'],['../struct_t_file_stream.html#a84324f2f19bfc3fcbc563ef2391f84fe',1,'TFileStream::StreamPos()']]],
   ['streamread',['StreamRead',['../struct_t_file_stream.html#aaf7da0af26da32b968cdb66eb87f26ce',1,'TFileStream']]],
   ['streamresize',['StreamResize',['../struct_t_file_stream.html#ae3358c9b5a9dfdee5e8275561eff8850',1,'TFileStream']]],
   ['streamsize',['StreamSize',['../struct_t_file_stream.html#a99bdae10f74cf57156e65bd76ba64771',1,'TFileStream::StreamSize()'],['../struct___t_stream_bitmap.html#a68b01a4b8bd0e60778c23012abb016a7',1,'_TStreamBitmap::StreamSize()']]],

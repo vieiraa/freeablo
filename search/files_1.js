@@ -2,6 +2,8 @@ var searchData=
 [
   ['actor_2ecpp',['actor.cpp',['../actor_8cpp.html',1,'']]],
   ['actor_2eh',['actor.h',['../actor_8h.html',1,'']]],
+  ['actoranimationmanager_2ecpp',['actoranimationmanager.cpp',['../actoranimationmanager_8cpp.html',1,'']]],
+  ['actoranimationmanager_2eh',['actoranimationmanager.h',['../actoranimationmanager_8h.html',1,'']]],
   ['actorstats_2ecpp',['actorstats.cpp',['../actorstats_8cpp.html',1,'']]],
   ['actorstats_2eh',['actorstats.h',['../actorstats_8h.html',1,'']]],
   ['adler32_2ec',['adler32.c',['../adler32_8c.html',1,'']]],

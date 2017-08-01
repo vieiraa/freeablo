@@ -1,7 +1,7 @@
 var searchData=
 [
   ['d',['d',['../struct_pop_count.html#a9acc328ffefb70588c53027481340521a91768adeec8e8c9dd1b0768205f9ee5e',1,'PopCount::d()'],['../struct_log2.html#a07d38252e7ea2ccf19fa7de58d5fd2a6af22f660505b98b77f5ba72b49f4f95aa',1,'Log2::d()']]],
-  ['dead',['dead',['../namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a5607ac40cc45e334c5ba41d6a37ee926',1,'FAWorld::AnimState']]],
+  ['dead',['dead',['../namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587af58e6a506c76fc2c90a7d29cbc631c2f',1,'FAWorld']]],
   ['decallbasicstats',['DecAllBasicStats',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaac130619d959236b8d27d96af71660283',1,'FAWorld::Item']]],
   ['decarmourclass',['DecArmourClass',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaab69b16472b224d777d4236416ab768a5',1,'FAWorld::Item']]],
   ['decdamagetaken',['DecDamageTaken',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaaf37a69f87d8faa3234e5f5bef3738036',1,'FAWorld::Item']]],

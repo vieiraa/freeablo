@@ -108,9 +108,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_cel_1_1_cel_decoder.html#aeb82dc6ad123a0369f21fa5f7bdca7fb">CelDecoder</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celPath);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cel_1_1_cel_decoder.html#aaeceb15b913e14638fccceaa65f6cf20">decode</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_cel_1_1_cel_frame.html">CelFrame</a>&amp; <a class="code" href="class_cel_1_1_cel_decoder.html#af305109213c0acb4ac156cea881d638d">operator[]</a>(<span class="keywordtype">size_t</span> index);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="class_cel_1_1_cel_decoder.html#a479b654e61ded68536bb1ba9f067b221">numFrames</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="class_cel_1_1_cel_decoder.html#a415cd4fb18067cfc56481ea7fc6ab09f">animationLength</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_cel_1_1_cel_frame.html">CelFrame</a>&amp; <a class="code" href="class_cel_1_1_cel_decoder.html#a8b0969f6b3a526d10cc39e9dbe9b504b">operator[]</a>(int32_t index);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        int32_t <a class="code" href="class_cel_1_1_cel_decoder.html#adef17fe869089a8aefb69262918c855d">numFrames</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        int32_t <a class="code" href="class_cel_1_1_cel_decoder.html#a2cd32b0142cbf5a2395c211ea885ccfe">animationLength</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;uint8_t&gt; FrameBytes;</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> readPalette();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> getFrames();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> decodeFrame(<span class="keywordtype">size_t</span> index, FrameBytesRef frame, <a class="code" href="class_cel_1_1_cel_frame.html">CelFrame</a>&amp; celFrame);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> decodeFrame(int32_t index, FrameBytesRef frame, <a class="code" href="class_cel_1_1_cel_frame.html">CelFrame</a>&amp; celFrame);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        FrameDecoder getFrameDecoder(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celName, FrameBytesRef frame, <span class="keywordtype">int</span> frameNumber);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> isType0(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celName, <span class="keywordtype">int</span> frameNumber);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">bool</span> isType2or4(FrameBytesRef frame);</div>
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setCharbutCelDimensions(<span class="keywordtype">int</span> frame);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::vector&lt;FrameBytes&gt; mFrames;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::map&lt;size_t, CelFrame&gt; mCache;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::map&lt;int32_t, CelFrame&gt; mCache;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mCelPath;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mCelName;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_cel_1_1_pal.html">Pal</a> mPal;</div>
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> mFrameWidth;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> mFrameHeight;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">int</span> mHeaderSize;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">size_t</span> mAnimationLength;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        int32_t mAnimationLength;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_settings_1_1_settings.html">Settings::Settings</a> mSettingsCel;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_settings_1_1_settings.html">Settings::Settings</a> mSettingsCl2;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
@@ -171,8 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="pal_8h_html"><div class="ttname"><a href="pal_8h.html">pal.h</a></div></div>
 <div class="ttc" id="namespacetesting_1_1internal_html_a8e8ff5b11e64078831112677156cb111"><div class="ttname"><a href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">testing::internal::string</a></div><div class="ttdeci">::std::string string</div><div class="ttdef"><b>Definition:</b> gtest-port.h:872</div></div>
-<div class="ttc" id="class_cel_1_1_cel_decoder_html_af305109213c0acb4ac156cea881d638d"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#af305109213c0acb4ac156cea881d638d">Cel::CelDecoder::operator[]</a></div><div class="ttdeci">CelFrame &amp; operator[](size_t index)</div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:23</div></div>
-<div class="ttc" id="class_cel_1_1_cel_decoder_html_a415cd4fb18067cfc56481ea7fc6ab09f"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#a415cd4fb18067cfc56481ea7fc6ab09f">Cel::CelDecoder::animationLength</a></div><div class="ttdeci">size_t animationLength() const </div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:42</div></div>
+<div class="ttc" id="class_cel_1_1_cel_decoder_html_adef17fe869089a8aefb69262918c855d"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#adef17fe869089a8aefb69262918c855d">Cel::CelDecoder::numFrames</a></div><div class="ttdeci">int32_t numFrames() const </div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:37</div></div>
 <div class="ttc" id="class_cel_1_1_cel_decoder_html_aeb82dc6ad123a0369f21fa5f7bdca7fb"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#aeb82dc6ad123a0369f21fa5f7bdca7fb">Cel::CelDecoder::CelDecoder</a></div><div class="ttdeci">CelDecoder(const std::string &amp;celPath)</div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:13</div></div>
 <div class="ttc" id="class_cel_1_1_cel_decoder_html"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html">Cel::CelDecoder</a></div><div class="ttdef"><b>Definition:</b> celdecoder.h:14</div></div>
 <div class="ttc" id="celframe_8h_html"><div class="ttname"><a href="celframe_8h.html">celframe.h</a></div></div>
@@ -180,9 +179,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="settings_8h_html"><div class="ttname"><a href="settings_8h.html">settings.h</a></div></div>
 <div class="ttc" id="namespace_cel_html"><div class="ttname"><a href="namespace_cel.html">Cel</a></div><div class="ttdoc">Library for loading blizzard CEL and CL2 files. </div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:8</div></div>
 <div class="ttc" id="class_cel_1_1_cel_decoder_html_aaeceb15b913e14638fccceaa65f6cf20"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#aaeceb15b913e14638fccceaa65f6cf20">Cel::CelDecoder::decode</a></div><div class="ttdeci">void decode()</div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:124</div></div>
-<div class="ttc" id="class_cel_1_1_cel_decoder_html_a479b654e61ded68536bb1ba9f067b221"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#a479b654e61ded68536bb1ba9f067b221">Cel::CelDecoder::numFrames</a></div><div class="ttdeci">size_t numFrames() const </div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:37</div></div>
+<div class="ttc" id="class_cel_1_1_cel_decoder_html_a2cd32b0142cbf5a2395c211ea885ccfe"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#a2cd32b0142cbf5a2395c211ea885ccfe">Cel::CelDecoder::animationLength</a></div><div class="ttdeci">int32_t animationLength() const </div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:42</div></div>
 <div class="ttc" id="class_settings_1_1_settings_html"><div class="ttname"><a href="class_settings_1_1_settings.html">Settings::Settings</a></div><div class="ttdef"><b>Definition:</b> settings.h:14</div></div>
 <div class="ttc" id="class_cel_1_1_pal_html"><div class="ttname"><a href="class_cel_1_1_pal.html">Cel::Pal</a></div><div class="ttdef"><b>Definition:</b> pal.h:26</div></div>
+<div class="ttc" id="class_cel_1_1_cel_decoder_html_a8b0969f6b3a526d10cc39e9dbe9b504b"><div class="ttname"><a href="class_cel_1_1_cel_decoder.html#a8b0969f6b3a526d10cc39e9dbe9b504b">Cel::CelDecoder::operator[]</a></div><div class="ttdeci">CelFrame &amp; operator[](int32_t index)</div><div class="ttdef"><b>Definition:</b> celdecoder.cpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

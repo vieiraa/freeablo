@@ -98,14 +98,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_f_a_world_1_1_actor_state"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world_1_1_actor_state.html">ActorState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_f_a_world_1_1_anim_state"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world_1_1_anim_state.html">AnimState</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor_animation_manager.html">ActorAnimationManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_array2_d.html">Array2D</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_basic_monster_behaviour.html">BasicMonsterBehaviour</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,14 +163,27 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae9ea9cec7b4cb15d6cdb50e05f022ece"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; int32_t, <br class="typebreak" />
 int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a></td></tr>
 <tr class="separator:ae9ea9cec7b4cb15d6cdb50e05f022ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17af347741a47a7fa4af0715facbde63"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a17af347741a47a7fa4af0715facbde63">Tick</a></td></tr>
-<tr class="separator:a17af347741a47a7fa4af0715facbde63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d15213b57eeb46de0220a410096385d"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">Tick</a></td></tr>
+<tr class="separator:a9d15213b57eeb46de0220a410096385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a0ee1f2a9c96e370ad1fe00631aa09587"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587">AnimState</a> { <br />
+&#160;&#160;<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587a46f9631576015f35f527af2bc67351a6">AnimState::walk</a>, 
+<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587aec2f993aec2c27fc750119ab17b16cdb">AnimState::idle</a>, 
+<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587afc7e987f23de5bd6562b7c0063cad659">AnimState::attack</a>, 
+<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587af58e6a506c76fc2c90a7d29cbc631c2f">AnimState::dead</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587af09328d495fa622700aabe5707edf00b">AnimState::hit</a>, 
+<a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587a334c4a4c42fdb79d7ebc3e73b517e6f8">AnimState::none</a>, 
+<a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aad927000fd863b08d2426cbf3fc66bd56">ENUM_END</a>
+<br />
+ }</td></tr>
+<tr class="separator:a0ee1f2a9c96e370ad1fe00631aa09587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe70175eb68954eddb04a030466081a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081a">FactionType</a> { <a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aa00b63598f4c2e1d12f2f43e50560f794">hell</a>, 
 <a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aa730a623b8bbb863818551e9b8514d4b6">heaven</a>, 
-<a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d">ENUM_END</a>
+<a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d">ENUM_END</a>, 
+<a class="el" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aad927000fd863b08d2426cbf3fc66bd56">ENUM_END</a>
  }</td></tr>
 <tr class="separator:a1fe70175eb68954eddb04a030466081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -184,8 +199,8 @@ Functions</h2></td></tr>
 <tr class="separator:a421cdf9a3a7edee78c3288fd6990e895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce8d5602a8ece5b1a324fee3b35dd31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#adce8d5602a8ece5b1a324fee3b35dd31">heuristic</a> (<a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> a, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> b)</td></tr>
 <tr class="separator:adce8d5602a8ece5b1a324fee3b35dd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ee24e5d45bbacc1a887da7d34eff7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a87ee24e5d45bbacc1a887da7d34eff7c">AStarSearch</a> (<a class="el" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a> *level, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> start, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> goal, std::unordered_map&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> &gt; &amp;came_from, std::unordered_map&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> &gt; &amp;costSoFar)</td></tr>
-<tr class="separator:a87ee24e5d45bbacc1a887da7d34eff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ae01092a1ab58e864508640c89c97d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a56ae01092a1ab58e864508640c89c97d">AStarSearch</a> (<a class="el" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a> *level, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> start, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> goal, std::unordered_map&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> &gt; &amp;came_from)</td></tr>
+<tr class="separator:a56ae01092a1ab58e864508640c89c97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab72900a0b93c476963db705242ee75e2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#ab72900a0b93c476963db705242ee75e2">reconstructPath</a> (<a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> start, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> goal, std::unordered_map&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> &gt; &amp;cameFrom)</td></tr>
 <tr class="separator:ab72900a0b93c476963db705242ee75e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8573fae666fcf6a80c8efd67e20cbe7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html#a8573fae666fcf6a80c8efd67e20cbe7b">findClosesPointToGoal</a> (<a class="el" href="class_f_a_world_1_1_game_level_impl.html">GameLevelImpl</a> *level, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> start, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> goal, std::unordered_map&lt; <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a>, <a class="el" href="namespace_f_a_world.html#ae9ea9cec7b4cb15d6cdb50e05f022ece">Location</a> &gt; &amp;cameFrom)</td></tr>
@@ -221,12 +236,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a17af347741a47a7fa4af0715facbde63"></a>
+<a class="anchor" id="a9d15213b57eeb46de0220a410096385d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int32_t <a class="el" href="namespace_f_a_world.html#a17af347741a47a7fa4af0715facbde63">FAWorld::Tick</a></td>
+          <td class="memname">typedef int64_t <a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,6 +249,42 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587">FAWorld::AnimState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587a46f9631576015f35f527af2bc67351a6"></a>walk&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587aec2f993aec2c27fc750119ab17b16cdb"></a>idle&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587afc7e987f23de5bd6562b7c0063cad659"></a>attack&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587af58e6a506c76fc2c90a7d29cbc631c2f"></a>dead&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587af09328d495fa622700aabe5707edf00b"></a>hit&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ee1f2a9c96e370ad1fe00631aa09587a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1fe70175eb68954eddb04a030466081aad927000fd863b08d2426cbf3fc66bd56"></a>ENUM_END&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a1fe70175eb68954eddb04a030466081a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,12 +301,14 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d"></a>ENUM_END&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1fe70175eb68954eddb04a030466081aad927000fd863b08d2426cbf3fc66bd56"></a>ENUM_END&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a87ee24e5d45bbacc1a887da7d34eff7c"></a>
+<a class="anchor" id="a56ae01092a1ab58e864508640c89c97d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -281,13 +334,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::unordered_map&lt; Location, Location &gt; &amp;&#160;</td>
-          <td class="paramname"><em>came_from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; Location, <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>costSoFar</em>&#160;</td>
+          <td class="paramname"><em>came_from</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

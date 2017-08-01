@@ -119,29 +119,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_engine_1_1_net_manager.html">NetManager</a>* <span class="keyword">get</span>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0">NetManager</a>(<span class="keywordtype">bool</span> isServer, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_player_factory.html">FAWorld::PlayerFactory</a>&amp; playerFactory);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0">NetManager</a>(<span class="keywordtype">bool</span> <a class="code" href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">isServer</a>, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_player_factory.html">FAWorld::PlayerFactory</a>&amp; playerFactory);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_engine_1_1_net_manager.html#ada27ecea83dc0117774680204415917f">~NetManager</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_engine_1_1_net_manager.html#a332d66c3c7e9005bef2c5e3400905216">update</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_engine_1_1_net_manager.html#a0c5ccb4414847ba034e19c6618485ad2">getServerSprite</a>(<span class="keywordtype">size_t</span> index);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            uint32_t mTick = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">bool</span> mIsServer;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_engine_1_1_client.html">Client</a>* mClient;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="class_engine_1_1_server.html">Server</a>* mServer;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">   35</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">isServer</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">return</span> mIsServer;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="comment">// TODO: don&#39;t proxy these calls? Just add a getter for mClient?</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_engine_1_1_net_manager.html#a0c5ccb4414847ba034e19c6618485ad2">getServerSprite</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_engine_1_1_net_manager.html#ac76e476193712f1c29047d23df7eb894">sendLevelChangePacket</a>(int32_t level);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            uint32_t mTick = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">bool</span> mIsServer = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_engine_1_1_client.html">Client</a>* mClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="class_engine_1_1_server.html">Server</a>* mServer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_engine_1_1_net_manager_html_a0e964d1cc95535444e4fccc2c25e0261"><div class="ttname"><a href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">Engine::NetManager::isServer</a></div><div class="ttdeci">bool isServer()</div><div class="ttdef"><b>Definition:</b> netmanager.h:35</div></div>
 <div class="ttc" id="class_f_a_render_1_1_f_a_sprite_group_html"><div class="ttname"><a href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a></div><div class="ttdef"><b>Definition:</b> spritecache.h:19</div></div>
 <div class="ttc" id="class_engine_1_1_net_manager_html_a332d66c3c7e9005bef2c5e3400905216"><div class="ttname"><a href="class_engine_1_1_net_manager.html#a332d66c3c7e9005bef2c5e3400905216">Engine::NetManager::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> netmanager.cpp:56</div></div>
 <div class="ttc" id="class_engine_1_1_net_manager_html_a0c5ccb4414847ba034e19c6618485ad2"><div class="ttname"><a href="class_engine_1_1_net_manager.html#a0c5ccb4414847ba034e19c6618485ad2">Engine::NetManager::getServerSprite</a></div><div class="ttdeci">FARender::FASpriteGroup * getServerSprite(size_t index)</div><div class="ttdef"><b>Definition:</b> netmanager.cpp:66</div></div>
 <div class="ttc" id="namespace_f_a_render_html"><div class="ttname"><a href="namespace_f_a_render.html">FARender</a></div><div class="ttdoc">Rendering. </div></div>
 <div class="ttc" id="class_engine_1_1_net_manager_html"><div class="ttname"><a href="class_engine_1_1_net_manager.html">Engine::NetManager</a></div><div class="ttdef"><b>Definition:</b> netmanager.h:25</div></div>
 <div class="ttc" id="class_f_a_world_1_1_player_factory_html"><div class="ttname"><a href="class_f_a_world_1_1_player_factory.html">FAWorld::PlayerFactory</a></div><div class="ttdef"><b>Definition:</b> playerfactory.h:13</div></div>
+<div class="ttc" id="class_engine_1_1_net_manager_html_ac76e476193712f1c29047d23df7eb894"><div class="ttname"><a href="class_engine_1_1_net_manager.html#ac76e476193712f1c29047d23df7eb894">Engine::NetManager::sendLevelChangePacket</a></div><div class="ttdeci">void sendLevelChangePacket(int32_t level)</div><div class="ttdef"><b>Definition:</b> netmanager.cpp:74</div></div>
 <div class="ttc" id="enet_8h_html"><div class="ttname"><a href="enet_8h.html">enet.h</a></div><div class="ttdoc">ENet public header file. </div></div>
 <div class="ttc" id="class_engine_1_1_client_html"><div class="ttname"><a href="class_engine_1_1_client.html">Engine::Client</a></div><div class="ttdef"><b>Definition:</b> client.h:19</div></div>
 <div class="ttc" id="class_engine_1_1_net_manager_html_a213ae4bb02889cd8dab377954d9f7ee0"><div class="ttname"><a href="class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0">Engine::NetManager::NetManager</a></div><div class="ttdeci">NetManager(bool isServer, const FAWorld::PlayerFactory &amp;playerFactory)</div><div class="ttdef"><b>Definition:</b> netmanager.cpp:30</div></div>

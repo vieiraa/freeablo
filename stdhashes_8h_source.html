@@ -109,9 +109,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_enum_class_hash.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_enum_class_hash.html">EnumClassHash</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_enum_class_hash.html#a02ef43aab3f3004ec306c58d3ebd423a">   24</a></span>&#160;    std::size_t <a class="code" href="struct_enum_class_hash.html#a02ef43aab3f3004ec306c58d3ebd423a">operator()</a>(T t)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(t);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> gtest-tuple.h:104</div></div>
+<div class="ttc" id="struct_enum_class_hash_html"><div class="ttname"><a href="struct_enum_class_hash.html">EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> stdhashes.h:21</div></div>
 <div class="ttc" id="structstd_1_1hash_3_01std_1_1pair_3_01a_00_01b_01_4_01_4_html_a6d317c112b5efaaf12dc6fbcee893497"><div class="ttname"><a href="structstd_1_1hash_3_01std_1_1pair_3_01a_00_01b_01_4_01_4.html#a6d317c112b5efaaf12dc6fbcee893497">std::hash&lt; std::pair&lt; a, b &gt; &gt;::hash</a></div><div class="ttdeci">hash()</div><div class="ttdef"><b>Definition:</b> stdhashes.h:14</div></div>
 <div class="ttc" id="structstd_1_1hash_3_01std_1_1pair_3_01a_00_01b_01_4_01_4_html_ae215bcf0b0b8d922e51d5e3c17f0c788"><div class="ttname"><a href="structstd_1_1hash_3_01std_1_1pair_3_01a_00_01b_01_4_01_4.html#ae215bcf0b0b8d922e51d5e3c17f0c788">std::hash&lt; std::pair&lt; a, b &gt; &gt;::operator()</a></div><div class="ttdeci">size_t operator()(const std::pair&lt; a, b &gt; &amp;p) const </div><div class="ttdef"><b>Definition:</b> stdhashes.h:15</div></div>
+<div class="ttc" id="struct_enum_class_hash_html_a02ef43aab3f3004ec306c58d3ebd423a"><div class="ttname"><a href="struct_enum_class_hash.html#a02ef43aab3f3004ec306c58d3ebd423a">EnumClassHash::operator()</a></div><div class="ttdeci">std::size_t operator()(T t) const </div><div class="ttdef"><b>Definition:</b> stdhashes.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

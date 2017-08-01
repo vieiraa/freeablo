@@ -86,7 +86,7 @@ var searchData=
   ['directinsert',['directInsert',['../class_f_a_render_1_1_sprite_cache.html#a6f66da5c54efaf0621ee21e600137bff',1,'FARender::SpriteCache']]],
   ['directoryexists',['DirectoryExists',['../classtesting_1_1internal_1_1_file_path.html#a3546b3f926935fefddb9a808e7e2be47',1,'testing::internal::FilePath']]],
   ['disabled_5ftest_5fcount',['disabled_test_count',['../classtesting_1_1_test_case.html#ac1e3cd2b598f19ce10e42b3421508a9e',1,'testing::TestCase::disabled_test_count()'],['../classtesting_1_1_unit_test.html#a4cbd084447b74784d1bb85c1ed4b96d5',1,'testing::UnitTest::disabled_test_count()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#ae5239c776abba66170ba84d1c7cee235',1,'testing::internal::UnitTestImpl::disabled_test_count()']]],
-  ['distance',['distance',['../class_f_a_level_gen_1_1_room.html#a17ddaaf881b4acb64723c587aece1a98',1,'FALevelGen::Room']]],
+  ['distance',['distance',['../class_f_a_level_gen_1_1_room.html#adac47a8312d5903f51368f3222a33d23',1,'FALevelGen::Room']]],
   ['distancefrom',['distanceFrom',['../class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26',1,'FAWorld::Position']]],
   ['dllmain',['DllMain',['../_dll_main_8c.html#a03f85c1540dd0107b41e6e15002d2d39',1,'DllMain.c']]],
   ['docompression',['DoCompression',['../class_t_huffmann_tree.html#aa65605e870061213ac45823934de3f42',1,'THuffmannTree']]],
@@ -97,12 +97,12 @@ var searchData=
   ['donothing_5fmousemove',['doNothing_mouseMove',['../namespace_input.html#a31f7d3ac8561bdaa36c30cf456c36857',1,'Input']]],
   ['donothing_5fmouserelease',['doNothing_mouseRelease',['../namespace_input.html#acd389460ef25b93b5979c4837428cd9c',1,'Input']]],
   ['donothing_5ftextinput',['doNothing_textInput',['../namespace_input.html#a4940a0c03b8c9b4bf199eb48da3b53cc',1,'Input']]],
-  ['dooraddhelper',['doorAddHelper',['../namespace_f_a_level_gen.html#adaf7e5a6e9305705ac2f1c0217351b26',1,'FALevelGen']]],
+  ['dooraddhelper',['doorAddHelper',['../namespace_f_a_level_gen.html#abc473193f408cfe3db7b8678d05a857c',1,'FALevelGen']]],
   ['double',['Double',['../class_queue_test.html#a2c7e0d1edb558dbbc4c085316d3d1ee6',1,'QueueTest']]],
   ['doublele',['DoubleLE',['../namespacetesting.html#ae10e2bb304b74abd1b06a2d912a8b43b',1,'testing']]],
   ['doublenearpredformat',['DoubleNearPredFormat',['../namespacetesting_1_1internal.html#a4f70b36c624b54c2362aeecc2f05ee8c',1,'testing::internal']]],
   ['downcast_5f',['DownCast_',['../namespacetesting_1_1internal.html#a1a1a1aed3fe00908b8a45d5ab4a33665',1,'testing::internal']]],
-  ['downstairspos',['downStairsPos',['../class_f_a_world_1_1_game_level.html#a3b3b248f2460bab086924f9de587d9e2',1,'FAWorld::GameLevel::downStairsPos()'],['../class_level_1_1_level.html#a7a9080be0dbced8f972b1c897704dde1',1,'Level::Level::downStairsPos()']]],
+  ['downstairspos',['downStairsPos',['../class_f_a_world_1_1_game_level.html#afc54bca062aee6cce824d82898116ad6',1,'FAWorld::GameLevel::downStairsPos()'],['../class_level_1_1_level.html#a8d505e341a734785761e65cf37af58fe',1,'Level::Level::downStairsPos()']]],
   ['draw',['draw',['../namespace_render.html#a7087bcd1e1950ec6ef28ff4897018fd9',1,'Render']]],
   ['drawattile',['drawAtTile',['../namespace_render.html#add9adb012f2dc9f2542e9232ec411312',1,'Render']]],
   ['drawbuffer',['drawBuffer',['../class_rocket_s_d_l2_renderer.html#a4d590e7958e63257934ec4a23c33750f',1,'RocketSDL2Renderer']]],
@@ -124,5 +124,5 @@ var searchData=
   ['dumpbaseitems',['dumpBaseItems',['../class_f_a_world_1_1_item_manager.html#a7e220987ec79e6be1b2789798dd21770',1,'FAWorld::ItemManager']]],
   ['dumpitempositions',['dumpItemPositions',['../class_f_a_world_1_1_item_manager.html#a7c9597dbc5e1a0d6ddde4ea70acb274a',1,'FAWorld::ItemManager']]],
   ['dumpuniqueitems',['dumpUniqueItems',['../class_f_a_world_1_1_item_manager.html#a3f13bcd1c104ff2806a4163fe806a156',1,'FAWorld::ItemManager']]],
-  ['dun',['Dun',['../class_level_1_1_dun.html#aebe0dd29cec43011e986c36a9a52b7b7',1,'Level::Dun::Dun(const std::string &amp;)'],['../class_level_1_1_dun.html#a6f8d438a6e18b0422cf11965afdd488d',1,'Level::Dun::Dun()'],['../class_level_1_1_dun.html#a405c84f6952cc06183f9c760ac8ac48e',1,'Level::Dun::Dun(size_t width, size_t height)']]]
+  ['dun',['Dun',['../class_level_1_1_dun.html#aebe0dd29cec43011e986c36a9a52b7b7',1,'Level::Dun::Dun(const std::string &amp;)'],['../class_level_1_1_dun.html#a6f8d438a6e18b0422cf11965afdd488d',1,'Level::Dun::Dun()'],['../class_level_1_1_dun.html#aa207b106a96cea90c82e406626c0a84a',1,'Level::Dun::Dun(int32_t width, int32_t height)']]]
 ];

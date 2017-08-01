@@ -107,14 +107,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> n = <a class="code" href="namespace_f_a_level_gen.html#a0374e2ca497149c811dbc135899a5db7">randomInRange</a>(0, parameters.size()-1);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> *(parameters.begin() + n);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_f_a_level_gen_1_1_rand_l_c_g.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_f_a_level_gen_1_1_rand_l_c_g.html">RandLCG</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_f_a_level_gen_1_1_rand_l_c_g.html#a1ec9ec553ceef511037cebd45db05276">   23</a></span>&#160;        <a class="code" href="class_f_a_level_gen_1_1_rand_l_c_g.html#a1ec9ec553ceef511037cebd45db05276">RandLCG</a>(int32_t seed) :mSeed(seed) {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_f_a_level_gen_1_1_rand_l_c_g.html#a464deb49e911ff4ff999ba313e85f15b">   25</a></span>&#160;        int32_t <span class="keyword">get</span>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            mSeed = (22695477 * mSeed + 1) % 4294967296;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> mSeed;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        int32_t mSeed;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespace_f_a_level_gen_html_a02a2a0b4a58390a385bfe338b26095e1"><div class="ttname"><a href="namespace_f_a_level_gen.html#a02a2a0b4a58390a385bfe338b26095e1">FALevelGen::normRand</a></div><div class="ttdeci">int normRand(int min, int max)</div><div class="ttdef"><b>Definition:</b> random.cpp:13</div></div>
 <div class="ttc" id="namespace_f_a_level_gen_html"><div class="ttname"><a href="namespace_f_a_level_gen.html">FALevelGen</a></div><div class="ttdoc">Level generation. </div></div>
+<div class="ttc" id="class_f_a_level_gen_1_1_rand_l_c_g_html_a1ec9ec553ceef511037cebd45db05276"><div class="ttname"><a href="class_f_a_level_gen_1_1_rand_l_c_g.html#a1ec9ec553ceef511037cebd45db05276">FALevelGen::RandLCG::RandLCG</a></div><div class="ttdeci">RandLCG(int32_t seed)</div><div class="ttdef"><b>Definition:</b> random.h:23</div></div>
+<div class="ttc" id="class_f_a_level_gen_1_1_rand_l_c_g_html"><div class="ttname"><a href="class_f_a_level_gen_1_1_rand_l_c_g.html">FALevelGen::RandLCG</a></div><div class="ttdef"><b>Definition:</b> random.h:20</div></div>
 <div class="ttc" id="namespace_f_a_level_gen_html_a0374e2ca497149c811dbc135899a5db7"><div class="ttname"><a href="namespace_f_a_level_gen.html#a0374e2ca497149c811dbc135899a5db7">FALevelGen::randomInRange</a></div><div class="ttdeci">int randomInRange(unsigned int min, unsigned int max)</div><div class="ttdef"><b>Definition:</b> random.cpp:27</div></div>
 <div class="ttc" id="namespace_f_a_level_gen_html_ab5c7b3eefd5effce43475521e4332590"><div class="ttname"><a href="namespace_f_a_level_gen.html#ab5c7b3eefd5effce43475521e4332590">FALevelGen::FAsrand</a></div><div class="ttdeci">void FAsrand(int seed)</div><div class="ttdef"><b>Definition:</b> random.cpp:8</div></div>
-<div class="ttc" id="namespace_f_a_level_gen_html_a9a5e4ea8044e59b4b5e21115e04d4e9a"><div class="ttname"><a href="namespace_f_a_level_gen.html#a9a5e4ea8044e59b4b5e21115e04d4e9a">FALevelGen::chooseOne</a></div><div class="ttdeci">T chooseOne(std::initializer_list&lt; T &gt; parameters)</div><div class="ttdef"><b>Definition:</b> random.h:13</div></div>
+<div class="ttc" id="namespace_f_a_level_gen_html_a9a5e4ea8044e59b4b5e21115e04d4e9a"><div class="ttname"><a href="namespace_f_a_level_gen.html#a9a5e4ea8044e59b4b5e21115e04d4e9a">FALevelGen::chooseOne</a></div><div class="ttdeci">T chooseOne(std::initializer_list&lt; T &gt; parameters)</div><div class="ttdoc">This is a really shit RNG but it is guaranteed to give the same results across multiple machines...</div><div class="ttdef"><b>Definition:</b> random.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

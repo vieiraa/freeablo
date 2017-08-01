@@ -14,7 +14,7 @@ var searchData=
   ['icshield',['icShield',['../class_f_a_world_1_1_item.html#a61bb43398c9739e359cc7de6d01ff865af05b51eaa933b33c336a5cd35648c1f0',1,'FAWorld::Item']]],
   ['icstave',['icStave',['../class_f_a_world_1_1_item.html#a61bb43398c9739e359cc7de6d01ff865a052efec66a8642454214aaac971ee429',1,'FAWorld::Item']]],
   ['icsword',['icSword',['../class_f_a_world_1_1_item.html#a61bb43398c9739e359cc7de6d01ff865a1914b541199ed07ef734b5a23a0372bc',1,'FAWorld::Item']]],
-  ['idle',['idle',['../namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a36d90d96ba5fb7775aa511a0c191bfd7',1,'FAWorld::AnimState']]],
+  ['idle',['idle',['../namespace_f_a_world.html#a0ee1f2a9c96e370ad1fe00631aa09587aec2f993aec2c27fc750119ab17b16cdb',1,'FAWorld']]],
   ['ignore_5fsharding_5fprotocol',['IGNORE_SHARDING_PROTOCOL',['../classtesting_1_1internal_1_1_unit_test_impl.html#acc5ffd3f9bc2e87bb3dba4218f58af43a68bd0b7e6a7bead14c93d1a42144095a',1,'testing::internal::UnitTestImpl']]],
   ['incallbasicstats',['IncAllBasicStats',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa42169a74adb6016475bbb5b3a90cbe88',1,'FAWorld::Item']]],
   ['incarmourclasswithmana',['IncArmourClassWithMana',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaaaf968ad2af9da9fddeb08cc93f5118a5',1,'FAWorld::Item']]],

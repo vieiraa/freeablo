@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_f_a_render_1_1_animation_player-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FARender::AnimationPlayer Class Reference</div>  </div>
@@ -103,7 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Types</h2></td></tr>
 <tr class="memitem:af86da10312f600b12fcb7527091ee76f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> { <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76faea3b2042a17eee4c899f43a304a09432">AnimationType::Looped</a>, 
 <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fae1a9dc9f23534e63de9df0d540ac1611">AnimationType::Once</a>, 
-<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fae5ff1617b16da4f04bd504cd8daf409f">AnimationType::FreezeAtEnd</a>
+<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fae5ff1617b16da4f04bd504cd8daf409f">AnimationType::FreezeAtEnd</a>, 
+<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fad927000fd863b08d2426cbf3fc66bd56">AnimationType::ENUM_END</a>
  }</td></tr>
 <tr class="separator:af86da10312f600b12fcb7527091ee76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -111,10 +113,23 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a759d8bb7684deb37a9e1f259b1386bba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a759d8bb7684deb37a9e1f259b1386bba">AnimationPlayer</a> ()</td></tr>
 <tr class="separator:a759d8bb7684deb37a9e1f259b1386bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c66b3308ad245e349f2eb5b1b087547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a4c66b3308ad245e349f2eb5b1b087547">getCurrentFrame</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&amp;sprite, int32_t &amp;frame)</td></tr>
-<tr class="separator:a4c66b3308ad245e349f2eb5b1b087547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb026d28372339c6462b6aceece1d227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#afb026d28372339c6462b6aceece1d227">playAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim, <a class="el" href="namespace_f_a_world.html#a17af347741a47a7fa4af0715facbde63">FAWorld::Tick</a> duration, <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> type)</td></tr>
+<tr class="memitem:a1db5a9c4233f2f0510932b6f0cba28b1"><td class="memItemLeft" align="right" valign="top">std::pair<br class="typebreak" />
+&lt; <a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> <br class="typebreak" />
+*, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a1db5a9c4233f2f0510932b6f0cba28b1">getCurrentFrame</a> ()</td></tr>
+<tr class="separator:a1db5a9c4233f2f0510932b6f0cba28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb026d28372339c6462b6aceece1d227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#afb026d28372339c6462b6aceece1d227">playAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim, <a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a> duration, <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> type)</td></tr>
 <tr class="separator:afb026d28372339c6462b6aceece1d227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3973ee12307ec942df18c76cde26a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af3973ee12307ec942df18c76cde26a64">replaceAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim)</td></tr>
+<tr class="separator:af3973ee12307ec942df18c76cde26a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575beedaa58c85255888b00feade3afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a575beedaa58c85255888b00feade3afa">update</a> ()</td></tr>
+<tr class="separator:a575beedaa58c85255888b00feade3afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad205ed962f6e06b951e171a816145267"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#ad205ed962f6e06b951e171a816145267">Serial::WriteBitStream</a></td></tr>
+<tr class="separator:ad205ed962f6e06b951e171a816145267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e809ee755d83b7485d6cf3d8f9dada"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af7e809ee755d83b7485d6cf3d8f9dada">Serial::ReadBitStream</a></td></tr>
+<tr class="separator:af7e809ee755d83b7485d6cf3d8f9dada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="af86da10312f600b12fcb7527091ee76f"></a>
@@ -140,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fae1a9dc9f23534e63de9df0d540ac1611"></a>Once&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fae5ff1617b16da4f04bd504cd8daf409f"></a>FreezeAtEnd&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fad927000fd863b08d2426cbf3fc66bd56"></a>ENUM_END&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -170,26 +187,15 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4c66b3308ad245e349f2eb5b1b087547"></a>
+<a class="anchor" id="a1db5a9c4233f2f0510932b6f0cba28b1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FARender::AnimationPlayer::getCurrentFrame </td>
+          <td class="memname">std::pair&lt; <a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *, int32_t &gt; FARender::AnimationPlayer::getCurrentFrame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&amp;&#160;</td>
-          <td class="paramname"><em>sprite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int32_t &amp;&#160;</td>
-          <td class="paramname"><em>frame</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,7 +215,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_f_a_world.html#a17af347741a47a7fa4af0715facbde63">FAWorld::Tick</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a>&#160;</td>
           <td class="paramname"><em>duration</em>, </td>
         </tr>
         <tr>
@@ -224,6 +230,79 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3973ee12307ec942df18c76cde26a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FARender::AnimationPlayer::replaceAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td>
+          <td class="paramname"><em>anim</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Simply replaces the currently running animation. The difference from playAnimation is that it will not start at the start of the new animation, but at whatever point the animation running before it was at, ie it "replaces" instead of playing a new animation </p>
+
+</div>
+</div>
+<a class="anchor" id="a575beedaa58c85255888b00feade3afa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FARender::AnimationPlayer::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="af7e809ee755d83b7485d6cf3d8f9dada"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_serial_1_1_read_bit_stream.html">Serial::ReadBitStream</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad205ed962f6e06b951e171a816145267"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_serial_1_1_write_bit_stream.html">Serial::WriteBitStream</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

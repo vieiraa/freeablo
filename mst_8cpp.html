@@ -88,13 +88,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mst.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mst_8h_source.html">mst.h</a>&quot;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -102,31 +102,13 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_f_a_level_gen"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_level.html" title="Library for loading blizzard DUN, TIL and MIN level files. ">Level</a> generation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:acfa3af56d5e0045c1d7a5682fd1d2853"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mst_8cpp.html#acfa3af56d5e0045c1d7a5682fd1d2853">SIZE_T_MAX</a>&#160;&#160;&#160;((size_t) -1)</td></tr>
-<tr class="separator:acfa3af56d5e0045c1d7a5682fd1d2853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aae67843d327b2eb402d25e6ba3d4c206"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_level_gen.html#aae67843d327b2eb402d25e6ba3d4c206">FALevelGen::minKey</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; size_t &gt; &amp;key, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt; &amp;mstSet)</td></tr>
-<tr class="separator:aae67843d327b2eb402d25e6ba3d4c206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ea210f38328e739f62adb59485ebaf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_level_gen.html#a6ea210f38328e739f62adb59485ebaf6">FALevelGen::minimumSpanningTree</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;graph, std::vector&lt; size_t &gt; &amp;parent)</td></tr>
-<tr class="separator:a6ea210f38328e739f62adb59485ebaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7cb8c82db8bba09bd5157f0107d4f0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_level_gen.html#afb7cb8c82db8bba09bd5157f0107d4f0">FALevelGen::minKey</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; int32_t &gt; &amp;key, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt; &amp;mstSet)</td></tr>
+<tr class="separator:afb7cb8c82db8bba09bd5157f0107d4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5509647bf69f7459e73ff512abf7984f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_level_gen.html#a5509647bf69f7459e73ff512abf7984f">FALevelGen::minimumSpanningTree</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; std::vector&lt; int32_t &gt; &gt; &amp;graph, std::vector&lt; int32_t &gt; &amp;parent)</td></tr>
+<tr class="separator:a5509647bf69f7459e73ff512abf7984f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="acfa3af56d5e0045c1d7a5682fd1d2853"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SIZE_T_MAX&#160;&#160;&#160;((size_t) -1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">struct </span>LevelObject</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">bool</span> valid;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">size_t</span> spriteCacheIndex;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">size_t</span> spriteFrame;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        int32_t spriteCacheIndex;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        int32_t spriteFrame;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        int32_t x2;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        int32_t y2;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        int32_t dist;</div>
@@ -114,19 +114,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">class </span>LevelObjects</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#aec95c0d3bbbec74e588dfefc1e0a1d9f">resize</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#aec95c0d3bbbec74e588dfefc1e0a1d9f">resize</a>(int32_t x, int32_t y);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_misc_1_1_helper2_d.html">Misc::Helper2D&lt;LevelObjects, std::vector&lt;LevelObject&gt;</a>&amp;&gt; operator[] (<span class="keywordtype">size_t</span> x);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_misc_1_1_helper2_d.html">Misc::Helper2D&lt;LevelObjects, std::vector&lt;LevelObject&gt;</a>&amp;&gt; operator[] (int32_t x);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">size_t</span> width();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">size_t</span> height();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            int32_t width();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            int32_t height();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            std::vector&lt;std::vector&lt;LevelObject&gt;&gt; mData;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">size_t</span> mWidth;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">size_t</span> mHeight;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            int32_t mWidth;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            int32_t mHeight;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">friend</span> std::vector&lt;LevelObject&gt;&amp; <span class="keyword">get</span>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, LevelObjects&amp; obj);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">friend</span> std::vector&lt;LevelObject&gt;&amp; <span class="keyword">get</span>(int32_t x, int32_t y, LevelObjects&amp; obj);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>

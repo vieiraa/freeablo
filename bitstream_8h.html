@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="bitstream_8inl.html">bitstream.inl</a>&quot;</code><br />
 </div>
 <p><a href="bitstream_8h_source.html">Go to the source code of this file.</a></p>
@@ -373,14 +374,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                \</div>
-<div class="line">{                                                           \</div>
-<div class="line">    int32_t enumValInt = val;                               <a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">\</a></div>
-<div class="line"><a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">    serialise_int</a>(stream, 0, <a class="code" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00">type::ENUM_END</a>, enumValInt);   \</div>
-<div class="line">    val = (type)enumValInt;                                 \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                        \</div>
+<div class="line">{                                                                   \</div>
+<div class="line">    int32_t enumValInt = (int32_t)val;                              <a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">\</a></div>
+<div class="line"><a class="code" href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">    serialise_int</a>(stream, 0, (int32_t)<a class="code" href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d">type::ENUM_END</a>, enumValInt);  \</div>
+<div class="line">    val = (type)enumValInt;                                         \</div>
 <div class="line">} <span class="keywordflow">while</span>(0)</div>
-<div class="ttc" id="namespace_f_a_world_1_1_anim_state_html_a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00"><div class="ttname"><a href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3a9df989121bc3cca5ee1a3a28a7271d00">FAWorld::AnimState::ENUM_END</a></div><div class="ttdef"><b>Definition:</b> actor.h:44</div></div>
-<div class="ttc" id="bitstream_8h_html_ade500a6db2e56719854e832f130cc37e"><div class="ttname"><a href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">serialise_int</a></div><div class="ttdeci">#define serialise_int(stream, min, max, val)</div><div class="ttdef"><b>Definition:</b> bitstream.h:157</div></div>
+<div class="ttc" id="bitstream_8h_html_ade500a6db2e56719854e832f130cc37e"><div class="ttname"><a href="bitstream_8h.html#ade500a6db2e56719854e832f130cc37e">serialise_int</a></div><div class="ttdeci">#define serialise_int(stream, min, max, val)</div><div class="ttdef"><b>Definition:</b> bitstream.h:174</div></div>
+<div class="ttc" id="namespace_f_a_world_html_a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d"><div class="ttname"><a href="namespace_f_a_world.html#a1fe70175eb68954eddb04a030466081aac6565f55af0b81f36fd118957960755d">FAWorld::ENUM_END</a></div><div class="ttdef"><b>Definition:</b> faction.h:12</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,13 +462,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>  \</div>
-<div class="line">{                                       \</div>
-<div class="line">    auto ret = macro;                   \</div>
-<div class="line">    if (ret != <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>)  \</div>
-<div class="line">        return ret;                     \</div>
-<div class="line">} <span class="keywordflow">while</span>(0)</div>
-<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:26</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>              \</div>
+<div class="line">    {                                                   \</div>
+<div class="line">        auto ret = macro;                               \</div>
+<div class="line">        if (ret != <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a>)              \</div>
+<div class="line">        {                                               \</div>
+<div class="line">            assert(ret == <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa2553a0d674fdcc7304ec651585016eee">Serial::Error::EndOfStream</a>);  \</div>
+<div class="line">            return ret;                                 \</div>
+<div class="line">        }                                               \</div>
+<div class="line">    } <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa545d921cf8259af4af2c3617f5cb2fbb">Serial::Error::Success</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:28</div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6fa2553a0d674fdcc7304ec651585016eee"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fa2553a0d674fdcc7304ec651585016eee">Serial::Error::EndOfStream</a></div><div class="ttdef"><b>Definition:</b> bitstream.h:30</div></div>
 </div><!-- fragment -->
 </div>
 </div>

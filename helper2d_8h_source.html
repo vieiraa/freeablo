@@ -101,19 +101,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            From&amp; parent;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordtype">size_t</span> x;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Retval (*func)(size_t, size_t, From&amp;); </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            int32_t x;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Retval (*func)(int32_t, int32_t, From&amp;); </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span>:    </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524">   19</a></span>&#160;            <a class="code" href="class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524">Helper2D</a>(From&amp; _p, <span class="keywordtype">size_t</span> _x, Retval (*_func)(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>, From&amp;)) : parent(_p), x(_x), func(_func) {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_misc_1_1_helper2_d.html#a707f5ab968079044eee0d3b8d0216a5f">   19</a></span>&#160;            <a class="code" href="class_misc_1_1_helper2_d.html#a707f5ab968079044eee0d3b8d0216a5f">Helper2D</a>(From&amp; _p, int32_t _x, Retval (*_func)(int32_t, int32_t, From&amp;)) : parent(_p), x(_x), func(_func) {}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_misc_1_1_helper2_d.html#ac109116f5b7d8f4ca8074e1739d39707">   21</a></span>&#160;            Retval <a class="code" href="class_misc_1_1_helper2_d.html#ac109116f5b7d8f4ca8074e1739d39707">operator[]</a>(<span class="keywordtype">size_t</span> y){ <span class="keywordflow">return</span> func(x, y, parent); }</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_misc_1_1_helper2_d.html#ad9c490d91580d2afb11e3e6da8f9e637">   21</a></span>&#160;            Retval <a class="code" href="class_misc_1_1_helper2_d.html#ad9c490d91580d2afb11e3e6da8f9e637">operator[]</a>(int32_t y){ <span class="keywordflow">return</span> func(x, y, parent); }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_misc_1_1_helper2_d_html_ac109116f5b7d8f4ca8074e1739d39707"><div class="ttname"><a href="class_misc_1_1_helper2_d.html#ac109116f5b7d8f4ca8074e1739d39707">Misc::Helper2D::operator[]</a></div><div class="ttdeci">Retval operator[](size_t y)</div><div class="ttdef"><b>Definition:</b> helper2d.h:21</div></div>
+<div class="ttc" id="class_misc_1_1_helper2_d_html_ad9c490d91580d2afb11e3e6da8f9e637"><div class="ttname"><a href="class_misc_1_1_helper2_d.html#ad9c490d91580d2afb11e3e6da8f9e637">Misc::Helper2D::operator[]</a></div><div class="ttdeci">Retval operator[](int32_t y)</div><div class="ttdef"><b>Definition:</b> helper2d.h:21</div></div>
 <div class="ttc" id="namespace_misc_html"><div class="ttname"><a href="namespace_misc.html">Misc</a></div><div class="ttdoc">miscellaneous stuff </div></div>
-<div class="ttc" id="class_misc_1_1_helper2_d_html_a3c66c8f9baacbd65651af7cfe54a0524"><div class="ttname"><a href="class_misc_1_1_helper2_d.html#a3c66c8f9baacbd65651af7cfe54a0524">Misc::Helper2D::Helper2D</a></div><div class="ttdeci">Helper2D(From &amp;_p, size_t _x, Retval(*_func)(size_t, size_t, From &amp;))</div><div class="ttdef"><b>Definition:</b> helper2d.h:19</div></div>
+<div class="ttc" id="class_misc_1_1_helper2_d_html_a707f5ab968079044eee0d3b8d0216a5f"><div class="ttname"><a href="class_misc_1_1_helper2_d.html#a707f5ab968079044eee0d3b8d0216a5f">Misc::Helper2D::Helper2D</a></div><div class="ttdeci">Helper2D(From &amp;_p, int32_t _x, Retval(*_func)(int32_t, int32_t, From &amp;))</div><div class="ttdef"><b>Definition:</b> helper2d.h:19</div></div>
 <div class="ttc" id="class_misc_1_1_helper2_d_html"><div class="ttname"><a href="class_misc_1_1_helper2_d.html">Misc::Helper2D</a></div><div class="ttdef"><b>Definition:</b> helper2d.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

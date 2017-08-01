@@ -116,35 +116,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_engine_1_1_client.html#a0a00782013a70f49e54ae774bb97834e">update</a>(uint32_t tick);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_engine_1_1_client.html#a5166f81555e411045076725e938f33ac">getServerSprite</a>(<span class="keywordtype">size_t</span> index);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">private</span>: <span class="comment">// methods</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">void</span> updateImp(uint32_t tick);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> receiveLevel(std::shared_ptr&lt;ReadPacket&gt; packet);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> readServerPacket(<a class="code" href="struct___e_net_event.html">ENetEvent</a>&amp; <a class="code" href="struct___e_net_event.html">event</a>, uint32_t tick);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">void</span> handleGameUpdateMessage(std::shared_ptr&lt;ReadPacket&gt; packet, uint32_t tick);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> sendClientPacket();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">void</span> sendSpriteRequest();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> readSpriteResponse(std::shared_ptr&lt;ReadPacket&gt; packet);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span>: <span class="comment">// members</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="struct___e_net_peer.html">ENetPeer</a>* mServerPeer = <a class="code" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="struct___e_net_host.html">ENetHost</a>* mHost = <a class="code" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="struct___e_net_address.html">ENetAddress</a> mAddress;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">bool</span> mClientRecievedId = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_engine_1_1_client.html#a46897e98a011338b0810c3c48b014455">sendLevelChangePacket</a>(int32_t level);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">private</span>: <span class="comment">// methods</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> updateImp(uint32_t tick);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> receiveLevel(std::shared_ptr&lt;ReadPacket&gt; packet);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">void</span> readServerPacket(<a class="code" href="struct___e_net_event.html">ENetEvent</a>&amp; <a class="code" href="struct___e_net_event.html">event</a>, uint32_t tick);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">void</span> handleGameUpdateMessage(std::shared_ptr&lt;ReadPacket&gt; packet, uint32_t tick);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">void</span> sendClientPacket();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">void</span> sendSpriteRequest();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a> readSpriteResponse(std::shared_ptr&lt;ReadPacket&gt; packet);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span>: <span class="comment">// members</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="struct___e_net_peer.html">ENetPeer</a>* mServerPeer = <a class="code" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="struct___e_net_host.html">ENetHost</a>* mHost = <a class="code" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="struct___e_net_address.html">ENetAddress</a> mAddress;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            uint32_t mClientTickWhenLastServerPacketReceived = 0;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            uint32_t mLastServerTickProcessed = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            uint32_t mLevelIndexTmp = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            std::unordered_set&lt;uint32_t&gt; mAlreadySentServerSprites;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::unordered_set&lt;uint32_t&gt; mUnknownServerSprites;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            std::unordered_set&lt;uint32_t&gt; mAlreadySentServerSprites;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            std::unordered_set&lt;uint32_t&gt; mUnknownServerSprites;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="struct___e_net_address_html"><div class="ttname"><a href="struct___e_net_address.html">_ENetAddress</a></div><div class="ttdef"><b>Definition:</b> enet.h:89</div></div>
 <div class="ttc" id="class_f_a_render_1_1_f_a_sprite_group_html"><div class="ttname"><a href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a></div><div class="ttdef"><b>Definition:</b> spritecache.h:19</div></div>
-<div class="ttc" id="class_engine_1_1_client_html_a5166f81555e411045076725e938f33ac"><div class="ttname"><a href="class_engine_1_1_client.html#a5166f81555e411045076725e938f33ac">Engine::Client::getServerSprite</a></div><div class="ttdeci">FARender::FASpriteGroup * getServerSprite(size_t index)</div><div class="ttdef"><b>Definition:</b> client.cpp:280</div></div>
+<div class="ttc" id="class_engine_1_1_client_html_a5166f81555e411045076725e938f33ac"><div class="ttname"><a href="class_engine_1_1_client.html#a5166f81555e411045076725e938f33ac">Engine::Client::getServerSprite</a></div><div class="ttdeci">FARender::FASpriteGroup * getServerSprite(size_t index)</div><div class="ttdef"><b>Definition:</b> client.cpp:290</div></div>
 <div class="ttc" id="class_engine_1_1_client_html_a0a00782013a70f49e54ae774bb97834e"><div class="ttname"><a href="class_engine_1_1_client.html#a0a00782013a70f49e54ae774bb97834e">Engine::Client::update</a></div><div class="ttdeci">void update(uint32_t tick)</div><div class="ttdef"><b>Definition:</b> client.cpp:46</div></div>
 <div class="ttc" id="struct___e_net_host_html"><div class="ttname"><a href="struct___e_net_host.html">_ENetHost</a></div><div class="ttdef"><b>Definition:</b> enet.h:358</div></div>
 <div class="ttc" id="namespace_f_a_render_html"><div class="ttname"><a href="namespace_f_a_render.html">FARender</a></div><div class="ttdoc">Rendering. </div></div>
@@ -153,11 +152,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="struct___e_net_event_html"><div class="ttname"><a href="struct___e_net_event.html">_ENetEvent</a></div><div class="ttdef"><b>Definition:</b> enet.h:434</div></div>
 <div class="ttc" id="struct___e_net_peer_html"><div class="ttname"><a href="struct___e_net_peer.html">_ENetPeer</a></div><div class="ttdef"><b>Definition:</b> enet.h:258</div></div>
 <div class="ttc" id="huff__old_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> huff_old.h:29</div></div>
-<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6f"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> bitstream.h:24</div></div>
+<div class="ttc" id="namespace_serial_1_1_error_html_a1be827363d805bba5e9a27ac5b590c6f"><div class="ttname"><a href="namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6f">Serial::Error::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> bitstream.h:26</div></div>
 <div class="ttc" id="enet_8h_html"><div class="ttname"><a href="enet_8h.html">enet.h</a></div><div class="ttdoc">ENet public header file. </div></div>
 <div class="ttc" id="class_engine_1_1_client_html"><div class="ttname"><a href="class_engine_1_1_client.html">Engine::Client</a></div><div class="ttdef"><b>Definition:</b> client.h:19</div></div>
 <div class="ttc" id="class_engine_1_1_client_html_ab7d52b11923f3eb9818e2503cd6a5c6d"><div class="ttname"><a href="class_engine_1_1_client.html#ab7d52b11923f3eb9818e2503cd6a5c6d">Engine::Client::Client</a></div><div class="ttdeci">Client()</div><div class="ttdef"><b>Definition:</b> client.cpp:17</div></div>
 <div class="ttc" id="namespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>Definition:</b> engineinputmanager.cpp:5</div></div>
+<div class="ttc" id="class_engine_1_1_client_html_a46897e98a011338b0810c3c48b014455"><div class="ttname"><a href="class_engine_1_1_client.html#a46897e98a011338b0810c3c48b014455">Engine::Client::sendLevelChangePacket</a></div><div class="ttdeci">void sendLevelChangePacket(int32_t level)</div><div class="ttdef"><b>Definition:</b> client.cpp:253</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

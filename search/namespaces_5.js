@@ -1,7 +1,6 @@
 var searchData=
 [
   ['actorstate',['ActorState',['../namespace_f_a_world_1_1_actor_state.html',1,'FAWorld']]],
-  ['animstate',['AnimState',['../namespace_f_a_world_1_1_anim_state.html',1,'FAWorld']]],
   ['faaudio',['FAAudio',['../namespace_f_a_audio.html',1,'']]],
   ['fagui',['FAGui',['../namespace_f_a_gui.html',1,'']]],
   ['faio',['FAIO',['../namespace_f_a_i_o.html',1,'']]],

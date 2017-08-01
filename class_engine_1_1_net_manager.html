@@ -101,14 +101,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a213ae4bb02889cd8dab377954d9f7ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0">NetManager</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isServer, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_player_factory.html">FAWorld::PlayerFactory</a> &amp;playerFactory)</td></tr>
+<tr class="memitem:a213ae4bb02889cd8dab377954d9f7ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0">NetManager</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">isServer</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_player_factory.html">FAWorld::PlayerFactory</a> &amp;playerFactory)</td></tr>
 <tr class="separator:a213ae4bb02889cd8dab377954d9f7ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada27ecea83dc0117774680204415917f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#ada27ecea83dc0117774680204415917f">~NetManager</a> ()</td></tr>
 <tr class="separator:ada27ecea83dc0117774680204415917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332d66c3c7e9005bef2c5e3400905216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#a332d66c3c7e9005bef2c5e3400905216">update</a> ()</td></tr>
 <tr class="separator:a332d66c3c7e9005bef2c5e3400905216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e964d1cc95535444e4fccc2c25e0261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#a0e964d1cc95535444e4fccc2c25e0261">isServer</a> ()</td></tr>
+<tr class="separator:a0e964d1cc95535444e4fccc2c25e0261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5ccb4414847ba034e19c6618485ad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#a0c5ccb4414847ba034e19c6618485ad2">getServerSprite</a> (size_t index)</td></tr>
 <tr class="separator:a0c5ccb4414847ba034e19c6618485ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76e476193712f1c29047d23df7eb894"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_net_manager.html#ac76e476193712f1c29047d23df7eb894">sendLevelChangePacket</a> (int32_t level)</td></tr>
+<tr class="separator:ac76e476193712f1c29047d23df7eb894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -190,6 +194,45 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e964d1cc95535444e4fccc2c25e0261"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Engine::NetManager::isServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac76e476193712f1c29047d23df7eb894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> Engine::NetManager::sendLevelChangePacket </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
