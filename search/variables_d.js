@@ -144,6 +144,7 @@ var searchData=
   ['minpath',['minPath',['../struct_f_a_render_1_1_tileset_path.html#a11c8337f1173d1aa6baa51a5e2c7c88f',1,'FARender::TilesetPath']]],
   ['minvalidvalue',['MinValidValue',['../class_t_huffmann_tree.html#a0f6dac496f3f6855db0aa2518c9e050f',1,'THuffmannTree']]],
   ['minventory',['mInventory',['../class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45',1,'FAWorld::Player']]],
+  ['minvuln',['mInvuln',['../class_f_a_world_1_1_actor.html#aa86846570e64649b4a6f118caeb275ab',1,'FAWorld::Actor']]],
   ['misdead',['mIsDead',['../class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1',1,'FAWorld::Actor']]],
   ['misreal',['mIsReal',['../class_f_a_world_1_1_item.html#a930546755e1ba5a242405d0710807847',1,'FAWorld::Item']]],
   ['mitemtype',['mItemType',['../class_diablo_exe_1_1_unique_item.html#af463514934e876b3330a4cd63434e4c1',1,'DiabloExe::UniqueItem']]],

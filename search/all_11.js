@@ -215,7 +215,7 @@ var searchData=
   ['posencoders',['posEncoders',['../struct_c_save_state.html#a67a16aaf4d6dbf13f262ec27d6f19073',1,'CSaveState::posEncoders()'],['../struct_c_lzma_enc.html#ae81a1f30f2a8c1a97ef5236e21787cfb',1,'CLzmaEnc::posEncoders()']]],
   ['posf',['Posf',['../deflate_8h.html#a7fc422ecb86afdd5f330dad6f7c1136b',1,'deflate.h']]],
   ['position',['Position',['../class_f_a_world_1_1_position.html',1,'FAWorld']]],
-  ['position',['position',['../structnk__sdl__vertex.html#ab260dc6e473f3fc4d2a5382dc0da9bb1',1,'nk_sdl_vertex::position()'],['../class_f_a_world_1_1_position.html#ad8fc3f2947f0017754c7d708aa640870',1,'FAWorld::Position::Position()'],['../class_f_a_world_1_1_position.html#a64fa8bfd0acd7e757e54352ab066265d',1,'FAWorld::Position::Position(int32_t x, int32_t y)'],['../class_f_a_world_1_1_position.html#a9f738351abca12740b41a568a24ae07b',1,'FAWorld::Position::Position(int32_t x, int32_t y, int32_t direction)']]],
+  ['position',['Position',['../class_f_a_world_1_1_position.html#ad8fc3f2947f0017754c7d708aa640870',1,'FAWorld::Position::Position()'],['../class_f_a_world_1_1_position.html#a64fa8bfd0acd7e757e54352ab066265d',1,'FAWorld::Position::Position(int32_t x, int32_t y)'],['../class_f_a_world_1_1_position.html#a9f738351abca12740b41a568a24ae07b',1,'FAWorld::Position::Position(int32_t x, int32_t y, int32_t direction)'],['../structnk__sdl__vertex.html#ab260dc6e473f3fc4d2a5382dc0da9bb1',1,'nk_sdl_vertex::position()']]],
   ['position_2ecpp',['position.cpp',['../position_8cpp.html',1,'']]],
   ['position_2eh',['position.h',['../position_8h.html',1,'']]],
   ['poslimit',['posLimit',['../struct___c_match_finder.html#a062617b9b12ee9b515115851a2e522f1',1,'_CMatchFinder']]],
