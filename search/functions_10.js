@@ -2,6 +2,8 @@ var searchData=
 [
   ['page',['Page',['../class_launcher_1_1_page.html#a8395f0e6bee33a7120da63344847d4ca',1,'Launcher::Page']]],
   ['pal',['Pal',['../class_cel_1_1_pal.html#a09b14aee2e2d21fd212f282ac63f6ae3',1,'Cel::Pal::Pal()'],['../class_cel_1_1_pal.html#a0fe143cf33cf944dd5e1befa7ae97593',1,'Cel::Pal::Pal(const std::string &amp;filename)']]],
+  ['panelname',['panelName',['../namespace_f_a_gui.html#a6332682677d6295d5ca604352a4edb42',1,'FAGui']]],
+  ['panelplacementbytype',['panelPlacementByType',['../namespace_f_a_gui.html#a8436e6916d877e7cd8e7d3477ab636f6',1,'FAGui']]],
   ['parseatomiccodenode',['ParseAtomicCodeNode',['../namespacepump.html#a40224eb47d27ea5626c29081d0d533f2',1,'pump']]],
   ['parseboolflag',['ParseBoolFlag',['../namespacetesting_1_1internal.html#ada3b98e7cfe93f4ba2053c470d9e3e51',1,'testing::internal']]],
   ['parsecodenode',['ParseCodeNode',['../namespacepump.html#aa889d697c651115f8eb880d5b9dd7120',1,'pump']]],

@@ -33,7 +33,7 @@ var searchData=
   ['initializepythonwrapper',['initializePythonWrapper',['../class_input_1_1_hotkey.html#aad7aa8f75e7368ad4626f3ee95027835',1,'Input::Hotkey']]],
   ['initmenu',['initMenu',['../classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475',1,'python::menu::Menu']]],
   ['inittree',['InitTree',['../class_t_huffmann_tree.html#a8bc84df971081627d909593fdea27118',1,'THuffmannTree']]],
-  ['inputmanager',['InputManager',['../class_input_1_1_input_manager.html#a28cc2d52a675c27e6f64c4045dcde789',1,'Input::InputManager::InputManager()'],['../class_engine_1_1_engine_main.html#a149932a5bad73cf8279a5b52f8a73a76',1,'Engine::EngineMain::inputManager()']]],
+  ['inputmanager',['inputManager',['../class_engine_1_1_engine_main.html#a149932a5bad73cf8279a5b52f8a73a76',1,'Engine::EngineMain::inputManager()'],['../class_input_1_1_input_manager.html#a28cc2d52a675c27e6f64c4045dcde789',1,'Input::InputManager::InputManager()']]],
   ['insertitem',['InsertItem',['../class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261',1,'THuffmannTree']]],
   ['insertlevel',['insertLevel',['../class_f_a_world_1_1_world.html#aef83bbf139aa4a33f05117a41bc5bed0',1,'FAWorld::World']]],
   ['insertnewbranchandrebalance',['InsertNewBranchAndRebalance',['../class_t_huffmann_tree.html#aa2d1ed63bb3b90c1f31bd34850ee0f5c',1,'THuffmannTree']]],

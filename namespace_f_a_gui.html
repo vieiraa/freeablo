@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -106,14 +107,36 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a74a913e58801afd07cf670954af75c89"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a74a913e58801afd07cf670954af75c89">HistoryCommandsContainer</a></td></tr>
 <tr class="separator:a74a913e58801afd07cf670954af75c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:af58915752ee1544c37c19c426336965c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965c">PanelType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca334c4a4c42fdb79d7ebc3e73b517e6f8">PanelType::none</a>, 
+<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca7a1eabc3deb7fd02ceb1e16eafc41073">PanelType::inventory</a>, 
+<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca649921b34e2f68becf1e7488379c7e6d">PanelType::spells</a>, 
+<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965caa956161a69928cd130a889b88082fb6e">PanelType::character</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca81159df9163879c80b772e3de1d50fc4">PanelType::quests</a>
+<br />
+ }</td></tr>
+<tr class="separator:af58915752ee1544c37c19c426336965c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f44b10f46c260602cb1911a38f4f1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1b">PanelPlacement</a> { <a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba334c4a4c42fdb79d7ebc3e73b517e6f8">PanelPlacement::none</a>, 
+<a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254">PanelPlacement::left</a>, 
+<a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d">PanelPlacement::right</a>
+ }</td></tr>
+<tr class="separator:a86f44b10f46c260602cb1911a38f4f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8436e6916d877e7cd8e7d3477ab636f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1b">PanelPlacement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a8436e6916d877e7cd8e7d3477ab636f6">panelPlacementByType</a> (<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965c">PanelType</a> type)</td></tr>
+<tr class="separator:a8436e6916d877e7cd8e7d3477ab636f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47add2f89de17d5810c9bda15c0dbe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#ab47add2f89de17d5810c9bda15c0dbe6">bgImgPath</a> (<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965c">PanelType</a> type)</td></tr>
+<tr class="separator:ab47add2f89de17d5810c9bda15c0dbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6332682677d6295d5ca604352a4edb42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a6332682677d6295d5ca604352a4edb42">panelName</a> (<a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965c">PanelType</a> type)</td></tr>
+<tr class="separator:a6332682677d6295d5ca604352a4edb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf866465236f3dcd795b72dc378f8e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a1cf866465236f3dcd795b72dc378f8e8">nk_fa_begin_image_window</a> (<a class="el" href="structnk__context.html">nk_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *title, struct <a class="el" href="structnk__rect.html">nk_rect</a> bounds, <a class="el" href="nuklear_8h.html#a19e0e2f6db4862891d9801de3c3da323">nk_flags</a> flags, struct <a class="el" href="structnk__image.html">nk_image</a> background, std::function&lt; <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>(<a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>)&gt; action)</td></tr>
 <tr class="separator:a1cf866465236f3dcd795b72dc378f8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf7c791e7353c1294b16c94950c51cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a1cf7c791e7353c1294b16c94950c51cf">pauseMenu</a> (<a class="el" href="structnk__context.html">nk_context</a> *ctx, <a class="el" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a> &amp;engine)</td></tr>
 <tr class="separator:a1cf7c791e7353c1294b16c94950c51cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817b4eb6afccf866e1f291a6f3980286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a817b4eb6afccf866e1f291a6f3980286">bottomMenu</a> (<a class="el" href="structnk__context.html">nk_context</a> *ctx)</td></tr>
-<tr class="separator:a817b4eb6afccf866e1f291a6f3980286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -134,16 +157,77 @@ Rocket::Core::ElementDocument * &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a86f44b10f46c260602cb1911a38f4f1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1b">FAGui::PanelPlacement</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a86f44b10f46c260602cb1911a38f4f1ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254"></a>left&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d"></a>right&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="af58915752ee1544c37c19c426336965c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_f_a_gui.html#af58915752ee1544c37c19c426336965c">FAGui::PanelType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af58915752ee1544c37c19c426336965ca334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af58915752ee1544c37c19c426336965ca7a1eabc3deb7fd02ceb1e16eafc41073"></a>inventory&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af58915752ee1544c37c19c426336965ca649921b34e2f68becf1e7488379c7e6d"></a>spells&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af58915752ee1544c37c19c426336965caa956161a69928cd130a889b88082fb6e"></a>character&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af58915752ee1544c37c19c426336965ca81159df9163879c80b772e3de1d50fc4"></a>quests&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a817b4eb6afccf866e1f291a6f3980286"></a>
+<a class="anchor" id="ab47add2f89de17d5810c9bda15c0dbe6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FAGui::bottomMenu </td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char * FAGui::bgImgPath </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnk__context.html">nk_context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td class="paramtype">PanelType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -195,6 +279,38 @@ Rocket::Core::ElementDocument * &gt;&#160;</td><td class="memItemRight" valign="
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6332682677d6295d5ca604352a4edb42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char * FAGui::panelName </td>
+          <td>(</td>
+          <td class="paramtype">PanelType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8436e6916d877e7cd8e7d3477ab636f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1b">PanelPlacement</a> FAGui::panelPlacementByType </td>
+          <td>(</td>
+          <td class="paramtype">PanelType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

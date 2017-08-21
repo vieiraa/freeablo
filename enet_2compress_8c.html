@@ -511,17 +511,19 @@ Functions</h2></td></tr>
 <div class="line">        value_ = node-&gt;value + 1 + (<a class="code" href="structcode.html">code</a> - after)/minimum; \</div>
 <div class="line">        under_ = <a class="code" href="structcode.html">code</a> - (<a class="code" href="structcode.html">code</a> - after)%minimum; <a class="code" href="enet_2compress_8c.html#a61f061433eedabacffa7c43b038d3528">\</a></div>
 <div class="line"><a class="code" href="enet_2compress_8c.html#a61f061433eedabacffa7c43b038d3528">        ENET_SYMBOL_CREATE</a> (symbol_, value_, update); \</div>
-<div class="line">        node -&gt; right = symbol_ - node; \</div>
+<div class="line">        node -&gt; <a class="code" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d">right</a> = symbol_ - node; \</div>
 <div class="line">    }, \</div>
 <div class="line">    { \</div>
 <div class="line">        value_ = node-&gt;value - 1 - (after - before - <a class="code" href="structcode.html">code</a> - 1)/minimum; \</div>
 <div class="line">        under_ = <a class="code" href="structcode.html">code</a> - (after - before - <a class="code" href="structcode.html">code</a> - 1)%minimum; <a class="code" href="enet_2compress_8c.html#a61f061433eedabacffa7c43b038d3528">\</a></div>
 <div class="line"><a class="code" href="enet_2compress_8c.html#a61f061433eedabacffa7c43b038d3528">        ENET_SYMBOL_CREATE</a> (symbol_, value_, update); \</div>
-<div class="line">        node -&gt; left = symbol_ - node; \</div>
+<div class="line">        node -&gt; <a class="code" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254">left</a> = symbol_ - node; \</div>
 <div class="line">    }) \</div>
 <div class="ttc" id="enet_2compress_8c_html_a61f061433eedabacffa7c43b038d3528"><div class="ttname"><a href="enet_2compress_8c.html#a61f061433eedabacffa7c43b038d3528">ENET_SYMBOL_CREATE</a></div><div class="ttdeci">#define ENET_SYMBOL_CREATE(symbol, value_, count_)</div><div class="ttdef"><b>Definition:</b> compress.c:68</div></div>
+<div class="ttc" id="namespace_f_a_gui_html_a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d"><div class="ttname"><a href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d">FAGui::PanelPlacement::right</a></div></div>
 <div class="ttc" id="enet_2compress_8c_html_a0f6333d89acd57abfa3c6905bc8cd54f"><div class="ttname"><a href="enet_2compress_8c.html#a0f6333d89acd57abfa3c6905bc8cd54f">ENET_CONTEXT_DECODE</a></div><div class="ttdeci">#define ENET_CONTEXT_DECODE(context, symbol_, code, value_, under_, count_, update, minimum, createRoot, visitNode, createRight, createLeft)</div><div class="ttdef"><b>Definition:</b> compress.c:373</div></div>
 <div class="ttc" id="der__length__ia5__string_8c_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="der__length__ia5__string_8c.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> der_length_ia5_string.c:21</div></div>
+<div class="ttc" id="namespace_f_a_gui_html_a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254"><div class="ttname"><a href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254">FAGui::PanelPlacement::left</a></div></div>
 <div class="ttc" id="structcode_html"><div class="ttname"><a href="structcode.html">code</a></div><div class="ttdef"><b>Definition:</b> inftrees.h:24</div></div>
 </div><!-- fragment -->
 </div>
@@ -832,14 +834,16 @@ Functions</h2></td></tr>
 <div class="line">    symbol -&gt; <a class="code" href="der__length__ia5__string_8c.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = value_; \</div>
 <div class="line">    symbol -&gt; count = count_; \</div>
 <div class="line">    symbol -&gt; under = count_; \</div>
-<div class="line">    symbol -&gt; left = 0; \</div>
-<div class="line">    symbol -&gt; right = 0; \</div>
+<div class="line">    symbol -&gt; <a class="code" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254">left</a> = 0; \</div>
+<div class="line">    symbol -&gt; <a class="code" href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d">right</a> = 0; \</div>
 <div class="line">    symbol -&gt; symbols = 0; \</div>
 <div class="line">    symbol -&gt; escapes = 0; \</div>
 <div class="line">    symbol -&gt; total = 0; \</div>
 <div class="line">    symbol -&gt; parent = 0; \</div>
 <div class="line">}</div>
+<div class="ttc" id="namespace_f_a_gui_html_a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d"><div class="ttname"><a href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba7c4f29407893c334a6cb7a87bf045c0d">FAGui::PanelPlacement::right</a></div></div>
 <div class="ttc" id="der__length__ia5__string_8c_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="der__length__ia5__string_8c.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> der_length_ia5_string.c:21</div></div>
+<div class="ttc" id="namespace_f_a_gui_html_a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254"><div class="ttname"><a href="namespace_f_a_gui.html#a86f44b10f46c260602cb1911a38f4f1ba811882fecd5c7618d7099ebbd39ea254">FAGui::PanelPlacement::left</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

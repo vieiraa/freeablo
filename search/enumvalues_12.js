@@ -59,6 +59,7 @@ var searchData=
   ['sfilempquserdataoffset',['SFileMpqUserDataOffset',['../_storm_lib_8h.html#a90f178cc391e156ead40ea74dc0414d3ab6ac50d041070ae4b65f53681f0854e9',1,'StormLib.h']]],
   ['specifiedarmourclass',['SpecifiedArmourClass',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaaea2415ff55c68ba555f19a7dd21918dd',1,'FAWorld::Item']]],
   ['spell',['Spell',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa284fbb3c237d67d95b47df86e3ae34cd',1,'FAWorld::Item']]],
+  ['spells',['spells',['../namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca649921b34e2f68becf1e7488379c7e6d',1,'FAGui']]],
   ['sprite',['Sprite',['../namespace_engine.html#a303d93204692a1abe978a611dc20cb7ca51f2b7b14433aa22c67d1f4fc18943cd',1,'Engine']]],
   ['start',['Start',['../namespace_serial_1_1_b_s_pos.html#ad6c8ee0b692aed13599fb06a95ad1641aa1fba6cfa4e8629c74d2a0e64344dce5',1,'Serial::BSPos']]],
   ['stop_5fsound',['STOP_SOUND',['../namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a65db86e106871795ae530e4f1246fb99',1,'Engine']]],

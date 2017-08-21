@@ -61,6 +61,7 @@ var searchData=
   ['intercept_5fall_5fthreads',['INTERCEPT_ALL_THREADS',['../classtesting_1_1_scoped_fake_test_part_result_reporter.html#a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd',1,'testing::ScopedFakeTestPartResultReporter']]],
   ['intercept_5fonly_5fcurrent_5fthread',['INTERCEPT_ONLY_CURRENT_THREAD',['../classtesting_1_1_scoped_fake_test_part_result_reporter.html#a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a',1,'testing::ScopedFakeTestPartResultReporter']]],
   ['invaliddata',['InvalidData',['../namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fafedf66671b5f603794fe85aaedfd3dc1',1,'Serial::Error']]],
+  ['inventory',['inventory',['../namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca7a1eabc3deb7fd02ceb1e16eafc41073',1,'FAGui']]],
   ['itarmour',['itARMOUR',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3a3941d52f3c4d2b22fe340a9c026f050c',1,'FAWorld::Item']]],
   ['itgold',['itGOLD',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3ad6b019ce3dea86d332bec6bc14675fca',1,'FAWorld::Item']]],
   ['itnovelty',['itNOVELTY',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3a6314155b4234d2cabaf1a6bfe9d27950',1,'FAWorld::Item']]],
