@@ -10,6 +10,7 @@ var searchData=
   ['nk_5fapi',['NK_API',['../nuklear_8h.html#a0cf1c39d0b118a76a84147c7f510e54e',1,'nuklear.h']]],
   ['nk_5fbetween',['NK_BETWEEN',['../nuklear_8h.html#ac21944fc6ffac114c9f621e0e74f1f55',1,'nuklear.h']]],
   ['nk_5fbutton_5fbehavior_5fstack_5fsize',['NK_BUTTON_BEHAVIOR_STACK_SIZE',['../nuklear_8h.html#a6928fff50ec88d27a9a52fb379930056',1,'nuklear.h']]],
+  ['nk_5fbutton_5ftrigger_5fon_5frelease',['NK_BUTTON_TRIGGER_ON_RELEASE',['../nuklear_8c.html#a554ad56b1ca94708d653f5220a001a97',1,'nuklear.c']]],
   ['nk_5fchart_5fmax_5fslot',['NK_CHART_MAX_SLOT',['../nuklear_8h.html#acb2e713edfb3e50211b1fd67d38529be',1,'nuklear.h']]],
   ['nk_5fclamp',['NK_CLAMP',['../nuklear_8h.html#a2fc614d220caad6d666ac774fea375a6',1,'nuklear.h']]],
   ['nk_5fcolor_5fstack_5fsize',['NK_COLOR_STACK_SIZE',['../nuklear_8h.html#a959e086f7329d240acf4d7a9a573ae2a',1,'nuklear.h']]],

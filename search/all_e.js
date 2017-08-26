@@ -443,7 +443,7 @@ var searchData=
   ['mp_5fmul_5fd',['mp_mul_d',['../tommath_8h.html#adf7c8916c1a2f69d9a4ca263e3b8e95d',1,'tommath.h']]],
   ['mp_5fmulmod',['mp_mulmod',['../tommath_8h.html#ab3f7e691536b2c5a3c6e7fcd64b6edf5',1,'tommath.h']]],
   ['mp_5fn_5froot',['mp_n_root',['../tommath_8h.html#a021ae2ea42b36780f0d25616198b6177',1,'tommath.h']]],
-  ['mp_5fneg',['mp_neg',['../tommath_8h.html#a2d57acfc18c0a61119360b3e22898bab',1,'mp_neg(mp_int *a, mp_int *b):&#160;tommath.h'],['../tommath_8h.html#a7785f4e84b18961a35f530f9e359aec6',1,'MP_NEG():&#160;tommath.h']]],
+  ['mp_5fneg',['MP_NEG',['../tommath_8h.html#a7785f4e84b18961a35f530f9e359aec6',1,'MP_NEG():&#160;tommath.h'],['../tommath_8h.html#a2d57acfc18c0a61119360b3e22898bab',1,'mp_neg(mp_int *a, mp_int *b):&#160;tommath.h']]],
   ['mp_5fno',['MP_NO',['../tommath_8h.html#a3044eafd5a3d356e9adee9dd58ccfdeb',1,'tommath.h']]],
   ['mp_5fokay',['MP_OKAY',['../tommath_8h.html#ac80c0f9e7e808e8a24359f04d71028c4',1,'tommath.h']]],
   ['mp_5for',['mp_or',['../tommath_8h.html#aea8ad6c65a2c3916f98742e8e7519a3d',1,'tommath.h']]],
