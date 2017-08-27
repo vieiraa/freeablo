@@ -107,7 +107,7 @@ var searchData=
   ['drawattile',['drawAtTile',['../namespace_render.html#add9adb012f2dc9f2542e9232ec411312',1,'Render']]],
   ['drawbuffer',['drawBuffer',['../class_rocket_s_d_l2_renderer.html#a4d590e7958e63257934ec4a23c33750f',1,'RocketSDL2Renderer']]],
   ['drawcorridoorsegment',['drawCorridoorSegment',['../namespace_f_a_level_gen.html#a936e41b0fa4a29dc684f6f0af066d73f',1,'FALevelGen']]],
-  ['drawcursor',['drawCursor',['../namespace_render.html#ae8490bd4dd892c99b383fe597d8c51e6',1,'Render']]],
+  ['drawcursor',['drawCursor',['../class_f_a_render_1_1_renderer.html#ae2fc75b1aa8fac3cf8bd6efe286cadd1',1,'FARender::Renderer::drawCursor()'],['../namespace_render.html#a018068721b41a7bb1dd492f46d2d824c',1,'Render::drawCursor()']]],
   ['drawframe',['drawFrame',['../namespace_render.html#a8384399aba8d9bca82788367f744016f',1,'Render']]],
   ['drawgui',['drawGui',['../namespace_render.html#a73dfef1334cd398f38b31085eef9fa49',1,'Render']]],
   ['drawlevel',['drawLevel',['../namespace_render.html#aa2625d5d45177718b16be35d3de01643',1,'Render']]],

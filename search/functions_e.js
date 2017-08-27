@@ -407,6 +407,7 @@ var searchData=
   ['nk_5fwidget_5fhas_5fmouse_5fclick_5fdown',['nk_widget_has_mouse_click_down',['../nuklear_8h.html#a935115fd23e76972ebc4315db22225ba',1,'nuklear.h']]],
   ['nk_5fwidget_5fheight',['nk_widget_height',['../nuklear_8h.html#ae2571e0f4f03995ce2c9951dd65209a5',1,'nuklear.h']]],
   ['nk_5fwidget_5fis_5fhovered',['nk_widget_is_hovered',['../nuklear_8h.html#a60af340017050bf4e0844a95496bd255',1,'nuklear.h']]],
+  ['nk_5fwidget_5fis_5fmouse_5fclick_5fdown',['nk_widget_is_mouse_click_down',['../nuklear_8h.html#a54fdcbe6ab17632fd65f9688dfb2f4ed',1,'nuklear.h']]],
   ['nk_5fwidget_5fis_5fmouse_5fclicked',['nk_widget_is_mouse_clicked',['../nuklear_8h.html#a7b9ee737a59137045b206a525f5f4177',1,'nuklear.h']]],
   ['nk_5fwidget_5fposition',['nk_widget_position',['../nuklear_8h.html#a3dd784872d99544fd2f28ac226c21507',1,'nuklear.h']]],
   ['nk_5fwidget_5fsize',['nk_widget_size',['../nuklear_8h.html#ab0317e82badabf0cd5fe5b1fd4d2d189',1,'nuklear.h']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['m',['m',['../namespace_f_a_i_o.html#a2341739ffdbd12b848c311fd4d6def0c',1,'FAIO']]],
+  ['m_5fptr',['m_ptr',['../struct_misc_1_1detail_1_1func__ptr__wrapper_3_01_ret_07_args_8_8_8_08_4.html#a2639ddb7ca438c900870048e7284d606',1,'Misc::detail::func_ptr_wrapper&lt; Ret(Args...)&gt;']]],
   ['mactor',['mActor',['../class_f_a_world_1_1_actor_stats.html#a01d6ad4d63a02666a200c8bf3abf9180',1,'FAWorld::ActorStats::mActor()'],['../class_f_a_world_1_1_behaviour.html#a3fb0caa34d4a64d86cbb3306fa79fbdc',1,'FAWorld::Behaviour::mActor()']]],
   ['mactorstatemachine',['mActorStateMachine',['../class_f_a_world_1_1_actor.html#a07eceaf3f9994af7a8311ca251222792',1,'FAWorld::Actor']]],
   ['magiccode',['magicCode',['../class_diablo_exe_1_1_base_item.html#a91e62dbcbeab6f04130bb6f6fab32ccd',1,'DiabloExe::BaseItem']]],
@@ -71,6 +72,7 @@ var searchData=
   ['mcursed',['mCursed',['../struct_diablo_exe_1_1_affix.html#ade3f2d1a69f2e159a9687ab7d1c57e75',1,'DiabloExe::Affix']]],
   ['mcursorempty',['mCursorEmpty',['../class_f_a_render_1_1_render_state.html#ac4f65c3f76c1d3de8fd94b7443e7de2b',1,'FARender::RenderState']]],
   ['mcursorframe',['mCursorFrame',['../class_f_a_render_1_1_render_state.html#a9aaff6dfbbd5255cc1309aea5a7ef8de',1,'FARender::RenderState']]],
+  ['mcursorhotspot',['mCursorHotspot',['../class_f_a_render_1_1_render_state.html#ad1c964ef60e383398270e111d8317bd5',1,'FARender::RenderState']]],
   ['mcursorspritegroup',['mCursorSpriteGroup',['../class_f_a_render_1_1_render_state.html#ad62f6520e196c2797be262493b1e8a39',1,'FARender::RenderState']]],
   ['md5',['md5',['../struct___t_patch_info.html#ac5bc9cd5608eb5235e0ccf412d2b573e',1,'_TPatchInfo::md5()'],['../struct___t_file_entry.html#a041d1a2b52759640cbea24d0d5e99ff6',1,'_TFileEntry::md5()']]],
   ['md5_5fafter_5fpatch',['md5_after_patch',['../struct___t_patch_header.html#abfce852056dff61c6ec2a63c7f54e045',1,'_TPatchHeader']]],
@@ -147,6 +149,7 @@ var searchData=
   ['minvuln',['mInvuln',['../class_f_a_world_1_1_actor.html#aa86846570e64649b4a6f118caeb275ab',1,'FAWorld::Actor']]],
   ['misdead',['mIsDead',['../class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1',1,'FAWorld::Actor']]],
   ['misreal',['mIsReal',['../class_f_a_world_1_1_item.html#a930546755e1ba5a242405d0710807847',1,'FAWorld::Item']]],
+  ['mitembyname',['mItemByName',['../namespace_f_a_world.html#a384a7d2558a9b02803e57e20f5ddb275',1,'FAWorld']]],
   ['mitemtype',['mItemType',['../class_diablo_exe_1_1_unique_item.html#af463514934e876b3330a4cd63434e4c1',1,'DiabloExe::UniqueItem']]],
   ['mixmatchesfunc',['MixMatchesFunc',['../struct___c_match_finder_mt.html#aede626f553532467b8f19e56fed43789',1,'_CMatchFinderMt']]],
   ['mlevel',['mLevel',['../class_f_a_world_1_1_actor_stats.html#a8ee35238c7e2257f5af84ccde8c807da',1,'FAWorld::ActorStats']]],

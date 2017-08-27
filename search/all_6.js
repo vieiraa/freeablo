@@ -367,6 +367,8 @@ var searchData=
   ['eqtwohand',['eqTWOHAND',['../class_f_a_world_1_1_item.html#a97a412c5cccaf808905914367c7c8417ae010a09f4571da8f8ee1da650ffc6413',1,'FAWorld::Item']]],
   ['equal',['EQUAL',['../deflate_8c.html#a214c717b2e51e1993a749ac99df7de58',1,'deflate.c']]],
   ['equiploc',['equipLoc',['../class_f_a_world_1_1_item.html#a97a412c5cccaf808905914367c7c8417',1,'FAWorld::Item::equipLoc()'],['../class_diablo_exe_1_1_base_item.html#a7c6449fd2cac9bc815698b1707c4b1a2',1,'DiabloExe::BaseItem::equipLoc()']]],
+  ['equiptarget',['EquipTarget',['../struct_f_a_world_1_1_equip_target.html#ab06d274f3cbf25b9e44e6561b2adc9e0',1,'FAWorld::EquipTarget::EquipTarget()=delete'],['../struct_f_a_world_1_1_equip_target.html#a73c2178aaa4214e52108f78b7405f606',1,'FAWorld::EquipTarget::EquipTarget(Item::equipLoc locationArg, int posXArg=-1, int posYArg=-1)']]],
+  ['equiptarget',['EquipTarget',['../struct_f_a_world_1_1_equip_target.html',1,'FAWorld']]],
   ['equnequip',['eqUNEQUIP',['../class_f_a_world_1_1_item.html#a97a412c5cccaf808905914367c7c8417a7ecbfcec2b7e98be4443eed6c5eb0c25',1,'FAWorld::Item']]],
   ['err_5fget_5fname_5fimpl',['ERR_GET_NAME_IMPL',['../bitstream_8cpp.html#a662478ca2fd893b8b02c8e117ed0b42b',1,'bitstream.cpp']]],
   ['err_5fmsg',['ERR_MSG',['../zutil_8h.html#a66466516a4a71f3c78ccc40d203c92e5',1,'zutil.h']]],

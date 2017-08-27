@@ -18,7 +18,7 @@ var searchData=
   ['sizet',['SizeT',['../_types_8h.html#a4f8e2163e01de507a0ac376e8ec2b796',1,'Types.h']]],
   ['socklen_5ft',['socklen_t',['../unix_8c.html#a6b82106923cc13b3a9734520ecc29514',1,'unix.c']]],
   ['sound',['Sound',['../namespace_audio.html#a4db71e4635ade54abd1d9eba1bc385e0',1,'Audio']]],
-  ['sprite',['Sprite',['../namespace_render.html#af50f804b65c964056de6aeffcf039f66',1,'Render']]],
+  ['sprite',['Sprite',['../namespace_render.html#aaa308308e8182fef9de72eb07546f0f5',1,'Render']]],
   ['sres',['SRes',['../_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367',1,'Types.h']]],
   ['static_5ftree_5fdesc',['static_tree_desc',['../deflate_8h.html#a905910aabf6aabbe79ff0832e4a664cc',1,'deflate.h']]],
   ['statstruct',['StatStruct',['../namespacetesting_1_1internal_1_1posix.html#a8eb9f08d3af29941c2d2a964cfff3ecb',1,'testing::internal::posix']]],

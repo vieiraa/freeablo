@@ -67,6 +67,8 @@ var searchData=
   ['inuse',['inUse',['../struct_e_state.html#a1e9b34981e1bbbb106c6eeccad9cd668',1,'EState::inUse()'],['../struct_d_state.html#ab33d14c6ab3b51d51bcb871ace899f5f',1,'DState::inUse()']]],
   ['inuse16',['inUse16',['../struct_d_state.html#ad03fbe8be0d8aed6ff951d667b6b2f4a',1,'DState']]],
   ['inventoryfile',['InventoryFile',['../classpython_1_1docmanage_1_1_doc_manager.html#acec6049d5415478d770b54d5a9da8ddf',1,'python::docmanage::DocManager']]],
+  ['inventoryheight',['inventoryHeight',['../class_f_a_world_1_1_inventory.html#ae8f369883c7b8263aedd44a18d300c3b',1,'FAWorld::Inventory']]],
+  ['inventorywidth',['inventoryWidth',['../class_f_a_world_1_1_inventory.html#aea21a2fcd48e32b4ceb8838e3cec2041',1,'FAWorld::Inventory']]],
   ['invmod',['invmod',['../structltc__math__descriptor.html#ad2e720c56a1845b76a9a53383e6b4ec8',1,'ltc_math_descriptor']]],
   ['is_5fcygwin',['IS_CYGWIN',['../namespacegtest__test__utils.html#a6a936096debb3c2e807d000f76245740',1,'gtest_test_utils']]],
   ['is_5flinux',['IS_LINUX',['../namespacegtest__env__var__test.html#a33b1e2e9afe9d59d75503de4a1297486',1,'gtest_env_var_test.IS_LINUX()'],['../namespacegtest__help__test.html#ae61a149d50be253176a139fbe6712582',1,'gtest_help_test.IS_LINUX()']]],

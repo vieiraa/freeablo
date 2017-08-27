@@ -21,7 +21,7 @@ var searchData=
   ['parsetoken',['ParseToken',['../namespacepump.html#a85396ae3b56877c067788f45b163eff5',1,'pump']]],
   ['partialmatch',['PartialMatch',['../classtesting_1_1internal_1_1_r_e.html#a1e81f9a87211bdca645e025f8f0236c8',1,'testing::internal::RE::PartialMatch(const ::std::string &amp;str, const RE &amp;re)'],['../classtesting_1_1internal_1_1_r_e.html#a97495dd4c2bb9589522823f060c8e8ba',1,'testing::internal::RE::PartialMatch(const char *str, const RE &amp;re)']]],
   ['passable',['passable',['../class_level_1_1_min_pillar.html#a701a129b3835810b34134504b864175f',1,'Level::MinPillar::passable()'],['../class_level_1_1_sol.html#a7e0e3de21dc692633896ae345cc59740',1,'Level::Sol::passable()']]],
-  ['passed',['Passed',['../classtesting_1_1_test_result.html#aa46a04342f02ec297357f47288da3ef3',1,'testing::TestResult::Passed()'],['../classtesting_1_1_test_case.html#ad093a04334d7eb8d707a7f1a321b040f',1,'testing::TestCase::Passed()'],['../classtesting_1_1_unit_test.html#a4ef49e958702bf741e7eaa4864e28a48',1,'testing::UnitTest::Passed()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#aca57d4b475d7b9ad49f061197124c183',1,'testing::internal::UnitTestImpl::Passed()'],['../classtesting_1_1_test_part_result.html#a901bd62d9fbe7f39826a9d02ab2bdaec',1,'testing::TestPartResult::passed()']]],
+  ['passed',['passed',['../classtesting_1_1_test_part_result.html#a901bd62d9fbe7f39826a9d02ab2bdaec',1,'testing::TestPartResult::passed()'],['../classtesting_1_1_test_result.html#aa46a04342f02ec297357f47288da3ef3',1,'testing::TestResult::Passed()'],['../classtesting_1_1_test_case.html#ad093a04334d7eb8d707a7f1a321b040f',1,'testing::TestCase::Passed()'],['../classtesting_1_1_unit_test.html#a4ef49e958702bf741e7eaa4864e28a48',1,'testing::UnitTest::Passed()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#aca57d4b475d7b9ad49f061197124c183',1,'testing::internal::UnitTestImpl::Passed()']]],
   ['patchfiledata',['PatchFileData',['../_s_file_patch_archives_8cpp.html#ad2733622c6a770882a35d18aa6235d4f',1,'PatchFileData(TMPQFile *hf):&#160;SFilePatchArchives.cpp'],['../_storm_common_8h.html#ad2733622c6a770882a35d18aa6235d4f',1,'PatchFileData(TMPQFile *hf):&#160;SFilePatchArchives.cpp']]],
   ['pathfind',['pathFind',['../namespace_f_a_world.html#ae0b64ecfc0bfa5262cbee53d45a94cca',1,'FAWorld']]],
   ['pathnext',['pathNext',['../class_f_a_world_1_1_position.html#afd625d3e4552ed267de09afbe78b395c',1,'FAWorld::Position']]],
@@ -110,7 +110,7 @@ var searchData=
   ['pushvariable',['PushVariable',['../classpump_1_1_env.html#ad0765fb966016a3cef4cae363b44661b',1,'pump::Env']]],
   ['put',['put',['../struct_f_a_world_1_1_priority_queue.html#a33ef5a2e8d3a9a7b5ea1872e904197fe',1,'FAWorld::PriorityQueue']]],
   ['putbits',['PutBits',['../class_t_output_stream.html#a60efe31d3fd395d10dba91a492537bcc',1,'TOutputStream::PutBits(unsigned int dwValue, unsigned int nBitCount)'],['../class_t_output_stream.html#a7e8d9672e25f0fb5eccda59de939e1ab',1,'TOutputStream::PutBits(unsigned long dwBuff, unsigned int nPutBits)']]],
-  ['putitem',['putItem',['../class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8',1,'FAWorld::Inventory']]],
   ['putitemonfloor',['putItemOnFloor',['../class_f_a_world_1_1_item_manager.html#a9ea838c6439daa8c44a1651663190b11',1,'FAWorld::ItemManager']]],
+  ['putitemunsafe',['putItemUnsafe',['../class_f_a_world_1_1_inventory.html#a31aa148f2a0fa470650f618f3b23b309',1,'FAWorld::Inventory']]],
   ['putshortmsb',['putShortMSB',['../deflate_8c.html#a6db0a0a840addf113cb217c4aa1c0384',1,'deflate.c']]]
 ];

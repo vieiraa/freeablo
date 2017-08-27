@@ -17,5 +17,7 @@ var searchData=
   ['footest',['FooTest',['../class_foo_test.html',1,'']]],
   ['formatforcomparison',['FormatForComparison',['../classtesting_1_1internal_1_1_format_for_comparison.html',1,'testing::internal']]],
   ['formatforcomparison_3c_20toprint_5bn_5d_2c_20otheroperand_20_3e',['FormatForComparison&lt; ToPrint[N], OtherOperand &gt;',['../classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print[_n]_00_01_other_operand_01_4.html',1,'testing::internal']]],
-  ['fornode',['ForNode',['../classpump_1_1_for_node.html',1,'pump']]]
+  ['fornode',['ForNode',['../classpump_1_1_for_node.html',1,'pump']]],
+  ['func_5fptr_5fwrapper',['func_ptr_wrapper',['../struct_misc_1_1detail_1_1func__ptr__wrapper.html',1,'Misc::detail']]],
+  ['func_5fptr_5fwrapper_3c_20ret_28args_2e_2e_2e_29_3e',['func_ptr_wrapper&lt; Ret(Args...)&gt;',['../struct_misc_1_1detail_1_1func__ptr__wrapper_3_01_ret_07_args_8_8_8_08_4.html',1,'Misc::detail']]]
 ];

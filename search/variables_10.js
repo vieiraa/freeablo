@@ -112,6 +112,8 @@ var searchData=
   ['posprev2',['posPrev2',['../struct_c_optimal.html#a36994ae41652f0617fb7e2b1d33dd866',1,'COptimal']]],
   ['posslotencoder',['posSlotEncoder',['../struct_c_save_state.html#ac38837c73ecbe23fd965bc27732beef0',1,'CSaveState::posSlotEncoder()'],['../struct_c_lzma_enc.html#aae29ef846d887dc73fa58072e68f478c',1,'CLzmaEnc::posSlotEncoder()']]],
   ['posslotprices',['posSlotPrices',['../struct_c_lzma_enc.html#a1df60f0a3d92bdc7a34b1f7e16ecdeb7',1,'CLzmaEnc']]],
+  ['posx',['posX',['../struct_f_a_world_1_1_equip_target.html#aed93916e528348326a537ef00408bfee',1,'FAWorld::EquipTarget']]],
+  ['posy',['posY',['../struct_f_a_world_1_1_equip_target.html#a09cca0612c1958336013e699d2504505',1,'FAWorld::EquipTarget']]],
   ['pparent',['pParent',['../struct_t_h_tree_item.html#a75093151f96eed37535d5d6e08134898',1,'THTreeItem']]],
   ['ppatchheader',['pPatchHeader',['../struct___t_m_p_q_file.html#afe6dc081c76c0416687f48d0ee192748',1,'_TMPQFile']]],
   ['ppatchinfo',['pPatchInfo',['../struct___t_m_p_q_file.html#a1aa2c25c7ff34803ce1c5086fe3422a3',1,'_TMPQFile']]],

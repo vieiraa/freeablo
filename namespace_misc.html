@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -94,6 +95,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>miscellaneous stuff  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_misc_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_misc_1_1detail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_misc_1_1_helper2_d.html">Helper2D</a></td></tr>
@@ -127,6 +133,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a501bcdb31f2fadaf6e4c7ea3db7b5d69"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a501bcdb31f2fadaf6e4c7ea3db7b5d69"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; float, float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69">getVec</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::pair&lt; T, T &gt; &amp;from, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::pair&lt; T, T &gt; &amp;to)</td></tr>
 <tr class="separator:a501bcdb31f2fadaf6e4c7ea3db7b5d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d58bca7eea2b15805d8f5c373b1ca9b"><td class="memTemplParams" colspan="2">template&lt;typename RetType  = void, typename... Args&gt; </td></tr>
+<tr class="memitem:a3d58bca7eea2b15805d8f5c373b1ca9b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_misc.html#a3d58bca7eea2b15805d8f5c373b1ca9b">overload</a> (Args &amp;&amp;...args) -&gt; <a class="el" href="singleton_misc_1_1detail_1_1overload__class.html">detail::overload_class</a>&lt; RetType, <a class="el" href="namespace_misc_1_1detail.html#a3981acb7501fbdeb3b7a658123eac7a0">detail::wrapper_for_t</a>&lt; typename std::decay&lt; Args &gt;::type &gt;...&gt;</td></tr>
+<tr class="separator:a3d58bca7eea2b15805d8f5c373b1ca9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>miscellaneous stuff </p>
@@ -280,6 +289,24 @@ template&lt;typename T &gt; </div>
           <td class="paramtype">md5_state_t *&#160;</td>
           <td class="paramname"><em>pms</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d58bca7eea2b15805d8f5c373b1ca9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RetType  = void, typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Misc::overload </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td> -&gt; detail::overload_class&lt;RetType, detail::wrapper_for_t&lt;typename std::decay&lt;Args&gt;::type&gt;...&gt; </td>
         </tr>
       </table>
 </div><div class="memdoc">

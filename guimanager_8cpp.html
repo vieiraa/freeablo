@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -101,11 +102,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="renderer_8h_source.html">../farender/renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="threadmanager_8h_source.html">../engine/threadmanager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="enginemain_8h_source.html">../engine/enginemain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="player_8h_source.html">../faworld/player.h</a>&quot;</code><br />
+<code>#include &quot;boost/range/counting_range.hpp&quot;</code><br />
+<code>#include &lt;boost/variant/variant.hpp&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_f_a_gui"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html">FAGui</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adb125c469281ea54d99d98b0f0b137b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>halign_t</b> { <b>FAGui::@32::halign_t::left</b>, 
+<b>FAGui::@32::halign_t::center</b>, 
+<b>FAGui::@32::halign_t::right</b>
+ }</td></tr>
+<tr class="separator:adb125c469281ea54d99d98b0f0b137b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5484601483f211cb91182284b59ebad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>valign_t</b> { <b>FAGui::@32::valign_t::top</b>, 
+<b>FAGui::@32::valign_t::center</b>, 
+<b>FAGui::@32::valign_t::bottom</b>
+ }</td></tr>
+<tr class="separator:ad5484601483f211cb91182284b59ebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,6 +142,12 @@ Variables</h2></td></tr>
 <tr class="memitem:aced9cdd3aa968191a34415f375b3b449"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak" />
 Rocket::Core::ElementDocument * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#aced9cdd3aa968191a34415f375b3b449">FAGui::menus</a></td></tr>
 <tr class="separator:aced9cdd3aa968191a34415f375b3b449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca1b6902b9ba1e9dd10b09bcc9cea0d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#a0ca1b6902b9ba1e9dd10b09bcc9cea0d">FAGui::cursorPath</a> = &quot;data/inv/objcurs.cel&quot;</td></tr>
+<tr class="separator:a0ca1b6902b9ba1e9dd10b09bcc9cea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeaebbc0ee052537ce05c78358f6d9ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#aaeaebbc0ee052537ce05c78358f6d9ca">FAGui::cursorFrame</a> = 0</td></tr>
+<tr class="separator:aaeaebbc0ee052537ce05c78358f6d9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e917c22b40466f8c549e894ed41c83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_render.html#a8c71cc15f395fd1eefe55c81b96da993">Render::CursorHotspotLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_gui.html#af9e917c22b40466f8c549e894ed41c83">FAGui::cursorHotspot</a> = <a class="el" href="namespace_render.html#a8c71cc15f395fd1eefe55c81b96da993a79ad18f72445fe00af22637f175bf878">Render::CursorHotspotLocation::topLeft</a></td></tr>
+<tr class="separator:af9e917c22b40466f8c549e894ed41c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

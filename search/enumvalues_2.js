@@ -1,6 +1,7 @@
 var searchData=
 [
   ['c',['c',['../struct_pop_count.html#a9acc328ffefb70588c53027481340521a71072e902be64a48c81f8ce79f1daed4',1,'PopCount::c()'],['../struct_log2.html#a07d38252e7ea2ccf19fa7de58d5fd2a6afd41ed7380a5bdfc686125c2f5f576ce',1,'Log2::c()']]],
+  ['center',['center',['../namespace_render.html#a8c71cc15f395fd1eefe55c81b96da993aadb115059e28d960fa8badfac5516667',1,'Render']]],
   ['change_5flevel_5fdown',['CHANGE_LEVEL_DOWN',['../namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aafdfdb86b3e99df9f76d9667cbedef440',1,'Engine']]],
   ['change_5flevel_5fup',['CHANGE_LEVEL_UP',['../namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984aa0ded9fcda4bc267ad0fb8304b9bc4a16',1,'Engine']]],
   ['character',['character',['../namespace_f_a_gui.html#af58915752ee1544c37c19c426336965caa956161a69928cd130a889b88082fb6e',1,'FAGui']]],
