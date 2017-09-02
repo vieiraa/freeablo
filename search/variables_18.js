@@ -4,7 +4,6 @@ var searchData=
   ['xcbc_5fmemory',['xcbc_memory',['../structltc__cipher__descriptor.html#a9d0270fd1c650000ee24a42e337a5de8',1,'ltc_cipher_descriptor']]],
   ['xdoor',['xDoor',['../class_f_a_level_gen_1_1_tile_set.html#a65d0fc6fc8818fd3be727ab09c788c9b',1,'FALevelGen::TileSet']]],
   ['xflags',['xflags',['../structgz__header__s.html#a40e35dc1a967c6537c6012cf5416210a',1,'gz_header_s']]],
-  ['xoffset',['xoffset',['../classpython_1_1draggable_1_1_draggable_widget.html#a75adda09b52c7b0d34ebfa890c4e33ce',1,'python::draggable::DraggableWidget']]],
   ['xpos',['xPos',['../class_f_a_level_gen_1_1_room.html#aeabf19bbd88f0b66580db5f1a140c70e',1,'FALevelGen::Room']]],
   ['xrel',['xrel',['../struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html#acde91373f544dd094194ae3de0ea66ef',1,'Input::InputManager::Event::_vals::_mouseMove']]],
   ['xwall',['xWall',['../class_f_a_level_gen_1_1_tile_set.html#aa1638e5bf24024b179eea98f57c8a8af',1,'FALevelGen::TileSet']]],

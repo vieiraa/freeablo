@@ -51,6 +51,5 @@ var searchData=
   ['help',['help',['../fontgenerator_2main_8cpp.html#a6d6a48e3841bf9007929f691d654614c',1,'main.cpp']]],
   ['helper2d',['Helper2D',['../class_misc_1_1_helper2_d.html#a707f5ab968079044eee0d3b8d0216a5f',1,'Misc::Helper2D']]],
   ['heuristic',['heuristic',['../namespace_f_a_world.html#adce8d5602a8ece5b1a324fee3b35dd31',1,'FAWorld']]],
-  ['hidedoc',['hideDoc',['../classpython_1_1docmanage_1_1_doc_manager.html#a846750936832a95f1526d3f51f3d3319',1,'python::docmanage::DocManager']]],
   ['hotkey',['Hotkey',['../class_input_1_1_hotkey.html#aa46c53768042f4b36becd21eb6badb8d',1,'Input::Hotkey::Hotkey()'],['../class_input_1_1_hotkey.html#a340b56efcad1598f592f635dfc77f656',1,'Input::Hotkey::Hotkey(const char *name)'],['../class_input_1_1_hotkey.html#ad31a2ba42fdfdcdb5294e2833438136b',1,'Input::Hotkey::Hotkey(const std::string &amp;name)'],['../class_input_1_1_hotkey.html#afd7137ebc76ac86902e6cb9e63918422',1,'Input::Hotkey::Hotkey(int nkey, bool nshift, bool nctrl, bool nalt)']]]
 ];

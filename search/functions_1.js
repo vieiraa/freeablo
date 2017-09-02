@@ -1,7 +1,7 @@
 var searchData=
 [
   ['abort',['Abort',['../namespacetesting_1_1internal_1_1posix.html#a69b8278c59359dd6a6f941b4643db9fb',1,'testing::internal::posix']]],
-  ['activate',['activate',['../class_f_a_world_1_1_game_level.html#aa5b2e7a080f00c0d4bcc854cdf5fd147',1,'FAWorld::GameLevel::activate()'],['../class_level_1_1_level.html#a5b8c9612c8e80015b27e3e5321e53cbd',1,'Level::Level::activate()'],['../classpython_1_1menu_1_1_menu.html#a15a35dd5b5a9199e90ce58b49a5fc3a9',1,'python.menu.Menu.activate()']]],
+  ['activate',['activate',['../class_f_a_world_1_1_game_level.html#aa5b2e7a080f00c0d4bcc854cdf5fd147',1,'FAWorld::GameLevel::activate()'],['../class_level_1_1_level.html#a5b8c9612c8e80015b27e3e5321e53cbd',1,'Level::Level::activate()']]],
   ['actor',['Actor',['../class_f_a_world_1_1_actor.html#a7f3e64ec18df757827ed90c1e19e1162',1,'FAWorld::Actor']]],
   ['actoranimationmanager',['ActorAnimationManager',['../class_f_a_world_1_1_actor_animation_manager.html#a6519173fc7ca5209ae7f3207faa237b0',1,'FAWorld::ActorAnimationManager']]],
   ['actormapclear',['actorMapClear',['../class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179',1,'FAWorld::GameLevel']]],
@@ -17,7 +17,6 @@ var searchData=
   ['addglobaltestenvironment',['AddGlobalTestEnvironment',['../namespacetesting.html#a460d7b998622e332392c1e00be3a60d5',1,'testing']]],
   ['additem',['addItem',['../class_f_a_world_1_1_item_manager.html#acec166fffd45dc392f330db9eb2c6e0a',1,'FAWorld::ItemManager']]],
   ['addtestinfo',['AddTestInfo',['../classtesting_1_1internal_1_1_unit_test_impl.html#a1cc87dfc91377ebec4a3ff4192dfcba9',1,'testing::internal::UnitTestImpl']]],
-  ['addtranslation',['addTranslation',['../class_script_1_1_command_translator.html#a0f0fb4333c42d6ffbd3cfe3717b457a3',1,'Script::CommandTranslator']]],
   ['addwalls',['addWalls',['../namespace_f_a_level_gen.html#a0419289bedbab7a736278c975a39a220',1,'FALevelGen']]],
   ['adhoctest',['AdHocTest',['../gtest__output__test___8cc.html#a36cd4d21174efaa3066237d716028d49',1,'gtest_output_test_.cc']]],
   ['adjustforparameterizedtests',['AdjustForParameterizedTests',['../classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a64459a94e952b09c079a8b81493d100b',1,'gtest_filter_unittest::GTestFilterUnitTest']]],

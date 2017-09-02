@@ -86,7 +86,6 @@ var searchData=
   ['gtest_5fprogram_5fname',['GTEST_PROGRAM_NAME',['../namespacegtest__xml__output__unittest.html#ab89cc5b402310ef67bcaf38fa5017461',1,'gtest_xml_output_unittest']]],
   ['gtest_5fprogram_5fpath',['GTEST_PROGRAM_PATH',['../namespacegtest__xml__output__unittest.html#a775ae6280a8c718f2cb0e0a9bad07f2b',1,'gtest_xml_output_unittest']]],
   ['gtest_5fspi_5fh_5fseed',['GTEST_SPI_H_SEED',['../namespacefuse__gtest__files.html#a891d03ce9cfe3577cb4c193f9544f17f',1,'fuse_gtest_files']]],
-  ['guiwasclicked',['guiWasClicked',['../classpython_1_1docmanage_1_1_doc_manager.html#ae66d6e95878eb10b37d4e8273250e8bb',1,'python::docmanage::DocManager']]],
   ['gzhead',['gzhead',['../structinternal__state.html#ac023d0c9e6112dfe6cbd049a56484997',1,'internal_state']]],
   ['gzindex',['gzindex',['../structinternal__state.html#a5e09188a83aadfcb0db60b0765596aa1',1,'internal_state']]]
 ];

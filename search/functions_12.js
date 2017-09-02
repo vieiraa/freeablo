@@ -40,7 +40,6 @@ var searchData=
   ['reinterpretbits',['ReinterpretBits',['../classtesting_1_1internal_1_1_floating_point.html#ac551f793522e54fbd8a25acb79eac5b1',1,'testing::internal::FloatingPoint']]],
   ['release',['release',['../classtesting_1_1internal_1_1scoped__ptr.html#a7a4f3e568d81a5d8bcb5f8d6bf5130b1',1,'testing::internal::scoped_ptr::release()'],['../classtesting_1_1_test_event_listeners.html#a038c9fa1975f84d6f3d25b52bc7bccdd',1,'testing::TestEventListeners::Release()'],['../classtesting_1_1internal_1_1_test_event_repeater.html#ac77a3d127e4726e11694e4ee9cf3b793',1,'testing::internal::TestEventRepeater::Release()']]],
   ['releasetexture',['ReleaseTexture',['../class_rocket_s_d_l2_renderer.html#aeb4f542365d59207c8896949a19bc1f4',1,'RocketSDL2Renderer']]],
-  ['reloaddoc',['reloadDoc',['../classpython_1_1docmanage_1_1_doc_manager.html#a83f1f9f8155a469d9ec51af2739393b6',1,'python::docmanage::DocManager']]],
   ['removeactor',['removeActor',['../class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4',1,'FAWorld::GameLevel']]],
   ['removedirectoryname',['RemoveDirectoryName',['../classtesting_1_1internal_1_1_file_path.html#a2852e5a759ff2e2620c7317b8121d757',1,'testing::internal::FilePath']]],
   ['removeextension',['RemoveExtension',['../classtesting_1_1internal_1_1_file_path.html#ab2a25cc916c111597b94d006aa973c3d',1,'testing::internal::FilePath']]],

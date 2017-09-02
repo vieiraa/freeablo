@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['implode_2ec',['implode.c',['../implode_8c.html',1,'']]],
-  ['inffast_2ec',['inffast.c',['../inffast_8c.html',1,'']]],
-  ['inffast_2eh',['inffast.h',['../inffast_8h.html',1,'']]],
-  ['inffixed_2eh',['inffixed.h',['../inffixed_8h.html',1,'']]],
-  ['inflate_2ec',['inflate.c',['../inflate_8c.html',1,'']]],
-  ['inflate_2eh',['inflate.h',['../inflate_8h.html',1,'']]],
-  ['inftrees_2ec',['inftrees.c',['../inftrees_8c.html',1,'']]],
-  ['inftrees_2eh',['inftrees.h',['../inftrees_8h.html',1,'']]],
-  ['inputmanager_2eh',['inputmanager.h',['../inputmanager_8h.html',1,'']]],
-  ['inputobserverinterface_2eh',['inputobserverinterface.h',['../inputobserverinterface_8h.html',1,'']]],
-  ['install_2edox',['install.dox',['../install_8dox.html',1,'']]],
-  ['inventory_2ecpp',['inventory.cpp',['../inventory_8cpp.html',1,'']]],
-  ['inventory_2eh',['inventory.h',['../inventory_8h.html',1,'']]],
-  ['item_2ecpp',['item.cpp',['../item_8cpp.html',1,'']]],
-  ['item_2eh',['item.h',['../item_8h.html',1,'']]],
-  ['itemmanager_2ecpp',['itemmanager.cpp',['../itemmanager_8cpp.html',1,'']]],
-  ['itemmanager_2eh',['itemmanager.h',['../itemmanager_8h.html',1,'']]]
+  ['keys_2eh',['keys.h',['../keys_8h.html',1,'']]]
 ];

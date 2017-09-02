@@ -82,7 +82,7 @@ var searchData=
   ['getdexterity',['getDexterity',['../class_f_a_world_1_1_actor_stats.html#a0bad9f98827f1270f90b6c415a1ebe46',1,'FAWorld::ActorStats']]],
   ['getdiewav',['getDieWav',['../class_f_a_world_1_1_actor.html#aa6234a4667ea2574d192619e786812e4',1,'FAWorld::Actor::getDieWav()'],['../class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48',1,'FAWorld::Monster::getDieWav()']]],
   ['getdirection',['getDirection',['../class_f_a_world_1_1_position.html#ae228a92b8397df1f2cae4b0452c71e9d',1,'FAWorld::Position']]],
-  ['getdoc',['getDoc',['../classpython_1_1docmanage_1_1_doc_manager.html#a9ac6aa34e179695ca54857794c6246a4',1,'python::docmanage::DocManager']]],
+  ['getdist',['getDist',['../class_f_a_world_1_1_position.html#afcd583fb608c52cd4e5f942e1e27c09d',1,'FAWorld::Position']]],
   ['getdoormap',['getDoorMap',['../class_f_a_level_gen_1_1_tile_set.html#a6a4edb0008f549b06d8e2150a9709b42',1,'FALevelGen::TileSet']]],
   ['geteffect0',['getEffect0',['../class_f_a_world_1_1_item.html#ac55945a16da67647e35285e6533cdc5d',1,'FAWorld::Item']]],
   ['geteffect1',['getEffect1',['../class_f_a_world_1_1_item.html#a32a009961b41b87f6ad032bddd284520',1,'FAWorld::Item']]],
@@ -93,7 +93,6 @@ var searchData=
   ['getelapsedtime',['GetElapsedTime',['../class_rocket_s_d_l2_system_interface.html#a43847d93442c836c5ca2e19c429fc558',1,'RocketSDL2SystemInterface']]],
   ['getelementor',['GetElementOr',['../namespacetesting_1_1internal.html#a71fdd20a0686bea3dc0cdcd95e0bca1c',1,'testing::internal']]],
   ['getemail',['GetEmail',['../namespaceupload.html#a60dcddb2eb258c146887ca1ec9ad5a58',1,'upload']]],
-  ['getentryelement',['getEntryElement',['../classpython_1_1menu_1_1_menu.html#ab429f52dd4c2ab9f96d6d14542e9a5a3',1,'python::menu::Menu']]],
   ['getenv',['GetEnv',['../namespacetesting_1_1internal_1_1posix.html#a1d5e3da5a27eed25986859fa83cafe95',1,'testing::internal::posix']]],
   ['getequiploc',['getEquipLoc',['../class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311',1,'FAWorld::Item']]],
   ['getexitstatus',['GetExitStatus',['../namespacegtest__test__utils.html#a8ff3a0bbcfecd0e0a8b3d102cb31f327',1,'gtest_test_utils']]],
@@ -124,7 +123,7 @@ var searchData=
   ['getid',['getId',['../class_f_a_world_1_1_actor.html#aa06348c90e930601c7c3ebcb0557cea6',1,'FAWorld::Actor']]],
   ['getimageextension',['getImageExtension',['../namespace_render.html#a8b66dddb0313a61f2211531c6bfd433e',1,'Render']]],
   ['getimageinfo',['getImageInfo',['../namespace_render.html#aac86ad027b2d63c26202107650b494c2',1,'Render']]],
-  ['getinstance',['GetInstance',['../classtesting_1_1_unit_test.html#a24192400b70b3b946746954e9574fb8e',1,'testing::UnitTest::GetInstance()'],['../class_script_1_1_script_context.html#a6d739cec9ee4fb396e423e99c76d5bfa',1,'Script::ScriptContext::getInstance()']]],
+  ['getinstance',['GetInstance',['../classtesting_1_1_unit_test.html#a24192400b70b3b946746954e9574fb8e',1,'testing::UnitTest']]],
   ['getintvalue',['GetIntValue',['../class_widget.html#a699748239d35b7f6de47db34e1d4a624',1,'Widget']]],
   ['getinvcoords',['getInvCoords',['../class_f_a_world_1_1_item.html#a1f9e3942cf9b273de32dd11e825e565b',1,'FAWorld::Item']]],
   ['getinvsize',['getInvSize',['../class_f_a_world_1_1_item.html#a72a463ee92e0d9d83ad2b4fcee8672cf',1,'FAWorld::Item']]],
@@ -239,7 +238,6 @@ var searchData=
   ['gettotalattackdamage',['getTotalAttackDamage',['../class_f_a_world_1_1_inventory.html#a7802b4b415fe4a62f2961f0d40aadb17',1,'FAWorld::Inventory']]],
   ['gettotaleffects',['getTotalEffects',['../class_f_a_world_1_1_inventory.html#acd2520acf595a745b3b50f72d7ed3829',1,'FAWorld::Inventory']]],
   ['gettown',['getTown',['../class_level_1_1_dun.html#a3ca87294a7a617442caa007b354402ba',1,'Level::Dun']]],
-  ['gettranslator',['getTranslator',['../class_script_1_1_script_context.html#a77d6ac615e8a2d2800c41070437ddb31',1,'Script::ScriptContext']]],
   ['gettype',['getType',['../class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde',1,'FAWorld::Item']]],
   ['gettypeid',['GetTypeId',['../namespacetesting_1_1internal.html#a6b108e56fdc68ea937ffb3759fb55ab0',1,'testing::internal']]],
   ['gettypename',['GetTypeName',['../namespacetesting_1_1internal.html#a635606b4731f843c86ec8ca51cab83a1',1,'testing::internal']]],
@@ -293,7 +291,5 @@ var searchData=
   ['gtestmutexlock',['GTestMutexLock',['../classtesting_1_1internal_1_1_g_test_mutex_lock.html#a77e3cba326d5356b4a1dea3790559c26',1,'testing::internal::GTestMutexLock']]],
   ['guessbase',['GuessBase',['../classupload_1_1_subversion_v_c_s.html#a14ccef7a1ccf94ca4bdadb6d9ccf7732',1,'upload::SubversionVCS']]],
   ['guessvcs',['GuessVCS',['../namespaceupload.html#a0d9e0cd59cba1f0350eac84fe12de5ca',1,'upload']]],
-  ['guiclicked',['guiClicked',['../classpython_1_1docmanage_1_1_doc_manager.html#aa3d54bf213214c5d01dcb8e7f3422a45',1,'python::docmanage::DocManager']]],
-  ['guimanager',['GuiManager',['../class_f_a_gui_1_1_gui_manager.html#ad5d74662aa8882cc9625c76e3c305a3d',1,'FAGui::GuiManager']]],
-  ['guimousedown',['guiMouseDown',['../classpython_1_1draggable_1_1_draggable_widget.html#aec250bb6f1aa9ce3875cb843a5537987',1,'python::draggable::DraggableWidget']]]
+  ['guimanager',['GuiManager',['../class_f_a_gui_1_1_gui_manager.html#ad5d74662aa8882cc9625c76e3c305a3d',1,'FAGui::GuiManager']]]
 ];

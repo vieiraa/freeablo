@@ -50,8 +50,6 @@ var searchData=
   ['flags',['flags',['../struct___e_net_packet.html#abfdabe5885bc9695e2dabced27d5447a',1,'_ENetPacket::flags()'],['../structnk__panel.html#a611bb738010ced8097aad851ea4397f0',1,'nk_panel::flags()'],['../structnk__window.html#ab2c821a48b401380bc00031d5e7b9e87',1,'nk_window::flags()'],['../structnk__configuration__stacks.html#a54e6f345ddb5f80b1b5c4985f3bad922',1,'nk_configuration_stacks::flags()'],['../structinflate__state.html#a9dcf6151443750d75b2283d0a3e62c39',1,'inflate_state::flags()'],['../struct___p_a_r_t___f_i_l_e___h_e_a_d_e_r.html#a2e7abcc0a964160e252b35ab327eb3fc',1,'_PART_FILE_HEADER::Flags()'],['../struct___p_a_r_t___f_i_l_e___m_a_p___e_n_t_r_y.html#abd1801ee4295f9608122a2fc81876354',1,'_PART_FILE_MAP_ENTRY::Flags()']]],
   ['floats',['floats',['../structnk__configuration__stacks.html#aaa0169624803bd2dbb6c871930901ba5',1,'nk_configuration_stacks']]],
   ['floor',['floor',['../class_f_a_level_gen_1_1_tile_set.html#a5406c72ed34a7918b7053892ed4dd7b0',1,'FALevelGen::TileSet']]],
-  ['fmtnotselected',['fmtNotSelected',['../classpython_1_1menu_1_1_menu.html#a6d63b3ed21640e934e345f49c4c792e0',1,'python::menu::Menu']]],
-  ['fmtselected',['fmtSelected',['../classpython_1_1menu_1_1_menu.html#a042eec14c885a15d0f37f61619b11a32',1,'python::menu::Menu']]],
   ['font',['font',['../structnk__command__text.html#a57e049a57f88d08355b6aa929d8e960c',1,'nk_command_text::font()'],['../structnk__style.html#aab136e535cc1d11d40e8b2fd18060c5d',1,'nk_style::font()']]],
   ['font_5ftex',['font_tex',['../structnk__gl__device.html#a28c96c72327ba1904c0ba4d8897aa45b',1,'nk_gl_device']]],
   ['fonts',['fonts',['../structnk__configuration__stacks.html#addf7cdf072a4c6cc7fc5a545b578b892',1,'nk_configuration_stacks']]],
