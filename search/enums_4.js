@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['effecttype',['EffectType',['../namespace_f_a_gui.html#a9f6018e8cbb9a4702ac88fc738c99efe',1,'FAGui']]],
   ['elzmadummy',['ELzmaDummy',['../_lzma_dec_8c.html#ad1eccabdcb384e1f414519aad38b95e0',1,'LzmaDec.c']]],
   ['elzmafinishmode',['ELzmaFinishMode',['../_lzma_dec_8h.html#a61326609cb619c55df7de7377082b79a',1,'LzmaDec.h']]],
   ['elzmastatus',['ELzmaStatus',['../_lzma_dec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a',1,'LzmaDec.h']]],

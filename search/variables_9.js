@@ -9,6 +9,8 @@ var searchData=
   ['image',['image',['../unionnk__style__item__data.html#ae0256c98c4e25f3b8ad0596d6dd68407',1,'nk_style_item_data']]],
   ['image_5fpadding',['image_padding',['../structnk__style__button.html#ab53cdca97ddb24dea561e1cec88b3ba2',1,'nk_style_button::image_padding()'],['../structnk__style__selectable.html#a6a88ded1389d9a57728e885d9cfae6e5',1,'nk_style_selectable::image_padding()']]],
   ['img',['img',['../structnk__cursor.html#ae85598fd872f474a4e63e92bbee10a92',1,'nk_cursor::img()'],['../structnk__command__image.html#ac95060c32a20e739a464fb40234282fa',1,'nk_command_image::img()']]],
+  ['imgh',['imgH',['../structnk__gl__device.html#a7401419cf703d663b3a3384ba890648e',1,'nk_gl_device']]],
+  ['imgw',['imgW',['../structnk__gl__device.html#a98c7f3496029955f044a40d9588b1794',1,'nk_gl_device']]],
   ['immortal',['immortal',['../struct_f_a_render_1_1_cache_entry.html#a454d9d94d9bdb6ce1b852fe45fbbbb27',1,'FARender::CacheEntry']]],
   ['in_5fbuff',['in_buff',['../struct_t_dcmp_struct.html#a23a6720acf5ac3986ee9a911582614d0',1,'TDcmpStruct']]],
   ['in_5fbytes',['in_bytes',['../struct_t_dcmp_struct.html#abec5a4ddc54ab29971d949b937ee264c',1,'TDcmpStruct']]],

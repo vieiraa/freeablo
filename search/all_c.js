@@ -1,7 +1,6 @@
 var searchData=
 [
   ['k0',['k0',['../struct_d_state.html#ab11d29dfcb76bf3e75cbae13cf699baf',1,'DState']]],
-  ['k_5fbutton_5fsymbol_5flabel_5fstyled',['k_button_symbol_label_styled',['../nuklear_8h.html#a9c9ef56d2ad0d5796d3090b61b14b21e',1,'nuklear.h']]],
   ['kae1',['kAE1',['../gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8ba1a36d0a263e18ed9a4e3562b4cd6e8e6',1,'gtest-printers_test.cc']]],
   ['kae2',['kAE2',['../gtest-printers__test_8cc.html#a7a5ee9fe858568a85d80af1312aefb8ba67ee14379c1b9fd5ae5616a1b3f0d5d5',1,'gtest-printers_test.cc']]],
   ['kalignmask',['kAlignMask',['../_lzma_enc_8c.html#a37bc0b7d05763dd5ff92ff1f6a3a05a6',1,'LzmaEnc.c']]],
