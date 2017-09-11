@@ -47,6 +47,7 @@ var searchData=
   ['clear',['clear',['../class_f_a_render_1_1_sprite_cache.html#aa02c7cd887f96554f6f2e62f2588d1fa',1,'FARender::SpriteCache::clear()'],['../class_f_a_render_1_1_sprite_manager.html#a3654837a02b4e588ea5a5f486dac3203',1,'FARender::SpriteManager::clear()'],['../singleton_queue.html#acfdd5f9f7e936ca30dcf877370ef9510',1,'Queue::Clear()'],['../namespace_render.html#a1b2e4583833018c9d23e43e44300ba83',1,'Render::clear()']]],
   ['clearadhoctestresult',['ClearAdHocTestResult',['../classtesting_1_1internal_1_1_unit_test_impl.html#ac44629cc4fa12b788779d4aa76939510',1,'testing::internal::UnitTestImpl']]],
   ['clearderivedstats',['clearDerivedStats',['../class_f_a_world_1_1_actor_stats.html#a52d8ac5d05cfdd1a9acffefc2e30fea9',1,'FAWorld::ActorStats']]],
+  ['cleardescription',['clearDescription',['../class_f_a_gui_1_1_gui_manager.html#a1e2ca52bd5d74242d017eca26d5e01c1',1,'FAGui::GuiManager']]],
   ['clearitemlinks',['ClearItemLinks',['../struct_t_h_tree_item.html#acdd25d72e5a88768b32616cb617b4ff9',1,'THTreeItem']]],
   ['clearnonadhoctestresult',['ClearNonAdHocTestResult',['../classtesting_1_1internal_1_1_unit_test_impl.html#a96c2a5b23541ef01020c402644563ba1',1,'testing::internal::UnitTestImpl']]],
   ['cleartestpartresults',['ClearTestPartResults',['../classtesting_1_1internal_1_1_test_result_accessor.html#a53c626632bac65d82d88e432072b866b',1,'testing::internal::TestResultAccessor']]],

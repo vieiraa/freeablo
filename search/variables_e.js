@@ -37,6 +37,7 @@ var searchData=
   ['nice_5fmatch',['nice_match',['../structinternal__state.html#a39ab99e52138c0628f645bc1e0c69a04',1,'internal_state']]],
   ['ninuse',['nInUse',['../struct_e_state.html#aa30ade5aef28689f57122d6119aa9bff',1,'EState::nInUse()'],['../struct_d_state.html#ace9cd79f50a2eb029b34781d9ef696aa',1,'DState::nInUse()']]],
   ['nitems',['nItems',['../class_t_huffmann_tree.html#a90ad780a778a618917927c6dc91d74ba',1,'THuffmannTree']]],
+  ['nkfont',['nkFont',['../class_f_a_render_1_1_font_info.html#ae7e11f9a5097f5f1df6201f43167cc04',1,'FARender::FontInfo']]],
   ['nlen',['nlen',['../structinflate__state.html#a489b005f4fe214353cd80b77b4f23194',1,'inflate_state']]],
   ['nmtf',['nMTF',['../struct_e_state.html#ac96a39944095f50734d32bb0acfc4434',1,'EState']]],
   ['no_5fcatch_5fexceptions_5fflag',['NO_CATCH_EXCEPTIONS_FLAG',['../namespacegtest__catch__exceptions__test.html#af3e2719448df6b24d78c870e5b586e8b',1,'gtest_catch_exceptions_test']]],

@@ -12,6 +12,7 @@ var searchData=
   ['finalsuccesschecker',['FinalSuccessChecker',['../classtesting_1_1internal_1_1_final_success_checker.html',1,'testing::internal']]],
   ['flags',['Flags',['../structtesting_1_1_flags.html',1,'testing']]],
   ['floatingpoint',['FloatingPoint',['../classtesting_1_1internal_1_1_floating_point.html',1,'testing::internal']]],
+  ['fontinfo',['FontInfo',['../class_f_a_render_1_1_font_info.html',1,'FARender']]],
   ['foo',['Foo',['../structtesting_1_1gtest__printers__test_1_1_foo.html',1,'testing::gtest_printers_test']]],
   ['fooenvironment',['FooEnvironment',['../class_foo_environment.html',1,'']]],
   ['footest',['FooTest',['../class_foo_test.html',1,'']]],

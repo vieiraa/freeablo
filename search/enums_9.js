@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['modifier',['Modifier',['../namespace_input.html#a1c39e19422b6144499a478cdc907baab',1,'Input']]],
-  ['mouseinputaction',['MouseInputAction',['../namespace_engine.html#a95bfc85950c2abe409801e2c35feafef',1,'Engine']]]
+  ['key',['Key',['../namespace_input.html#ac74df526ba38aedbefa716292b6534d5',1,'Input']]],
+  ['keyboardinputaction',['KeyboardInputAction',['../namespace_engine.html#aa8c0bb918cb64fe07e3d3e2c5fbc984a',1,'Engine']]]
 ];

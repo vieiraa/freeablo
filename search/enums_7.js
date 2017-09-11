@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['inflate_5fmode',['inflate_mode',['../inflate_8h.html#a164ea0159d5f0b5f12a646f25f99ecea',1,'inflate.h']]],
-  ['interceptmode',['InterceptMode',['../classtesting_1_1_scoped_fake_test_part_result_reporter.html#a82f6209b3cf5c4b15ec8bd8041dbc2d5',1,'testing::ScopedFakeTestPartResultReporter']]],
-  ['itemcode',['itemCode',['../class_f_a_world_1_1_item.html#a61bb43398c9739e359cc7de6d01ff865',1,'FAWorld::Item']]],
-  ['itemeffect',['ItemEffect',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbea',1,'FAWorld::Item']]],
-  ['itemhighlightinfo',['itemHighlightInfo',['../namespace_f_a_gui.html#a3576c525794ed10ed1620e7552496a29',1,'FAGui']]],
-  ['itemtype',['itemType',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3',1,'FAWorld::Item']]]
+  ['gtestcolor',['GTestColor',['../namespacetesting_1_1internal.html#a648c1bc94c2ef9e868ff3f9dff0f9c4e',1,'testing::internal']]],
+  ['gtestlogseverity',['GTestLogSeverity',['../namespacetesting_1_1internal.html#aa6255ef3b023c5b4e1a2198d887fb977',1,'testing::internal']]]
 ];

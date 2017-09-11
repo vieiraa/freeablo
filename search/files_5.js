@@ -13,5 +13,7 @@ var searchData=
   ['filestream_2eh',['FileStream.h',['../_file_stream_8h.html',1,'']]],
   ['findpath_2ecpp',['findpath.cpp',['../findpath_8cpp.html',1,'']]],
   ['findpath_2eh',['findpath.h',['../findpath_8h.html',1,'']]],
+  ['fontinfo_2ecpp',['fontinfo.cpp',['../fontinfo_8cpp.html',1,'']]],
+  ['fontinfo_2eh',['fontinfo.h',['../fontinfo_8h.html',1,'']]],
   ['fuse_5fgtest_5ffiles_2epy',['fuse_gtest_files.py',['../fuse__gtest__files_8py.html',1,'']]]
 ];
