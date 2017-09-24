@@ -63,7 +63,7 @@ var searchData=
   ['invaliddata',['InvalidData',['../namespace_serial_1_1_error.html#a1be827363d805bba5e9a27ac5b590c6fafedf66671b5f603794fe85aaedfd3dc1',1,'Serial::Error']]],
   ['inventory',['inventory',['../namespace_f_a_gui.html#af58915752ee1544c37c19c426336965ca7a1eabc3deb7fd02ceb1e16eafc41073',1,'FAGui']]],
   ['itarmour',['itARMOUR',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3a3941d52f3c4d2b22fe340a9c026f050c',1,'FAWorld::Item']]],
-  ['item',['item',['../namespace_f_a_gui.html#a518024c024ed5db7c55ee0df7c31e318a447b7147e84be512208dcc0995d67ebc',1,'FAGui']]],
+  ['item',['item',['../namespace_f_a_gui.html#a518024c024ed5db7c55ee0df7c31e318a447b7147e84be512208dcc0995d67ebc',1,'FAGui::item()'],['../namespace_f_a_world.html#ab4c781381c5b7dbbf680f0cd31144e39a447b7147e84be512208dcc0995d67ebc',1,'FAWorld::item()']]],
   ['itgold',['itGOLD',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3ad6b019ce3dea86d332bec6bc14675fca',1,'FAWorld::Item']]],
   ['itnovelty',['itNOVELTY',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3a6314155b4234d2cabaf1a6bfe9d27950',1,'FAWorld::Item']]],
   ['itpot',['itPOT',['../class_f_a_world_1_1_item.html#a9c941f1258452bc1f20609e2ffde87c3a369d30ca94571209ff8e990a56289f97',1,'FAWorld::Item']]],

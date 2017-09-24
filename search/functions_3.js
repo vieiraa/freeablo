@@ -11,6 +11,7 @@ var searchData=
   ['call1501db70',['Call1501DB70',['../struct_t_h_tree_item.html#aa0d866d089fe23f2f8b5aaf56925a084',1,'THTreeItem']]],
   ['canattack',['canAttack',['../class_f_a_world_1_1_faction.html#ab9a1787ced1f38f64723a07757020baa',1,'FAWorld::Faction']]],
   ['caniattack',['canIAttack',['../class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2',1,'FAWorld::Actor']]],
+  ['caninteractwith',['canInteractWith',['../class_f_a_world_1_1_actor.html#ab9be1e48d4f05c00e0a65261785f4e33',1,'FAWorld::Actor']]],
   ['cantalk',['canTalk',['../class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735',1,'FAWorld::Actor']]],
   ['cantalkto',['canTalkTo',['../class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf',1,'FAWorld::Actor']]],
   ['canwalkto',['canWalkTo',['../class_f_a_world_1_1_actor.html#ad1281394f68e342bf5e6b99cee09f518',1,'FAWorld::Actor']]],
@@ -134,5 +135,6 @@ var searchData=
   ['current_5ftest_5finfo',['current_test_info',['../classtesting_1_1_unit_test.html#a088eaf814a33085ace3d881d22e6bdea',1,'testing::UnitTest::current_test_info()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#a8d303ebdcf5989e96d3ed96fb7255102',1,'testing::internal::UnitTestImpl::current_test_info()'],['../classtesting_1_1internal_1_1_unit_test_impl.html#a6c90b6512125a43fba8d1be5f99dde1a',1,'testing::internal::UnitTestImpl::current_test_info() const ']]],
   ['current_5ftest_5fresult',['current_test_result',['../classtesting_1_1internal_1_1_unit_test_impl.html#aba3caef4ad23ce98be80250aeb0cc787',1,'testing::internal::UnitTestImpl']]],
   ['currentosstacktraceexcepttop',['CurrentOsStackTraceExceptTop',['../classtesting_1_1internal_1_1_unit_test_impl.html#a61c0a51ac4e57d9f884f646ca6dd2210',1,'testing::internal::UnitTestImpl']]],
-  ['currentstacktrace',['CurrentStackTrace',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a6965eadb9b340808718fab9f1475c49a',1,'testing::internal::OsStackTraceGetterInterface::CurrentStackTrace()'],['../classtesting_1_1internal_1_1_os_stack_trace_getter.html#afe0f7539f1a325eec1adf0625bbdfbd7',1,'testing::internal::OsStackTraceGetter::CurrentStackTrace()']]]
+  ['currentstacktrace',['CurrentStackTrace',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a6965eadb9b340808718fab9f1475c49a',1,'testing::internal::OsStackTraceGetterInterface::CurrentStackTrace()'],['../classtesting_1_1internal_1_1_os_stack_trace_getter.html#afe0f7539f1a325eec1adf0625bbdfbd7',1,'testing::internal::OsStackTraceGetter::CurrentStackTrace()']]],
+  ['cursorsize',['cursorSize',['../class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb',1,'FARender::Renderer']]]
 ];

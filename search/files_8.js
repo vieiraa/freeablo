@@ -16,5 +16,7 @@ var searchData=
   ['item_2ecpp',['item.cpp',['../item_8cpp.html',1,'']]],
   ['item_2eh',['item.h',['../item_8h.html',1,'']]],
   ['itemmanager_2ecpp',['itemmanager.cpp',['../itemmanager_8cpp.html',1,'']]],
-  ['itemmanager_2eh',['itemmanager.h',['../itemmanager_8h.html',1,'']]]
+  ['itemmanager_2eh',['itemmanager.h',['../itemmanager_8h.html',1,'']]],
+  ['itemmap_2ecpp',['itemmap.cpp',['../itemmap_8cpp.html',1,'']]],
+  ['itemmap_2eh',['itemmap.h',['../itemmap_8h.html',1,'']]]
 ];

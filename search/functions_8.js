@@ -40,6 +40,7 @@ var searchData=
   ['hasnonfatalfailure',['HasNonfatalFailure',['../classtesting_1_1_test.html#a8c00e8cc6fe10616b480bd54d2a426cb',1,'testing::Test::HasNonfatalFailure()'],['../classtesting_1_1_test_result.html#a34e6901b9772f51ce4f17a5517c26607',1,'testing::TestResult::HasNonfatalFailure()']]],
   ['hasonefailure',['HasOneFailure',['../namespacetesting_1_1internal.html#a14ff02e6d151f45e998657674e9af88a',1,'testing::internal']]],
   ['hasprefix',['HasPrefix',['../namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1',1,'testing::gtest_printers_test']]],
+  ['hastarget',['hasTarget',['../class_f_a_world_1_1_actor.html#a526228e4d63e5c7ca6d7996e62476ac8',1,'FAWorld::Actor']]],
   ['hc3zip_5fmatchfinder_5fgetmatches',['Hc3Zip_MatchFinder_GetMatches',['../_lz_find_8c.html#adaf58b7194a85571acdda03eee037c2b',1,'Hc3Zip_MatchFinder_GetMatches(CMatchFinder *p, UInt32 *distances):&#160;LzFind.c'],['../_lz_find_8h.html#adaf58b7194a85571acdda03eee037c2b',1,'Hc3Zip_MatchFinder_GetMatches(CMatchFinder *p, UInt32 *distances):&#160;LzFind.c']]],
   ['hc3zip_5fmatchfinder_5fskip',['Hc3Zip_MatchFinder_Skip',['../_lz_find_8c.html#ac6c5818765d337d2c54f45421c4d1ba9',1,'Hc3Zip_MatchFinder_Skip(CMatchFinder *p, UInt32 num):&#160;LzFind.c'],['../_lz_find_8h.html#ac6c5818765d337d2c54f45421c4d1ba9',1,'Hc3Zip_MatchFinder_Skip(CMatchFinder *p, UInt32 num):&#160;LzFind.c']]],
   ['head',['Head',['../singleton_queue.html#a71aa0154ef75bb87a53b6af1829fcd5e',1,'Queue::Head()'],['../singleton_queue.html#a877051b27c1c844ab5d5455116a54e57',1,'Queue::Head() const ']]],
@@ -51,5 +52,6 @@ var searchData=
   ['help',['help',['../fontgenerator_2main_8cpp.html#a6d6a48e3841bf9007929f691d654614c',1,'main.cpp']]],
   ['helper2d',['Helper2D',['../class_misc_1_1_helper2_d.html#a707f5ab968079044eee0d3b8d0216a5f',1,'Misc::Helper2D']]],
   ['heuristic',['heuristic',['../namespace_f_a_world.html#adce8d5602a8ece5b1a324fee3b35dd31',1,'FAWorld']]],
-  ['hotkey',['Hotkey',['../class_input_1_1_hotkey.html#aa46c53768042f4b36becd21eb6badb8d',1,'Input::Hotkey::Hotkey()'],['../class_input_1_1_hotkey.html#a340b56efcad1598f592f635dfc77f656',1,'Input::Hotkey::Hotkey(const char *name)'],['../class_input_1_1_hotkey.html#ad31a2ba42fdfdcdb5294e2833438136b',1,'Input::Hotkey::Hotkey(const std::string &amp;name)'],['../class_input_1_1_hotkey.html#afd7137ebc76ac86902e6cb9e63918422',1,'Input::Hotkey::Hotkey(int nkey, bool nshift, bool nctrl, bool nalt)']]]
+  ['hotkey',['Hotkey',['../class_input_1_1_hotkey.html#aa46c53768042f4b36becd21eb6badb8d',1,'Input::Hotkey::Hotkey()'],['../class_input_1_1_hotkey.html#a340b56efcad1598f592f635dfc77f656',1,'Input::Hotkey::Hotkey(const char *name)'],['../class_input_1_1_hotkey.html#ad31a2ba42fdfdcdb5294e2833438136b',1,'Input::Hotkey::Hotkey(const std::string &amp;name)'],['../class_input_1_1_hotkey.html#afd7137ebc76ac86902e6cb9e63918422',1,'Input::Hotkey::Hotkey(int nkey, bool nshift, bool nctrl, bool nalt)']]],
+  ['hoverstate',['HoverState',['../class_f_a_world_1_1_hover_state.html#a2b50903148096df14b6f9f4e7d58b4f7',1,'FAWorld::HoverState']]]
 ];

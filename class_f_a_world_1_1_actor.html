@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -106,6 +107,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Inherited by <a class="el" href="class_f_a_world_1_1_monster.html">FAWorld::Monster</a>, and <a class="el" href="class_f_a_world_1_1_player.html">FAWorld::Player</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afaadce737e981ee6ab350c71c4c56d5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">TargetType</a> = boost::variant&lt; boost::blank, <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *, <a class="el" href="class_f_a_world_1_1_item_target.html">ItemTarget</a> &gt;</td></tr>
+<tr class="separator:afaadce737e981ee6ab350c71c4c56d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f3e64ec18df757827ed90c1e19e1162"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a7f3e64ec18df757827ed90c1e19e1162">Actor</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;walkAnimPath=&quot;&quot;, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;idleAnimPath=&quot;&quot;, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;dieAnimPath=&quot;&quot;)</td></tr>
@@ -124,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45131c266364a071e5e36dba66bdf38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a999f531e5704c6bc6c2c8eb358b3de"><td class="memItemLeft" align="right" valign="top">virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a4a999f531e5704c6bc6c2c8eb358b3de">getCurrentHP</a> ()</td></tr>
 <tr class="separator:a4a999f531e5704c6bc6c2c8eb358b3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a05ca7bf95dc76ae5e6f390083bcbc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#af0a05ca7bf95dc76ae5e6f390083bcbc">pickupItem</a> (<a class="el" href="class_f_a_world_1_1_item_target.html">ItemTarget</a>)</td></tr>
+<tr class="separator:af0a05ca7bf95dc76ae5e6f390083bcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526228e4d63e5c7ca6d7996e62476ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a526228e4d63e5c7ca6d7996e62476ac8">hasTarget</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a526228e4d63e5c7ca6d7996e62476ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34794e1b866ce3c8e4fb6ead335f534a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor_animation_manager.html">ActorAnimationManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a34794e1b866ce3c8e4fb6ead335f534a">getAnimationManager</a> ()</td></tr>
 <tr class="separator:a34794e1b866ce3c8e4fb6ead335f534a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fdef3a001f5551a794465ae8cdb66fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a4fdef3a001f5551a794465ae8cdb66fe">isPassable</a> ()</td></tr>
@@ -132,14 +142,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9f15a51635be167074f82dd8f243b658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06348c90e930601c7c3ebcb0557cea6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#aa06348c90e930601c7c3ebcb0557cea6">getId</a> ()</td></tr>
 <tr class="separator:aa06348c90e930601c7c3ebcb0557cea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef1527b570e57e7ab20e9f2470862da"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a6ef1527b570e57e7ab20e9f2470862da">getName</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a6ef1527b570e57e7ab20e9f2470862da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa2a2bde6e7c59ffb401d0b4cd1a51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9fa2a2bde6e7c59ffb401d0b4cd1a51a">setName</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;name)</td></tr>
+<tr class="separator:a9fa2a2bde6e7c59ffb401d0b4cd1a51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007a534c24c4fe1134c343dfc08d82ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a007a534c24c4fe1134c343dfc08d82ba">teleport</a> (<a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *level, <a class="el" href="class_f_a_world_1_1_position.html">Position</a> pos)</td></tr>
 <tr class="separator:a007a534c24c4fe1134c343dfc08d82ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f3a1a4b5b66da302e257ea3b5c0f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58">getLevel</a> ()</td></tr>
 <tr class="separator:ac7f3a1a4b5b66da302e257ea3b5c0f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a5d2bbac1f829e82054276e41a4db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#af0a5d2bbac1f829e82054276e41a4db6">attack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *enemy)</td></tr>
 <tr class="separator:af0a5d2bbac1f829e82054276e41a4db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77967cf6328da51c0267795da6aea541"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">talk</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
+<tr class="memitem:a77967cf6328da51c0267795da6aea541"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">talk</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *<a class="el" href="namespace_f_a_world.html#ab4c781381c5b7dbbf680f0cd31144e39a8e62561c3ac6d3fb0016e9a34a2caa5d">actor</a>)</td></tr>
 <tr class="separator:a77967cf6328da51c0267795da6aea541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09c2441ebb348329954119561144b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab09c2441ebb348329954119561144b10">setTarget</a> (<a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">TargetType</a> target)</td></tr>
+<tr class="separator:ab09c2441ebb348329954119561144b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2a012747b50781b26f8451cb1da8d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ade2a012747b50781b26f8451cb1da8d3">getPos</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:ade2a012747b50781b26f8451cb1da8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c191fcc44226378819bc9a561411a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a40c191fcc44226378819bc9a561411a6">setInvuln</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> invuln)</td></tr>
@@ -194,8 +210,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a07eceaf3f9994af7a8311ca251222792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3750ee8440d3a3541a6338df60c19dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_movement_handler.html">MovementHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a3750ee8440d3a3541a6338df60c19dba">mMoveHandler</a></td></tr>
 <tr class="separator:a3750ee8440d3a3541a6338df60c19dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8bb44107fac190931de9ab705a3abb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a3c8bb44107fac190931de9ab705a3abb">actorTarget</a> = nullptr</td></tr>
-<tr class="separator:a3c8bb44107fac190931de9ab705a3abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6c56f5af37a069b6b1a7eae36b3cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">TargetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9f6c56f5af37a069b6b1a7eae36b3cf4">mTarget</a></td></tr>
+<tr class="separator:a9f6c56f5af37a069b6b1a7eae36b3cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14eefc56cb7a87f21c02b1979a84ca3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a14eefc56cb7a87f21c02b1979a84ca3e">mStats</a> =nullptr</td></tr>
 <tr class="separator:a14eefc56cb7a87f21c02b1979a84ca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -207,9 +223,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae052cd3c00a6b57b34430d684e7863b8"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr class="memitem:ae052cd3c00a6b57b34430d684e7863b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ae052cd3c00a6b57b34430d684e7863b8">load</a> (Archive &amp;ar, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> version)</td></tr>
 <tr class="separator:ae052cd3c00a6b57b34430d684e7863b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab251c6705ad0be74a823fe955e6175f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">canIAttack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
+<tr class="memitem:ab251c6705ad0be74a823fe955e6175f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">canIAttack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *<a class="el" href="namespace_f_a_world.html#ab4c781381c5b7dbbf680f0cd31144e39a8e62561c3ac6d3fb0016e9a34a2caa5d">actor</a>)</td></tr>
 <tr class="separator:ab251c6705ad0be74a823fe955e6175f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77ec7ddb3e80ebaeb58740e36ee22cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf">canTalkTo</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
+<tr class="memitem:ab9be1e48d4f05c00e0a65261785f4e33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab9be1e48d4f05c00e0a65261785f4e33">canInteractWith</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *<a class="el" href="namespace_f_a_world.html#ab4c781381c5b7dbbf680f0cd31144e39a8e62561c3ac6d3fb0016e9a34a2caa5d">actor</a>)</td></tr>
+<tr class="separator:ab9be1e48d4f05c00e0a65261785f4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77ec7ddb3e80ebaeb58740e36ee22cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf">canTalkTo</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *<a class="el" href="namespace_f_a_world.html#ab4c781381c5b7dbbf680f0cd31144e39a8e62561c3ac6d3fb0016e9a34a2caa5d">actor</a>)</td></tr>
 <tr class="separator:ac77ec7ddb3e80ebaeb58740e36ee22cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -254,6 +272,19 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a84eaa7e8220ef7f8cfb10d95398a0995 inherit pub_static_methods_class_f_a_world_1_1_net_object"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">getClassIdFromIndirectId</a> (int32_t indirectId)</td></tr>
 <tr class="separator:a84eaa7e8220ef7f8cfb10d95398a0995 inherit pub_static_methods_class_f_a_world_1_1_net_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="afaadce737e981ee6ab350c71c4c56d5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">FAWorld::Actor::TargetType</a> =  boost::variant&lt;boost::blank, <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a>*, <a class="el" href="class_f_a_world_1_1_item_target.html">ItemTarget</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7f3e64ec18df757827ed90c1e19e1162"></a>
 <div class="memitem">
@@ -369,6 +400,30 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9be1e48d4f05c00e0a65261785f4e33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> FAWorld::Actor::canInteractWith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -638,6 +693,21 @@ template&lt;class Stream &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a6ef1527b570e57e7ab20e9f2470862da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FAWorld::Actor::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ade2a012747b50781b26f8451cb1da8d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -657,6 +727,21 @@ template&lt;class Stream &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a526228e4d63e5c7ca6d7996e62476ac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> FAWorld::Actor::hasTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -748,6 +833,32 @@ template&lt;class Archive &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0a05ca7bf95dc76ae5e6f390083bcbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FAWorld::Actor::pickupItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_item_target.html">ItemTarget</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_f_a_world_1_1_player.html#a0cc5d2b82439b04ece979c1f892193c5">FAWorld::Player</a>.</p>
 
 </div>
 </div>
@@ -843,6 +954,22 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a9fa2a2bde6e7c59ffb401d0b4cd1a51a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FAWorld::Actor::setName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9f15a51635be167074f82dd8f243b658"></a>
 <div class="memitem">
 <div class="memproto">
@@ -890,6 +1017,22 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="class_f_a_world_1_1_player.html#a617f9248e099f1bfe1a1685456d1fdbb">FAWorld::Player</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab09c2441ebb348329954119561144b10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FAWorld::Actor::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">TargetType</a>&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1095,18 +1238,6 @@ template&lt;class Archive &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a3c8bb44107fac190931de9ab705a3abb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a>* FAWorld::Actor::actorTarget = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a0aa3b53bf1be4464e2c5b45e4465a0c8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1301,6 +1432,18 @@ template&lt;class Archive &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a>* FAWorld::Actor::mStats =nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f6c56f5af37a069b6b1a7eae36b3cf4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_a_world_1_1_actor.html#afaadce737e981ee6ab350c71c4c56d5e">TargetType</a> FAWorld::Actor::mTarget</td>
         </tr>
       </table>
 </div><div class="memdoc">

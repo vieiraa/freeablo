@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a50c9a61c31dbaec1a33fdb51e3d6c4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2986d4eb0568b1ac3e90b03cd3856424"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a2986d4eb0568b1ac3e90b03cd3856424">getPathForIndex</a> (uint32_t index)</td></tr>
 <tr class="separator:a2986d4eb0568b1ac3e90b03cd3856424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e6106a85dea87a6ae937fd163904260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_render_1_1_tile.html">Render::Tile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a7e6106a85dea87a6ae937fd163904260">getClickedTile</a> (size_t x, size_t y, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &amp;screenPos)</td></tr>
-<tr class="separator:a7e6106a85dea87a6ae937fd163904260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9513750919818ceb3d26c2897898d68f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_render_1_1_tile.html">Render::Tile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a9513750919818ceb3d26c2897898d68f">getTileByScreenPos</a> (size_t x, size_t y, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &amp;screenPos)</td></tr>
+<tr class="separator:a9513750919818ceb3d26c2897898d68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2fc75b1aa8fac3cf8bd6efe286cadd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#ae2fc75b1aa8fac3cf8bd6efe286cadd1">drawCursor</a> (<a class="el" href="class_f_a_render_1_1_render_state.html">RenderState</a> *State)</td></tr>
 <tr class="separator:ae2fc75b1aa8fac3cf8bd6efe286cadd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a53990193344a85369040a1ed665917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a9a53990193344a85369040a1ed665917">renderFrame</a> (<a class="el" href="class_f_a_render_1_1_render_state.html">RenderState</a> *state, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; uint32_t &gt; &amp;spritesToPreload)</td></tr>
@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c3143aefd6b3454e511ed572dad79c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a7c3143aefd6b3454e511ed572dad79c9">cleanup</a> ()</td></tr>
 <tr class="memdesc:a7c3143aefd6b3454e511ed572dad79c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called only by <a class="el" href="class_engine_1_1_thread_manager.html">Engine::ThreadManager</a>.  <a href="#a7c3143aefd6b3454e511ed572dad79c9">More...</a><br /></td></tr>
 <tr class="separator:a7c3143aefd6b3454e511ed572dad79c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bba048e164b0b561043dd98c7385fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_misc_1_1_point.html">Misc::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb">cursorSize</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a3bba048e164b0b561043dd98c7385fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdaecb47d3b328c769c47895589b76a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnk__context.html">nk_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#abdaecb47d3b328c769c47895589b76a9">getNuklearContext</a> ()</td></tr>
 <tr class="separator:abdaecb47d3b328c769c47895589b76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9586c48c291383cfa36174be1cb6655e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_renderer.html#a9586c48c291383cfa36174be1cb6655e">getWindowDimensions</a> (int32_t &amp;w, int32_t &amp;h)</td></tr>
@@ -210,6 +212,29 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>To be called only by <a class="el" href="class_engine_1_1_thread_manager.html">Engine::ThreadManager</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3bba048e164b0b561043dd98c7385fcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_misc_1_1_point.html">Misc::Point</a> FARender::Renderer::cursorSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -294,38 +319,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7e6106a85dea87a6ae937fd163904260"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_render_1_1_tile.html">Render::Tile</a> FARender::Renderer::getClickedTile </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &amp;&#160;</td>
-          <td class="paramname"><em>screenPos</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ac4c33c3a19e242d3cda304a56a719e9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -374,6 +367,38 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9513750919818ceb3d26c2897898d68f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_render_1_1_tile.html">Render::Tile</a> FARender::Renderer::getTileByScreenPos </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &amp;&#160;</td>
+          <td class="paramname"><em>screenPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

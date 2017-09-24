@@ -115,6 +115,7 @@ var searchData=
   ['specialsound',['specialSound',['../struct_diablo_exe_1_1_monster.html#add33f747a6e87887ecc7d24c2ba06556',1,'DiabloExe::Monster']]],
   ['spellcode',['spellCode',['../class_diablo_exe_1_1_base_item.html#a926128a23d5ebf2468f13a973efcde26',1,'DiabloExe::BaseItem']]],
   ['sprite',['sprite',['../struct_f_a_render_1_1_cache_entry.html#aec30046768542d8e3d094600d9af92a0',1,'FARender::CacheEntry']]],
+  ['spritegroup',['spriteGroup',['../struct_f_a_render_1_1_object_to_render.html#af5624290a3ef9d95ab2798e3d49e61ca',1,'FARender::ObjectToRender']]],
   ['spriteindex',['spriteIndex',['../struct_render_1_1_rocket_f_a_tex.html#a9c3495131624e34c5c31a70464c12f4b',1,'Render::RocketFATex']]],
   ['sqr',['sqr',['../structltc__math__descriptor.html#ae56c5ac2a48f7c3b4babad2936625be2',1,'ltc_math_descriptor']]],
   ['sqrmod',['sqrmod',['../structltc__math__descriptor.html#a03449a78e658e2b2f9dd34aa17cffa93',1,'ltc_math_descriptor']]],

@@ -5,6 +5,7 @@ var searchData=
   ['execdeathtest',['ExecDeathTest',['../classtesting_1_1_test_result.html#adf5553cae6aea6f8648d47e299237e34',1,'testing::TestResult']]],
   ['getunittestimpl',['GetUnitTestImpl',['../classtesting_1_1_unit_test.html#a56e56be7066957d612e53b5c60f6ac08',1,'testing::UnitTest']]],
   ['inventory',['Inventory',['../class_f_a_world_1_1_melee_stats.html#a4153fb350155e74d4b0d758d9ca894f5',1,'FAWorld::MeleeStats::Inventory()'],['../class_f_a_world_1_1_ranger_stats.html#a4153fb350155e74d4b0d758d9ca894f5',1,'FAWorld::RangerStats::Inventory()'],['../class_f_a_world_1_1_mage_stats.html#a4153fb350155e74d4b0d758d9ca894f5',1,'FAWorld::MageStats::Inventory()'],['../class_f_a_world_1_1_player.html#a4153fb350155e74d4b0d758d9ca894f5',1,'FAWorld::Player::Inventory()']]],
+  ['itemmap',['ItemMap',['../class_f_a_world_1_1_placed_item_data.html#ab95d3685f8a955b6469a094d1364575c',1,'FAWorld::PlacedItemData']]],
   ['itemposition',['ItemPosition',['../class_f_a_world_1_1_item.html#a512f920ff7932f0044ca746f34746ae8',1,'FAWorld::Item']]],
   ['makeandregistertestinfo',['MakeAndRegisterTestInfo',['../classtesting_1_1_test_info.html#a3e27fa5e97044d379b1e3b2a753f56f8',1,'testing::TestInfo']]],
   ['noexecdeathtest',['NoExecDeathTest',['../classtesting_1_1_test_event_listeners.html#afddba49fdf3f493532b4d5efb9814f4e',1,'testing::TestEventListeners']]],
