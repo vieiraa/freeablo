@@ -298,7 +298,7 @@ var searchData=
   ['btnumavailbytes',['btNumAvailBytes',['../struct___c_match_finder_mt.html#aa54a973ca6cf9f6db89361dd4a8ba8eb',1,'_CMatchFinderMt']]],
   ['btsync',['btSync',['../struct___c_match_finder_mt.html#a01249c11bb8f73379f4c9837bf615429',1,'_CMatchFinderMt']]],
   ['btthreadfunc',['BtThreadFunc',['../_lz_find_mt_8c.html#a9388955f0272d2954a5f7d30de7e595f',1,'LzFindMt.c']]],
-  ['buf',['buf',['../struct_misc_1_1md5__state__s.html#a98997e508e2857a65635cae5d6a7ad90',1,'Misc::md5_state_s::buf()'],['../structnk__popup__state.html#a74261b023275e19b075c6db1dab8905b',1,'nk_popup_state::buf()'],['../structbz_file.html#a5899bab16e8dc86cdcb9dba1eee3a27d',1,'bzFile::buf()'],['../struct_c_lzma_dec.html#a8befb478bce8563de4496cc2367b61c4',1,'CLzmaDec::buf()'],['../struct_c_range_enc.html#a885eed7bde9d20f9aaf9d3ca212c6504',1,'CRangeEnc::buf()'],['../struct_c_look_to_read.html#aa1b864bacf3e478cbedaa4b5934da0fc',1,'CLookToRead::buf()']]],
+  ['buf',['buf',['../struct_misc_1_1md5__state__s.html#a98997e508e2857a65635cae5d6a7ad90',1,'Misc::md5_state_s::buf()'],['../structnfdpathset__t.html#ae36983165c42a6de38c06ec496c22d13',1,'nfdpathset_t::buf()'],['../structnk__popup__state.html#a74261b023275e19b075c6db1dab8905b',1,'nk_popup_state::buf()'],['../structbz_file.html#a5899bab16e8dc86cdcb9dba1eee3a27d',1,'bzFile::buf()'],['../struct_c_lzma_dec.html#a8befb478bce8563de4496cc2367b61c4',1,'CLzmaDec::buf()'],['../struct_c_range_enc.html#a885eed7bde9d20f9aaf9d3ca212c6504',1,'CRangeEnc::buf()'],['../struct_c_look_to_read.html#aa1b864bacf3e478cbedaa4b5934da0fc',1,'CLookToRead::buf()']]],
   ['buf_5fsize',['Buf_size',['../trees_8c.html#a0c0213b942f7535235cf515e8fe23bf9',1,'trees.c']]],
   ['bufbase',['bufBase',['../struct_c_range_enc.html#a5ca9369a657727ccd4ff8dab95fde5a9',1,'CRangeEnc']]],
   ['buffer',['buffer',['../struct_f_a_render_1_1_raw_cache_tmp.html#a76ab0ccc7578893300043574c63296f2',1,'FARender::RawCacheTmp::buffer()'],['../structnk__str.html#af09f932d4972189976784f9f6974e894',1,'nk_str::buffer()'],['../structnk__panel.html#af92431d2360f7f815e7caf2896ea9090',1,'nk_panel::buffer()'],['../structnk__property__state.html#aba9b0d6a242c09b6c949f933a3c4d6c0',1,'nk_property_state::buffer()'],['../structnk__window.html#ab1a260769cace3a808d1361feeeaa002',1,'nk_window::buffer()'],['../struct___c_match_finder.html#a68cb423e10f70eb57e6cdcfa1c303672',1,'_CMatchFinder::buffer()'],['../struct___c_match_finder_mt.html#aad32d649b339a9e39fe8b1f9c6f420b4',1,'_CMatchFinderMt::buffer()'],['../struct_t_list_file_cache.html#ac9e8848849da284df993e315a4a1aec9',1,'TListFileCache::Buffer()']]],
@@ -309,6 +309,7 @@ var searchData=
   ['buflim',['bufLim',['../struct_c_range_enc.html#a59eec3c74fba04ff4b94bdf229048b30',1,'CRangeEnc']]],
   ['bufn',['bufN',['../structbz_file.html#a4a19af6faa294019774c79d3d556b4c5',1,'bzFile']]],
   ['build',['build',['../structnk__context.html#a0d0f953ef2b6c56b046e4e5488d074e6',1,'nk_context']]],
+  ['build_2emd',['build.md',['../build_8md.html',1,'']]],
   ['build_5fbl_5ftree',['build_bl_tree',['../trees_8c.html#aef05b1c8b7f7ef2902111a8f415ead66',1,'trees.c']]],
   ['build_5ftree',['build_tree',['../trees_8c.html#ae24585b9d3230020126f1c8ae8f240f9',1,'trees.c']]],
   ['buildfiletable',['BuildFileTable',['../_s_base_file_table_8cpp.html#a1c0a0948adf593a715e4cdc76bd252fd',1,'BuildFileTable(TMPQArchive *ha):&#160;SBaseFileTable.cpp'],['../_storm_common_8h.html#a1c0a0948adf593a715e4cdc76bd252fd',1,'BuildFileTable(TMPQArchive *ha):&#160;SBaseFileTable.cpp']]],
@@ -475,5 +476,6 @@ var searchData=
   ['bzfree',['bzfree',['../structbz__stream.html#a71c2bc381f011bebd32462975c4b75cb',1,'bz_stream::bzfree()'],['../bzlib__private_8h.html#a47226ed6cfccd153d09bc91e96faa5d3',1,'BZFREE():&#160;bzlib_private.h']]],
   ['bzlib_2ec',['bzlib.c',['../bzlib_8c.html',1,'']]],
   ['bzlib_2eh',['bzlib.h',['../bzlib_8h.html',1,'']]],
-  ['bzlib_5fprivate_2eh',['bzlib_private.h',['../bzlib__private_8h.html',1,'']]]
+  ['bzlib_5fprivate_2eh',['bzlib_private.h',['../bzlib__private_8h.html',1,'']]],
+  ['building_20nfd',['Building NFD',['../md_extern_nativefiledialog_docs_build.html',1,'']]]
 ];

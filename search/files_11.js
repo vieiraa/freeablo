@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['test_5fopendialog_2ec',['test_opendialog.c',['../test__opendialog_8c.html',1,'']]],
+  ['test_5fopendialogmultiple_2ec',['test_opendialogmultiple.c',['../test__opendialogmultiple_8c.html',1,'']]],
+  ['test_5fpickfolder_2ec',['test_pickfolder.c',['../test__pickfolder_8c.html',1,'']]],
+  ['test_5fsavedialog_2ec',['test_savedialog.c',['../test__savedialog_8c.html',1,'']]],
   ['tests_2emd',['tests.md',['../tests_8md.html',1,'']]],
   ['threadmanager_2ecpp',['threadmanager.cpp',['../threadmanager_8cpp.html',1,'']]],
   ['threadmanager_2eh',['threadmanager.h',['../threadmanager_8h.html',1,'']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['unaligned_5fbh',['UNALIGNED_BH',['../blocksort_8c.html#a7cc55e5c6eea01faf39662a8cbcc7dd9',1,'blocksort.c']]],
+  ['unicode',['UNICODE',['../nfd__win_8cpp.html#a09ecca53f2cd1b8d1c566bedb245e141',1,'nfd_win.cpp']]],
   ['unused_5fparam',['UNUSED_PARAM',['../misc_2misc_8h.html#a6c7ba74ad57863d1342878d2c703e660',1,'misc.h']]],
   ['update',['UPDATE',['../inflate_8c.html#a5eea7ffd1fff4fbea834bcb292d1bea2',1,'inflate.c']]],
   ['update_5f0',['UPDATE_0',['../_lzma_dec_8c.html#ae78e66f0b2b3bc3f1783e7b2a9adf358',1,'LzmaDec.c']]],

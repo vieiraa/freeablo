@@ -139,7 +139,7 @@ var searchData=
   ['processedpos',['processedPos',['../struct_c_lzma_dec.html#ad466ce9f0fdd3c18b34d920433cf324e',1,'CLzmaDec']]],
   ['prog',['prog',['../structnk__gl__device.html#af84c5382993162b24c31a48e2dc6290f',1,'nk_gl_device']]],
   ['program_5fpath',['PROGRAM_PATH',['../namespacegtest__help__test.html#a8477d662626da4ff2f370c330bfa7e3f',1,'gtest_help_test.PROGRAM_PATH()'],['../namespacegtest__output__test.html#a091d7c2220b9da215ddfa38130aaa49a',1,'gtest_output_test.PROGRAM_PATH()']]],
-  ['progress',['progress',['../structnk__style.html#a8064c6b388f735cff32d4951c6156c9a',1,'nk_style::progress()'],['../struct_i_compress_progress.html#a6c9f049d784deacce9ba61bc7f42dd9f',1,'ICompressProgress::Progress()']]],
+  ['progress',['Progress',['../struct_i_compress_progress.html#a6c9f049d784deacce9ba61bc7f42dd9f',1,'ICompressProgress::Progress()'],['../structnk__style.html#a8064c6b388f735cff32d4951c6156c9a',1,'nk_style::progress()']]],
   ['prop',['prop',['../struct_c_lzma_dec.html#a1060ffc045d00995bb061c488ed442ee',1,'CLzmaDec']]],
   ['property',['property',['../structnk__style.html#a6af2c48298dd1c358751c70c59b91924',1,'nk_style::property()'],['../structnk__window.html#ab9fedd0b171796592daf5fa41a08bcea',1,'nk_window::property()']]],
   ['psearchtable',['pSearchTable',['../struct_t_m_p_q_search.html#a8e4185e2ee1a45373adca67a87c39bd5',1,'TMPQSearch']]],

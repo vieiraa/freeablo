@@ -62,6 +62,7 @@ var searchData=
   ['signature_5ftype_5fnone',['SIGNATURE_TYPE_NONE',['../_storm_lib_8h.html#a963e3c2877d3c9d08737ce2e901cb17f',1,'StormLib.h']]],
   ['signature_5ftype_5fstrong',['SIGNATURE_TYPE_STRONG',['../_storm_lib_8h.html#ab77da79e415e52afa44cb2a346bc55c7',1,'StormLib.h']]],
   ['signature_5ftype_5fweak',['SIGNATURE_TYPE_WEAK',['../_storm_lib_8h.html#a4cac1edf4a3101da9c369e81fd7c0908',1,'StormLib.h']]],
+  ['simple_5fexec_5fimplementation',['SIMPLE_EXEC_IMPLEMENTATION',['../nfd__zenity_8c.html#a9d14f9ac987b5b945d5460e7c8f72878',1,'nfd_zenity.c']]],
   ['size_5fof_5fxfrm_5fheader',['SIZE_OF_XFRM_HEADER',['../_storm_lib_8h.html#ad7ec40c870b41fa7fdb7a60e68a7ca96',1,'StormLib.h']]],
   ['skip_5ffooter',['SKIP_FOOTER',['../_lz_find_8c.html#af3c59dbfa59c4f7cc3edaed2a319e34b',1,'LzFind.c']]],
   ['skip_5ffooter_5fmt',['SKIP_FOOTER_MT',['../_lz_find_mt_8c.html#a306555d99d5500997dc0e4987e86b567',1,'LzFindMt.c']]],

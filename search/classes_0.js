@@ -40,6 +40,7 @@ var searchData=
   ['_5fimatchfinder',['_IMatchFinder',['../struct___i_match_finder.html',1,'']]],
   ['_5fmousebutton',['_mouseButton',['../struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html',1,'Input::InputManager::Event::_vals']]],
   ['_5fmousemove',['_mouseMove',['../struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html',1,'Input::InputManager::Event::_vals']]],
+  ['_5fmousewheel',['_mouseWheel',['../struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_wheel.html',1,'Input::InputManager::Event::_vals']]],
   ['_5fmpq_5fattributes_5fheader',['_MPQ_ATTRIBUTES_HEADER',['../struct___m_p_q___a_t_t_r_i_b_u_t_e_s___h_e_a_d_e_r.html',1,'']]],
   ['_5fmpq_5fsignature_5finfo',['_MPQ_SIGNATURE_INFO',['../struct___m_p_q___s_i_g_n_a_t_u_r_e___i_n_f_o.html',1,'']]],
   ['_5fpart_5ffile_5fheader',['_PART_FILE_HEADER',['../struct___p_a_r_t___f_i_l_e___h_e_a_d_e_r.html',1,'']]],

@@ -2,6 +2,8 @@ var searchData=
 [
   ['name_5fstate',['NAME_STATE',['../deflate_8h.html#acec08b85e51457d214b759d489785e99',1,'deflate.h']]],
   ['needbits',['NEEDBITS',['../inflate_8c.html#ab3731a4aa4bb04481dc95069bbfb7156',1,'inflate.c']]],
+  ['nfd_5fmax_5fstrlen',['NFD_MAX_STRLEN',['../extern_2nativefiledialog_2src_2common_8h.html#a742f7466461e75c89a7cee845510d667',1,'NFD_MAX_STRLEN():&#160;common.h'],['../nfd__common_8h.html#a742f7466461e75c89a7cee845510d667',1,'NFD_MAX_STRLEN():&#160;nfd_common.h']]],
+  ['nfd_5futf8_5fbom',['NFD_UTF8_BOM',['../nfd__common_8h.html#a5e07aa12743a0a43336115a4441eb2f3',1,'nfd_common.h']]],
   ['nil',['NIL',['../deflate_8c.html#a263efce0e5cda1d387a1a43f94715445',1,'deflate.c']]],
   ['nk_5fabs',['NK_ABS',['../nuklear_8h.html#a4dd62c825b47f8f40071b93660a1edcc',1,'nuklear.h']]],
   ['nk_5falign_5fptr',['NK_ALIGN_PTR',['../nuklear_8h.html#a57b79575bed3fd38030a35c1c10b513d',1,'nuklear.h']]],

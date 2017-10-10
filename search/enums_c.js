@@ -1,6 +1,7 @@
 var searchData=
 [
   ['namedenum',['NamedEnum',['../gtest__unittest_8cc.html#ae0610bad70a3b53c94ee9db54f6f732b',1,'gtest_unittest.cc']]],
+  ['nfdresult_5ft',['nfdresult_t',['../nfd_8h.html#af8653f87bdc1662963a84f68802e96b4',1,'nfd.h']]],
   ['nk_5fallocation_5ftype',['nk_allocation_type',['../nuklear_8h.html#aa988e58afebdfa0bbd380ed643f913ec',1,'nuklear.h']]],
   ['nk_5fanti_5faliasing',['nk_anti_aliasing',['../nuklear_8h.html#a9b070460af54cd26421eb7d000956f38',1,'nuklear.h']]],
   ['nk_5fbuffer_5fallocation_5ftype',['nk_buffer_allocation_type',['../nuklear_8h.html#add31ad7a49e91bcf491614a4739108c1',1,'nuklear.h']]],

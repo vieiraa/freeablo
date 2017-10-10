@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pull_20requests',['Pull Requests',['../md_extern_nativefiledialog_docs_submitting_pull_requests.html',1,'']]],
   ['p',['p',['../struct_c_len_price_enc.html#ad8aa8f9a0c19d512ddc3c4ed76527c2a',1,'CLenPriceEnc']]],
   ['packet',['packet',['../struct_engine_1_1_write_packet.html#aff0325f28dfd1d121030db39935aed22',1,'Engine::WritePacket::packet()'],['../struct___e_net_outgoing_command.html#a883552143c9c5c9b85c0d99bd3009bf7',1,'_ENetOutgoingCommand::packet()'],['../struct___e_net_incoming_command.html#a224a424ba3bd64d673aec8e4b0e4c220',1,'_ENetIncomingCommand::packet()'],['../struct___e_net_event.html#afb6303a5593fce6b9671efbc2ca1b5de',1,'_ENetEvent::packet()']]],
   ['packet_2ec',['packet.c',['../packet_8c.html',1,'']]],
@@ -166,7 +167,7 @@ var searchData=
   ['playanimation',['playAnimation',['../class_f_a_render_1_1_animation_player.html#afb026d28372339c6462b6aceece1d227',1,'FARender::AnimationPlayer::playAnimation()'],['../class_f_a_world_1_1_actor_animation_manager.html#ad5d1e7ef2ecf1a8946c639fad8e2868f',1,'FAWorld::ActorAnimationManager::playAnimation()']]],
   ['playbutton',['playButton',['../class_ui___main_window.html#a1a28d28cf3e27503fec703150a8cec5d',1,'Ui_MainWindow']]],
   ['player',['Player',['../class_f_a_world_1_1_player.html',1,'FAWorld']]],
-  ['player',['Player',['../class_f_a_world_1_1_inventory.html#a7f4241aa9ecc051c75f779af132a52ed',1,'FAWorld::Inventory::Player()'],['../class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797',1,'FAWorld::Player::Player()'],['../class_f_a_world_1_1_player.html#a5b1eda0f3b9509f1df14b82f403401dd',1,'FAWorld::Player::Player(const std::string &amp;className, const DiabloExe::CharacterStats &amp;charStats)'],['../struct_engine_1_1_client_data.html#a2f86cdb562c00883bbdc48a6657e9938',1,'Engine::ClientData::player()']]],
+  ['player',['player',['../struct_engine_1_1_client_data.html#a2f86cdb562c00883bbdc48a6657e9938',1,'Engine::ClientData::player()'],['../class_f_a_world_1_1_inventory.html#a7f4241aa9ecc051c75f779af132a52ed',1,'FAWorld::Inventory::Player()'],['../class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797',1,'FAWorld::Player::Player()'],['../class_f_a_world_1_1_player.html#a5b1eda0f3b9509f1df14b82f403401dd',1,'FAWorld::Player::Player(const std::string &amp;className, const DiabloExe::CharacterStats &amp;charStats)']]],
   ['player_2ecpp',['player.cpp',['../player_8cpp.html',1,'']]],
   ['player_2eh',['player.h',['../player_8h.html',1,'']]],
   ['playerfactory',['PlayerFactory',['../class_f_a_world_1_1_player_factory.html#ac641c9ae7712a01bbb2873719bff0705',1,'FAWorld::PlayerFactory']]],
@@ -338,7 +339,7 @@ var searchData=
   ['production_2eh',['production.h',['../production_8h.html',1,'']]],
   ['prog',['prog',['../structnk__gl__device.html#af84c5382993162b24c31a48e2dc6290f',1,'nk_gl_device']]],
   ['program_5fpath',['PROGRAM_PATH',['../namespacegtest__help__test.html#a8477d662626da4ff2f370c330bfa7e3f',1,'gtest_help_test.PROGRAM_PATH()'],['../namespacegtest__output__test.html#a091d7c2220b9da215ddfa38130aaa49a',1,'gtest_output_test.PROGRAM_PATH()']]],
-  ['progress',['progress',['../structnk__style.html#a8064c6b388f735cff32d4951c6156c9a',1,'nk_style::progress()'],['../struct_i_compress_progress.html#a6c9f049d784deacce9ba61bc7f42dd9f',1,'ICompressProgress::Progress()']]],
+  ['progress',['Progress',['../struct_i_compress_progress.html#a6c9f049d784deacce9ba61bc7f42dd9f',1,'ICompressProgress::Progress()'],['../structnk__style.html#a8064c6b388f735cff32d4951c6156c9a',1,'nk_style::progress()']]],
   ['prop',['prop',['../struct_c_lzma_dec.html#a1060ffc045d00995bb061c488ed442ee',1,'CLzmaDec']]],
   ['property',['property',['../structnk__style.html#a6af2c48298dd1c358751c70c59b91924',1,'nk_style::property()'],['../structnk__window.html#ab9fedd0b171796592daf5fa41a08bcea',1,'nk_window::property()']]],
   ['propertyone',['PropertyOne',['../class_property_one.html',1,'']]],
@@ -352,7 +353,7 @@ var searchData=
   ['psfile_5fcreate_5fmpq',['PSFILE_CREATE_MPQ',['../_storm_lib_8h.html#a97df30ed85f80d5c8fe560750b3efe4a',1,'StormLib.h']]],
   ['psfile_5ffind_5fdata',['PSFILE_FIND_DATA',['../_storm_lib_8h.html#a868c53c463cdc7f0bf83c41993c5eb54',1,'StormLib.h']]],
   ['pstream',['pStream',['../struct___t_m_p_q_archive.html#a3dac14b565b2d617f5f3e65db2d7fa05',1,'_TMPQArchive::pStream()'],['../struct___t_m_p_q_file.html#a8c3a90e5d6abcbc6757bf7fdae94a5d9',1,'_TMPQFile::pStream()']]],
-  ['ptr',['ptr',['../unionnk__handle.html#adbdcd879ad5f3d6cc77b5085bf35ac40',1,'nk_handle::ptr()'],['../structnk__memory.html#a844a5bebb33c6e11678e4e1ad5a9762c',1,'nk_memory::ptr()'],['../struct_e_state.html#a6d014c56a52f7f0a4c680ddbae266577',1,'EState::ptr()']]],
+  ['ptr',['Ptr',['../class_com_ptr.html#a7331ebf0aeda03d558f203d6beabdfe0',1,'ComPtr::Ptr()'],['../unionnk__handle.html#adbdcd879ad5f3d6cc77b5085bf35ac40',1,'nk_handle::ptr()'],['../structnk__memory.html#a844a5bebb33c6e11678e4e1ad5a9762c',1,'nk_memory::ptr()'],['../struct_e_state.html#a6d014c56a52f7f0a4c680ddbae266577',1,'EState::ptr()']]],
   ['ptr_5fint',['PTR_INT',['../huff__old_8h.html#aaec3278afbf237954cc4b39903d59b6b',1,'huff_old.h']]],
   ['ptr_5finvalid',['PTR_INVALID',['../huff__old_8cpp.html#ae35934d2985221152fe57ec00c88bcdf',1,'huff_old.cpp']]],
   ['ptr_5finvalid_5for_5fnull',['PTR_INVALID_OR_NULL',['../huff__old_8cpp.html#a1ac8b5f5a8f58659bc9d56b361178b22',1,'huff_old.cpp']]],

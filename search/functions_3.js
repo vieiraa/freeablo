@@ -82,6 +82,7 @@ var searchData=
   ['compressadpcm',['CompressADPCM',['../adpcm_8cpp.html#ae09ca6c99cd2eff7c478055b3062b559',1,'CompressADPCM(void *pvOutBuffer, int cbOutBuffer, void *pvInBuffer, int cbInBuffer, int ChannelCount, int CompressionLevel):&#160;adpcm.cpp'],['../adpcm_8h.html#aa2ceb51da39e136f78cb1b4410a7d283',1,'CompressADPCM(void *pvOutBuffer, int dwOutLength, void *pvInBuffer, int dwInLength, int nCmpType, int ChannelCount):&#160;adpcm.cpp'],['../adpcm__old_8cpp.html#a4bf7ef43922168e26d9ee913ad458095',1,'CompressADPCM(unsigned char *pbOutBuffer, int dwOutLength, short *pwInBuffer, int dwInLength, int nChannels, int nCmpLevel):&#160;adpcm_old.cpp'],['../adpcm__old_8h.html#afadb1533ab714cdc3174c5c9999e3f09',1,'CompressADPCM(unsigned char *pbOutBuffer, int dwOutLength, short *pwInBuffer, int dwInLength, int nCmpType, int nChannels):&#160;adpcm_old.cpp']]],
   ['compressbound',['compressBound',['../extern_2_storm_lib_2src_2zlib_2compress_8c.html#a6bfd92b4426ff6008c841c2cc6f8fed3',1,'compress.c']]],
   ['compresssparse',['CompressSparse',['../sparse_8cpp.html#a2ffe0fb4f37155f893214e9a57f7818f',1,'CompressSparse(void *pvOutBuffer, int *pcbOutBuffer, void *pvInBuffer, int cbInBuffer):&#160;sparse.cpp'],['../sparse_8h.html#a2ffe0fb4f37155f893214e9a57f7818f',1,'CompressSparse(void *pvOutBuffer, int *pcbOutBuffer, void *pvInBuffer, int cbInBuffer):&#160;sparse.cpp']]],
+  ['comptr',['ComPtr',['../class_com_ptr.html#ae0efb8102d67087fbb2e464c793710a3',1,'ComPtr']]],
   ['concatpaths',['ConcatPaths',['../classtesting_1_1internal_1_1_file_path.html#ac9d57987f60ac43f0c57b89e333e531e',1,'testing::internal::FilePath']]],
   ['configurexmloutput',['ConfigureXmlOutput',['../classtesting_1_1internal_1_1_unit_test_impl.html#a21cd7b2928de03a55b5252f29dd5ae6d',1,'testing::internal::UnitTestImpl']]],
   ['connect',['connect',['../namespace_f_a_level_gen.html#aab6daf68a2c5c15cfc70e3306a58b0c4',1,'FALevelGen']]],
@@ -136,5 +137,6 @@ var searchData=
   ['current_5ftest_5fresult',['current_test_result',['../classtesting_1_1internal_1_1_unit_test_impl.html#aba3caef4ad23ce98be80250aeb0cc787',1,'testing::internal::UnitTestImpl']]],
   ['currentosstacktraceexcepttop',['CurrentOsStackTraceExceptTop',['../classtesting_1_1internal_1_1_unit_test_impl.html#a61c0a51ac4e57d9f884f646ca6dd2210',1,'testing::internal::UnitTestImpl']]],
   ['currentstacktrace',['CurrentStackTrace',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a6965eadb9b340808718fab9f1475c49a',1,'testing::internal::OsStackTraceGetterInterface::CurrentStackTrace()'],['../classtesting_1_1internal_1_1_os_stack_trace_getter.html#afe0f7539f1a325eec1adf0625bbdfbd7',1,'testing::internal::OsStackTraceGetter::CurrentStackTrace()']]],
-  ['cursorsize',['cursorSize',['../class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb',1,'FARender::Renderer']]]
+  ['cursorsize',['cursorSize',['../class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb',1,'FARender::Renderer']]],
+  ['cvsprite',['CVSprite',['../struct_c_v_sprite.html#ad956618af59065a4f7dd2865e86dc032',1,'CVSprite']]]
 ];

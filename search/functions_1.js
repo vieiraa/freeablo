@@ -72,6 +72,7 @@ var searchData=
   ['attachbehaviour',['attachBehaviour',['../class_f_a_world_1_1_actor.html#abbd165373986b133464944dc1eaf1cda',1,'FAWorld::Actor']]],
   ['attack',['attack',['../class_f_a_world_1_1_actor.html#af0a5d2bbac1f829e82054276e41a4db6',1,'FAWorld::Actor']]],
   ['audiomanager',['AudioManager',['../class_f_a_audio_1_1_audio_manager.html#a216749e9368821bb7390c089a3dc5304',1,'FAAudio::AudioManager']]],
+  ['autocoinit',['AutoCoInit',['../class_auto_co_init.html#abb2aacb8617250acc1e51eac192311e1',1,'AutoCoInit']]],
   ['autocomplete',['AutoComplete',['../class_f_a_gui_1_1_auto_complete.html#ade959aa0c20918db1b58efb7d63afb5d',1,'FAGui::AutoComplete']]],
   ['autoresetevent_5fcreate',['AutoResetEvent_Create',['../_threads_8c.html#adb1324b7e6541e5ccb3467a41378390e',1,'AutoResetEvent_Create(CAutoResetEvent *p, int signaled):&#160;Threads.c'],['../_threads_8h.html#adb1324b7e6541e5ccb3467a41378390e',1,'AutoResetEvent_Create(CAutoResetEvent *p, int signaled):&#160;Threads.c']]],
   ['autoresetevent_5fcreatenotsignaled',['AutoResetEvent_CreateNotSignaled',['../_threads_8c.html#a412a057fdddc508871f7c63812a96aff',1,'AutoResetEvent_CreateNotSignaled(CAutoResetEvent *p):&#160;Threads.c'],['../_threads_8h.html#a412a057fdddc508871f7c63812a96aff',1,'AutoResetEvent_CreateNotSignaled(CAutoResetEvent *p):&#160;Threads.c']]]

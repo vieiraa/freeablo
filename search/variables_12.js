@@ -68,6 +68,7 @@ var searchData=
   ['roundtriptimevariance',['roundTripTimeVariance',['../struct___e_net_peer.html#a2176c695ef652e93a192bd5b20e0261e',1,'_ENetPeer']]],
   ['row',['row',['../structnk__panel.html#a9687b3e8837edcf72a16332b80e6e42e',1,'nk_panel']]],
   ['row_5fpadding',['row_padding',['../structnk__style__edit.html#ad3e38663299850e384418c2434dc9345',1,'nk_style_edit']]],
+  ['rowheight',['rowHeight',['../celview_2main_8cpp.html#afcde63d96ad156b72d9b9be3cc0dd927',1,'main.cpp']]],
   ['rsa_5fkeygen',['rsa_keygen',['../structltc__math__descriptor.html#a633e3166470b893720262501582a1368',1,'ltc_math_descriptor']]],
   ['rsa_5fme',['rsa_me',['../structltc__math__descriptor.html#a9284c529edc0a53a06f9f9da85fadd1a',1,'ltc_math_descriptor']]]
 ];

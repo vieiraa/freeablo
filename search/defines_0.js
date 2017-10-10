@@ -7,6 +7,7 @@ var searchData=
   ['_5fcrt_5fsecure_5fno_5fdeprecate',['_CRT_SECURE_NO_DEPRECATE',['../_storm_test_8cpp.html#a411c46599e926f8cdf49c63957255359',1,'StormTest.cpp']]],
   ['_5fcrt_5fsecure_5fno_5fwarnings',['_CRT_SECURE_NO_WARNINGS',['../bzlib_8c.html#af08ec37a8c99d747fb60fa15bc28678b',1,'bzlib.c']]],
   ['_5flzma_5fuint32_5fis_5fulong',['_LZMA_UINT32_IS_ULONG',['../_storm_port_8h.html#a69c092f46d4e78e6e97c45dda1713a46',1,'StormPort.h']]],
+  ['_5fnfd_5funused',['_NFD_UNUSED',['../extern_2nativefiledialog_2src_2common_8h.html#a9ca590aa032988a18eff6e11f474c978',1,'_NFD_UNUSED():&#160;common.h'],['../nfd__common_8h.html#a9ca590aa032988a18eff6e11f474c978',1,'_NFD_UNUSED():&#160;nfd_common.h']]],
   ['_5fserialise_5fbool',['_serialise_bool',['../bitstream_8h.html#ae81720560e8c568d5be7ae35b0e490f6',1,'bitstream.h']]],
   ['_5fserialise_5fint',['_serialise_int',['../bitstream_8h.html#ae78eb3c5e025c3dc6f3af5cc09e85a6f',1,'bitstream.h']]],
   ['_5fserialise_5fint32',['_serialise_int32',['../bitstream_8h.html#a5ba1b03c6867b39e1676c93b2e04f699',1,'bitstream.h']]],

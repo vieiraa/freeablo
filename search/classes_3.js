@@ -27,6 +27,7 @@ var searchData=
   ['compileassert',['CompileAssert',['../structtesting_1_1internal_1_1_compile_assert.html',1,'testing::internal']]],
   ['compileasserttypesequal',['CompileAssertTypesEqual',['../structtesting_1_1internal_1_1_compile_assert_types_equal.html',1,'testing::internal']]],
   ['compileasserttypesequal_3c_20t_2c_20t_20_3e',['CompileAssertTypesEqual&lt; T, T &gt;',['../structtesting_1_1internal_1_1_compile_assert_types_equal_3_01_t_00_01_t_01_4.html',1,'testing::internal']]],
+  ['comptr',['ComPtr',['../class_com_ptr.html',1,'']]],
   ['config_5fs',['config_s',['../structconfig__s.html',1,'']]],
   ['const_5fiterator',['const_iterator',['../structtesting_1_1gtest__printers__test_1_1const__iterator.html',1,'testing::gtest_printers_test']]],
   ['constandnonconstcastable',['ConstAndNonConstCastable',['../classtesting_1_1internal_1_1_const_and_non_const_castable.html',1,'testing::internal']]],
@@ -43,5 +44,7 @@ var searchData=
   ['cseqoutstreambuf',['CSeqOutStreamBuf',['../struct_c_seq_out_stream_buf.html',1,'']]],
   ['ct_5fdata_5fs',['ct_data_s',['../structct__data__s.html',1,'']]],
   ['currenttestinfotest',['CurrentTestInfoTest',['../classtesting_1_1_current_test_info_test.html',1,'testing']]],
-  ['cursor',['Cursor',['../classpump_1_1_cursor.html',1,'pump']]]
+  ['cursor',['Cursor',['../classpump_1_1_cursor.html',1,'pump']]],
+  ['cvsprite',['CVSprite',['../struct_c_v_sprite.html',1,'']]],
+  ['cvspritecache',['CVSpriteCache',['../class_c_v_sprite_cache.html',1,'']]]
 ];

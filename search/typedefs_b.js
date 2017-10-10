@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nfdchar_5ft',['nfdchar_t',['../nfd_8h.html#ac2bbba0a1ca14bc1399696fe611b7d7b',1,'nfd.h']]],
   ['nk_5fbyte',['nk_byte',['../nuklear_8h.html#a1a0ad76219a407f92601a49b44507ecb',1,'nuklear.h']]],
   ['nk_5fchar',['nk_char',['../nuklear_8h.html#a0b5348ac549a4ba5421e290437a26db7',1,'nuklear.h']]],
   ['nk_5fcommand_5fcustom_5fcallback',['nk_command_custom_callback',['../nuklear_8h.html#ab746418b298fbdafb18f3b7c9f875570',1,'nuklear.h']]],
