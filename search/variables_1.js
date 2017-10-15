@@ -42,6 +42,7 @@ var searchData=
   ['also_5frun_5fdisabled_5ftests',['also_run_disabled_tests',['../structtesting_1_1_flags.html#a8ebf8c68f918b9039926b569c880f910',1,'testing::Flags']]],
   ['alt',['alt',['../class_input_1_1_hotkey.html#a3e92b798d6f4bb2c993ca132921690b4',1,'Input::Hotkey::alt()'],['../struct_input_1_1_keyboard_modifiers.html#aead09eb6f128ccf7cb7af534823806da',1,'Input::KeyboardModifiers::alt()']]],
   ['andmask64',['AndMask64',['../struct___t_m_p_q_het_table.html#acb0d375cf300a908b7f68ae7273686eb',1,'_TMPQHetTable']]],
+  ['animationsequenceid',['animationSequenceId',['../class_diablo_exe_1_1_npc.html#aa9a6b06f8b9e93d86f7a0053e5f13a80',1,'DiabloExe::Npc']]],
   ['animlength',['animLength',['../struct_render_1_1_rocket_f_a_tex.html#a379df58e36c02e8aca2104282c12e535',1,'Render::RocketFATex']]],
   ['animsize',['animSize',['../struct_diablo_exe_1_1_monster.html#a8e977719c051e6cbe9ea880e876e048b',1,'DiabloExe::Monster']]],
   ['arc_5fsegment_5fcount',['arc_segment_count',['../structnk__convert__config.html#ae367d812c2f866e843f9684b3a920e73',1,'nk_convert_config']]],

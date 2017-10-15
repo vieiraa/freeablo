@@ -102,10 +102,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af86da10312f600b12fcb7527091ee76f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> { <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76faea3b2042a17eee4c899f43a304a09432">AnimationType::Looped</a>, 
+<tr class="memitem:af86da10312f600b12fcb7527091ee76f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> { <br />
+&#160;&#160;<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76faea3b2042a17eee4c899f43a304a09432">AnimationType::Looped</a>, 
 <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fae1a9dc9f23534e63de9df0d540ac1611">AnimationType::Once</a>, 
 <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fae5ff1617b16da4f04bd504cd8daf409f">AnimationType::FreezeAtEnd</a>, 
-<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fad927000fd863b08d2426cbf3fc66bd56">AnimationType::ENUM_END</a>
+<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fa81a90fe9cde1e1fbb4169e6a080d817c">AnimationType::BySequence</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76fad927000fd863b08d2426cbf3fc66bd56">AnimationType::ENUM_END</a>
+<br />
  }</td></tr>
 <tr class="separator:af86da10312f600b12fcb7527091ee76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -117,8 +121,10 @@ Public Member Functions</h2></td></tr>
 &lt; <a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> <br class="typebreak" />
 *, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a1db5a9c4233f2f0510932b6f0cba28b1">getCurrentFrame</a> ()</td></tr>
 <tr class="separator:a1db5a9c4233f2f0510932b6f0cba28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb026d28372339c6462b6aceece1d227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#afb026d28372339c6462b6aceece1d227">playAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim, <a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a> duration, <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> type)</td></tr>
-<tr class="separator:afb026d28372339c6462b6aceece1d227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b939f23bda955cfd58a5ae4789007a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#aa7b939f23bda955cfd58a5ae4789007a">playAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim, <a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a> frameDuration, <a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationType</a> type)</td></tr>
+<tr class="separator:aa7b939f23bda955cfd58a5ae4789007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c075ef2b3db6faedd2ebc97ae5b8f26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a2c075ef2b3db6faedd2ebc97ae5b8f26">playAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim, <a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a> frameDuration, std::vector&lt; <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> &gt; frameSequence)</td></tr>
+<tr class="separator:a2c075ef2b3db6faedd2ebc97ae5b8f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3973ee12307ec942df18c76cde26a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#af3973ee12307ec942df18c76cde26a64">replaceAnimation</a> (<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *anim)</td></tr>
 <tr class="separator:af3973ee12307ec942df18c76cde26a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575beedaa58c85255888b00feade3afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_animation_player.html#a575beedaa58c85255888b00feade3afa">update</a> ()</td></tr>
@@ -155,6 +161,8 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fae1a9dc9f23534e63de9df0d540ac1611"></a>Once&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fae5ff1617b16da4f04bd504cd8daf409f"></a>FreezeAtEnd&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fa81a90fe9cde1e1fbb4169e6a080d817c"></a>BySequence&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af86da10312f600b12fcb7527091ee76fad927000fd863b08d2426cbf3fc66bd56"></a>ENUM_END&#160;</td><td class="fielddoc">
 </td></tr>
@@ -202,7 +210,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb026d28372339c6462b6aceece1d227"></a>
+<a class="anchor" id="aa7b939f23bda955cfd58a5ae4789007a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -216,13 +224,45 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a>&#160;</td>
-          <td class="paramname"><em>duration</em>, </td>
+          <td class="paramname"><em>frameDuration</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_f_a_render_1_1_animation_player.html#af86da10312f600b12fcb7527091ee76f">AnimationPlayer::AnimationType</a>&#160;</td>
           <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c075ef2b3db6faedd2ebc97ae5b8f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enet_8h.html#a3a2d26a32098450edee8054a39d71906">void</a> FARender::AnimationPlayer::playAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td>
+          <td class="paramname"><em>anim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_f_a_world.html#a9d15213b57eeb46de0220a410096385d">FAWorld::Tick</a>&#160;</td>
+          <td class="paramname"><em>frameDuration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="enet_8h.html#ac5698c428351548dfa3265f2001fff4a">int</a> &gt;&#160;</td>
+          <td class="paramname"><em>frameSequence</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

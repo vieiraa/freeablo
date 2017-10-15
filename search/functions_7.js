@@ -246,6 +246,7 @@ var searchData=
   ['gettotalattackdamage',['getTotalAttackDamage',['../class_f_a_world_1_1_inventory.html#a7802b4b415fe4a62f2961f0d40aadb17',1,'FAWorld::Inventory']]],
   ['gettotaleffects',['getTotalEffects',['../class_f_a_world_1_1_inventory.html#acd2520acf595a745b3b50f72d7ed3829',1,'FAWorld::Inventory']]],
   ['gettown',['getTown',['../class_level_1_1_dun.html#a3ca87294a7a617442caa007b354402ba',1,'Level::Dun']]],
+  ['gettowneranimation',['getTownerAnimation',['../class_diablo_exe_1_1_diablo_exe.html#a1c9615df8418464b00247f7cbfb1dfc6',1,'DiabloExe::DiabloExe']]],
   ['gettype',['getType',['../class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde',1,'FAWorld::Item']]],
   ['gettypeid',['GetTypeId',['../namespacetesting_1_1internal.html#a6b108e56fdc68ea937ffb3759fb55ab0',1,'testing::internal']]],
   ['gettypename',['GetTypeName',['../namespacetesting_1_1internal.html#a635606b4731f843c86ec8ca51cab83a1',1,'testing::internal']]],
