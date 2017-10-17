@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ui_5fmainwindow',['Ui_MainWindow',['../class_ui___main_window.html',1,'']]],
   ['uniqueitem',['UniqueItem',['../class_diablo_exe_1_1_unique_item.html',1,'DiabloExe']]],
   ['unittest',['UnitTest',['../classtesting_1_1_unit_test.html',1,'testing']]],
   ['unittesthelper',['UnitTestHelper',['../classtesting_1_1internal_1_1_unit_test_helper.html',1,'testing::internal']]],

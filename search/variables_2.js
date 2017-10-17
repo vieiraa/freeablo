@@ -78,8 +78,6 @@ var searchData=
   ['break_5fon_5ffailure',['break_on_failure',['../structtesting_1_1_flags.html#acccce2a9673bb61751269d2ef9c21c89',1,'testing::Flags']]],
   ['break_5fon_5ffailure_5fenv_5fvar',['BREAK_ON_FAILURE_ENV_VAR',['../namespacegtest__break__on__failure__unittest.html#a95b56c611c5844be4247700787a175a1',1,'gtest_break_on_failure_unittest']]],
   ['break_5fon_5ffailure_5fflag',['BREAK_ON_FAILURE_FLAG',['../namespacegtest__break__on__failure__unittest.html#a04adcb60898d929007033e178c772e88',1,'gtest_break_on_failure_unittest']]],
-  ['browsediabdatbutton',['browseDiabdatButton',['../class_ui___main_window.html#ac597dc6cab7ad191e7ea1a15582afa30',1,'Ui_MainWindow']]],
-  ['browseexebutton',['browseExeButton',['../class_ui___main_window.html#af71f985c85fb31b03c5b0d7dc4751eab',1,'Ui_MainWindow']]],
   ['bsbuff',['bsBuff',['../struct_e_state.html#a607c896aec76ecf3c0c1eb315dfcd99d',1,'EState::bsBuff()'],['../struct_d_state.html#ac8a8f1e3f3db538611317d24562ba0d8',1,'DState::bsBuff()']]],
   ['bslive',['bsLive',['../struct_e_state.html#a37196697485ef9e0e364b946d2b01ccf',1,'EState::bsLive()'],['../struct_d_state.html#ac366e057d6ff7173a2d2308d78e37cf7',1,'DState::bsLive()']]],
   ['btbuf',['btBuf',['../struct___c_match_finder_mt.html#ac60c68585ffef0dcc880e5229c13a117',1,'_CMatchFinderMt']]],

@@ -15,7 +15,6 @@ var searchData=
   ['get_3c_208_20_3e',['Get&lt; 8 &gt;',['../classstd_1_1tr1_1_1gtest__internal_1_1_get_3_018_01_4.html',1,'std::tr1::gtest_internal']]],
   ['get_3c_209_20_3e',['Get&lt; 9 &gt;',['../classstd_1_1tr1_1_1gtest__internal_1_1_get_3_019_01_4.html',1,'std::tr1::gtest_internal']]],
   ['gitvcs',['GitVCS',['../classupload_1_1_git_v_c_s.html',1,'upload']]],
-  ['graphicspage',['GraphicsPage',['../class_launcher_1_1_graphics_page.html',1,'Launcher']]],
   ['gtestbreakonfailureunittest',['GTestBreakOnFailureUnitTest',['../classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test.html',1,'gtest_break_on_failure_unittest']]],
   ['gtestcolortest',['GTestColorTest',['../classgtest__color__test_1_1_g_test_color_test.html',1,'gtest_color_test']]],
   ['gtestenvvartest',['GTestEnvVarTest',['../classgtest__env__var__test_1_1_g_test_env_var_test.html',1,'gtest_env_var_test']]],
@@ -32,5 +31,6 @@ var searchData=
   ['gtestxmloutputunittest',['GTestXMLOutputUnitTest',['../classgtest__xml__output__unittest_1_1_g_test_x_m_l_output_unit_test.html',1,'gtest_xml_output_unittest']]],
   ['gtestxmltestcase',['GTestXMLTestCase',['../classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case.html',1,'gtest_xml_test_utils']]],
   ['guimanager',['GuiManager',['../class_f_a_gui_1_1_gui_manager.html',1,'FAGui']]],
+  ['guisprite',['GuiSprite',['../class_nuklear_misc_1_1_gui_sprite.html',1,'NuklearMisc']]],
   ['gz_5fheader_5fs',['gz_header_s',['../structgz__header__s.html',1,'']]]
 ];

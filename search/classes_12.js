@@ -22,6 +22,7 @@ var searchData=
   ['spritecachebase',['SpriteCacheBase',['../class_render_1_1_sprite_cache_base.html',1,'Render']]],
   ['spritegroup',['SpriteGroup',['../class_render_1_1_sprite_group.html',1,'Render']]],
   ['spritemanager',['SpriteManager',['../class_f_a_render_1_1_sprite_manager.html',1,'FARender']]],
+  ['standaloneguihandler',['StandaloneGuiHandler',['../class_nuklear_misc_1_1_standalone_gui_handler.html',1,'NuklearMisc']]],
   ['statechange',['StateChange',['../struct_state_machine_1_1_state_change.html',1,'StateMachine']]],
   ['statemachine',['StateMachine',['../class_state_machine_1_1_state_machine.html',1,'StateMachine']]],
   ['statemachine_3c_20faworld_3a_3aactor_20_3e',['StateMachine&lt; FAWorld::Actor &gt;',['../class_state_machine_1_1_state_machine.html',1,'StateMachine']]],

@@ -3,8 +3,6 @@ var searchData=
   ['gamelevel_2ecpp',['gamelevel.cpp',['../gamelevel_8cpp.html',1,'']]],
   ['gamelevel_2eh',['gamelevel.h',['../gamelevel_8h.html',1,'']]],
   ['gen_5fgtest_5fpred_5fimpl_2epy',['gen_gtest_pred_impl.py',['../gen__gtest__pred__impl_8py.html',1,'']]],
-  ['graphicspage_2ecpp',['graphicspage.cpp',['../graphicspage_8cpp.html',1,'']]],
-  ['graphicspage_2eh',['graphicspage.h',['../graphicspage_8h.html',1,'']]],
   ['gtest_2dall_2ecc',['gtest-all.cc',['../gtest-all_8cc.html',1,'']]],
   ['gtest_2ddeath_2dtest_2dinternal_2eh',['gtest-death-test-internal.h',['../gtest-death-test-internal_8h.html',1,'']]],
   ['gtest_2ddeath_2dtest_2ecc',['gtest-death-test.cc',['../gtest-death-test_8cc.html',1,'']]],

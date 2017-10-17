@@ -60,6 +60,8 @@ var searchData=
   ['spritecache_2eh',['spritecache.h',['../spritecache_8h.html',1,'']]],
   ['spritemanager_2ecpp',['spritemanager.cpp',['../spritemanager_8cpp.html',1,'']]],
   ['spritemanager_2eh',['spritemanager.h',['../spritemanager_8h.html',1,'']]],
+  ['standaloneguispritehandler_2ecpp',['standaloneguispritehandler.cpp',['../standaloneguispritehandler_8cpp.html',1,'']]],
+  ['standaloneguispritehandler_2eh',['standaloneguispritehandler.h',['../standaloneguispritehandler_8h.html',1,'']]],
   ['statemachine_2ecpp',['statemachine.cpp',['../statemachine_8cpp.html',1,'']]],
   ['statemachine_2eh',['statemachine.h',['../statemachine_8h.html',1,'']]],
   ['stdhashes_2eh',['stdhashes.h',['../stdhashes_8h.html',1,'']]],

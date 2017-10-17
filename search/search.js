@@ -17,7 +17,7 @@ var indexSectionsWithContent =
   7: "_abcdefghikmnprstw",
   8: "abcdefghijklmnopqrstuvwxyz",
   9: ":abcdefgilpqrstu",
-  10: "_abcdefghiklmnopqrstuvwxz",
+  10: "_abcdefghiklmnoprstuvwxz",
   11: "acdeflmr",
   12: "bdfilmnprt"
 };

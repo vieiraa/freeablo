@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['weightof',['WEIGHTOF',['../huffman_8c.html#a0d49b9240dc646993a99b12031b47422',1,'huffman.c']]],
-  ['win32_5flean_5fand_5fmean',['WIN32_LEAN_AND_MEAN',['../_dll_main_8c.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'DllMain.c']]],
-  ['win_5finit',['WIN_INIT',['../deflate_8h.html#ac2836f69eb1551bb9699e4dd87dfbdc0',1,'deflate.h']]],
-  ['winapi',['WINAPI',['../_storm_port_8h.html#a9aa60e1ead64be77ad551e745cbfd4d3',1,'StormPort.h']]],
-  ['winsize',['WINSIZE',['../ltc__ecc__mulmod_8c.html#ae503004492a3af248faa09d61b4ee4b4',1,'ltc_ecc_mulmod.c']]],
-  ['word_5fbh',['WORD_BH',['../blocksort_8c.html#a345de47c14e724d816633f21721cefe3',1,'blocksort.c']]],
-  ['work_5fpath_5froot',['WORK_PATH_ROOT',['../_storm_test_8cpp.html#a6b97ffabe5189d82945a26c4cf19ff95',1,'StormTest.cpp']]]
+  ['xcalloc',['XCALLOC',['../tomcrypt__custom_8h.html#a8503239c1e72ca92c157863382d59e59',1,'XCALLOC():&#160;tomcrypt_custom.h'],['../tommath_8h.html#a8503239c1e72ca92c157863382d59e59',1,'XCALLOC():&#160;tommath.h']]],
+  ['xclock',['XCLOCK',['../tomcrypt__custom_8h.html#a73526f064867d959b5bf0fa2b8579d5d',1,'tomcrypt_custom.h']]],
+  ['xclocks_5fper_5fsec',['XCLOCKS_PER_SEC',['../tomcrypt__custom_8h.html#aee43ef4cd4ce2f3f259f2f1f11b8ca05',1,'tomcrypt_custom.h']]],
+  ['xfree',['XFREE',['../tomcrypt__custom_8h.html#afbf096b8374086f38c83ae49b2f2c97b',1,'XFREE():&#160;tomcrypt_custom.h'],['../tommath_8h.html#afbf096b8374086f38c83ae49b2f2c97b',1,'XFREE():&#160;tommath.h']]],
+  ['xmalloc',['XMALLOC',['../tomcrypt__custom_8h.html#a1877fd5e5019f9165749c55cf16be320',1,'XMALLOC():&#160;tomcrypt_custom.h'],['../tommath_8h.html#a1877fd5e5019f9165749c55cf16be320',1,'XMALLOC():&#160;tommath.h']]],
+  ['xmemcmp',['XMEMCMP',['../tomcrypt__custom_8h.html#ae99c2288e4d00c78889edb56d1628e78',1,'tomcrypt_custom.h']]],
+  ['xmemcpy',['XMEMCPY',['../tomcrypt__custom_8h.html#a3a156e6cb9a13df56d253051286d04b5',1,'tomcrypt_custom.h']]],
+  ['xmemset',['XMEMSET',['../tomcrypt__custom_8h.html#aecc88e1dabd4bc6bb25ea088991b26e8',1,'tomcrypt_custom.h']]],
+  ['xqsort',['XQSORT',['../tomcrypt__custom_8h.html#a60cc98c6e13b829221f6f80eab4a212f',1,'tomcrypt_custom.h']]],
+  ['xrealloc',['XREALLOC',['../tomcrypt__custom_8h.html#a39383dcb89fdcd1a91bbdd0cd81e3e1b',1,'XREALLOC():&#160;tomcrypt_custom.h'],['../tommath_8h.html#a39383dcb89fdcd1a91bbdd0cd81e3e1b',1,'XREALLOC():&#160;tommath.h']]],
+  ['xstrcmp',['XSTRCMP',['../tomcrypt__custom_8h.html#a953b493d66d1a8ae393a8a97cdb8d9c6',1,'tomcrypt_custom.h']]]
 ];

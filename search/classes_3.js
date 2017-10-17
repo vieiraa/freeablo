@@ -44,7 +44,5 @@ var searchData=
   ['cseqoutstreambuf',['CSeqOutStreamBuf',['../struct_c_seq_out_stream_buf.html',1,'']]],
   ['ct_5fdata_5fs',['ct_data_s',['../structct__data__s.html',1,'']]],
   ['currenttestinfotest',['CurrentTestInfoTest',['../classtesting_1_1_current_test_info_test.html',1,'testing']]],
-  ['cursor',['Cursor',['../classpump_1_1_cursor.html',1,'pump']]],
-  ['cvsprite',['CVSprite',['../struct_c_v_sprite.html',1,'']]],
-  ['cvspritecache',['CVSpriteCache',['../class_c_v_sprite_cache.html',1,'']]]
+  ['cursor',['Cursor',['../classpump_1_1_cursor.html',1,'pump']]]
 ];

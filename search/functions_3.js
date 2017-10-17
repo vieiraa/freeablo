@@ -137,6 +137,5 @@ var searchData=
   ['current_5ftest_5fresult',['current_test_result',['../classtesting_1_1internal_1_1_unit_test_impl.html#aba3caef4ad23ce98be80250aeb0cc787',1,'testing::internal::UnitTestImpl']]],
   ['currentosstacktraceexcepttop',['CurrentOsStackTraceExceptTop',['../classtesting_1_1internal_1_1_unit_test_impl.html#a61c0a51ac4e57d9f884f646ca6dd2210',1,'testing::internal::UnitTestImpl']]],
   ['currentstacktrace',['CurrentStackTrace',['../classtesting_1_1internal_1_1_os_stack_trace_getter_interface.html#a6965eadb9b340808718fab9f1475c49a',1,'testing::internal::OsStackTraceGetterInterface::CurrentStackTrace()'],['../classtesting_1_1internal_1_1_os_stack_trace_getter.html#afe0f7539f1a325eec1adf0625bbdfbd7',1,'testing::internal::OsStackTraceGetter::CurrentStackTrace()']]],
-  ['cursorsize',['cursorSize',['../class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb',1,'FARender::Renderer']]],
-  ['cvsprite',['CVSprite',['../struct_c_v_sprite.html#ad956618af59065a4f7dd2865e86dc032',1,'CVSprite']]]
+  ['cursorsize',['cursorSize',['../class_f_a_render_1_1_renderer.html#a3bba048e164b0b561043dd98c7385fcb',1,'FARender::Renderer']]]
 ];

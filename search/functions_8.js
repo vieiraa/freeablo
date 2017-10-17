@@ -38,7 +38,6 @@ var searchData=
   ['hashstringslash',['HashStringSlash',['../_s_base_common_8cpp.html#a02d21e4503c849811801f033baa4b733',1,'HashStringSlash(const char *szFileName, DWORD dwHashType):&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a02d21e4503c849811801f033baa4b733',1,'HashStringSlash(const char *szFileName, DWORD dwHashType):&#160;SBaseCommon.cpp']]],
   ['hashword',['hashword',['../lookup3_8c.html#a6b57e35d1649b351ed629d3e022bf85f',1,'lookup3.c']]],
   ['hashword2',['hashword2',['../lookup3_8c.html#af4b16260e69ab4fc6a2584d04332404b',1,'lookup3.c']]],
-  ['hasmaster',['hasMaster',['../class_launcher_1_1_play_page.html#a86732f5d2831e2e57be85719f7935866',1,'Launcher::PlayPage']]],
   ['hasnewfatalfailurehelper',['HasNewFatalFailureHelper',['../classtesting_1_1internal_1_1_has_new_fatal_failure_helper.html#a59190a7188db558c00b4c6bf9251859a',1,'testing::internal::HasNewFatalFailureHelper']]],
   ['hasnonfatalfailure',['HasNonfatalFailure',['../classtesting_1_1_test.html#a8c00e8cc6fe10616b480bd54d2a426cb',1,'testing::Test::HasNonfatalFailure()'],['../classtesting_1_1_test_result.html#a34e6901b9772f51ce4f17a5517c26607',1,'testing::TestResult::HasNonfatalFailure()']]],
   ['hasonefailure',['HasOneFailure',['../namespacetesting_1_1internal.html#a14ff02e6d151f45e998657674e9af88a',1,'testing::internal']]],

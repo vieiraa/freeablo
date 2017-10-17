@@ -266,8 +266,6 @@ var searchData=
   ['break_5fon_5ffailure_5fflag',['BREAK_ON_FAILURE_FLAG',['../namespacegtest__break__on__failure__unittest.html#a04adcb60898d929007033e178c772e88',1,'gtest_break_on_failure_unittest']]],
   ['breakonfailure',['BreakOnFailure',['../structtesting_1_1_flags.html#a62660e44922321f7640bc951a04c2296',1,'testing::Flags']]],
   ['broadcastpacket',['broadcastPacket',['../struct_engine_1_1_write_packet.html#ab3d422d9522e860cd6cc2f296834bb56',1,'Engine::WritePacket::broadcastPacket()'],['../namespace_engine.html#a38e0088c7d07e54710dc04ba1d3628a7',1,'Engine::broadcastPacket()']]],
-  ['browsediabdatbutton',['browseDiabdatButton',['../class_ui___main_window.html#ac597dc6cab7ad191e7ea1a15582afa30',1,'Ui_MainWindow']]],
-  ['browseexebutton',['browseExeButton',['../class_ui___main_window.html#af71f985c85fb31b03c5b0d7dc4751eab',1,'Ui_MainWindow']]],
   ['bsbuff',['bsBuff',['../struct_e_state.html#a607c896aec76ecf3c0c1eb315dfcd99d',1,'EState::bsBuff()'],['../struct_d_state.html#ac8a8f1e3f3db538611317d24562ba0d8',1,'DState::bsBuff()']]],
   ['bslive',['bsLive',['../struct_e_state.html#a37196697485ef9e0e364b946d2b01ccf',1,'EState::bsLive()'],['../struct_d_state.html#ac366e057d6ff7173a2d2308d78e37cf7',1,'DState::bsLive()']]],
   ['bsneedw',['bsNEEDW',['../extern_2_storm_lib_2src_2bzip2_2compress_8c.html#af54aadd2f614dfc6d03bcf40e6b84a56',1,'compress.c']]],
