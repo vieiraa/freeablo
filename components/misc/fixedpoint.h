@@ -75,6 +75,8 @@ public:
     static FixedPoint sin_degrees(FixedPoint deg);
     static FixedPoint cos_degrees(FixedPoint deg);
 
+    static FixedPoint Pi;
+
 private:
     // The scaling factor to use, as a power of 10.
     // Essentially the number of base 10 digits after the decimal point.
@@ -89,6 +91,7 @@ private:
 
     int64_t mVal = 0;
 #ifndef NDEBUG
+public:
     double mDebugVal = 0;
 #endif
 };
