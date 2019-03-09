@@ -71,9 +71,10 @@ public:
         return fromRawValue(mVal >= 0 ? mVal : -mVal);
     }
 
-    static FixedPoint atan2_degrees(FixedPoint y, FixedPoint x);
     static FixedPoint sin_degrees(FixedPoint deg);
     static FixedPoint cos_degrees(FixedPoint deg);
+
+    static FixedPoint Pi;
 
 private:
     // The scaling factor to use, as a power of 10.
@@ -89,6 +90,7 @@ private:
 
     int64_t mVal = 0;
 #ifndef NDEBUG
+public:
     double mDebugVal = 0;
 #endif
 };

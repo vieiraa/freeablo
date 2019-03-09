@@ -9,6 +9,8 @@ using uint128_t = boost::multiprecision::uint128_t;
 constexpr int64_t FixedPoint::scalingFactorPowerOf10;
 constexpr int64_t FixedPoint::scalingFactor;
 
+FixedPoint FixedPoint::Pi("3.141592652");
+
 static int64_t ipow(int64_t x, int64_t power)
 {
     int64_t result = 1;
@@ -230,13 +232,6 @@ FixedPoint FixedPoint::sqrt() const
 // TODO: Convert to fixed point implementation.
 #define _USE_MATH_DEFINES
 #include <math.h>
-FixedPoint FixedPoint::atan2_degrees(FixedPoint y, FixedPoint x)
-{
-    // TODO: Possible domain errors (0, 0)?
-    double res = atan2(y.toDouble(), x.toDouble()) * 180 / M_PI;
-    return FixedPoint::fromRawValue((uint64_t)(res * FixedPoint::scalingFactor));
-}
-
 FixedPoint FixedPoint::sin_degrees(FixedPoint deg)
 {
 

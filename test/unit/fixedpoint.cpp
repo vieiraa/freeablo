@@ -116,3 +116,42 @@ TEST(FixedPoint, VectorToDirection)
     ASSERT_EQ(Vec2Fix(-1, -1).getIsometricDirection(), Misc::Direction::north);
     ASSERT_EQ(Vec2Fix(-1, 1).getIsometricDirection(), Misc::Direction::west);
 }
+
+TEST(FixedPoint, Atan2)
+{
+    for (float degrees = 0; degrees <= 360; degrees+= 0.5)
+    {
+        constexpr float degToRad = 0.01745329;
+        constexpr float radToDeg = 57.29578;
+
+        float radians = degrees * degToRad;
+
+        float vectorX = cos(radians);
+        float vectorY = sin(radians);
+
+        float calculatedFloatRadians = atan2(vectorY, vectorX);
+        float calculatedFloatDegrees = calculatedFloatRadians * radToDeg;
+        if (calculatedFloatDegrees < 0)
+            calculatedFloatDegrees = 360 + calculatedFloatDegrees;
+
+        FixedPoint fixedPointX(std::to_string(vectorX));
+        FixedPoint fixedPointY(std::to_string(-vectorY));
+
+        FixedPoint calculatedFixedPointDegrees = Vec2Fix::atan2Degrees(Vec2Fix(fixedPointX, fixedPointY));
+
+        float difference = abs(calculatedFixedPointDegrees.toDouble() - calculatedFloatDegrees);
+
+        bool aBig = calculatedFixedPointDegrees > 270;
+        bool aSmall = calculatedFixedPointDegrees < 90;
+        bool bBig = calculatedFloatDegrees > 270;
+        bool bSmall = calculatedFloatDegrees < 90;
+
+        // account for errors like 359.8 vs 0.1
+        if ((aBig && bSmall) || (aSmall && bBig))
+            difference = 360 - difference;
+
+        // std::cout << degrees << "," << calculatedFixedPointDegrees.str() << "," << calculatedFixedPointDegrees.mDebugVal << "," << calculatedFloatDegrees << " " << vectorX << " " << vectorY <<std::endl;
+        ASSERT_LT(difference, 1);
+        ASSERT_NEAR(calculatedFloatDegrees, degrees, 1);
+    }
+}
