@@ -89,6 +89,23 @@ namespace Render
         // Windows does not trigger a SDL_WINDOWEVENT_RESIZED event.
         SDL_GetWindowSize(screen, &WIDTH, &HEIGHT);
 
+        WIDTH = 640;
+        HEIGHT = 1080;
+
+#ifdef WIN32
+        WIDTH = WIDTH - 2;
+        HEIGHT = HEIGHT - 31 - 1;
+#elif __linux__
+        HEIGHT = HEIGHT - 30;
+#elif __APPLE__
+	HEIGHT = HEIGHT - 22;
+#endif
+
+        SDL_SetWindowSize(screen, WIDTH, HEIGHT);
+        
+        SDL_GetWindowSize(screen, &WIDTH, &HEIGHT);
+
+
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);

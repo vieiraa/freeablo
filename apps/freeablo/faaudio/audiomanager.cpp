@@ -82,12 +82,12 @@ namespace FAAudio
 
     void AudioManager::stopSound() { Audio::stopSound(); }
 
-    void AudioManager::playMusic(const std::string& path)
+    void AudioManager::playMusic(const std::string& /*path*/)
     {
-        if (mCurrentMusic != NULL)
-            Audio::freeMusic(mCurrentMusic);
+//        if (mCurrentMusic != NULL)
+//            Audio::freeMusic(mCurrentMusic);
 
-        mCurrentMusic = Audio::loadMusic(path);
-        Audio::playMusic(mCurrentMusic);
+//        mCurrentMusic = Audio::loadMusic(path);
+//        Audio::playMusic(mCurrentMusic);
     }
 }
