@@ -60,7 +60,6 @@ namespace FAWorld
         void doMeleeHit(Actor* enemy);
         void doMeleeHit(const Misc::Point& point);
         void startMeleeAttack(Misc::Direction direction);
-        bool checkDeath();
 
         std::string getDieWav() const;
         std::string getHitWav() const;
@@ -101,8 +100,7 @@ namespace FAWorld
         bool mIsTowner = false;
 
     protected:
-        void inflictDamage(Actor* enemy, uint32_t damage);
-        virtual void enemyKilled(Actor* enemy);
+        virtual void onEnemyKilled(Actor* enemy) { UNUSED_PARAM(enemy); };
 
         // protected member variables
         std::unique_ptr<StateMachine> mActorStateMachine;

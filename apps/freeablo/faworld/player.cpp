@@ -365,7 +365,7 @@ namespace FAWorld
         }
     }
 
-    void Player::enemyKilled(Actor* enemy)
+    void Player::onEnemyKilled(Actor* enemy)
     {
         if (Monster* monster = dynamic_cast<Monster*>(enemy))
         {

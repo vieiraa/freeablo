@@ -164,6 +164,9 @@ namespace FAWorld
             if (mAnimation.getCurrentAnimation() != AnimState::hit)
                 mAnimation.interruptAnimation(AnimState::hit, FARender::AnimationPlayer::AnimationType::Once);
         }
+
+        if (getStats().mHp.current <= 0)
+            die();
     }
 
     void Actor::heal() { mStats.mHp = mStats.mHp.max; }
@@ -288,34 +291,15 @@ namespace FAWorld
 
     void Actor::startMeleeAttack(Misc::Direction direction) { mMeleeAttackRequestedDirection = direction; }
 
-    bool Actor::checkDeath()
-    {
-        if (getStats().mHp.current <= 0)
-        {
-            die();
-            return true;
-        }
-        return false;
-    }
-
     void Actor::doMeleeHit(Actor* enemy)
     {
         Engine::ThreadManager::get()->playSound(mWorld.mRng->chooseOne({"sfx/misc/swing2.wav", "sfx/misc/swing.wav"}));
         if (checkHit(enemy))
-            inflictDamage(enemy, meleeDamageVs(enemy));
-    }
-
-    void Actor::inflictDamage(Actor* enemy, uint32_t damage)
-    {
-        enemy->takeDamage(damage);
-        if (enemy->checkDeath())
-            enemyKilled(enemy);
-    }
-
-    void Actor::enemyKilled(Actor* enemy)
-    {
-        // Nothing to do for base actor.
-        // Players will get exp, Diablo may do a happy dance etc.
-        (void)enemy;
+        {
+            int32_t damage = meleeDamageVs(enemy);
+            enemy->takeDamage(damage);
+            if (enemy->isDead())
+                onEnemyKilled(enemy);
+        }
     }
 }
