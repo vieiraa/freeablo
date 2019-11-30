@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.14.7)
 
 set(
     HUNTER_CACHE_SERVERS
@@ -161,16 +161,19 @@ endif()
 
 
 # TODO: use the new FILE(CREATE_LINK) comand in newer cmake (+upgrade cmake on ci workers)
-if (WIN32)
-    string(REPLACE "/" "\\" SYM_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}\\resources")
-    string(REPLACE "/" "\\" SYM_DEST "${CMAKE_CURRENT_BINARY_DIR}\\resources")
-    
-    if (NOT EXISTS "${SYM_DEST}")
-        exec_program("cmd" ARGS "/wait" "/c" "mklink" "/j" "${SYM_DEST}" "${SYM_SOURCE}")
-    endif()
-else()
-    if (NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/resources")
-        execute_process(COMMAND "ln" "-s" "${CMAKE_CURRENT_SOURCE_DIR}/resources" "${CMAKE_CURRENT_BINARY_DIR}/resources")
-    endif()
-endif()
+#if (WIN32)
+#    string(REPLACE "/" "\\" SYM_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}\\resources")
+#    string(REPLACE "/" "\\" SYM_DEST "${CMAKE_CURRENT_BINARY_DIR}\\resources")
 
+#    if (NOT EXISTS "${SYM_DEST}")
+#        exec_program("cmd" ARGS "/wait" "/c" "mklink" "/j" "${SYM_DEST}" "${SYM_SOURCE}")
+#    endif()
+#else()
+#    if (NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/resources")
+#        execute_process(COMMAND "ln" "-s" "${CMAKE_CURRENT_SOURCE_DIR}/resources" "${CMAKE_CURRENT_BINARY_DIR}/resources")
+#    endif()
+#endif()
+
+set(SYM_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/resources")
+set(SYM_DEST "${CMAKE_CURRENT_BINARY_DIR}/resources")
+file(CREATE_LINK "${SYM_SOURCE}" "${SYM_DEST}" SYMBOLIC)
