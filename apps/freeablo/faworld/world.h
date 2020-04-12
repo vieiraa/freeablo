@@ -49,6 +49,7 @@ namespace FAWorld
     class ItemFactory;
     class HoverStatus;
     class StoreData;
+    class QuestManager;
 
     // at 125 ticks/second, it will take about 2 billion years to reach max (signed) value, so int64 will probably do :p
     typedef int64_t Tick;
@@ -107,6 +108,8 @@ namespace FAWorld
 
         void playLevelMusic(size_t level);
 
+        QuestManager& getQuestManager() { return *mQuestManager; }
+
         static const Tick ticksPerSecond = 60; ///< number of times per second that game state will be updated
         FASaveGame::ObjectIdMapper mObjectIdMapper;
 
@@ -123,6 +126,7 @@ namespace FAWorld
         std::vector<Player*> mPlayers; ///< This vector is sorted
         std::unique_ptr<ItemFactory> mItemFactory;
         std::unique_ptr<StoreData> mStoreData;
+        std::unique_ptr<QuestManager> mQuestManager;
 
         int32_t mNextId = 1;
         PlayerClass mNextPlayerClass = PlayerClass::warrior;
