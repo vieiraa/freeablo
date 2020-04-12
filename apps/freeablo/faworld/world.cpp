@@ -16,6 +16,7 @@
 #include "itemmap.h"
 #include "player.h"
 #include "playerbehaviour.h"
+#include "quest/questmanager.h"
 #include "storedata.h"
 #include <diabloexe/diabloexe.h>
 #include <iostream>
@@ -28,7 +29,7 @@ namespace FAWorld
     World::World(const DiabloExe::DiabloExe& exe, uint32_t seed)
         : mDiabloExe(exe), mRng(new Random::RngMersenneTwister(seed)),
           mLevelRng(new Random::RngMersenneTwister(uint32_t(mRng->randomInRange(std::numeric_limits<int32_t>::min(), std::numeric_limits<int32_t>::max())))),
-          mItemFactory(std::make_unique<ItemFactory>(exe, *mRng.get())), mStoreData(std::make_unique<StoreData>(*mItemFactory))
+          mItemFactory(std::make_unique<ItemFactory>(exe, *mRng.get())), mStoreData(std::make_unique<StoreData>(*mItemFactory)), mQuestManager(std::make_unique<QuestManager>(*this))
     {
         this->setupObjectIdMappers();
 
